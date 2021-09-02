@@ -8,10 +8,14 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include USB_DEVICE/Target/subdir.mk
+-include USB_DEVICE/App/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -58,8 +62,8 @@ all: main-build
 main-build: Pinball_Controller_V0.elf secondary-outputs
 
 # Tool invocations
-Pinball_Controller_V0.elf: $(OBJS) $(USER_OBJS) /home/h3l/Documents/Programming/STM32CubeIDE/workspace_1.5.0/Pinball_Controller_V0/STM32F411CEUX_FLASH.ld
-	arm-none-eabi-gcc -o "Pinball_Controller_V0.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/h3l/Documents/Programming/STM32CubeIDE/workspace_1.5.0/Pinball_Controller_V0/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Pinball_Controller_V0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Pinball_Controller_V0.elf: $(OBJS) $(USER_OBJS) /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/STM32F411CEUX_FLASH.ld
+	arm-none-eabi-gcc -o "Pinball_Controller_V0.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Pinball_Controller_V0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
