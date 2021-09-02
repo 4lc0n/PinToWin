@@ -42,16 +42,30 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-/* Definitions for solenoid_driver */
+TIM_HandleTypeDef htim2;
+
+/* Definitions for init_task */
+osThreadId_t init_taskHandle;
+const osThreadAttr_t init_task_attributes = {
+  .name = "init_task",
+  .priority = (osPriority_t) osPriorityNormal,
+  .stack_size = 128 * 4
+};
+/* USER CODE BEGIN PV */
+
+
+
+// thread handler for solenoid driver 1
 osThreadId_t solenoid_driverHandle;
 const osThreadAttr_t solenoid_driver_attributes = {
   .name = "solenoid_driver",
   .priority = (osPriority_t) osPriorityNormal,
   .stack_size = 128 * 4
 };
-/* USER CODE BEGIN PV */
 
-volatile uint8_t status_button1 = 0;
+
+
+volatile uint16_t status_button1 = 0;
 
 
 
@@ -60,7 +74,8 @@ volatile uint8_t status_button1 = 0;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-void start_solenoid_driver(void *argument);
+static void MX_TIM2_Init(void);
+void start_init_task(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -99,7 +114,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
+
+
 
   /* USER CODE END 2 */
 
@@ -124,11 +142,16 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of solenoid_driver */
-  solenoid_driverHandle = osThreadNew(start_solenoid_driver, NULL, &solenoid_driver_attributes);
+  /* creation of init_task */
+  init_taskHandle = osThreadNew(start_init_task, NULL, &init_task_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
+
+  // solenoid_driverHandle = osThreadNew(start_solenoid_driver, NULL, &solenoid_driver_attributes);
+
+
+
+
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -197,6 +220,55 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 0;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 19200;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_PWM_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 1000;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
+  HAL_TIM_MspPostInit(&htim2);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -242,35 +314,32 @@ void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin)
 	{
 		if(HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin))
 		{
-			status_button1 = 1;
+			status_button1 = 0;
 		}
 		else
 		{
-			status_button1 = 0;
+			status_button1 = 1;
 		}
 	}
 }
 
-/* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_start_solenoid_driver */
+
 /**
   * @brief  Function implementing the solenoid_driver thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_start_solenoid_driver */
 void start_solenoid_driver(void *argument)
 {
   /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
-  /* USER CODE BEGIN 5 */
 
-  uint8_t prev_status_button1 = status_button1;
-  uint8_t duty = 0, output = 0;
 
-	char msg[]="Hallo! This is a pretty long textHallo! This is a pretty long textHallo! This is a pretty long text\n";
+  uint16_t prev_status_button1 = status_button1;
+  uint16_t duty = 0, output = 0;
 
+  const float iir_const = 0.05;
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
 
   /* Infinite loop */
 	for(;;)
@@ -281,17 +350,19 @@ void start_solenoid_driver(void *argument)
 
 		if(status_button1)
 		{
-			// TODO: calculate duty
+			// calculate duty value: iir approach
+			duty = duty * (1 - iir_const) + output * iir_const;
+
 
 			// if initial hit: do nothing
 			if(prev_status_button1 != status_button1)
 			{
-			  continue;
+			  output = MAX_PWM;
 			}
 			// if duty cycle exceeds max. rated duty cycle
 			else if(duty > MAX_DUTY_CYCLE && output > MAX_DUTY_CYCLE)
 			{
-			  output -= 25;
+			  output -= 1920;
 			}
 			// if duty cycle below max_duty cycle
 			else if(duty < MAX_DUTY_CYCLE && output < MAX_DUTY_CYCLE)
@@ -300,8 +371,7 @@ void start_solenoid_driver(void *argument)
 			}
 
 
-			//  TODO: send duty cycle to PWM unit
-
+			HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
 
 
 
@@ -309,20 +379,47 @@ void start_solenoid_driver(void *argument)
 
 
 		}
+		else
+		{
+			HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, RESET);
+			output = 0;
+		}
 
-		// test to check duration of usb.send
-		// LED On
-		HAL_GPIO_WritePin(USER_LED_GPIO_Port,USER_LED_Pin,GPIO_PIN_SET);
 
-		// Send data
-		CDC_Transmit_FS( (uint8_t*) msg, strlen(msg));	// not dma driven, but pretty fast: 100 char: 7 us
-		// LED Off
-		HAL_GPIO_WritePin(USER_LED_GPIO_Port,USER_LED_Pin,GPIO_PIN_RESET);
+		// write pwm signal:
+		TIM2->CCR2 = output;
+
+		prev_status_button1 = status_button1;
 
 		osDelay(50);			// delay for 50 ms
 
 
 	}
+  /* USER CODE END 5 */
+}
+
+/* USER CODE END 4 */
+
+/* USER CODE BEGIN Header_start_init_task */
+/**
+  * @brief  Function implementing the init_task thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_start_init_task */
+void start_init_task(void *argument)
+{
+  /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
+  /* USER CODE BEGIN 5 */
+
+  // init solenoid task:
+  solenoid_driverHandle = osThreadNew(start_solenoid_driver, NULL, &solenoid_driver_attributes);
+
+
+  osThreadExit();
+
+
   /* USER CODE END 5 */
 }
 
@@ -354,6 +451,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
+
+	char error_handler_message[120];
+	sprintf(error_handler_message, "%ld ticks: Error-Handler\r\n", xTaskGetTickCount());
+	CDC_Transmit_FS( (uint8_t*) error_handler_message, strlen(error_handler_message));
+
+
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)

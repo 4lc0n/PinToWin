@@ -50,6 +50,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -68,7 +70,10 @@ void Error_Handler(void);
 
 // ======= Defines for solenoid - task =======
 
-#define MAX_DUTY_CYCLE ((int)(255 * 0.25))
+
+#define MAX_PWM 19200
+
+#define MAX_DUTY_CYCLE ((uint16_t)(MAX_PWM * 0.25))
 
 
 
