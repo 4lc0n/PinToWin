@@ -1,0 +1,21 @@
+!SESSION 2021-09-02 15:08:11.523 -----------------------------------------------
+eclipse.buildId=Version 1.5.0
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-09-02 15:08:24.857
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-09-02 15:08:24.882
+!MESSAGE Log4j initialized with config file /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-09-02 15:08:25.644
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-09-02 15:08:25.791
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-02 15:08:56.589
+!MESSAGE Indexed 'Pinball_Controller_V0' (33 sources, 123 headers) in 2.68 sec: 11,360 declarations; 48,405 references; 2 unresolved inclusions; 147 syntax errors; 148 unresolved names (0.25%)
