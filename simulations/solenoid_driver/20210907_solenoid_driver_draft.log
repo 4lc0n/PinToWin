@@ -1,0 +1,21 @@
+Circuit: * C:\users\h3l\My Documents\Studium\Auslandssemster\Vorlesungen\SmartSystems\working_directory\simulations\solenoid_driver\20210907_solenoid_driver_draft.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Sep 08 20:59:01 2021
+Total elapsed time: 1.201 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 407850
+traniter = 407803
+tranpoints = 129444
+accept = 99987
+rejected = 29457
+matrix size = 27
+fillins = 8
+solver = Normal
+Matrix Compiler1: 2.05 KB object code size  0.3/0.2/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.3
+

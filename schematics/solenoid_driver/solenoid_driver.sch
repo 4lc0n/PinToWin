@@ -1,0 +1,289 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F4:STM32F411CEUx U?
+U 1 1 61390395
+P 2550 3450
+F 0 "U?" H 2500 5131 50  0000 C CNN
+F 1 "STM32F411CEUx" H 2500 5040 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1950 1950 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115249.pdf" H 2550 3450 50  0001 C CNN
+	1    2550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:SFH617A-1 U?
+U 1 1 61391D51
+P 7150 3250
+F 0 "U?" H 7150 3575 50  0000 C CNN
+F 1 "SFH617A-1" H 7150 3484 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6950 3050 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 7150 3250 50  0001 L CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613931AA
+P 6700 3550
+F 0 "#PWR?" H 6700 3300 50  0001 C CNN
+F 1 "GND" H 6705 3377 50  0000 C CNN
+F 2 "" H 6700 3550 50  0001 C CNN
+F 3 "" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3550 6700 3350
+Wire Wire Line
+	6700 3350 6850 3350
+Wire Wire Line
+	6850 3150 6600 3150
+$Comp
+L Device:R R?
+U 1 1 61392CD3
+P 6450 3150
+F 0 "R?" V 6243 3150 50  0000 C CNN
+F 1 "R" V 6334 3150 50  0000 C CNN
+F 2 "" V 6380 3150 50  0001 C CNN
+F 3 "~" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	0    1    1    0   
+$EndComp
+Text GLabel 6150 3150 0    50   Input ~ 0
+PWM_Sig
+Wire Wire Line
+	6150 3150 6300 3150
+$Comp
+L power:GND #PWR?
+U 1 1 61395119
+P 7700 3500
+F 0 "#PWR?" H 7700 3250 50  0001 C CNN
+F 1 "GND" H 7705 3327 50  0000 C CNN
+F 2 "" H 7700 3500 50  0001 C CNN
+F 3 "" H 7700 3500 50  0001 C CNN
+	1    7700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3500 7700 3300
+Wire Wire Line
+	7700 3300 7450 3300
+$Comp
+L power:+12V #PWR?
+U 1 1 61395C84
+P 7700 2100
+F 0 "#PWR?" H 7700 1950 50  0001 C CNN
+F 1 "+12V" H 7715 2273 50  0000 C CNN
+F 2 "" H 7700 2100 50  0001 C CNN
+F 3 "" H 7700 2100 50  0001 C CNN
+	1    7700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61396269
+P 7700 2450
+F 0 "R?" H 7770 2496 50  0000 L CNN
+F 1 "R" H 7770 2405 50  0000 L CNN
+F 2 "" V 7630 2450 50  0001 C CNN
+F 3 "~" H 7700 2450 50  0001 C CNN
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2600 7700 2850
+Wire Wire Line
+	7700 3150 7450 3150
+Wire Wire Line
+	7700 2100 7700 2200
+$Comp
+L Device:R R?
+U 1 1 61396F11
+P 8000 2850
+F 0 "R?" V 7793 2850 50  0000 C CNN
+F 1 "R" V 7884 2850 50  0000 C CNN
+F 2 "" V 7930 2850 50  0001 C CNN
+F 3 "~" H 8000 2850 50  0001 C CNN
+	1    8000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 61397969
+P 8550 2650
+F 0 "Q?" H 8741 2696 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 8741 2605 50  0000 L CNN
+F 2 "" H 8750 2750 50  0001 C CNN
+F 3 "~" H 8550 2650 50  0001 C CNN
+	1    8550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_CBE Q?
+U 1 1 613990B5
+P 8550 3150
+F 0 "Q?" H 8740 3104 50  0000 L CNN
+F 1 "Q_PNP_CBE" H 8740 3195 50  0000 L CNN
+F 2 "" H 8750 3250 50  0001 C CNN
+F 3 "~" H 8550 3150 50  0001 C CNN
+	1    8550 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8650 2850 8650 2900
+Wire Wire Line
+	8350 2650 8200 2650
+Wire Wire Line
+	8200 2650 8200 2850
+Wire Wire Line
+	8200 3150 8350 3150
+Wire Wire Line
+	8150 2850 8200 2850
+Connection ~ 8200 2850
+Wire Wire Line
+	8200 2850 8200 3150
+Wire Wire Line
+	7850 2850 7700 2850
+Connection ~ 7700 2850
+Wire Wire Line
+	7700 2850 7700 3150
+$Comp
+L power:GND #PWR?
+U 1 1 6139E706
+P 8650 3550
+F 0 "#PWR?" H 8650 3300 50  0001 C CNN
+F 1 "GND" H 8655 3377 50  0000 C CNN
+F 2 "" H 8650 3550 50  0001 C CNN
+F 3 "" H 8650 3550 50  0001 C CNN
+	1    8650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3600 7700 3600
+Wire Wire Line
+	8650 3550 8650 3350
+Wire Wire Line
+	7700 2200 8650 2200
+Wire Wire Line
+	8650 2200 8650 2450
+Connection ~ 7700 2200
+Wire Wire Line
+	7700 2200 7700 2300
+$Comp
+L Device:R R?
+U 1 1 613A1E8B
+P 9150 2900
+F 0 "R?" V 8943 2900 50  0000 C CNN
+F 1 "R" V 9034 2900 50  0000 C CNN
+F 2 "" V 9080 2900 50  0001 C CNN
+F 3 "~" H 9150 2900 50  0001 C CNN
+	1    9150 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 613A53ED
+P 9600 2900
+F 0 "Q?" H 9804 2946 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 9804 2855 50  0000 L CNN
+F 2 "" H 9800 3000 50  0001 C CNN
+F 3 "~" H 9600 2900 50  0001 C CNN
+	1    9600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613A64ED
+P 9700 3600
+F 0 "#PWR?" H 9700 3350 50  0001 C CNN
+F 1 "GND" H 9705 3427 50  0000 C CNN
+F 2 "" H 9700 3600 50  0001 C CNN
+F 3 "" H 9700 3600 50  0001 C CNN
+	1    9700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3100 9700 3600
+Wire Wire Line
+	9400 2900 9350 2900
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 613AB59D
+P 9700 2250
+F 0 "L?" H 9788 2296 50  0000 L CNN
+F 1 "L_Core_Ferrite" H 9788 2205 50  0000 L CNN
+F 2 "" H 9700 2250 50  0001 C CNN
+F 3 "~" H 9700 2250 50  0001 C CNN
+	1    9700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 613AB7DB
+P 9700 1950
+F 0 "#PWR?" H 9700 1800 50  0001 C CNN
+F 1 "+24V" H 9715 2123 50  0000 C CNN
+F 2 "" H 9700 1950 50  0001 C CNN
+F 3 "" H 9700 1950 50  0001 C CNN
+	1    9700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1950 9700 2000
+Wire Wire Line
+	9700 2400 9700 2500
+$Comp
+L Device:D_Schottky D?
+U 1 1 613AD976
+P 10500 2250
+F 0 "D?" V 10454 2330 50  0000 L CNN
+F 1 "D_Schottky" V 10545 2330 50  0000 L CNN
+F 2 "" H 10500 2250 50  0001 C CNN
+F 3 "~" H 10500 2250 50  0001 C CNN
+	1    10500 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 2100 10500 2000
+Wire Wire Line
+	10500 2000 9700 2000
+Connection ~ 9700 2000
+Wire Wire Line
+	9700 2000 9700 2100
+Wire Wire Line
+	10500 2400 10500 2500
+Wire Wire Line
+	10500 2500 9700 2500
+Connection ~ 9700 2500
+Wire Wire Line
+	9700 2500 9700 2700
+Wire Wire Line
+	8650 2900 9000 2900
+Connection ~ 8650 2900
+Wire Wire Line
+	8650 2900 8650 2950
+Wire Notes Line
+	5700 1600 11050 1600
+Wire Notes Line
+	11050 1600 11050 3950
+Wire Notes Line
+	11050 3950 5700 3950
+Wire Notes Line
+	5700 3950 5700 1600
+Text Notes 5850 1800 0    50   ~ 0
+Solenoid driver circuit: \nmosfet push-pull circuit
+$EndSCHEMATC
