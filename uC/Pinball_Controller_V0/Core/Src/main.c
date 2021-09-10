@@ -255,7 +255,7 @@ static void MX_TIM2_Init(void)
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
   sConfigOC.Pulse = 1000;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
@@ -335,11 +335,19 @@ void start_solenoid_driver(void *argument)
   /* init code for USB_DEVICE */
 
 
-  uint16_t prev_status_button1 = status_button1;
+	Solenoid_task_argument *Sta = (Solenoid_task_argument*)(argument);
+
+
+	volatile uint16_t *status_button = Sta->status_button;
+	TIM_HandleTypeDef *htim = Sta->htimX;
+	TIM_TypeDef *TIM = Sta->TIMX;
+	unsigned timer_channel = Sta->timer_channel;
+
+  uint16_t prev_status_button = *status_button;
   uint16_t duty = 0, output = 0;
 
   const float iir_const = 0.05;
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(htim, timer_channel);
 
   /* Infinite loop */
 	for(;;)
@@ -348,14 +356,14 @@ void start_solenoid_driver(void *argument)
 
 
 
-		if(status_button1)
+		if(*status_button)
 		{
 			// calculate duty value: iir approach
 			duty = duty * (1 - iir_const) + output * iir_const;
 
 
 			// if initial hit: do nothing
-			if(prev_status_button1 != status_button1)
+			if(prev_status_button != *status_button)
 			{
 			  output = MAX_PWM;
 			}
@@ -387,9 +395,9 @@ void start_solenoid_driver(void *argument)
 
 
 		// write pwm signal:
-		TIM2->CCR2 = output;
+		TIM->CCR2 = output;
 
-		prev_status_button1 = status_button1;
+		prev_status_button = *status_button;
 
 		osDelay(50);			// delay for 50 ms
 
@@ -414,7 +422,12 @@ void start_init_task(void *argument)
   /* USER CODE BEGIN 5 */
 
   // init solenoid task:
-  solenoid_driverHandle = osThreadNew(start_solenoid_driver, NULL, &solenoid_driver_attributes);
+  Solenoid_task_argument sta1;
+  sta1.htimX = &htim2;
+  sta1.TIMX = TIM2;
+  sta1.timer_channel = TIM_CHANNEL_2;
+  sta1.status_button = &status_button1;
+  solenoid_driverHandle = osThreadNew(start_solenoid_driver, (void*)(&sta1), &solenoid_driver_attributes);
 
 
   osThreadExit();

@@ -75,7 +75,13 @@ void Error_Handler(void);
 
 #define MAX_DUTY_CYCLE ((uint16_t)(MAX_PWM * 0.25))
 
+typedef struct Solenoid_task_arguments{
+	TIM_HandleTypeDef *htimX;
+	TIM_TypeDef *TIMX;
+	unsigned timer_channel;
+	volatile uint16_t *status_button;
 
+} Solenoid_task_argument;
 
 
 
