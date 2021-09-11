@@ -332,12 +332,13 @@ void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin)
   */
 void start_solenoid_driver(void *argument)
 {
-  /* init code for USB_DEVICE */
 
 
+	// convert argument to struct
 	Solenoid_task_argument *Sta = (Solenoid_task_argument*)(argument);
 
 
+	// save struct in local variables to prevent errors when it is reused
 	volatile uint16_t *status_button = Sta->status_button;
 	TIM_HandleTypeDef *htim = Sta->htimX;
 	TIM_TypeDef *TIM = Sta->TIMX;
@@ -355,7 +356,7 @@ void start_solenoid_driver(void *argument)
 
 
 
-
+		// solenoid should be enalbed
 		if(*status_button)
 		{
 			// calculate duty value: iir approach
@@ -395,6 +396,7 @@ void start_solenoid_driver(void *argument)
 
 
 		// write pwm signal:
+		// to timer instance transfered in arguments
 		TIM->CCR2 = output;
 
 		prev_status_button = *status_button;
