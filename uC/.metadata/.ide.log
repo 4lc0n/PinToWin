@@ -2875,3 +2875,166 @@
 2021-09-11 18:24:28,504 [INFO] RtosManager:591 - Active RTOS found at IOC load: FREERTOS [Cortex-M4NS]
 2021-09-11 18:24:28,509 [INFO] OpenFileManager:294 - Restore cursor
 2021-09-11 18:25:43,958 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,584x296,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-09-11 22:19:58,358 [INFO] DbMcusDocs:145 - JSON generation date=Tue Jan 12 13:36:04 CET 2021 (1610454964)
+2021-09-11 22:19:58,463 [INFO] DbMcusDocs:81 - Found 614 MCUs documents
+2021-09-11 22:44:33,966 [INFO] MainUpdater:2644 - connection check result : 10
+2021-09-11 22:44:34,177 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: /home/h3l/.stmcufinder/plugins/mcufinder/mcu/cs_comparisons_mx
+2021-09-11 22:44:34,186 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2021-09-11 22:44:34,189 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-09-11 22:44:34,458 [INFO] DetailPanel:344 - Set advertising image to /home/h3l/STM32Cube/Repository//stm32cubemx-promo_image.jpg
+2021-09-11 22:44:34,646 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2021-09-11 22:44:34,719 [INFO] DbBoardsPdsc:91 - Found 4 items
+2021-09-11 22:44:34,721 [INFO] DbBoardsPdsc:91 - Found 9 items
+2021-09-11 22:44:34,727 [INFO] DbBoardsPdsc:91 - Found 41 items
+2021-09-11 22:44:34,731 [INFO] DbBoardsPdsc:91 - Found 45 items
+2021-09-11 22:44:34,734 [INFO] DbBoardsPdsc:91 - Found 24 items
+2021-09-11 22:44:34,736 [INFO] DbBoardsPdsc:91 - Found 2 items
+2021-09-11 22:44:34,737 [INFO] DbBoardsPdsc:91 - Found 1 items
+2021-09-11 22:44:34,741 [INFO] DbBoardsPdsc:91 - Found 32 items
+2021-09-11 22:44:34,748 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-09-11 22:44:34,748 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-09-11 22:44:34,748 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-09-11 22:44:34,751 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-09-11 22:44:34,751 [WARN] DbBoardsPdsc:255 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-09-11 22:44:34,764 [INFO] DbBoardsJson:85 - JSON generation date=Fri Jan 08 07:00:45 CET 2021 (1610085645)
+2021-09-11 22:44:34,772 [INFO] DbBoards:118 - Found 158 boards (155 are supported by CubeMX)
+2021-09-11 22:44:34,779 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Jan 12 13:36:04 CET 2021 (1610454964)
+2021-09-11 22:44:34,802 [INFO] DbBoardsDocs:81 - Found 190 boards documents
+2021-09-11 22:44:34,803 [WARN] DbBoards:128 - board B-L462E-CELL1 has no document id list !
+2021-09-11 22:44:34,803 [WARN] DbBoards:128 - board B-L475E-IOT01A2 has no document id list !
+2021-09-11 22:44:34,804 [WARN] DbBoards:128 - board NUCLEO-G0B1RE has no document id list !
+2021-09-11 22:44:34,804 [WARN] DbBoards:128 - board NUCLEO-G491RE has no document id list !
+2021-09-11 22:44:34,804 [WARN] DbBoards:128 - board NUCLEO-H743ZI2 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board NUCLEO-L4A6ZG has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board NUCLEO-WB55RG has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board NUCLEO-WL55JC1 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board NUCLEO-WL55JC2 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-BFA001V1B has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-BFA001V2B has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-IDP005V1 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-IDP005V2 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-09-11 22:44:34,805 [WARN] DbBoards:128 - board STEVAL-STWINKT1 has no document id list !
+2021-09-11 22:44:34,806 [WARN] DbBoards:128 - board STM32F401C-DISCO has no document id list !
+2021-09-11 22:44:34,806 [WARN] DbBoards:128 - board STM32F769I-DISC1 has no document id list !
+2021-09-11 22:44:34,807 [WARN] DbBoards:128 - board STM32G0C1E-EV has no document id list !
+2021-09-11 22:44:34,807 [WARN] DbBoards:128 - board STM32G474E-EVAL1 has no document id list !
+2021-09-11 22:44:34,807 [WARN] DbBoards:128 - board STM32H743I-EVAL2 has no document id list !
+2021-09-11 22:44:34,807 [WARN] DbBoards:128 - board STM32H747I-DISC1 has no document id list !
+2021-09-11 22:44:34,807 [WARN] DbBoards:128 - board STM32H753I-EVAL2 has no document id list !
+2021-09-11 22:44:34,808 [WARN] DbBoards:128 - board STM32L-DISCOVERY has no document id list !
+2021-09-11 22:44:34,808 [WARN] DbBoards:128 - board STM32MP157A-DK1 has no document id list !
+2021-09-11 22:44:34,808 [WARN] DbBoards:128 - board STM32MP157F-DK2 has no document id list !
+2021-09-11 22:44:34,808 [WARN] DbBoards:128 - board STM32MP157F-EV1 has no document id list !
+2021-09-11 22:44:35,692 [ERROR] DbBoards:190 - Image file not found for board STM32H747I-EVAL: /opt/st/stm32cubeide_1.5.0/../../../home/h3l/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.5.0_1935173080_linux_gtk_x86_64/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2021-09-11 22:44:35,701 [ERROR] DbBoards:190 - Image file not found for board STM32H757I-EVAL: /opt/st/stm32cubeide_1.5.0/../../../home/h3l/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.5.0_1935173080_linux_gtk_x86_64/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2021-09-11 22:44:35,701 [ERROR] DbBoards:190 - Image file not found for board STM32H7B3I-DK: /opt/st/stm32cubeide_1.5.0/../../../home/h3l/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.5.0_1935173080_linux_gtk_x86_64/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/boards/stm32h7b3i-dk_small.jpg
+2021-09-11 22:44:35,896 [INFO] ApiDb:238 - Load user favorites file /home/h3l/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2021-09-11 22:44:35,897 [INFO] ApiDb:242 - User favorites Boards=[]
+2021-09-11 22:44:35,897 [INFO] DbBoards:207 - Set 0 / 0 favorites Boards
+2021-09-11 22:45:37,931 [ERROR] McuDetailPanel:618 - No block diagram available for MCU STM32F103C8Tx
+2021-09-11 22:45:37,931 [INFO] McuAction:178 - Block Diagram
+2021-09-11 22:45:40,148 [INFO] McuAction:73 - Docs & Resources
+2021-09-11 22:45:40,802 [ERROR] McuDetailPanel:618 - No block diagram available for MCU STM32F103C8Tx
+2021-09-11 22:45:40,803 [INFO] McuAction:178 - Block Diagram
+2021-09-11 22:45:41,804 [INFO] McuAction:73 - Docs & Resources
+2021-09-11 22:45:54,571 [INFO] ApiDb:263 - Save user favorites file /home/h3l/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-09-11 22:45:54,571 [INFO] ApiDb:267 - User favorites MCUs=[]
+2021-09-11 22:45:58,919 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 326785896 Bytes (483393536)
+2021-09-11 22:46:00,216 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 344089440 Bytes (483393536)
+2021-09-11 22:46:00,838 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 220058048 Bytes (483393536)
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_DEVICE
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-09-11 22:46:01,243 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-09-11 22:46:01,244 [INFO] CodeGenerator:639 - code generatio: config db path: /opt/st/stm32cubeide_1.5.0/../../../home/h3l/.eclipse/com.st.stm32cube.ide.mcu.rcp.product_1.5.0_1935173080_linux_gtk_x86_64/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-09-11 22:46:01,819 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/license.tmp_save
+2021-09-11 22:46:02,279 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/license.tmp
+2021-09-11 22:46:02,322 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/gpio.tmp_save
+2021-09-11 22:46:02,437 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/gpio.tmp
+2021-09-11 22:46:02,440 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2021-09-11 22:46:02,492 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_vars.tmp_save
+2021-09-11 22:46:02,546 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_vars.tmp
+2021-09-11 22:46:02,547 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_inc.tmp_save
+2021-09-11 22:46:02,594 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_inc.tmp
+2021-09-11 22:46:02,596 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_HalInit.tmp_save
+2021-09-11 22:46:02,679 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_HalInit.tmp
+2021-09-11 22:46:02,680 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_Msp.tmp_save
+2021-09-11 22:46:02,765 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/usb_otg_fs_Msp.tmp
+2021-09-11 22:46:03,009 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-09-11 22:46:03,026 [INFO] Middleware:1252 - No code input for Bsp Dependency
+2021-09-11 22:46:03,031 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_inc.tmp_save
+2021-09-11 22:46:03,076 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_inc.tmp
+2021-09-11 22:46:03,077 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_kernelInit.tmp_save
+2021-09-11 22:46:03,123 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_kernelInit.tmp
+2021-09-11 22:46:03,125 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_kernelStart.tmp_save
+2021-09-11 22:46:03,171 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_kernelStart.tmp
+2021-09-11 22:46:03,173 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_typedefs.tmp_save
+2021-09-11 22:46:03,218 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_typedefs.tmp
+2021-09-11 22:46:03,219 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_vars.tmp_save
+2021-09-11 22:46:03,267 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_vars.tmp
+2021-09-11 22:46:03,268 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_pfp.tmp_save
+2021-09-11 22:46:03,312 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_pfp.tmp
+2021-09-11 22:46:03,313 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_obj_creat.tmp_save
+2021-09-11 22:46:03,358 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_obj_creat.tmp
+2021-09-11 22:46:03,360 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_default_thread.tmp_save
+2021-09-11 22:46:03,394 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_default_thread.tmp
+2021-09-11 22:46:03,395 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_threads.tmp_save
+2021-09-11 22:46:03,428 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/rtos_threads.tmp
+2021-09-11 22:46:03,429 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/FreeRTOSConfig.h_save
+2021-09-11 22:46:03,481 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/FreeRTOSConfig.h
+2021-09-11 22:46:03,482 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/freertos.c_save
+2021-09-11 22:46:03,528 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/freertos.c
+2021-09-11 22:46:03,528 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-09-11 22:46:03,530 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-09-11 22:46:03,552 [INFO] Middleware:1252 - No code input for Bsp Dependency
+2021-09-11 22:46:03,557 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usb_device.c_save
+2021-09-11 22:46:03,616 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usb_device.c
+2021-09-11 22:46:03,618 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usb_device.h_save
+2021-09-11 22:46:03,691 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usb_device.h
+2021-09-11 22:46:03,692 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/Target/usbd_conf.h_save
+2021-09-11 22:46:03,725 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/Target/usbd_conf.h
+2021-09-11 22:46:03,726 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/Target/usbd_conf.c_save
+2021-09-11 22:46:03,767 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/Target/usbd_conf.c
+2021-09-11 22:46:03,768 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_desc.h_save
+2021-09-11 22:46:03,799 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_desc.h
+2021-09-11 22:46:03,800 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_desc.c_save
+2021-09-11 22:46:03,836 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_desc.c
+2021-09-11 22:46:03,837 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_cdc_if.h_save
+2021-09-11 22:46:03,871 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_cdc_if.h
+2021-09-11 22:46:03,872 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_cdc_if.c_save
+2021-09-11 22:46:03,910 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/USB_DEVICE/App/usbd_cdc_if.c
+2021-09-11 22:46:03,914 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_it.c_save
+2021-09-11 22:46:03,987 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_it.c
+2021-09-11 22:46:03,988 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/stm32f4xx_it.h_save
+2021-09-11 22:46:04,033 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/stm32f4xx_it.h
+2021-09-11 22:46:04,039 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_hal_msp.c_save
+2021-09-11 22:46:04,146 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_hal_msp.c
+2021-09-11 22:46:04,149 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/system.tmp_save
+2021-09-11 22:46:04,231 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/MXTmpFiles/system.tmp
+2021-09-11 22:46:04,233 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_hal_timebase_tim.c_save
+2021-09-11 22:46:04,306 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/stm32f4xx_hal_timebase_tim.c
+2021-09-11 22:46:04,310 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-09-11 22:46:04,399 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/stm32f4xx_hal_conf.h
+2021-09-11 22:46:04,432 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-09-11 22:46:04,433 [WARN] CodeGenerator:3177 - IP not found : null
+2021-09-11 22:46:04,437 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/main.h_save
+2021-09-11 22:46:04,508 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Inc/main.h
+2021-09-11 22:46:04,509 [INFO] CodeEngine:229 - oldGeneratedFile, /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/main.c_save
+2021-09-11 22:46:04,611 [INFO] CodeEngine:247 - Generated code: /home/h3l/Documents/Studium/Auslandssemster/Vorlesungen/SmartSystems/working_directory/uC/Pinball_Controller_V0/Core/Src/main.c
+2021-09-11 22:46:05,304 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 44mS.
+2021-09-11 22:46:05,377 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-09-11 22:46:05,779 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-09-11 22:46:05,791 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2021-09-11 22:46:05,822 [INFO] ApiDbMcu:456 - Load IP Config File for LIBJPEG
+2021-09-11 22:46:05,844 [INFO] ApiDbMcu:456 - Load IP Config File for MBEDTLS
+2021-09-11 22:46:05,849 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2021-09-11 22:46:07,804 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2427mS.
+2021-09-11 22:46:07,805 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-09-11 22:46:07,807 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
