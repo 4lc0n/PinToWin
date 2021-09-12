@@ -22,7 +22,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,20 +43,26 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
 
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 
+
+Matrix m;
+
+char output[255] = "";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
-
+void set_col_active(int8_t col);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -90,9 +98,17 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  HAL_ADCEx_Calibration_Start(&hadc1);
+  set_col_active(-1);	// deactivate all
+
+
+  sprintf(output, "Init abgeschlossen\r\n");
+  HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
 
   /* USER CODE END 2 */
 
@@ -103,6 +119,35 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+
+  	for(int i = 0; i < ROW_N; i++){
+  		set_col_active(i);
+  		//HAL_ADC_Start_DMA(&hadc1, m.raw[i], 4);
+  		HAL_ADC_Start(&hadc1);
+  		for(int j = 0; j < COLUMN_N; j++){
+
+  			HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+  			m.col[i].r[j] = HAL_ADC_GetValue(&hadc1);
+  		}
+
+  		//HAL_Delay(100);
+  	}
+  	HAL_ADC_Stop_DMA(&hadc1);
+
+  	sprintf(output, "\033[2J");		// for terminal: clear terminal
+  	//sprintf(output, "-\r\n");		// for processing to simulate a new-data symbol
+		HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
+
+
+  	for(int i = 0; i < ROW_N; i++){	// print data to uart
+  		sprintf(output, "%d,%d,%d,%d,\r\n", m.col[i].r[0],m.col[i].r[1],m.col[i].r[2],m.col[i].r[3]);
+  		HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
+  	}
+
+
+  	HAL_Delay(100);
+
   }
   /* USER CODE END 3 */
 }
@@ -174,7 +219,8 @@ static void MX_ADC1_Init(void)
   hadc1.Instance = ADC1;
   hadc1.Init.ScanConvMode = ADC_SCAN_ENABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
-  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.DiscontinuousConvMode = ENABLE;
+  hadc1.Init.NbrOfDiscConversion = 1;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 4;
@@ -255,20 +301,84 @@ static void MX_USART1_UART_Init(void)
 }
 
 /**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, COL0_Pin|COL1_Pin|COL2_Pin|COL3_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : COL0_Pin COL1_Pin COL2_Pin COL3_Pin */
+  GPIO_InitStruct.Pin = COL0_Pin|COL1_Pin|COL2_Pin|COL3_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
 /* USER CODE BEGIN 4 */
+
+/**
+ * @brief Function to activate corresponding column
+ * @param col: column to be activated, if col == -1: deactivate all
+ * @return None
+ */
+void set_col_active(int8_t col)
+{
+	switch(col)
+	{
+	case 0:
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, COL0_Pin, SET);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, COL1_Pin, SET);
+
+		break;
+	case 2:
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, COL2_Pin, SET);
+
+		break;
+	case 3:
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, COL3_Pin, SET);
+		break;
+	case -1:
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+
+		break;
+	}
+
+}
+
 
 /* USER CODE END 4 */
 

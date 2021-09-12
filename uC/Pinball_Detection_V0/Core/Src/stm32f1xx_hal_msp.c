@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
+extern DMA_HandleTypeDef hdma_adc1;
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
@@ -105,9 +106,26 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     PA2     ------> ADC1_IN2
     PA3     ------> ADC1_IN3
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3;
+    GPIO_InitStruct.Pin = ROW0_Pin|ROW1_Pin|ROW2_Pin|ROW3_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    /* ADC1 DMA Init */
+    /* ADC1 Init */
+    hdma_adc1.Instance = DMA1_Channel1;
+    hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_adc1.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+    hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+    hdma_adc1.Init.Mode = DMA_NORMAL;
+    hdma_adc1.Init.Priority = DMA_PRIORITY_LOW;
+    if (HAL_DMA_Init(&hdma_adc1) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(hadc,DMA_Handle,hdma_adc1);
 
     /* ADC1 interrupt Init */
     HAL_NVIC_SetPriority(ADC1_2_IRQn, 0, 0);
@@ -141,7 +159,10 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     PA2     ------> ADC1_IN2
     PA3     ------> ADC1_IN3
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
+    HAL_GPIO_DeInit(GPIOA, ROW0_Pin|ROW1_Pin|ROW2_Pin|ROW3_Pin);
+
+    /* ADC1 DMA DeInit */
+    HAL_DMA_DeInit(hadc->DMA_Handle);
 
     /* ADC1 interrupt DeInit */
     HAL_NVIC_DisableIRQ(ADC1_2_IRQn);

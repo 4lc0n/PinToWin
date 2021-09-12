@@ -38,6 +38,12 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
+
+
+
+
+
+
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -58,7 +64,38 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ROW0_Pin GPIO_PIN_0
+#define ROW0_GPIO_Port GPIOA
+#define ROW1_Pin GPIO_PIN_1
+#define ROW1_GPIO_Port GPIOA
+#define ROW2_Pin GPIO_PIN_2
+#define ROW2_GPIO_Port GPIOA
+#define ROW3_Pin GPIO_PIN_3
+#define ROW3_GPIO_Port GPIOA
+#define COL0_Pin GPIO_PIN_3
+#define COL0_GPIO_Port GPIOB
+#define COL1_Pin GPIO_PIN_4
+#define COL1_GPIO_Port GPIOB
+#define COL2_Pin GPIO_PIN_5
+#define COL2_GPIO_Port GPIOB
+#define COL3_Pin GPIO_PIN_6
+#define COL3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
+
+
+#define COLUMN_N 4
+#define ROW_N 4
+
+
+
+typedef struct column{
+	uint16_t r[COLUMN_N];
+}column;
+
+typedef union Matrix{
+	uint16_t raw[ROW_N][COLUMN_N];
+	column col[ROW_N];
+}Matrix;
 
 /* USER CODE END Private defines */
 
