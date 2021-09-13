@@ -135,8 +135,8 @@ int main(void)
   	}
   	HAL_ADC_Stop_DMA(&hadc1);
 
-  	sprintf(output, "\033[2J");		// for terminal: clear terminal
-  	//sprintf(output, "-\r\n");		// for processing to simulate a new-data symbol
+  	//sprintf(output, "\033[2J");		// for terminal: clear terminal
+  	sprintf(output, "-\r\n");		// for processing to simulate a new-data symbol
 		HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
 
 
