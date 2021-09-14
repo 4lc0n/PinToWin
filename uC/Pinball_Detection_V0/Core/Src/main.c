@@ -53,6 +53,11 @@ UART_HandleTypeDef huart1;
 Matrix m;
 
 char output[255] = "";
+
+volatile int adc_complete = 0;
+volatile int adc_error = 0;
+volatile uint8_t n_adc_conversions = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -120,20 +125,35 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+  	if(adc_error == 1){
+  		adc_error = 0;
+  		sprintf(output, "ADC Error\r\n");
+  	  HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
+  	  while(1);
+  	}
 
   	for(int i = 0; i < ROW_N; i++){
   		set_col_active(i);
-  		//HAL_ADC_Start_DMA(&hadc1, m.raw[i], 4);
-  		HAL_ADC_Start(&hadc1);
-  		for(int j = 0; j < COLUMN_N; j++){
+  		HAL_Delay(1);
+  		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)m.raw[i], 4);
 
-  			HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-  			m.col[i].r[j] = HAL_ADC_GetValue(&hadc1);
-  		}
+  		while(adc_complete != 1);
+  		adc_complete = 0;
+  		HAL_ADC_Stop_DMA(&hadc1);
+
+  		//HAL_ADC_Start(&hadc1);
+  		//for(int j = 0; j < COLUMN_N; j++){
+
+  			//HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+  			//uint16_t data = HAL_ADC_GetValue(&hadc1);
+  			//m.col[i].r[j] = data;
+  		//}
+  		//HAL_ADC_Stop(&hadc1);
+
 
   		//HAL_Delay(100);
   	}
-  	HAL_ADC_Stop_DMA(&hadc1);
+  	//HAL_ADC_Stop_DMA(&hadc1);
 
   	//sprintf(output, "\033[2J");		// for terminal: clear terminal
   	sprintf(output, "-\r\n");		// for processing to simulate a new-data symbol
@@ -141,7 +161,7 @@ int main(void)
 
 
   	for(int i = 0; i < ROW_N; i++){	// print data to uart
-  		sprintf(output, "%d,%d,%d,%d,\r\n", m.col[i].r[0],m.col[i].r[1],m.col[i].r[2],m.col[i].r[3]);
+  		sprintf(output, "%d,%d,%d,%d,\r\n", m.raw[0][i], m.raw[1][i], m.raw[2][i], m.raw[3][i]);
   		HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
   	}
 
@@ -149,6 +169,9 @@ int main(void)
   	HAL_Delay(100);
 
   }
+
+
+
   /* USER CODE END 3 */
 }
 
@@ -220,7 +243,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ScanConvMode = ADC_SCAN_ENABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.DiscontinuousConvMode = ENABLE;
-  hadc1.Init.NbrOfDiscConversion = 1;
+  hadc1.Init.NbrOfDiscConversion = 4;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 4;
@@ -232,7 +255,7 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -354,29 +377,42 @@ void set_col_active(int8_t col)
 	switch(col)
 	{
 	case 0:
-		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL0_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
 		HAL_GPIO_WritePin(COL0_GPIO_Port, COL0_Pin, SET);
+
 		break;
 	case 1:
-		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL0_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
 		HAL_GPIO_WritePin(COL0_GPIO_Port, COL1_Pin, SET);
 
 		break;
 	case 2:
-		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL0_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
 		HAL_GPIO_WritePin(COL0_GPIO_Port, COL2_Pin, SET);
 
 		break;
 	case 3:
-		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL0_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
 		HAL_GPIO_WritePin(COL0_GPIO_Port, COL3_Pin, SET);
 		break;
 	case -1:
-		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL1_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
+		HAL_GPIO_WritePin(COL0_GPIO_Port, (COL0_Pin | COL1_Pin | COL2_Pin | COL3_Pin), RESET);
 
 		break;
 	}
 
+}
+
+// Called when buffer is completely filled
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
+
+	adc_complete = 1;
+
+
+}
+
+void HAL_ADC_ErrorCallback(ADC_HandleTypeDef* hadc){
+	adc_error = 1;
 }
 
 

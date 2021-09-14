@@ -18,7 +18,7 @@ void setup() {
   
   
   thread("processSerialData");
-  
+  frameRate(25);
   size(400,400);
   background(0);
   println("setup finished");
@@ -36,13 +36,15 @@ void draw() {
     {
       for(int j = 0; j < 4; j++)
       {
-        if(data[j][i] < 4000)
+        /*if(data[j][i] < 4000)
         {
           
           fill(10);
         }else{
           fill(255);
-        }
+        }*/
+        
+        fill(data[j][i] / 16);
         rect(100 * i, 100 * j, 100, 100);
         
       }
