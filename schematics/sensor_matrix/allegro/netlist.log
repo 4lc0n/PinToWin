@@ -1,0 +1,17 @@
+{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 21:46:54 }
+
+#1 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#3" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+#2 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#5" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+#3 WARNING(ORCAP-36042): Pin "VCC" is renamed to "VCC#4" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+#4 WARNING(ORCAP-36042): Pin "VCC" is renamed to "VCC#6" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+#5 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#21" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\allegro\pstchip.dat
+
+Loading... C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\allegro\pstchip.dat
+
+Loading... C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\allegro\pstxprt.dat
+
+Loading... C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\allegro\pstxnet.dat
+packaging the design view...

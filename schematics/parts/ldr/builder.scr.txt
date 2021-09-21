@@ -1,0 +1,14 @@
+skill load "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/ldr/builder.ile" 
+skill changeWorkingDir "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/ldr" 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/ldr/LDR1_NTE.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist LDR1_NTE.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 

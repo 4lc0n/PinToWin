@@ -1,0 +1,1940 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 21:46:55 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='SENSOR_BOARD';
+ POST_TIME='Apr 19 2021 16:22:31';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'CAP NP_SMC0805_100N':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5472@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins5472@discrete.\cap np.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins5472@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP NP_SMC0805_100N':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5566@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins5566@discrete.\cap np.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins5566@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C3 'CAP NP_SMC1206_1UF':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5040@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins5040@discrete.\cap np.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins5040@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C4 'CAP NP_SMC0805_100N':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5592@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins5592@discrete.\cap np.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins5592@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'CAP NP_SMC0805_100N':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5618@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins5618@discrete.\cap np.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins5618@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'LED_SMD1206_LED':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS12658@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins12658@discrete.\led.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins12658@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D10 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d\@sensor_board.\ldr-d-unit\(sch_1):page19_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D11 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d\@sensor_board.\ldr-d-unit\(sch_1):page20_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D12 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d\@sensor_board.\ldr-d-unit\(sch_1):page21_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D13 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page22_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D14 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page23_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D15 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page24_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D16 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page25_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D17 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page26_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D18 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page27_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D19 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page28_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'LED_SMD1206_LED':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS12677@DISCRETE.LED.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins12677@discrete.\led.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins12677@discrete.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D20 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page29_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D21 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page30_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D22 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page31_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D23 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page32_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D24 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page33_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D25 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page34_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D26 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page35_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D27 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page36_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D28 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page37_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D29 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page38_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d\@sensor_board.\ldr-d-unit\(sch_1):page12_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D30 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page39_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D31 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page40_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D32 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page41_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D33 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page42_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D34 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page43_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D35 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page44_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D36 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page45_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D37 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page46_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D38 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page47_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D39 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page48_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d\@sensor_board.\ldr-d-unit\(sch_1):page13_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D40 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page49_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D41 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page50_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D42 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page51_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D43 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page52_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D44 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page53_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D45 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page54_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D46 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page55_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D47 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page56_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D48 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page57_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D49 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page58_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d\@sensor_board.\ldr-d-unit\(sch_1):page14_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D50 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page59_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D51 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page60_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D52 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page61_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D53 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page62_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D54 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page63_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D55 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page64_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D56 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page65_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D57 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page66_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D58 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page67_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D59 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page68_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d\@sensor_board.\ldr-d-unit\(sch_1):page15_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D60 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page69_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D61 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page70_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D62 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page71_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D63 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page72_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D64 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page73_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D65 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page74_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D66 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page75_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D67 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page76_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D68 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page77_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D69 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page78_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d\@sensor_board.\ldr-d-unit\(sch_1):page16_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D70 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page79_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D71 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page80_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D72 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page81_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D73 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page82_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D74 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page83_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D75 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page84_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D76 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page85_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D77 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page86_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D78 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page87_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D79 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page88_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d\@sensor_board.\ldr-d-unit\(sch_1):page17_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D80 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page89_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D81 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page90_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D82 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page91_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D83 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d\@sensor_board.\ldr-d-unit\(sch_1):page92_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D84 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page93_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D85 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page94_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D86 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page95_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D9 '1N4148_DAX2DO35_D1N4148':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS89@EDIODE.1N4148.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d\@sensor_board.\ldr-d-unit\(sch_1):page18_ins89@ediode.\1n4148.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'CON5_SIPTML5005_BOARD_INTERFACE':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS4782@CONNECTOR.CON5.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins4782@connector.\con5.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins4782@connector.\con5.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'JUMPER_SIPTML2002_JUMPER':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS6342@CONNECTOR.JUMPER.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins6342@connector.\jumper.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins6342@connector.\jumper.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'CON6_SIPTML6006_PROGRAMMER':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS6309@CONNECTOR.CON6.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins6309@connector.\con6.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins6309@connector.\con6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q1 'IRF9530N/TO_TO220ABH_IRF9530N/TO':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS11806@TRANSISTOR.IRF9530N/TO.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins11806@transistor.\irf9530n/to.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins11806@transistor.\irf9530n/to.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS12731@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins12731@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins12731@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d\@sensor_board.\ldr-d-unit\(sch_1):page17_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d\@sensor_board.\ldr-d-unit\(sch_1):page18_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d\@sensor_board.\ldr-d-unit\(sch_1):page19_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d\@sensor_board.\ldr-d-unit\(sch_1):page20_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d\@sensor_board.\ldr-d-unit\(sch_1):page21_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page22_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page23_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page24_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page25_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page26_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS12767@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins12767@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins12767@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R20 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page27_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R21 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page28_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R22 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page29_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R23 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page30_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R24 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D1@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d1\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d1\@sensor_board.\ldr-d-unit\(sch_1):page31_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R25 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page32_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R26 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page33_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R27 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page34_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R28 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page35_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R29 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page36_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'R_SMR0805_100':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS11906@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins11906@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins11906@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R30 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page37_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R31 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page38_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R32 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page39_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R33 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page40_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R34 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page41_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R35 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page42_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R36 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page43_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R37 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page44_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R38 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page45_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R39 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page46_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'R_SMR0805_10K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS6091@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins6091@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins6091@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R40 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page47_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R41 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page48_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R42 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page49_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R43 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page50_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R44 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D3@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d3\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d3\@sensor_board.\ldr-d-unit\(sch_1):page51_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R45 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page52_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R46 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page53_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R47 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page54_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R48 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page55_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R49 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page56_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d\@sensor_board.\ldr-d-unit\(sch_1):page12_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R50 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page57_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R51 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page58_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R52 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page59_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R53 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page60_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R54 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page61_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R55 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page62_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R56 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page63_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R57 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page64_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R58 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page65_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R59 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page66_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d\@sensor_board.\ldr-d-unit\(sch_1):page13_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R60 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page67_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R61 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page68_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R62 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page69_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R63 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page70_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R64 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D5@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d5\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d5\@sensor_board.\ldr-d-unit\(sch_1):page71_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R65 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page72_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R66 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page73_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R67 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page74_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R68 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page75_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R69 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page76_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d\@sensor_board.\ldr-d-unit\(sch_1):page14_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R70 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page77_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R71 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page78_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R72 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page79_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R73 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page80_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R74 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page81_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R75 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col@sensor_board.\column of ldr sensor matrix\(sch_1):\page2_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page82_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R76 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL12@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col12@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col12@sensor_board.\column of ldr sensor matrix\(sch_1):\page3_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page83_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R77 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL13@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col13@sensor_board.\column of ldr sensor matrix\(sch_1):\page4_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page84_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R78 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page85_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R79 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page86_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL14@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col14@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col14@sensor_board.\column of ldr sensor matrix\(sch_1):\page5_r-d\@sensor_board.\ldr-d-unit\(sch_1):page15_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R80 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL16@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col16@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col16@sensor_board.\column of ldr sensor matrix\(sch_1):\page7_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page87_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R81 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL17@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col17@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col17@sensor_board.\column of ldr sensor matrix\(sch_1):\page8_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page88_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R82 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL18@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col18@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col18@sensor_board.\column of ldr sensor matrix\(sch_1):\page9_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page89_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R83 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL19@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col19@sensor_board.\column of ldr sensor matrix\(sch_1):\page10_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page90_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R84 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL20@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D7@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d7\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col20@sensor_board.\column of ldr sensor matrix\(sch_1):\page11_r-d7\@sensor_board.\ldr-d-unit\(sch_1):page91_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R85 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d\@sensor_board.\ldr-d-unit\(sch_1):page92_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R86 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D2@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d2\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d2\@sensor_board.\ldr-d-unit\(sch_1):page93_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R87 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D4@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d4\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d4\@sensor_board.\ldr-d-unit\(sch_1):page94_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R88 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):C@SENSOR_BOARD.LDR_COLUMN_EVEN(SCH_1):R-D6@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):c@sensor_board.ldr_column_even(sch_1):\r-d6\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_c@sensor_board.ldr_column_even(sch_1):\page96_r-d6\@sensor_board.\ldr-d-unit\(sch_1):page95_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R89 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5646@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5646@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5646@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'LDR_LDR1_NTE_5K-20K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):COL15@SENSOR_BOARD.COLUMN OF LDR SENSOR MATRIX(SCH_1):R-D@SENSOR_BOARD.LDR-D-UNIT(SCH_1):INS36@MY_LIBRARY.LDR.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col15@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins36@my_library.\ldr.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_col15@sensor_board.\column of ldr sensor matrix\(sch_1):\page6_r-d\@sensor_board.\ldr-d-unit\(sch_1):page16_ins36@my_library.\ldr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R90 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5662@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5662@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5662@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R91 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5678@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5678@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5678@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R92 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5694@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5694@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5694@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R93 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5710@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5710@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5710@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R94 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5726@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5726@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5726@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R95 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5742@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5742@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5742@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R96 'R_SMR0805_1K':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5758@MY_LIBRARY.R.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5758@my_library.\r.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page97_ins5758@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'SW PUSHBUTTON_SIPTML2002_SW PUSHBUTTON':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS8329@DISCRETE.SW PUSHBUTTON.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins8329@discrete.\sw pushbutton.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins8329@discrete.\sw pushbutton.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'ATMEGA168PV_1_TQFP32_ATMEGA168PV':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS10559@SENSOR_BOARD.ATMEGA168PV_1.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins10559@sensor_board.\atmega168pv_1.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins10559@sensor_board.\atmega168pv_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

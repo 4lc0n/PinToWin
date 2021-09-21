@@ -1,0 +1,42 @@
+\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Sep 21 19:59:00 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=15352 CPUs=8
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.65
+   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function Find_Component_Routine redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function findAllOfType redefined
+   (00:00:00) function ashFindAllClines redefined
+   (00:00:00) function ashFindAllClinesegs redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "LDR1_NTE"
+\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/ldr/LDR1_NTE.dra
+   (00:00:03) Loading skillExt.cxt 
+\i (00:00:03) trapsize 2572
+\i (00:00:03) trapsize 2817
+\i (00:00:03) trapsize 2572
+\i (00:00:03) trapsize 2572
+\i (00:00:03) trapsize 861
+\i (00:00:04) etchedit 
+\i (00:00:06) new 
+\i (00:00:33) newdrawfillin "header_01x05.dra" "Package Symbol (Wizard)"
+\t (00:00:33)     Journal end - Tue Sep 21 19:59:33 2021
