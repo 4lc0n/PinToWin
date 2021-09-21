@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 21:46:55}
+{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 23:27:57}
 primitive 'CAP NP_SMC0805_100N';
   pin
     '1':
@@ -30,22 +30,22 @@ primitive 'CAP NP_SMC1206_1UF';
     VALUE='1uF';
   end_body;
 end_primitive;
-primitive 'LED_SMD1206_LED';
+primitive 'LED_1_SMD1206_LED';
   pin
-    'ANODE':
-      PIN_NUMBER='(2)';
+    'A':
+      PIN_NUMBER='(A)';
       PINUSE='UNSPEC';
-    'CATHODE':
-      PIN_NUMBER='(1)';
+    'C':
+      PIN_NUMBER='(C)';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED';
+    PART_NAME='LED_1';
     JEDEC_TYPE='SMD1206';
     VALUE='LED';
   end_body;
 end_primitive;
-primitive '1N4148_DAX2DO35_D1N4148';
+primitive '1N4148_SOD80_D1N4148';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -56,7 +56,7 @@ primitive '1N4148_DAX2DO35_D1N4148';
   end_pin;
   body
     PART_NAME='1N4148';
-    JEDEC_TYPE='dax2do35';
+    JEDEC_TYPE='SOD80';
     VALUE='D1N4148';
   end_body;
 end_primitive;
@@ -126,7 +126,7 @@ primitive 'CON6_SIPTML6006_PROGRAMMER';
     VALUE='PROGRAMMER';
   end_body;
 end_primitive;
-primitive 'IRF9530N/TO_TO220ABH_IRF9530N/TO';
+primitive 'IRF9530N/TO_0_TO220ABH_IRF9530N/TO';
   pin
     'D':
       PIN_NUMBER='(2)';
@@ -137,9 +137,12 @@ primitive 'IRF9530N/TO_TO220ABH_IRF9530N/TO';
     'S':
       PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='IRF9530N/TO';
+    PART_NAME='IRF9530N/TO_0';
     JEDEC_TYPE='TO220ABH';
     VALUE='IRF9530N/TO';
   end_body;

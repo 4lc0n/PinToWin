@@ -1,0 +1,94 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : sensor_board_place_repl.brd                   )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Tue Sep 21 23:28:02 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         '.'
+Design Directory:            'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro'
+Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd'
+New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd'
+
+CmdLine: netrev -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaabj14736.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read ./pstchip.dat 
+   Finished reading ./pstchip.dat (00:00:00.01)
+Starting to read ./pstxprt.dat 
+   Finished reading ./pstxprt.dat (00:00:00.00)
+Starting to read ./pstxnet.dat 
+   Finished reading ./pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/Company/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           C:\Cadence\Company\pcb\symbols\connector 
+           C:\Cadence\Company\pcb\symbols\ic 
+           C:\Cadence\Company\pcb\symbols\other_symbols 
+           C:\Cadence\Company\pcb\symbols\padsyms 
+           C:\Cadence\Company\pcb\symbols\smd_misc 
+           C:\Cadence\Company\pcb\symbols\tht_misc 
+           C:\Cadence\Company\pcb\symbols\student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+
+PADPATH =  . 
+           symbols 
+           padstacks 
+           C:\Cadence\Company\pcb\padstacks 
+           C:\Cadence\Company\pcb\padstacks\student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Sep 21 23:28:02 2021
+   DESIGN NAME : 'SENSOR_BOARD'
+   PACKAGING ON Apr 19 2021 16:22:31
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:00:14
+elapsed time  0:00:00
+

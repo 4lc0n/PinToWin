@@ -1,4 +1,4 @@
-{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 21:46:54 }
+{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 23:27:57 }
 
 #1 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#3" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
 #2 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#5" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).

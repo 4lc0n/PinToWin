@@ -1,0 +1,76 @@
+{
+	"Gate Swap" : [],
+	"Ref Des" : [],
+	"Pin Swap" : [],
+	"Component Property" : [
+		{
+			"Name" : "D3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips)",
+			"PropName" : "REUSE_ID",
+			"Logical" : null,
+			"Physical" : "2"
+		},
+		{
+			"Name" : "R5",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d\\@sensor_board.\\ldr-d-unit\\(sch_1):ins36@my_library.\\ldr.normal\\(chips)",
+			"PropName" : "REUSE_ID",
+			"Logical" : null,
+			"Physical" : "1"
+		}
+	],
+	"Net Property" : [],
+	"Pin Property" : [],
+	"Component" : [],
+	"Net" : [
+		{
+			"Name" : "R3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):r3",
+			"Logical" : null,
+			"Physical" : "R3"
+		},
+		{
+			"Name" : "R5",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):r5",
+			"Logical" : null,
+			"Physical" : "R5"
+		},
+		{
+			"Name" : "R7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):r7",
+			"Logical" : null,
+			"Physical" : "R7"
+		},
+		{
+			"Name" : "R1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):r1",
+			"Logical" : null,
+			"Physical" : "R1"
+		}
+	],
+	"Connection" : [
+		{
+			"Name" : "D24.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d1\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips):\\2\\",
+			"Logical" : "ADC1",
+			"Physical" : "R1"
+		},
+		{
+			"Name" : "D46.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d3\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips):\\2\\",
+			"Logical" : "ADC3",
+			"Physical" : "R3"
+		},
+		{
+			"Name" : "D68.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d5\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips):\\2\\",
+			"Logical" : "ADC5",
+			"Physical" : "R5"
+		},
+		{
+			"Name" : "D90.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d7\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips):\\2\\",
+			"Logical" : "ADC7",
+			"Physical" : "R7"
+		}
+	]
+}

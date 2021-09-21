@@ -89,7 +89,7 @@
     (Board_sim_option "VHDL_flow")
     (Netlist_TAB "0")
     ("Create Allegro Netlist" "TRUE")
-    ("View Allegro Netlist Files" "TRUE")
+    ("View Allegro Netlist Files" "FALSE")
     ("Allegro Netlist Create DCF File" "FALSE")
     ("Update Allegro Board" "FALSE")
     ("Allegro Netlist Output Board File" ".\allegro\sensor_board.brd")
@@ -102,7 +102,12 @@
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
     ("Allegro Netlist User Defined Property" "FALSE"))
-  (Folder "Layout")
+  (Folder "Layout"
+    (File ".\allegro\sensor_board.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\sensor_board.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "1")))
   (Folder "Outputs"
     (File ".\sensor_board.drc"
       (Type "Report"))
@@ -124,7 +129,11 @@
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (Folder "Logs")
+  (Folder "Logs"
+    (File ".\allegro\netlist.log"
+      (Type "Log File")
+      (LogFile
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\netlist.log")))
   (PartMRUSelector
     (LED
       (FullPartName "LED.Normal")
@@ -191,7 +200,9 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" "Library")
-      (Path "Outputs"))
+      (Path "Layout")
+      (Path "Outputs")
+      (Path "Logs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -202,8 +213,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 5 24 5 1284 24 773")
-        (Scroll "-108 0")
-        (Zoom "89")
+        (Scroll "189 1525")
+        (Zoom "340")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
@@ -234,9 +245,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
-        (Scroll "-44 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 5 24 5 1284 24 773")
+        (Scroll "612 326")
+        (Zoom "200")
         (Occurrence "/m1/col1/R-D1"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
