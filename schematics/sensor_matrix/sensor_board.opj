@@ -92,7 +92,7 @@
     ("View Allegro Netlist Files" "TRUE")
     ("Allegro Netlist Create DCF File" "FALSE")
     ("Update Allegro Board" "FALSE")
-    ("Allegro Netlist Output Board File" "allegro\SENSOR_BOARD.brd")
+    ("Allegro Netlist Output Board File" ".\allegro\sensor_board.brd")
     ("Allegro Netlist Remove Etch" "FALSE")
     ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
     ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
@@ -190,34 +190,19 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn")
-      (Path "Design Resources"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
-         "LDR-D-Unit")
-      (Path "Design Resources"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
-         "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\private_lib.olb")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 340 0 629"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1248 24 647")
-        (Scroll "-90 0")
+        (Placement "44 0 1 -1 -1 5 24 5 1284 24 773")
+        (Scroll "-108 0")
         (Zoom "89")
         (Occurrence "/"))
       (Path
@@ -227,8 +212,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1248 24 647")
-        (Scroll "-26 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
+        (Scroll "-44 0")
         (Zoom "100")
         (Occurrence "/m1"))
       (Path
@@ -238,8 +223,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1248 24 647")
-        (Scroll "-26 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
+        (Scroll "-44 0")
         (Zoom "100")
         (Occurrence "/m1/col1"))
       (Path
@@ -249,8 +234,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1248 24 647")
-        (Scroll "-26 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
+        (Scroll "-44 0")
         (Zoom "100")
         (Occurrence "/m1/col1/R-D1"))
       (Path

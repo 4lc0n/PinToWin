@@ -1,0 +1,102 @@
+\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Sep 21 22:13:15 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=19872 CPUs=8
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.65
+   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function Find_Component_Routine redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function findAllOfType redefined
+   (00:00:00) function ashFindAllClines redefined
+   (00:00:00) function ashFindAllClinesegs redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "sensor_board"
+\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board.brd
+   (00:00:03) Loading skillExt.cxt 
+\i (00:00:03) trapsize 33073
+\i (00:00:03) trapsize 36220
+\i (00:00:03) trapsize 33073
+\i (00:00:03) trapsize 44864
+\i (00:00:03) trapsize 44864
+\i (00:00:03) trapsize 12132
+\i (00:00:04) etchedit 
+\i (00:00:05) place manual 
+\i (00:00:05) setwindow form.plc_manual
+\i (00:00:05) FORM plc_manual tree  'Components by refdes' 
+\i (00:00:07) FORM plc_manual tree  R43 'Components by refdes' 
+\i (00:00:08) FORM plc_manual tree 'MULTISEL YES' R43 'Components by refdes' 
+\w (00:00:08) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:00:08) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (00:00:08) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\t (00:00:08) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:22) FORM plc_manual tree  R1 'Components by refdes' 
+\i (00:00:22) FORM plc_manual tree 'MULTISEL YES' R1 'Components by refdes' 
+\e (00:00:22) Cannot load symbol 'SMR0805'
+\i (00:00:23) FORM plc_manual tree 'MULTISEL NO' R1 'Components by refdes' 
+\t (00:00:23) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:24) FORM plc_manual tree  R3 'Components by refdes' 
+\i (00:00:25) FORM plc_manual tree 'MULTISEL YES' R3 'Components by refdes' 
+\e (00:00:25) Cannot load symbol 'SMR0805'
+\i (00:00:26) FORM plc_manual tree 'MULTISEL NO' R3 'Components by refdes' 
+\t (00:00:26) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:26) FORM plc_manual tree  R4 'Components by refdes' 
+\i (00:00:26) FORM plc_manual tree 'MULTISEL YES' R4 'Components by refdes' 
+\e (00:00:26) Cannot load symbol 'SMR0805'
+\i (00:00:26) FORM plc_manual tree 'MULTISEL NO' R4 'Components by refdes' 
+\t (00:00:26) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:27) FORM plc_manual tree  R5 'Components by refdes' 
+\i (00:00:27) FORM plc_manual tree 'MULTISEL YES' R5 'Components by refdes' 
+\t (00:00:27) Placing R5 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:27) FORM plc_manual tree 'MULTISEL NO' R5 'Components by refdes' 
+\t (00:00:27) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:28) FORM plc_manual tree 'MULTISEL YES' R5 'Components by refdes' 
+\t (00:00:28) Placing R5 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:29) FORM plc_manual tree 'MULTISEL NO' R5 'Components by refdes' 
+\t (00:00:29) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:32) FORM plc_manual tree  D83 'Components by refdes' 
+\i (00:00:32) FORM plc_manual tree 'MULTISEL YES' D83 'Components by refdes' 
+\e (00:00:32) Cannot load symbol 'DAX2DO35'
+\i (00:00:33) FORM plc_manual tree 'MULTISEL NO' D83 'Components by refdes' 
+\t (00:00:33) Placing R43 / LDR_LDR1_NTE_5K-20K / LDR1_NTE on Top.
+\i (00:00:36) FORM plc_manual done  
+\i (00:00:36) setwindow pcb
+\i (00:00:36) etchedit 
+\i (00:00:38) trapsize 44864
+\i (00:00:38) trapsize 12132
+\i (00:00:46) file_property 
+\i (00:00:47) etchedit 
+\i (00:00:48) setwindow form.fileprop
+\i (00:00:48) FORM fileprop cancel  
+\i (00:00:54) setwindow pcb
+\i (00:00:54) enved 
+\i (00:00:54) setwindow form.prfedit
+\i (00:00:54) FORM prfedit treelist  My_favorites 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) etchedit 
+\i (00:00:57) setwindow form.prfedit
+\i (00:00:57) FORM prfedit treelist  Paths 
+\i (00:00:59) FORM prfedit treelist  Library Paths 
+\i (00:01:19) FORM prfedit cancel  
+\i (00:01:30) setwindow pcb
+\i (00:01:30) exit 
+\e (00:01:30) Do you want to save the changes you made to sensor_board.brd?
+\i (00:01:31) fillin yes 
+\t (00:01:31)     Journal end - Tue Sep 21 22:14:46 2021
