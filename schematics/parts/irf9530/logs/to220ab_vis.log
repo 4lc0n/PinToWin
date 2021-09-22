@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : TO220AB_VIS.dra                               )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Wed Sep 22 22:09:11 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/irf9530
+    Name      = to220ab_vis.psm
+    User      = markl
+    Machine   = DESKTOP-QOSR346
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+
