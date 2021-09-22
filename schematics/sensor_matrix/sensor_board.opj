@@ -107,7 +107,32 @@
       (Type "Board File")
       (OutputBoard ".\allegro\sensor_board.brd")
       (NetListPath ".\allegro")
-      (ActiveBoard "1")))
+      (ActiveBoard "1"))
+    (File ".\allegro\autosave_markl.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\autosave_markl.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\autosave_markl.brd,1"
+      (Type "Board File")
+      (OutputBoard ".\allegro\autosave_markl.brd,1")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\autosave_markl.brd,2"
+      (Type "Board File")
+      (OutputBoard ".\allegro\autosave_markl.brd,2")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\sensor_board_place_repl.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\sensor_board_place_repl.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\ldr_diode_place_replicate.mdd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\ldr_diode_place_replicate.mdd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0")))
   (Folder "Outputs"
     (File ".\sensor_board.drc"
       (Type "Report"))
@@ -199,10 +224,21 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "LDR-D-Unit")
       (Path "Design Resources" "Library")
       (Path "Layout")
       (Path "Outputs")
-      (Path "Logs"))
+      (Path "Logs")
+      (Select "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -212,46 +248,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1284 24 773")
-        (Scroll "189 1525")
-        (Zoom "340")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
+        (Scroll "-44 99")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
-        (Scroll "-44 0")
-        (Zoom "100")
-        (Occurrence "/m1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "matrix")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
-        (Scroll "-44 0")
-        (Zoom "100")
-        (Occurrence "/m1/col1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "Column of LDR Sensor Matrix")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1284 24 773")
-        (Scroll "612 326")
-        (Zoom "200")
-        (Occurrence "/m1/col1/R-D1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "LDR-D-Unit")
       (Page "PAGE1")))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))
