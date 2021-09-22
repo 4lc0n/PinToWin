@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : sensor_board_place_repl.brd                   )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Wed Sep 22 22:35:14 2021                      )
+(    Date/Time        : Wed Sep 22 23:58:10 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -22,14 +22,12 @@ Report methodology:
   - To suppress items in dangle report add the OK_DANGLE property to the via
     or connect line.
 
-
-
-<< Dangling Vias >>
-  Net                  Padstack               Location            Layers
-  ---------------------------------------------------------------------------
-  Not on a Net         VIA0_2C0_5C          (-49.0000 59.0000) TOP/BOTTOM 
+<< Dangling Lines >>  - Location marked with a star (*) is dangling.
+  Net                 Layer                  Length       Location
+  ------------------------------------------------------------------------------------------
+  N18549               BOTTOM                0.2828      (41.5000 30.6636) to *(41.7000 30.8636)
 
 << Summary >>
-  Total dangling lines:       0
-  Total dangling vias:        1
+  Total dangling lines:       1
+  Total dangling vias:        0
   Total antenna vias:         0
