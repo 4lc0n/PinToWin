@@ -327,7 +327,7 @@ void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin)
 
 /**
   * @brief  Function implementing the solenoid_driver thread.
-  * @param  argument: Not used
+  * @param  argument: struct of Solenoid_task_argument, to transfer interface options like timer and status_buttonQ
   * @retval None
   */
 void start_solenoid_driver(void *argument)
