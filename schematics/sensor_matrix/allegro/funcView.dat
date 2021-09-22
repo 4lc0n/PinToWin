@@ -1,5 +1,5 @@
 A!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!REFDES!FUNC_PRIM_FILE!COMP_PARENT_PPT!COMP_PARENT_PPT_PART!COMP_PARENT_PART_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!FUNC_GROUP!FUNC_ROOM!FUNC_CDS_FSP_UID!FUNC_NO_SWAP_PIN!FUNC_HARD_LOCATION!FUNC_NO_SWAP_GATE_EXT!FUNC_CDS_FSP_MAPPED_CELL!FUNC_CDS_FSP_FPGA_SYMBOL!FUNC_CDS_FSP_TERM_TYPE!FUNC_CDS_FSP_TERM_NAME!FUNC_ROOM!FUNC_GROUP!FUNC_CDS_FSP_TERM_INDEX!FUNC_NO_SWAP_GATE!
-J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd!Tue Sep 21 23:28:00 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
+J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd!Wed Sep 22 14:50:30 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
 S!@sensor_board.schematic1(sch_1):ins12658@sensor_board.\led_1.normal\(chips)!LED_1_SMD1206_LED!D1!.\chipsView.dat!!!!!!F195!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):ins12677@sensor_board.\led_1.normal\(chips)!LED_1_SMD1206_LED!D2!.\chipsView.dat!!!!!!F194!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)!IRF9530N/TO_0_TO220ABH_IRF9530N/TO!Q1!.\chipsView.dat!!!!!!F102!!!!!!!!!!!!!!!

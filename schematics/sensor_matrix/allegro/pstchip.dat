@@ -1,20 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 23:27:57}
-primitive 'CAP NP_SMC0805_100N';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='SMC0805';
-    VALUE='100n';
-  end_body;
-end_primitive;
+{ Using PSTWRITER 17.4.0 d001Sep-22-2021 at 14:50:11}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -28,21 +13,6 @@ primitive 'CAP NP_SMC1206_1UF';
     PART_NAME='CAP NP';
     JEDEC_TYPE='SMC1206';
     VALUE='1uF';
-  end_body;
-end_primitive;
-primitive 'LED_1_SMD1206_LED';
-  pin
-    'A':
-      PIN_NUMBER='(A)';
-      PINUSE='UNSPEC';
-    'C':
-      PIN_NUMBER='(C)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='LED_1';
-    JEDEC_TYPE='SMD1206';
-    VALUE='LED';
   end_body;
 end_primitive;
 primitive '1N4148_SOD80_D1N4148';
@@ -60,46 +30,7 @@ primitive '1N4148_SOD80_D1N4148';
     VALUE='D1N4148';
   end_body;
 end_primitive;
-primitive 'CON5_SIPTML5005_BOARD_INTERFACE';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
-    '5':
-      PIN_NUMBER='(5)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CON5';
-    JEDEC_TYPE='SIPTML5005';
-    VALUE='BOARD_INTERFACE';
-  end_body;
-end_primitive;
-primitive 'JUMPER_SIPTML2002_JUMPER';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='JUMPER';
-    JEDEC_TYPE='SIPTML2002';
-    VALUE='JUMPER';
-  end_body;
-end_primitive;
-primitive 'CON6_SIPTML6006_PROGRAMMER';
+primitive 'CON6_BLKCON100VHTM1SQW1006_CON6';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -122,11 +53,26 @@ primitive 'CON6_SIPTML6006_PROGRAMMER';
   end_pin;
   body
     PART_NAME='CON6';
-    JEDEC_TYPE='SIPTML6006';
-    VALUE='PROGRAMMER';
+    JEDEC_TYPE='BLKCON100VHTM1SQW1006';
+    VALUE='CON6';
   end_body;
 end_primitive;
-primitive 'IRF9530N/TO_0_TO220ABH_IRF9530N/TO';
+primitive 'JUMPER_BLKCON100VHTM1SQW1002_JUMPER';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='JUMPER';
+    JEDEC_TYPE='BLKCON100VHTM1SQW1002';
+    VALUE='JUMPER';
+  end_body;
+end_primitive;
+primitive 'IRF9530N/TO_0_TO220ABH_IRF9530N/TO220';
   pin
     'D':
       PIN_NUMBER='(2)';
@@ -144,37 +90,7 @@ primitive 'IRF9530N/TO_0_TO220ABH_IRF9530N/TO';
   body
     PART_NAME='IRF9530N/TO_0';
     JEDEC_TYPE='TO220ABH';
-    VALUE='IRF9530N/TO';
-  end_body;
-end_primitive;
-primitive 'R_SMR0805_1K';
-  pin
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='R';
-    JEDEC_TYPE='SMR0805';
-    VALUE='1k';
-  end_body;
-end_primitive;
-primitive 'LDR_LDR1_NTE_5K-20K';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='LDR';
-    JEDEC_TYPE='LDR1_NTE';
-    VALUE='5k-20k';
+    VALUE='IRF9530N/TO220';
   end_body;
 end_primitive;
 primitive 'R_SMR0805_100';
@@ -192,7 +108,22 @@ primitive 'R_SMR0805_100';
     VALUE='100';
   end_body;
 end_primitive;
-primitive 'R_SMR0805_10K';
+primitive 'LDR_LDR1_NTE_5K-20K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LDR';
+    JEDEC_TYPE='LDR1_NTE';
+    VALUE='5k-20k';
+  end_body;
+end_primitive;
+primitive 'R_SMR0805_1K';
   pin
     '2':
       PIN_NUMBER='(2)';
@@ -204,127 +135,136 @@ primitive 'R_SMR0805_10K';
   body
     PART_NAME='R';
     JEDEC_TYPE='SMR0805';
-    VALUE='10k';
+    VALUE='1k';
   end_body;
 end_primitive;
-primitive 'SW PUSHBUTTON_SIPTML2002_SW PUSHBUTTON';
+primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
   pin
-    '1':
+    'PB12':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
-    '2':
+    'PB13':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='SW PUSHBUTTON';
-    JEDEC_TYPE='SIPTML2002';
-    VALUE='SW PUSHBUTTON';
-  end_body;
-end_primitive;
-primitive 'ATMEGA168PV_1_TQFP32_ATMEGA168PV';
-  pin
-    'PD3':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    'PD4':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    'GND#3':
+    'PB14':
       PIN_NUMBER='(3)';
-      PINUSE='POWER';
-    'GND#5':
-      PIN_NUMBER='(5)';
-      PINUSE='POWER';
-    'VCC#4':
+      PINUSE='UNSPEC';
+    'PB15':
       PIN_NUMBER='(4)';
-      PINUSE='POWER';
-    'VCC#6':
+      PINUSE='UNSPEC';
+    'PA8':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'PA9':
       PIN_NUMBER='(6)';
-      PINUSE='POWER';
-    'PB6/XTAL1':
+      PINUSE='UNSPEC';
+    'PA10':
       PIN_NUMBER='(7)';
       PINUSE='UNSPEC';
-    'PB7/XTAL2':
+    'PA11':
       PIN_NUMBER='(8)';
       PINUSE='UNSPEC';
-    'PD5':
+    'PA12':
       PIN_NUMBER='(9)';
       PINUSE='UNSPEC';
-    'PD6':
+    'PA15':
       PIN_NUMBER='(10)';
       PINUSE='UNSPEC';
-    'PD7':
+    'PB3':
       PIN_NUMBER='(11)';
       PINUSE='UNSPEC';
-    'PB0':
+    'PB4':
       PIN_NUMBER='(12)';
       PINUSE='UNSPEC';
-    'PB1':
+    'PB5':
       PIN_NUMBER='(13)';
       PINUSE='UNSPEC';
-    'PB2':
+    'PB6':
       PIN_NUMBER='(14)';
       PINUSE='UNSPEC';
-    'PB3':
+    'PB7':
       PIN_NUMBER='(15)';
       PINUSE='UNSPEC';
-    'PB4':
+    'PB8':
       PIN_NUMBER='(16)';
       PINUSE='UNSPEC';
-    'PB5':
+    'PB9':
       PIN_NUMBER='(17)';
       PINUSE='UNSPEC';
-    'AVCC':
+    'VIN_5V#18':
       PIN_NUMBER='(18)';
-      PINUSE='UNSPEC';
-    'ADC6':
-      PIN_NUMBER='(19)';
-      PINUSE='UNSPEC';
-    'AREF':
-      PIN_NUMBER='(20)';
-      PINUSE='UNSPEC';
-    'GND#21':
-      PIN_NUMBER='(21)';
       PINUSE='POWER';
-    'ADC7':
+    'GND#19':
+      PIN_NUMBER='(19)';
+      PINUSE='POWER';
+    '3V3#20':
+      PIN_NUMBER='(20)';
+      PINUSE='POWER';
+    'VBAT':
+      PIN_NUMBER='(21)';
+      PINUSE='UNSPEC';
+    'PC13':
       PIN_NUMBER='(22)';
       PINUSE='UNSPEC';
-    'PC0':
+    'PC14':
       PIN_NUMBER='(23)';
       PINUSE='UNSPEC';
-    'PC1':
+    'PC15':
       PIN_NUMBER='(24)';
       PINUSE='UNSPEC';
-    'PC2':
+    'RESET':
       PIN_NUMBER='(25)';
       PINUSE='UNSPEC';
-    'PC3':
+    'PA0':
       PIN_NUMBER='(26)';
       PINUSE='UNSPEC';
-    'PC4':
+    'PA1':
       PIN_NUMBER='(27)';
       PINUSE='UNSPEC';
-    'PC5':
+    'PA2':
       PIN_NUMBER='(28)';
       PINUSE='UNSPEC';
-    'PC6':
+    'PA3':
       PIN_NUMBER='(29)';
       PINUSE='UNSPEC';
-    'PD0':
+    'PA4':
       PIN_NUMBER='(30)';
       PINUSE='UNSPEC';
-    'PD1':
+    'PA5':
       PIN_NUMBER='(31)';
       PINUSE='UNSPEC';
-    'PD2':
+    'PA6':
       PIN_NUMBER='(32)';
       PINUSE='UNSPEC';
+    'PA7':
+      PIN_NUMBER='(33)';
+      PINUSE='UNSPEC';
+    'PB0':
+      PIN_NUMBER='(34)';
+      PINUSE='UNSPEC';
+    'PB1':
+      PIN_NUMBER='(35)';
+      PINUSE='UNSPEC';
+    'PB2':
+      PIN_NUMBER='(36)';
+      PINUSE='UNSPEC';
+    'PB10':
+      PIN_NUMBER='(37)';
+      PINUSE='UNSPEC';
+    '3V3#38':
+      PIN_NUMBER='(38)';
+      PINUSE='POWER';
+    'GND#39':
+      PIN_NUMBER='(39)';
+      PINUSE='POWER';
+    'VIN_5V#40':
+      PIN_NUMBER='(40)';
+      PINUSE='POWER';
   end_pin;
   body
-    PART_NAME='ATMEGA168PV_1';
-    JEDEC_TYPE='TQFP32';
-    VALUE='ATMEGA168PV';
+    PART_NAME='STM32_Bluepill';
+    JEDEC_TYPE='blackpill_footprint';
+    VALUE='STM32F411';
   end_body;
 end_primitive;
 END.

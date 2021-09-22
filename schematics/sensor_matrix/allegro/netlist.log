@@ -1,10 +1,14 @@
-{ Using PSTWRITER 17.4.0 d001Sep-21-2021 at 23:27:57 }
+{ Using PSTWRITER 17.4.0 d001Sep-22-2021 at 14:50:11 }
 
-#1 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#3" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
-#2 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#5" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
-#3 WARNING(ORCAP-36042): Pin "VCC" is renamed to "VCC#4" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
-#4 WARNING(ORCAP-36042): Pin "VCC" is renamed to "VCC#6" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
-#5 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#21" as visible power pin of same name already exists in Package ATMEGA168PV_1 , U1: SCHEMATIC1, PAGE1 (58.42, 106.68).
+#1 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.18" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "VIN_5V".
+#2 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.40" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "VIN_5V".
+#3 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.20" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "3V3".
+#4 WARNING(ORCAP-36042): Pin "Vin_5V" is renamed to "VIN_5V#18" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
+#5 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#19" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
+#6 WARNING(ORCAP-36042): Pin "3V3" is renamed to "3V3#20" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
+#7 WARNING(ORCAP-36042): Pin "3V3" is renamed to "3V3#38" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
+#8 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#39" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
+#9 WARNING(ORCAP-36042): Pin "Vin_5V" is renamed to "VIN_5V#40" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).
 INFO(ORCAP-36080): Scanning netlist files ...
 
 Loading... C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\allegro\pstchip.dat

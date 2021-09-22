@@ -1,13 +1,14 @@
 (---------------------------------------------------------------------)
 (                                                                     )
-(    GenFeed                                                          )
+(    Downrev Design                                                   )
 (                                                                     )
+(    Drawing          : blackpill_footprint.dra                       )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Wed Sep 22 14:50:30 2021                      )
+(    Date/Time        : Wed Sep 22 14:32:20 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
-Extract file used: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/pxlBA.txt
 
-SUMMARY: No errors or warnings detected.
+Changes made to design for 17.2 compatibility.
+

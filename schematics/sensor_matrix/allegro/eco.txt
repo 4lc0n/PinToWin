@@ -3,29 +3,1233 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
-|                                                    Tue Sep 21 23:28:02 2021  |
+|                                                    Wed Sep 22 14:50:32 2021  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  R1           pins MOVED FROM this net (to net name listed on right)
-                                 D24.2           -14.984 -32.504
+  3V3          pins ADDED TO this new net
+                                 C1.1            173.000 35.0000
+                                 U1.20           137.380 -21.130
+                                 U1.38           152.620 22.0500
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC0         pins MOVED FROM this net (to net name listed on right)
+                                 D12.2           45.0160 -2.5043
                                                                            ADC1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  R3           pins MOVED FROM this net (to net name listed on right)
-                                 D46.2           15.0160 27.4957
+                                 D13.2           19.9957 74.0160
+                                                                           ADC1
+                                 R93.1           70.0000 80.0000
                                                                            ADC3
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 D1.2            157.995 40.0160
+                                 D2.2            159.995 31.0160
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  R5           pins MOVED FROM this net (to net name listed on right)
-                                 D68.2                          
+  ADC1         pins MOVED FROM this net (to net name listed on right)
+                                 D23.2           65.0160 -22.504
+                                                                           ADC2
+                                 D24.2           85.0160 -22.504
+                                                                           ADC2
+                                 R94.1           80.0000 90.0000
+                                                                           ADC4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC2         pins MOVED FROM this net (to net name listed on right)
+                                 D34.2           55.0160 -62.504
+                                                                           ADC3
+                                 D35.2           85.0160 -32.504
+                                                                           ADC3
+                                 R95.1           80.0000 100.000
                                                                            ADC5
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  R7           pins MOVED FROM this net (to net name listed on right)
-                                 D90.2                          
-                                                                           ADC7
+  ADC3         pins MOVED FROM this net (to net name listed on right)
+                                 D45.2           65.0160  7.4957
+                                                                           ADC4
+                                 D46.2           175.016 -42.504
+                                                                           ADC4
+                                 R96.1           87.0000 62.0000
+                                                                           ADC6
+                                 U1.26           152.620 -8.4300
+                                                                           ADC0
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC4         pins MOVED FROM this net (to net name listed on right)
+                                 D56.2           65.0160 17.4957
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|       Nets changed          :       4                                        |
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                           ADC5
+                                 D57.2           49.9957 74.0160
+                                                                           ADC5
+                                 R97.1           90.0000 40.0000
+                                                                           ADC7
+                                 U1.27           152.620 -5.8900
+                                                                           ADC1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC5         pins MOVED FROM this net (to net name listed on right)
+                                 D67.2           65.0160 -12.504
+                                                                           ADC6
+                                 D68.2           29.9957 74.0160
+                                                                           ADC6
+                                 U1.28           152.620 -3.3500
+                                                                           ADC2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC6         pins MOVED FROM this net (to net name listed on right)
+                                 D78.2           65.0160 -2.5043
+                                                                           ADC7
+                                 D79.2           85.0160 -2.5043
+                                                                           ADC7
+                                 U1.19           137.380 -18.590
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ADC7         pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.33           152.620  9.3500
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_0 pins MOVED FROM this net (to net name listed on right)
+                                 R5.1            -22.000  0.0000
+                                                                   COL_SELECT_3
+                                 R16.1           28.0000 100.000
+                                                                   COL_SELECT_3
+                                 R27.1           -122.00 -60.000
+                                                                   COL_SELECT_3
+                                 R38.1           -22.000 10.0000
+                                                                   COL_SELECT_3
+                                 R49.1           -22.000 20.0000
+                                                                   COL_SELECT_3
+                                 R60.1           -62.000 -90.000
+                                                                   COL_SELECT_3
+                                 R71.1           -22.000 -10.000
+                                                                   COL_SELECT_3
+                                 R82.1           -22.000 10.0000
+                                                                   COL_SELECT_3
+                                 U1.30           152.620  1.7300
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                           ADC4
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.34           152.620 11.8900
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_1 pins MOVED FROM this net (to net name listed on right)
+                                 R6.1            68.0000 -60.000
+                                                                   COL_SELECT_4
+                                 R17.1           -92.000 40.0000
+                                                                   COL_SELECT_4
+                                 R28.1           -92.000 -30.000
+                                                                   COL_SELECT_4
+                                 R39.1           48.0000 -70.000
+                                                                   COL_SELECT_4
+                                 R50.1            8.0000 -60.000
+                                                                   COL_SELECT_4
+                                 R61.1           48.0000 -80.000
+                                                                   COL_SELECT_4
+                                 R72.1           148.000 -60.000
+                                                                   COL_SELECT_4
+                                 R83.1           148.000 -70.000
+                                                                   COL_SELECT_4
+                                 U1.31           152.620  4.2700
+                                                                           ADC5
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.35           152.620 14.4300
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_2 pins MOVED FROM this net (to net name listed on right)
+                                 R7.1            48.0000 -90.000
+                                                                   COL_SELECT_5
+                                 R18.1           170.000 -50.000
+                                                                   COL_SELECT_5
+                                 R29.1           -32.000 -30.000
+                                                                   COL_SELECT_5
+                                 R40.1           -42.000 50.0000
+                                                                   COL_SELECT_5
+                                 R51.1           -32.000 30.0000
+                                                                   COL_SELECT_5
+                                 R62.1           -32.000 -10.000
+                                                                   COL_SELECT_5
+                                 R73.1           158.000 -60.000
+                                                                   COL_SELECT_5
+                                 R84.1           158.000 -70.000
+                                                                   COL_SELECT_5
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 U1.32           152.620  6.8100
+                                                                           ADC6
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.36           152.620 16.9700
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_3 pins MOVED FROM this net (to net name listed on right)
+                                 R8.1            -12.000 80.0000
+                                                                   COL_SELECT_6
+                                 R19.1           178.000 -50.000
+                                                                   COL_SELECT_6
+                                 R30.1           -22.000 -90.000
+                                                                   COL_SELECT_6
+                                 R41.1           38.0000 10.0000
+                                                                   COL_SELECT_6
+                                 R52.1           38.0000 20.0000
+                                                                   COL_SELECT_6
+                                 R63.1           38.0000 -10.000
+                                                                   COL_SELECT_6
+                                 R74.1           168.000 -60.000
+                                                                   COL_SELECT_6
+                                 R85.1           168.000 -70.000
+                                                                   COL_SELECT_6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_4 pins MOVED FROM this net (to net name listed on right)
+                                 R9.1            -82.000 70.0000
+                                                                   COL_SELECT_7
+                                 R20.1           208.000 -40.000
+                                                                   COL_SELECT_7
+                                 R31.1           198.000 -50.000
+                                                                   COL_SELECT_7
+                                 R42.1           78.0000 10.0000
+                                                                   COL_SELECT_7
+                                 R53.1           58.0000 130.000
+                                                                   COL_SELECT_7
+                                 R64.1           158.000 -40.000
+                                                                   COL_SELECT_7
+                                 R75.1           178.000 -60.000
+                                                                   COL_SELECT_7
+                                 R86.1           178.000 -70.000
+                                                                   COL_SELECT_7
+                                 U1.2            137.380 24.5900
+                                                                            SCK
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_5 pins MOVED FROM this net (to net name listed on right)
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R10.1           -112.00  0.0000
+                                                                   COL_SELECT_8
+                                 R21.1           238.000 10.0000
+                                                                   COL_SELECT_8
+                                 R32.1           238.000 20.0000
+                                                                   COL_SELECT_8
+                                 R43.1           148.000 -50.000
+                                                                   COL_SELECT_8
+                                 R54.1           18.0000 20.0000
+                                                                   COL_SELECT_8
+                                 R65.1           188.000 -40.000
+                                                                   COL_SELECT_8
+                                 R76.1           188.000 -60.000
+                                                                   COL_SELECT_8
+                                 R87.1           188.000 -70.000
+                                                                   COL_SELECT_8
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_6 pins MOVED FROM this net (to net name listed on right)
+                                 R11.1           -72.000 140.000
+                                                                   COL_SELECT_9
+                                 R22.1           38.0000 -20.000
+                                                                   COL_SELECT_9
+                                 R33.1           148.000 -30.000
+                                                                   COL_SELECT_9
+                                 R44.1           178.000 -40.000
+                                                                   COL_SELECT_9
+                                 R55.1           168.000 -30.000
+                                                                   COL_SELECT_9
+                                 R66.1           198.000 -40.000
+                                                                   COL_SELECT_9
+                                 R77.1           198.000 -60.000
+                                                                   COL_SELECT_9
+                                 R88.1           198.000 -70.000
+                                                                   COL_SELECT_9
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_7 pins MOVED FROM this net (to net name listed on right)
+                                 R12.1            8.0000  0.0000
+                                                                  COL_SELECT_10
+                                 R23.1            8.0000 -20.000
+                                                                  COL_SELECT_10
+                                 R34.1           -92.000 10.0000
+                                                                  COL_SELECT_10
+                                 R45.1           148.000 -40.000
+                                                                  COL_SELECT_10
+                                 R56.1           -22.000 30.0000
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                  COL_SELECT_10
+                                 R67.1           158.000 -50.000
+                                                                  COL_SELECT_10
+                                 R78.1           208.000 -60.000
+                                                                  COL_SELECT_10
+                                 R89.1            8.0000 10.0000
+                                                                  COL_SELECT_10
+                                 U1.11           137.380  1.7300
+                                                                   COL_SELECT_3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_8 pins MOVED FROM this net (to net name listed on right)
+                                 R13.1           28.0000  0.0000
+                                                                   COL_SELECT_0
+                                 R24.1           -12.000 60.0000
+                                                                   COL_SELECT_0
+                                 R35.1           158.000 -30.000
+                                                                   COL_SELECT_0
+                                 R46.1           -82.000 -70.000
+                                                                   COL_SELECT_0
+                                 R57.1           188.000 -50.000
+                                                                   COL_SELECT_0
+                                 R68.1            8.0000 -10.000
+                                                                   COL_SELECT_0
+                                 R79.1           28.0000 -10.000
+                                                                   COL_SELECT_0
+                                 R90.1           208.000 -70.000
+                                                                           ADC0
+                                 U1.12           137.380 -0.8100
+                                                                   COL_SELECT_4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_9 pins MOVED FROM this net (to net name listed on right)
+                                 R14.1           38.0000  0.0000
+                                                                   COL_SELECT_1
+                                 R25.1           58.0000 -20.000
+                                                                   COL_SELECT_1
+                                 R36.1           48.0000 -60.000
+                                                                   COL_SELECT_1
+                                 R47.1           58.0000 10.0000
+                                                                   COL_SELECT_1
+                                 R58.1           58.0000 20.0000
+                                                                   COL_SELECT_1
+                                 R69.1           58.0000 -10.000
+                                                                   COL_SELECT_1
+                                 R80.1           58.0000  0.0000
+                                                                   COL_SELECT_1
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R91.1           208.000 -50.000
+                                                                           ADC1
+                                 U1.13           137.380 -3.3500
+                                                                   COL_SELECT_5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  COL_SELECT_10 pins MOVED FROM this net (to net name listed on right)
+                                 R15.1           20.0000 60.0000
+                                                                   COL_SELECT_2
+                                 R26.1           78.0000 -20.000
+                                                                   COL_SELECT_2
+                                 R37.1           78.0000 -30.000
+                                                                   COL_SELECT_2
+                                 R48.1           168.000 -40.000
+                                                                   COL_SELECT_2
+                                 R59.1           50.0000 60.0000
+                                                                   COL_SELECT_2
+                                 R70.1           30.0000 60.0000
+                                                                   COL_SELECT_2
+                                 R81.1           78.0000  0.0000
+                                                                   COL_SELECT_2
+                                 R92.1           40.0000 60.0000
+                                                                           ADC2
+                                 U1.14           137.380 -5.8900
+                                                                   COL_SELECT_6
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.37           152.620 19.5100
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins MOVED FROM this net (to net name listed on right)
+                                 J1.5            90.1600 36.0000
+                                                                            SCK
+                                 R1.1            103.000 -14.000
+                                                                         N18612
+                                 R2.1            106.000 -6.0000
+                                                                   COL_SELECT_0
+                                 R3.2            105.403 -1.0000
+                                                             N00105_M_COL12_R-D
+                                 U1.3            137.380 22.0500
+                                                                           MISO
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U1.39           152.620 24.5900
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  MISO         pins MOVED FROM this net (to net name listed on right)
+                                 J1.3            85.0800 36.0000
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                           MOSI
+                                 U1.16           137.380 -10.970
+                                                                   COL_SELECT_8
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  MOSI         pins MOVED FROM this net (to net name listed on right)
+                                 U1.15           137.380 -8.4300
+                                                                   COL_SELECT_7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D24.1           81.0000 -22.500
+                                                            N00105_M_COL12_R-D2
+                                 R26.2           81.4036 -20.000
+                                                            N00105_M_COL13_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D35.1           81.0000 -32.500
+                                                            N00105_M_COL12_R-D3
+                                 R37.2           81.4036 -30.000
+                                                            N00105_M_COL13_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D46.1           171.000 -42.500
+                                                            N00105_M_COL12_R-D4
+                                 R48.2           171.403 -40.000
+                                                            N00105_M_COL13_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D57.1           50.0000 70.0000
+                                                            N00105_M_COL12_R-D5
+                                 R59.2           53.4036 60.0000
+                                                            N00105_M_COL13_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D68.1           30.0000 70.0000
+                                                            N00105_M_COL12_R-D6
+                                 R70.2           33.4036 60.0000
+                                                            N00105_M_COL13_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D79.1           81.0000 -2.5000
+                                                            N00105_M_COL12_R-D7
+                                 R81.2           81.4036  0.0000
+                                                            N00105_M_COL13_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D7 pins MOVED FROM this net (to net name listed on right)
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   9  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R92.2           42.1336 60.0000
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL1_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D13.1           20.0000 70.0000
+                                                            N00105_M_COL12_R-D1
+                                 R15.2           23.4036 60.0000
+                                                            N00105_M_COL13_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D15.1           -89.000 37.5000
+                                                            N00105_M_COL14_R-D1
+                                 R17.2           -88.596 40.0000
+                                                            N00105_M_COL15_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D26.1           -89.000 -32.500
+                                                            N00105_M_COL14_R-D2
+                                 R28.2           -88.596 -30.000
+                                                            N00105_M_COL15_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D37.1           51.0000 -72.500
+                                                            N00105_M_COL14_R-D3
+                                 R39.2           51.4036 -70.000
+                                                            N00105_M_COL15_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D48.1           11.0000 -62.500
+                                                            N00105_M_COL14_R-D4
+                                 R50.2           11.4036 -60.000
+                                                            N00105_M_COL15_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D59.1           51.0000 -82.500
+                                                            N00105_M_COL14_R-D5
+                                 R61.2           51.4036 -80.000
+                                                            N00105_M_COL15_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D70.1           151.000 -62.500
+                                                            N00105_M_COL14_R-D6
+                                 R72.2           151.403 -60.000
+                                                            N00105_M_COL15_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  10  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N00105_M_COL12_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D81.1           151.000 -72.500
+                                                            N00105_M_COL14_R-D7
+                                 R83.2           151.403 -70.000
+                                                            N00105_M_COL15_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL12_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D4.1            71.0000 -62.500
+                                                             N00105_M_COL14_R-D
+                                 R6.2            71.4036 -60.000
+                                                             N00105_M_COL15_R-D
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 D2.1            160.000 27.0000
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D16.1           171.000 -52.500
+                                                            N00105_M_COL15_R-D1
+                                 R18.2           173.403 -50.000
+                                                            N00105_M_COL16_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D27.1           -29.000 -32.500
+                                                            N00105_M_COL15_R-D2
+                                 R29.2           -28.596 -30.000
+                                                            N00105_M_COL16_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D38.1           -39.000 47.5000
+                                                            N00105_M_COL15_R-D3
+                                 R40.2           -38.596 50.0000
+                                                            N00105_M_COL16_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D49.1           -29.000 27.5000
+                                                            N00105_M_COL15_R-D4
+                                 R51.2           -28.596 30.0000
+                                                            N00105_M_COL16_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D60.1           -29.000 -12.500
+                                                            N00105_M_COL15_R-D5
+                                 R62.2           -28.596 -10.000
+                                                            N00105_M_COL16_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  11  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N00105_M_COL13_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D71.1           161.000 -62.500
+                                                            N00105_M_COL15_R-D6
+                                 R73.2           161.403 -60.000
+                                                            N00105_M_COL16_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D82.1           161.000 -72.500
+                                                            N00105_M_COL15_R-D7
+                                 R84.2           161.403 -70.000
+                                                            N00105_M_COL16_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL13_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D5.1            51.0000 -92.500
+                                                             N00105_M_COL15_R-D
+                                 R7.2            51.4036 -90.000
+                                                             N00105_M_COL16_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D17.1           181.000 -52.500
+                                                            N00105_M_COL16_R-D1
+                                 R19.2           181.403 -50.000
+                                                            N00105_M_COL17_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D28.1           -19.000 -92.500
+                                                            N00105_M_COL16_R-D2
+                                 R30.2           -18.596 -90.000
+                                                            N00105_M_COL17_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D39.1           41.0000  7.5000
+                                                            N00105_M_COL16_R-D3
+                                 R41.2           41.4036 10.0000
+                                                            N00105_M_COL17_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D50.1           41.0000 17.5000
+                                                            N00105_M_COL16_R-D4
+                                 R52.2           41.4036 20.0000
+                                                            N00105_M_COL17_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D61.1           41.0000 -12.500
+                                                            N00105_M_COL16_R-D5
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  12  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R63.2           41.4036 -10.000
+                                                            N00105_M_COL17_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D72.1           171.000 -62.500
+                                                            N00105_M_COL16_R-D6
+                                 R74.2           171.403 -60.000
+                                                            N00105_M_COL17_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D83.1           171.000 -72.500
+                                                            N00105_M_COL16_R-D7
+                                 R85.2           171.403 -70.000
+                                                            N00105_M_COL17_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL14_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D6.1            -9.0000 77.5000
+                                                             N00105_M_COL16_R-D
+                                 R8.2            -8.5964 80.0000
+                                                             N00105_M_COL17_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D18.1           211.000 -42.500
+                                                            N00105_M_COL17_R-D1
+                                 R20.2           211.403 -40.000
+                                                            N00105_M_COL18_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D29.1           201.000 -52.500
+                                                            N00105_M_COL17_R-D2
+                                 R31.2           201.403 -50.000
+                                                            N00105_M_COL18_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D40.1           81.0000  7.5000
+                                                            N00105_M_COL17_R-D3
+                                 R42.2           81.4036 10.0000
+                                                            N00105_M_COL18_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D51.1           61.0000 127.500
+                                                            N00105_M_COL17_R-D4
+                                 R53.2           61.4036 130.000
+                                                            N00105_M_COL18_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  13  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N00105_M_COL15_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D62.1           161.000 -42.500
+                                                            N00105_M_COL17_R-D5
+                                 R64.2           161.403 -40.000
+                                                            N00105_M_COL18_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D73.1           181.000 -62.500
+                                                            N00105_M_COL17_R-D6
+                                 R75.2           181.403 -60.000
+                                                            N00105_M_COL18_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D84.1           181.000 -72.500
+                                                            N00105_M_COL17_R-D7
+                                 R86.2           181.403 -70.000
+                                                            N00105_M_COL18_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL15_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D7.1            -79.000 67.5000
+                                                             N00105_M_COL17_R-D
+                                 R9.2            -78.596 70.0000
+                                                             N00105_M_COL18_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D19.1           241.000  7.5000
+                                                            N00105_M_COL18_R-D1
+                                 R21.2           241.403 10.0000
+                                                            N00105_M_COL19_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D30.1           241.000 17.5000
+                                                            N00105_M_COL18_R-D2
+                                 R32.2           241.403 20.0000
+                                                            N00105_M_COL19_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D41.1           151.000 -52.500
+                                                            N00105_M_COL18_R-D3
+                                 R43.2           151.403 -50.000
+                                                            N00105_M_COL19_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D52.1           21.0000 17.5000
+                                                            N00105_M_COL18_R-D4
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  14  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R54.2           21.4036 20.0000
+                                                            N00105_M_COL19_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D63.1           191.000 -42.500
+                                                            N00105_M_COL18_R-D5
+                                 R65.2           191.403 -40.000
+                                                            N00105_M_COL19_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D74.1           191.000 -62.500
+                                                            N00105_M_COL18_R-D6
+                                 R76.2           191.403 -60.000
+                                                            N00105_M_COL19_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D85.1           191.000 -72.500
+                                                            N00105_M_COL18_R-D7
+                                 R87.2           191.403 -70.000
+                                                            N00105_M_COL19_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL16_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D8.1            -109.00 -2.5000
+                                                             N00105_M_COL18_R-D
+                                 R10.2           -108.59  0.0000
+                                                             N00105_M_COL19_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D20.1           41.0000 -22.500
+                                                            N00105_M_COL19_R-D1
+                                 R22.2           41.4036 -20.000
+                                                            N00105_M_COL20_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D31.1           151.000 -32.500
+                                                            N00105_M_COL19_R-D2
+                                 R33.2           151.403 -30.000
+                                                            N00105_M_COL20_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D42.1           181.000 -42.500
+                                                            N00105_M_COL19_R-D3
+                                 R44.2           181.403 -40.000
+                                                            N00105_M_COL20_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  15  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N00105_M_COL17_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D53.1           171.000 -32.500
+                                                            N00105_M_COL19_R-D4
+                                 R55.2           171.403 -30.000
+                                                            N00105_M_COL20_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D64.1           201.000 -42.500
+                                                            N00105_M_COL19_R-D5
+                                 R66.2           201.403 -40.000
+                                                            N00105_M_COL20_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D75.1           201.000 -62.500
+                                                            N00105_M_COL19_R-D6
+                                 R77.2           201.403 -60.000
+                                                            N00105_M_COL20_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D86.1           201.000 -72.500
+                                                            N00105_M_COL19_R-D7
+                                 R88.2           201.403 -70.000
+                                                            N00105_M_COL20_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL17_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D9.1            -69.000 137.500
+                                                             N00105_M_COL19_R-D
+                                 R11.2           -68.596 140.000
+                                                             N00105_M_COL20_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D21.1           11.0000 -22.500
+                                                            N00105_M_COL20_R-D1
+                                 R23.2           11.4036 -20.000
+                                                             N00105_M_COL1_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D32.1           -89.000  7.5000
+                                                            N00105_M_COL20_R-D2
+                                 R34.2           -88.596 10.0000
+                                                             N00105_M_COL1_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D43.1           151.000 -42.500
+                                                            N00105_M_COL20_R-D3
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  16  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R45.2           151.403 -40.000
+                                                             N00105_M_COL1_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D54.1           -19.000 27.5000
+                                                            N00105_M_COL20_R-D4
+                                 R56.2           -18.596 30.0000
+                                                             N00105_M_COL1_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D65.1           161.000 -52.500
+                                                            N00105_M_COL20_R-D5
+                                 R67.2           161.403 -50.000
+                                                             N00105_M_COL1_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D76.1           211.000 -62.500
+                                                            N00105_M_COL20_R-D6
+                                 R78.2           211.403 -60.000
+                                                             N00105_M_COL1_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D87.1           11.0000  7.5000
+                                                            N00105_M_COL20_R-D7
+                                 R89.2           11.4036 10.0000
+                                                             N00105_M_COL1_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL18_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D10.1           11.0000 -2.5000
+                                                             N00105_M_COL20_R-D
+                                 R12.2           11.4036  0.0000
+                                                              N00105_M_COL1_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D22.1           -9.0000 57.5000
+                                                             N00105_M_COL1_R-D1
+                                 R24.2           -8.5964 60.0000
+                                                              N00105_M_COL_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D33.1           161.000 -32.500
+                                                             N00105_M_COL1_R-D2
+                                 R35.2           161.403 -30.000
+                                                              N00105_M_COL_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  17  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N00105_M_COL19_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D44.1           -79.000 -72.500
+                                                             N00105_M_COL1_R-D3
+                                 R46.2           -78.596 -70.000
+                                                              N00105_M_COL_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D55.1           191.000 -52.500
+                                                             N00105_M_COL1_R-D4
+                                 R57.2           191.403 -50.000
+                                                              N00105_M_COL_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D66.1           11.0000 -12.500
+                                                             N00105_M_COL1_R-D5
+                                 R68.2           11.4036 -10.000
+                                                              N00105_M_COL_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D77.1           31.0000 -12.500
+                                                             N00105_M_COL1_R-D6
+                                 R79.2           31.4036 -10.000
+                                                              N00105_M_COL_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D88.1           211.000 -72.500
+                                                             N00105_M_COL1_R-D7
+                                 R90.2           210.133 -70.000
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL19_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D11.1           31.0000 -2.5000
+                                                              N00105_M_COL1_R-D
+                                 R13.2           31.4036  0.0000
+                                                              N00105_M_COL_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D23.1           61.0000 -22.500
+                                                              N00105_M_COL_R-D2
+                                 R25.2           61.4036 -20.000
+                                                            N00105_M_COL12_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D34.1           51.0000 -62.500
+                                                              N00105_M_COL_R-D3
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  18  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R36.2           51.4036 -60.000
+                                                            N00105_M_COL12_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D45.1           61.0000  7.5000
+                                                              N00105_M_COL_R-D4
+                                 R47.2           61.4036 10.0000
+                                                            N00105_M_COL12_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D56.1           61.0000 17.5000
+                                                              N00105_M_COL_R-D5
+                                 R58.2           61.4036 20.0000
+                                                            N00105_M_COL12_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D67.1           61.0000 -12.500
+                                                              N00105_M_COL_R-D6
+                                 R69.2           61.4036 -10.000
+                                                            N00105_M_COL12_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D78.1           61.0000 -2.5000
+                                                              N00105_M_COL_R-D7
+                                 R80.2           61.4036  0.0000
+                                                            N00105_M_COL12_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 R91.2           210.133 -50.000
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL20_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D12.1           41.0000 -2.5000
+                                                              N00105_M_COL_R-D1
+                                 R14.2           41.4036  0.0000
+                                                            N00105_M_COL12_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D1 pins MOVED FROM this net (to net name listed on right)
+                                 D14.1           31.0000 97.5000
+                                                            N00105_M_COL13_R-D1
+                                 R16.2           31.4036 100.000
+                                                            N00105_M_COL14_R-D1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D2 pins MOVED FROM this net (to net name listed on right)
+                                 D25.1           -119.00 -62.500
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  19  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                            N00105_M_COL13_R-D2
+                                 R27.2           -118.59 -60.000
+                                                            N00105_M_COL14_R-D2
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D3 pins MOVED FROM this net (to net name listed on right)
+                                 D36.1           -19.000  7.5000
+                                                            N00105_M_COL13_R-D3
+                                 R38.2           -18.596 10.0000
+                                                            N00105_M_COL14_R-D3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D4 pins MOVED FROM this net (to net name listed on right)
+                                 D47.1           -19.000 17.5000
+                                                            N00105_M_COL13_R-D4
+                                 R49.2           -18.596 20.0000
+                                                            N00105_M_COL14_R-D4
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D5 pins MOVED FROM this net (to net name listed on right)
+                                 D58.1           -59.000 -92.500
+                                                            N00105_M_COL13_R-D5
+                                 R60.2           -58.596 -90.000
+                                                            N00105_M_COL14_R-D5
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D6 pins MOVED FROM this net (to net name listed on right)
+                                 D69.1           -19.000 -12.500
+                                                            N00105_M_COL13_R-D6
+                                 R71.2           -18.596 -10.000
+                                                            N00105_M_COL14_R-D6
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D7 pins MOVED FROM this net (to net name listed on right)
+                                 D80.1           -19.000  7.5000
+                                                            N00105_M_COL13_R-D7
+                                 R82.2           -18.596 10.0000
+                                                            N00105_M_COL14_R-D7
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00105_M_COL_R-D pins MOVED FROM this net (to net name listed on right)
+                                 D3.1            -19.000 -2.5000
+                                                             N00105_M_COL13_R-D
+                                 R5.2            -18.596  0.0000
+                                                             N00105_M_COL14_R-D
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 D1.1            158.000 36.0000
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N04826       pins MOVED FROM this net (to net name listed on right)
+                                 J1.1            80.0000 36.0000
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  20  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                            GND
+                                 Q1.2            136.000 95.5400
+                                                                         N18545
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N11924       pins MOVED FROM this net (to net name listed on right)
+                                 Q1.1            136.000 93.0000
+                                                                         N18612
+                                 R3.1            102.000 -1.0000
+                                                                   COL_SELECT_1
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12910       pins MOVED FROM this net (to net name listed on right)
+                                 R2.2            109.403 -6.0000
+                                                               N00105_M_COL_R-D
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N12914       pins MOVED FROM this net (to net name listed on right)
+                                 R1.2            105.133 -14.000
+                                                                            GND
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N18545       pins ADDED TO this new net
+                                 J2.2            172.540 -9.0000
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N18549       pins ADDED TO this new net
+                                 J1.6            92.7000 36.0000
+                                 J2.1            170.000 -9.0000
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  NCS          pins ADDED TO this new net
+                                 J1.4            87.6200 36.0000
+                                 U1.1            137.380 27.1300
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  RST          pins MOVED FROM this net (to net name listed on right)
+                                 R4.1            109.000  8.0000
+                                                                   COL_SELECT_2
+                                 U1.29           152.620 -0.8100
+                                                                           ADC3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SCK          pins MOVED FROM this net (to net name listed on right)
+                                 J1.2            82.5400 36.0000
+                                                                           MISO
+                                 U1.17           137.380 -13.510
+                                                                   COL_SELECT_9
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC          pins MOVED FROM this net (to net name listed on right)
+                                 Q1.3            136.000 98.0800
+                                                                            3V3
+                                 R4.2            112.403  8.0000
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  21  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                             N00105_M_COL13_R-D
+                                 U1.4            137.380 19.5100
+                                                                           MOSI
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VIN_5V       pins ADDED TO this new net
+                                 U1.18           137.380 -16.050
+                                 U1.40           152.620 27.1300
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  22  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CON6_BLKCON100VHTM1SQW1006_CON6
+ IRF9530N/TO_0_TO220ABH_IRF9530N/TO220
+ JUMPER_BLKCON100VHTM1SQW1002_JUMPER
+ R_SMR0805_100
+ STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  23  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| COMPONENTS DELETED from design                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type      |   x   |   y                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C2                  CAP NP_SMC0805_100N   172.000 31.0000
+ C3                  CAP NP_SMC1206_1UF    171.000 26.0000
+ C4                  CAP NP_SMC0805_100N   172.000 21.0000
+ C5                  CAP NP_SMC0805_100N   172.000 15.0000
+ D89                 1N4148_SOD80_D1N4148  211.000 -52.500
+ D90                 1N4148_SOD80_D1N4148  40.0000 70.0000
+ J3                  CON6_SIPTML6006_PROGRAMMER 80.0000 31.0000
+ R98                 R_SMR0805_1K          87.0000 62.0000
+ R99                 R_SMR0805_1K          87.0000 62.0000
+ R100                R_SMR0805_1K          90.0000 110.000
+ SW1                 SW PUSHBUTTON_SIPTML2002_SW PUSHBUTTON 83.0000 51.0000
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  24  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  CAP NP_SMC1206_1UF    173.000 35.0000 CAP NP_SMC0805_100N
+ D1                  1N4148_SOD80_D1N4148  158.000 36.0000 LED_1_SMD1206_LED
+ D2                  1N4148_SOD80_D1N4148  160.000 27.0000 LED_1_SMD1206_LED
+ J1                  CON6_BLKCON100VHTM1SQW1006_CON6 80.0000 36.0000 CON5_SIPTML5005_BOARD_INTERFACE
+ J2                  JUMPER_BLKCON100VHTM1SQW1002_JUMPER 170.000 -9.0000 JUMPER_SIPTML2002_JUMPER
+ Q1                  IRF9530N/TO_0_TO220ABH_IRF9530N/TO220 136.000 93.0000 IRF9530N/TO_0_TO220ABH_IRF9530N/TO
+ R1                  R_SMR0805_100         103.000 -14.000 R_SMR0805_1K
+ R2                  LDR_LDR1_NTE_5K-20K   106.000 -6.0000 R_SMR0805_1K
+ R3                  LDR_LDR1_NTE_5K-20K   102.000 -1.0000 R_SMR0805_100
+ R4                  LDR_LDR1_NTE_5K-20K   109.000  8.0000 R_SMR0805_10K
+ R90                 R_SMR0805_1K          208.000 -70.000 LDR_LDR1_NTE_5K-20K
+ R91                 R_SMR0805_1K          208.000 -50.000 LDR_LDR1_NTE_5K-20K
+ R92                 R_SMR0805_1K          40.0000 60.0000 LDR_LDR1_NTE_5K-20K
+ U1                  STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411 145.000  3.0000 ATMEGA168PV_1_TQFP32_ATMEGA168PV
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  25  |
+|------------------------------------------------------------------------------|
+|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Wed Sep 22 14:50:32 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2           173.000 35.0000 PRIM_FILE      .\pstchip.dat
+ D1.2           158.000 36.0000 PRIM_FILE      .\pstchip.dat
+ D2.2           160.000 27.0000 PRIM_FILE      .\pstchip.dat
+ J1.6           80.0000 36.0000 PRIM_FILE      .\pstchip.dat
+ J2.2           170.000 -9.0000 PRIM_FILE      .\pstchip.dat
+ Q1.3           136.000 93.0000 PRIM_FILE      .\pstchip.dat
+ R1.2           103.000 -14.000 PRIM_FILE      .\pstchip.dat
+ R2.2           106.000 -6.0000 PRIM_FILE      .\pstchip.dat
+ R3.2           102.000 -1.0000 PRIM_FILE      .\pstchip.dat
+ R4.2           109.000  8.0000 PRIM_FILE      .\pstchip.dat
+ R90.2          208.000 -70.000 PRIM_FILE      .\pstchip.dat
+ R91.2          208.000 -50.000 PRIM_FILE      .\pstchip.dat
+ R92.2          40.0000 60.0000 PRIM_FILE      .\pstchip.dat
+ U1.40          145.000  3.0000 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Nets changed          :     334                                        |
+|       Comp definitions added:       5                                        |
+|       Components deleted    :      11                                        |
+|       Components changed    :      14                                        |
+|       Slot property added   :      14                                        |
 |                                                                              |
-|   Total ECO changes reported:       4                                        |
+|   Total ECO changes reported:     378                                        |
 |------------------------------------------------------------------------------|

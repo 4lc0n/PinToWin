@@ -1,6 +1,6 @@
 (ExpressProject "sensor_board"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/21/21]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/22/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library"
@@ -160,6 +160,25 @@
       (LogFile
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\netlist.log")))
   (PartMRUSelector
+    (VCC_ARROW
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON6
+      (FullPartName "CON6.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (JUMPER
+      (FullPartName "JUMPER.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (STM32_Bluepill
+      (FullPartName "STM32_Bluepill.Normal")
+      (LibraryName
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
+      (DeviceIndex "0"))
     (LED
       (FullPartName "LED.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -173,20 +192,9 @@
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
       (DeviceIndex "0"))
-    (GND
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     ("SW PUSHBUTTON"
       (FullPartName "SW PUSHBUTTON.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (JUMPER
-      (FullPartName "JUMPER.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
-      (DeviceIndex "0"))
-    (CON6
-      (FullPartName "CON6.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
@@ -195,9 +203,6 @@
     ("CAP NP"
       (FullPartName "CAP NP.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (VCC_ARROW
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (CON5
       (FullPartName "CON5.Normal")
@@ -232,29 +237,64 @@
       (Path "Design Resources"
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
          "LDR-D-Unit")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "matrix")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "Design Cache")
       (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\private_lib.olb")
       (Path "Layout")
       (Path "Outputs")
       (Path "Logs")
       (Select "Design Resources"
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
-         "SCHEMATIC1" "PAGE1"))
+         "matrix" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 553"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 773")
-        (Scroll "-44 99")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 571")
+        (Scroll "-44 0")
         (Zoom "100")
-        (Occurrence "/"))
+        (Occurrence "/m1"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "SCHEMATIC1")
+      (Schematic "matrix")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1284 24 571")
+        (Scroll "-44 71")
+        (Zoom "100")
+        (Occurrence "/m1/col1"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "Column of LDR Sensor Matrix")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1284 24 571")
+        (Scroll "-44 0")
+        (Zoom "100")
+        (Occurrence "/m1/col1/R-D1"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 571")
+        (Scroll "-44 0")
+        (Zoom "100")
+        (Occurrence "/m1/col1/R-D2"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "LDR-D-Unit")
       (Page "PAGE1")))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))
