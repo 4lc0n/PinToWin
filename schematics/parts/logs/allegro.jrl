@@ -1,69 +1,54 @@
-\t (00:00:01) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Wed Sep 22 14:32:47 2021
-\t (00:00:01)         Host=DESKTOP-QOSR346 User=markl Pid=16200 CPUs=8
-\t (00:00:01) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
-\t (00:00:01) 
-   (00:00:01) Loading axlcore.cxt 
-   (00:00:01) Searching for nsWare programs v2.65
-   (00:00:01) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
-   (00:00:01) 	NsWare programs must reside in this directory!
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function Find_Component_Routine redefined
-   (00:00:01) function AFn_formEnd redefined
-   (00:00:01) function AFn_formMessage redefined
-   (00:00:01) function AFn_formGroup redefined
-   (00:00:01) function AFn_formText redefined
-   (00:00:01) function AFn_formButton redefined
-   (00:00:01) function AFn_formChecklistItem redefined
-   (00:00:01) function AFn_formRealFillin redefined
-   (00:00:01) function AFn_formPop redefined
-   (00:00:01) function AFn_formThumbnail redefined
-   (00:00:01) function AFn_formOptionsString redefined
-   (00:00:01) function AFn_formSizeString redefined
-   (00:00:01) function AFn_formOptionalString redefined
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function findAllOfType redefined
-   (00:00:01) function ashFindAllClines redefined
-   (00:00:01) function ashFindAllClinesegs redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "blackpill_footprint"
-\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/blackpill_footprint.dra
-   (00:00:03) Loading skillExt.cxt 
-\t (00:00:04) Grids are drawn 1.270, 1.270 apart for enhanced viewing.
-\i (00:00:04) trapsize 981
-\i (00:00:04) trapsize 1032
-\i (00:00:04) trapsize 1090
-\i (00:00:04) trapsize 995
-\i (00:00:04) trapsize 1032
-\i (00:00:04) trapsize 941
-\t (00:00:04) Grids are drawn 1.270, 1.270 apart for enhanced viewing.
-\i (00:00:04) trapsize 941
-\i (00:00:04) trapsize 315
-\i (00:00:04) etchedit 
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:05) roam y -96 
-\i (00:00:05) roam y -96
-\i (00:00:08) pick grid -7.553 -6.734
-\t (00:00:08) last pick:  -7.620 -6.985
-\i (00:17:28) open 
-\i (00:17:38) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd"
-\i (00:17:38) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
-\t (00:17:38) Opening existing design...
-\i (00:17:38) trapsize 15648
-\i (00:17:38) trapsize 16117
-\i (00:17:38) trapsize 15648
-\t (00:17:38) Grids are drawn 160.0000, 160.0000 apart for enhanced viewing.
-\t (00:17:38) Grids are drawn 2.0000, 2.0000 apart for enhanced viewing.
-\i (00:17:38) trapsize 17288
-\t (00:17:38)     Journal end - Wed Sep 22 14:50:25 2021
+\t (00:00:05) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Thu Sep 23 11:59:27 2021
+\t (00:00:05)         Host=DESKTOP-QOSR346 User=markl Pid=9380 CPUs=8
+\t (00:00:05) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+   (00:00:05) Searching for nsWare programs v2.65
+   (00:00:05) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:05) 	NsWare programs must reside in this directory!
+   (00:00:05) function _saveSelSet redefined
+   (00:00:05) function _restoreSelSet redefined
+   (00:00:05) function Find_Component_Routine redefined
+   (00:00:05) function AFn_formEnd redefined
+   (00:00:05) function AFn_formMessage redefined
+   (00:00:05) function AFn_formGroup redefined
+   (00:00:05) function AFn_formText redefined
+   (00:00:05) function AFn_formButton redefined
+   (00:00:05) function AFn_formChecklistItem redefined
+   (00:00:05) function AFn_formRealFillin redefined
+   (00:00:05) function AFn_formPop redefined
+   (00:00:05) function AFn_formThumbnail redefined
+   (00:00:05) function AFn_formOptionsString redefined
+   (00:00:05) function AFn_formSizeString redefined
+   (00:00:05) function AFn_formOptionalString redefined
+   (00:00:05) function _saveSelSet redefined
+   (00:00:05) function _restoreSelSet redefined
+   (00:00:05) function findAllOfType redefined
+   (00:00:05) function ashFindAllClines redefined
+   (00:00:05) function ashFindAllClinesegs redefined
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "blackpill_footprint"
+\d (00:00:07) Design opened: C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/parts/blackpill_footprint.dra
+   (00:00:07) Loading skillExt.cxt 
+\i (00:00:07) trapsize 981
+\i (00:00:07) trapsize 1032
+\i (00:00:07) trapsize 1090
+\i (00:00:07) trapsize 995
+\i (00:00:07) trapsize 1032
+\i (00:00:08) trapsize 941
+\t (00:00:08) Grids are drawn 1.270, 1.270 apart for enhanced viewing.
+\i (00:00:08) trapsize 941
+\i (00:00:08) trapsize 315
+\i (00:00:08) etchedit 
+\i (00:00:09) open 
+\i (00:00:23) fillin "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
+\i (00:00:23) cd "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro"
+\t (00:00:23) Opening existing design...
+\t (00:00:23) Grids are drawn 1.0000, 1.0000 apart for enhanced viewing.
+\i (00:00:23) trapsize 7824
+\i (00:00:23) trapsize 8058
+\i (00:00:23) trapsize 7824
+\t (00:00:23) Grids are drawn 64.0000, 64.0000 apart for enhanced viewing.
+\i (00:00:23) trapsize 8975
+\t (00:00:23)     Journal end - Thu Sep 23 11:59:46 2021

@@ -2,9 +2,9 @@
 (                                                                     )
 (    Dangling Line, Via and Antenna Report                            )
 (                                                                     )
-(    Drawing          : sensor_board_place_repl.brd                   )
+(    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Thu Sep 23 10:21:49 2021                      )
+(    Date/Time        : Thu Sep 23 12:11:08 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -26,18 +26,8 @@ Report methodology:
   Net                 Layer                  Length       Location
   ------------------------------------------------------------------------------------------
   N18549               BOTTOM                0.2828      (41.5000 30.6636) to *(41.7000 30.8636)
-  COL_SELECT_10        BOTTOM               34.3082     *(9.0000 27.0000) to  (-21.4900 34.6200)
-  COL_SELECT_9         BOTTOM               35.6005      (-24.0300 34.6200) to *(8.0000 26.0000)
-  COL_SELECT_8         BOTTOM               37.5547     *(7.0000 25.0000) to  (-26.5700 34.6200)
-  COL_SELECT_7         BOTTOM               42.4587     *(7.5000 20.5000) to  (-29.1100 34.6200)
-  COL_SELECT_6         BOTTOM               35.4129     *(-2.5000 19.5000) to  (-31.6500 34.6200)
-  COL_SELECT_5         BOTTOM               30.2458     *(-10.0000 20.0000) to  (-34.1900 34.6200)
-  COL_SELECT_4         BOTTOM               34.9500     *(-11.0000 16.2500) to  (-36.7300 34.6200)
-  COL_SELECT_3         BOTTOM                1.4900     *(-46.8900 17.8900) to  (-46.8900 19.3800)
-  COL_SELECT_2         BOTTOM                1.9500     *(-49.4300 17.4300) to  (-49.4300 19.3800)
-  COL_SELECT_0         BOTTOM                0.9886     *(-54.5100 18.3914) to  (-54.5100 19.3800)
 
 << Summary >>
-  Total dangling lines:      11
+  Total dangling lines:       1
   Total dangling vias:        0
   Total antenna vias:         0

@@ -13,8 +13,5 @@ Consumers of license:  "OrCAD_PCB_Designer_PSpice"
 Consumers of license:  "OrCAD_PCB_Editor"
     Server:      5280@DESKTOP-QOSR346
     Available:   1
-    In use:      1
-
- USER                 SYSTEM               USED  STATUS
- markl                DESKTOP-QOSR346        1   Checked out
+    In use:      0
 

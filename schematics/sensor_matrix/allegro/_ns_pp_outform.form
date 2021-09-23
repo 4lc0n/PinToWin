@@ -1,0 +1,414 @@
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM
+FIXED
+PORT 80 85
+HEADER "Post Processing - Release 3.44"
+
+POPUP <STRING>"NONE""0"
+TILE
+FIELD Run_button
+FLOC 71 2
+MENUBUTTON "Run" 7 3
+ENDFIELD
+
+FIELD Close_button
+FLOC 71 5
+MENUBUTTON "Close" 7 3
+ENDFIELD
+
+#========== using STRFILLIN
+TEXT "Designer Name"
+FLOC 2 2
+ENDTEXT
+
+FIELD pcb_username
+FLOC 15 2
+STRFILLIN 15 20
+ENDFIELD
+
+#========== using STRFILLIN
+TEXT "Film name"
+FLOC 2 5
+ENDTEXT
+
+FIELD film_name
+FLOC 15 5
+STRFILLIN 15 20
+ENDFIELD
+
+TABSET "tab"
+OPTIONS tabsetDispatch
+FLOC 2 8
+FSIZE 76 32
+TAB "Output Data"
+
+#======================
+FIELD report_IPC
+FLOC 2 2
+CHECKLIST "IPC 356 Netlist (.ipc)"
+
+ENDFIELD
+
+FIELD report_route
+FLOC 2 5
+CHECKLIST "Route data (.rou)"
+ENDFIELD
+
+FIELD routeset_button
+FLOC 26 5
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD report_drill
+FLOC 2 8
+CHECKLIST "Drill data (.drl)"
+ENDFIELD
+
+FIELD drillset_button
+FLOC 26 8
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD report_legend
+FLOC 2 11
+CHECKLIST "Create/Update Drill Legend"
+ENDFIELD
+
+FIELD legendset_button
+FLOC 26 11
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD gerber_out
+FLOC 2 14
+CHECKLIST "Create Gerber data"
+ENDFIELD
+
+FIELD artset_button
+FLOC 26 14
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD fabmaster_out
+FLOC 38 2
+CHECKLIST "Create FabMaster data"
+ENDFIELD
+
+FIELD pnp_out
+FLOC 38 5
+CHECKLIST "Create Pick'n'Place data"
+ENDFIELD
+
+
+GROUP "Pick Point"
+GLOC 59 2
+GSIZE 15 7
+ENDGROUP
+
+FIELD Body_center
+FLOC 61 4
+CHECKLIST "Body Center" "ccenter"
+ENDFIELD
+FIELD Symbol_origin
+FLOC 61 6
+CHECKLIST "Symbol Origin" "ccenter"
+ENDFIELD
+FIELD pnp_backanno
+FLOC 38 8
+CHECKLIST "P'n'P to CIS backanno"
+ENDFIELD
+
+FIELD report_pdf
+FLOC 38 11
+CHECKLIST "PDF documentation"
+ENDFIELD
+
+FIELD pdfset_button
+FLOC 62 11
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD zip_create
+FLOC 2 25
+CHECKLIST "Zip output data"
+ENDFIELD
+
+FIELD zip_delete
+FLOC 4 27
+CHECKLIST "Cleanup output directory"
+ENDFIELD
+
+FIELD allon_create
+FLOC 63 27
+CHECKLIST "All ON/OFF"
+ENDFIELD
+
+ENDTAB
+
+TAB "Gerber Setup"
+
+FIELD art_button
+FLOC 65 2
+MENUBUTTON "Setup" 5 2
+ENDFIELD
+
+FIELD report_gerbers
+FLOC 2 2
+CHECKLIST "Etch layers"
+ENDFIELD
+
+FIELD report_silk_gerbers
+FLOC 4 4
+CHECKLIST "Silkscreen"
+ENDFIELD
+
+FIELD report_drill_gerbers
+FLOC 4 6
+CHECKLIST "Drill legend"
+ENDFIELD
+
+FIELD report_soldermask
+FLOC 4 8
+CHECKLIST "Soldermask"
+ENDFIELD
+
+FIELD report_pastemask
+FLOC 4 10
+CHECKLIST "Pastemask"
+ENDFIELD
+
+FIELD report_assembly
+FLOC 4 12
+CHECKLIST "Assembly"
+ENDFIELD
+
+FIELD report_outline
+FLOC 4 14
+CHECKLIST "Board outline"
+ENDFIELD
+
+FIELD report_cutout
+FLOC 4 16
+CHECKLIST "Cutout data"
+ENDFIELD
+
+FIELD report_masterdrawing
+FLOC 4 18
+CHECKLIST "Masterdrawing"
+ENDFIELD
+
+FIELD allon
+FLOC 63 27
+CHECKLIST "All ON/OFF"
+ENDFIELD
+
+TEXT "Film ext.:"
+TLOC 2 25
+ENDTEXT
+
+FIELD film_ext
+FLOC 12 25
+STRFILLIN 4 4
+ENDFIELD
+
+TEXT "Undef Line Width:"
+TLOC 2 27
+ENDTEXT
+
+FIELD undef_lw
+FLOC 18 27
+REALFILLIN 4 4
+MIN 0
+ENDFIELD
+
+ENDTAB
+
+TAB "Readme file"
+
+TEXT "Select data for Stackup specifikation in readme file. All data are taken from cross-section!"
+TLOC 2 1
+ENDTEXT
+
+FIELD lfunction
+FLOC 4 4
+CHECKLIST "Layer function"
+ENDFIELD
+
+FIELD lmaterial
+FLOC 4 6
+CHECKLIST "Layer material"
+ENDFIELD
+
+FIELD ltangent
+FLOC 4 8
+CHECKLIST "Loss tangent"
+ENDFIELD
+
+FIELD pcb_min_data
+FLOC 2 11
+CHECKLIST "Report min line width"
+ENDFIELD
+
+FIELD readme_nodate
+FLOC 38 4
+CHECKLIST "No date in readme filename"
+ENDFIELD
+
+FIELD dont_show_readme
+FLOC 38 6
+CHECKLIST "Don't show readme"
+ENDFIELD
+
+FIELD read_print_spec
+FLOC 2 16
+CHECKLIST "Add text to readme from:"
+ENDFIELD
+
+TEXT "Drawing Format:"
+FLOC 3 18
+ENDTEXT
+FIELD specttextlayer
+FLOC 18 18
+STRFILLIN 32 32
+POP "STRING"
+ENDFIELD
+
+ENDTAB
+
+ENDTABSET
+
+
+GROUP "Status ...."
+GLOC 2 40
+GSIZE 77 7
+ENDGROUP
+
+TEXT "DRC Status: "
+TLOC 4 42
+FGROUP "Status ...."
+ENDTEXT
+
+
+TEXT "drc_count" drcinfo
+TLOC  15 42
+FSIZE 25 2
+FGROUP "Status ...."
+ENDFIELD
+
+FIELD Drc_button
+FLOC 33 42
+MENUBUTTON "DRC Update" 7 3
+ENDFIELD
+
+TEXT "Design Units is: "
+TLOC 44 42
+FGROUP "Information ...."
+ENDTEXT
+
+
+TEXT "dunits" dunitsinfo
+TLOC  66 42
+FGROUP "Information ...."
+ENDFIELD
+
+TEXT "Shape Status: "
+TLOC 4 44
+FGROUP "Status ...."
+ENDTEXT
+
+
+TEXT "shape_count" shapeinfo
+TLOC  15 44
+FSIZE 10 2
+FGROUP "Status ...."
+ENDFIELD
+
+FIELD Shape_button
+FLOC 33 44
+MENUBUTTON "Shape Update" 7 3
+ENDFIELD
+
+
+TEXT "" shapeinfo2
+TLOC  46 44
+FSIZE 20 2
+FGROUP "Status ...."
+ENDFIELD
+
+
+GROUP "Information ...."
+GLOC 2 47
+GSIZE 77 5
+ENDGROUP
+
+TEXT "No responsibility taken for output generated using this utility - Always check your output!"
+TLOC 4 49
+FGROUP "Information ...."
+ENDTEXT
+
+FIELD Help_button
+FLOC 69 49
+MENUBUTTON "Help" 7 3
+ENDFIELD
+
+
+GROUP "Path Settings ...."
+GLOC 2 52
+GSIZE 77 11
+ENDGROUP
+
+TEXT "-- Artwork and NC Drill settings are determined by your nc_param.txt and art_param.txt!"
+TLOC 4 54
+FGROUP "Path Settings ...."
+ENDTEXT
+
+TEXT "-- Check files inside your artpath and ncdpath. -> artpath in use:"
+TLOC 4 56
+FGROUP "Path Settings ...."
+ENDTEXT
+
+
+TEXT "art_path" artinfo
+TLOC  47 56
+FSIZE 100 2
+FGROUP "Path Settings ...."
+ENDFIELD
+
+TEXT "Output Data directory: "
+TLOC 4 58
+FGROUP "Path Settings ...."
+ENDTEXT
+
+
+TEXT "ads_path" adsinfo
+TLOC  22 58
+FSIZE 100 2
+FGROUP "Path Settings ...."
+ENDFIELD
+
+FIELD Open_outdir
+FLOC 70 58
+MENUBUTTON "Open dir" 8 3
+ENDFIELD
+
+TEXT "Settings are read from: "
+TLOC 4 60
+FGROUP "Path Settings ...."
+ENDTEXT
+
+
+TEXT "set_file" settingsinfo
+TLOC  22 60
+FSIZE 100 2
+FGROUP "Path Settings ...."
+ENDFIELD
+
+FIELD Save_button
+FLOC 66 54
+MENUBUTTON "Save Settings" 7 3
+ENDFIELD
+
+#======================
+ENDTILE
+
+ENDFORM
