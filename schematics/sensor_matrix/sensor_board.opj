@@ -251,17 +251,28 @@
       (Path "Logs")
       (Select "Design Resources"
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
-         "matrix" "PAGE1"))
+         "Design Cache" "TitleBlock0"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 553"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 798"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 571")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
+        (Scroll "-274 0")
+        (Zoom "94")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 0 0 5 1674 24 816")
         (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1"))
@@ -272,7 +283,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 571")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
         (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col1"))
@@ -283,15 +294,10 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 571")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
         (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col1/R-D1"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1284 24 571")
-        (Scroll "-44 0")
-        (Zoom "100")
-        (Occurrence "/m1/col1/R-D2"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "LDR-D-Unit")
