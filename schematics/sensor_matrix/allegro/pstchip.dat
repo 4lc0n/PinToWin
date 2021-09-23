@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 09:49:15}
+{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 15:14:49}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -136,6 +136,114 @@ primitive 'R_SMR0805_1K';
     PART_NAME='R';
     JEDEC_TYPE='SMR0805';
     VALUE='1k';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW0';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW0';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_COL0';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='COL0';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW1';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW1';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW2';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW2';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW3';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW3';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW4';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW4';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW5';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW5';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW6';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW6';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTCOUP_ROW7';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='TESTCOUP';
+    VALUE='ROW7';
   end_body;
 end_primitive;
 primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';

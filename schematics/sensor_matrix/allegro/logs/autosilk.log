@@ -1,0 +1,1646 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : sensor_board_routing.brd                      )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Thu Sep 23 12:20:18 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for both sides of the board.
+
+Copying all elements.
+
+Element to Pad clearance is 2.0000
+Max Text displacement is 2.5400
+Min Line Length is 10.0000
+Allowing 0 and 90 degree text rotations.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : Silkscreen
+ Component Value      : Silkscreen
+ Device Type          : Silkscreen
+ Package Geometry     : Silkscreen
+ Reference Designator : Silkscreen
+ Tolerance            : None
+ User Part Number     : Silkscreen
+
+
+     ----- Top Silkscreen -----
+
+Text string 'R96' is not at a suitable location
+(location: -43.0000, 27.5000)
+Text string 'R94' is not at a suitable location
+(location: -37.0000, 27.5000)
+Text string 'R92' is not at a suitable location
+(location: -31.0000, 27.5000)
+Text string 'R90' is not at a suitable location
+(location: -25.0000, 27.5000)
+Text string 'R1' is not at a suitable location
+(location: 27.1877, 25.9586)
+Text string 'R88' is not at a suitable location
+(location: 29.9018, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -60.6350)
+Text string 'R77' is not at a suitable location
+(location: 29.9018, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -50.6350)
+Text string 'R66' is not at a suitable location
+(location: 29.9018, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -40.6350)
+Text string 'R55' is not at a suitable location
+(location: 29.9018, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -30.6350)
+Text string 'R44' is not at a suitable location
+(location: 29.9018, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -20.6350)
+Text string 'R33' is not at a suitable location
+(location: 29.9018, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -10.6350)
+Text string 'R22' is not at a suitable location
+(location: 29.9018, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, -0.6350)
+Text string 'R11' is not at a suitable location
+(location: 29.9018, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 29.9018, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: 29.9018, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: 29.9018, 9.3650)
+Text string 'R87' is not at a suitable location
+(location: 19.9018, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -60.6350)
+Text string 'R76' is not at a suitable location
+(location: 19.9018, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -50.6350)
+Text string 'R65' is not at a suitable location
+(location: 19.9018, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -40.6350)
+Text string 'R54' is not at a suitable location
+(location: 19.9018, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -30.6350)
+Text string 'R43' is not at a suitable location
+(location: 19.9018, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -20.6350)
+Text string 'R32' is not at a suitable location
+(location: 19.9018, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -10.6350)
+Text string 'R21' is not at a suitable location
+(location: 19.9018, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, -0.6350)
+Text string 'R10' is not at a suitable location
+(location: 19.9018, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 19.9018, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: 19.9018, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: 19.9018, 9.3650)
+Text string 'R86' is not at a suitable location
+(location: 9.9018, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -60.6350)
+Text string 'R75' is not at a suitable location
+(location: 9.9018, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -50.6350)
+Text string 'R64' is not at a suitable location
+(location: 9.9018, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -40.6350)
+Text string 'R53' is not at a suitable location
+(location: 9.9018, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -30.6350)
+Text string 'R42' is not at a suitable location
+(location: 9.9018, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -20.6350)
+Text string 'R31' is not at a suitable location
+(location: 9.9018, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -10.6350)
+Text string 'R20' is not at a suitable location
+(location: 9.9018, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, -0.6350)
+Text string 'R9' is not at a suitable location
+(location: 9.9018, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 9.9018, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: 9.9018, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: 9.9018, 9.3650)
+Text string 'R85' is not at a suitable location
+(location: -0.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -60.6350)
+Text string 'R74' is not at a suitable location
+(location: -0.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -50.6350)
+Text string 'R63' is not at a suitable location
+(location: -0.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -40.6350)
+Text string 'R52' is not at a suitable location
+(location: -0.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -30.6350)
+Text string 'R41' is not at a suitable location
+(location: -0.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -20.6350)
+Text string 'R30' is not at a suitable location
+(location: -0.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -10.6350)
+Text string 'R19' is not at a suitable location
+(location: -0.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, -0.6350)
+Text string 'R8' is not at a suitable location
+(location: -0.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -0.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -0.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -0.0982, 9.3650)
+Text string 'R84' is not at a suitable location
+(location: -10.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -60.6350)
+Text string 'R73' is not at a suitable location
+(location: -10.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -50.6350)
+Text string 'R62' is not at a suitable location
+(location: -10.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -40.6350)
+Text string 'R51' is not at a suitable location
+(location: -10.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -30.6350)
+Text string 'R40' is not at a suitable location
+(location: -10.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -20.6350)
+Text string 'R29' is not at a suitable location
+(location: -10.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -10.6350)
+Text string 'R18' is not at a suitable location
+(location: -10.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, -0.6350)
+Text string 'R7' is not at a suitable location
+(location: -10.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -10.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -10.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -10.0982, 9.3650)
+Text string 'R83' is not at a suitable location
+(location: -20.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -60.6350)
+Text string 'R72' is not at a suitable location
+(location: -20.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -50.6350)
+Text string 'R61' is not at a suitable location
+(location: -20.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -40.6350)
+Text string 'R50' is not at a suitable location
+(location: -20.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -30.6350)
+Text string 'R39' is not at a suitable location
+(location: -20.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -20.6350)
+Text string 'R28' is not at a suitable location
+(location: -20.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -10.6350)
+Text string 'R17' is not at a suitable location
+(location: -20.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, -0.6350)
+Text string 'R6' is not at a suitable location
+(location: -20.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -20.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -20.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -20.0982, 9.3650)
+Text string 'R82' is not at a suitable location
+(location: -30.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -60.6350)
+Text string 'R71' is not at a suitable location
+(location: -30.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -50.6350)
+Text string 'R60' is not at a suitable location
+(location: -30.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -40.6350)
+Text string 'R49' is not at a suitable location
+(location: -30.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -30.6350)
+Text string 'R38' is not at a suitable location
+(location: -30.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -20.6350)
+Text string 'R27' is not at a suitable location
+(location: -30.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -10.6350)
+Text string 'R16' is not at a suitable location
+(location: -30.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, -0.6350)
+Text string 'R5' is not at a suitable location
+(location: -30.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -30.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -30.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -30.0982, 9.3650)
+Text string 'R81' is not at a suitable location
+(location: -40.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -60.6350)
+Text string 'R70' is not at a suitable location
+(location: -40.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -50.6350)
+Text string 'R59' is not at a suitable location
+(location: -40.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -40.6350)
+Text string 'R48' is not at a suitable location
+(location: -40.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -30.6350)
+Text string 'R37' is not at a suitable location
+(location: -40.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -20.6350)
+Text string 'R26' is not at a suitable location
+(location: -40.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -10.6350)
+Text string 'R15' is not at a suitable location
+(location: -40.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, -0.6350)
+Text string 'R4' is not at a suitable location
+(location: -40.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -40.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -40.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -40.0982, 9.3650)
+Text string 'R80' is not at a suitable location
+(location: -50.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -60.6350)
+Text string 'R69' is not at a suitable location
+(location: -50.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -50.6350)
+Text string 'R58' is not at a suitable location
+(location: -50.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -40.6350)
+Text string 'R47' is not at a suitable location
+(location: -50.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -30.6350)
+Text string 'R36' is not at a suitable location
+(location: -50.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -20.6350)
+Text string 'R25' is not at a suitable location
+(location: -50.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -10.6350)
+Text string 'R14' is not at a suitable location
+(location: -50.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, -0.6350)
+Text string 'R3' is not at a suitable location
+(location: -50.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -50.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -50.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -50.0982, 9.3650)
+Text string 'R79' is not at a suitable location
+(location: -60.0982, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -60.6350)
+Text string 'R68' is not at a suitable location
+(location: -60.0982, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -50.6350)
+Text string 'R57' is not at a suitable location
+(location: -60.0982, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -40.6350)
+Text string 'R46' is not at a suitable location
+(location: -60.0982, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -30.6350)
+Text string 'R35' is not at a suitable location
+(location: -60.0982, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -20.6350)
+Text string 'R24' is not at a suitable location
+(location: -60.0982, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -10.6350)
+Text string 'R13' is not at a suitable location
+(location: -60.0982, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, -0.6350)
+Text string 'R2' is not at a suitable location
+(location: -60.0982, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: -60.0982, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: -60.0982, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: -60.0982, 9.3650)
+Text string 'R89' is not at a suitable location
+(location: 39.9018, -60.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -60.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -60.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -60.6350)
+Text string 'R78' is not at a suitable location
+(location: 39.9018, -50.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -50.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -50.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -50.6350)
+Text string 'R67' is not at a suitable location
+(location: 39.9018, -40.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -40.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -40.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -40.6350)
+Text string 'R56' is not at a suitable location
+(location: 39.9018, -30.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -30.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -30.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -30.6350)
+Text string 'R45' is not at a suitable location
+(location: 39.9018, -20.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -20.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -20.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -20.6350)
+Text string 'R34' is not at a suitable location
+(location: 39.9018, -10.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -10.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -10.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -10.6350)
+Text string 'R23' is not at a suitable location
+(location: 39.9018, -0.6350)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, -0.6350)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, -0.6350)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, -0.6350)
+Text string 'R12' is not at a suitable location
+(location: 39.9018, 9.3650)
+Text string 'LDR_LDR1_NTE_5K-20K' is not at a suitable location
+(location: 39.9018, 9.3650)
+Text string 'PN' is not at a suitable location
+(location: 39.9018, 9.3650)
+Text string '5k-20k' is not at a suitable location
+(location: 39.9018, 9.3650)
+
+     ----- Bottom Silkscreen -----
+
+Line segment from (-12.5000, 37.0000) --> (-12.5000, 36.9889) is too small.
+Line segment from (-12.5000, 17.0111) --> (-12.5000, 17.0000) is too small.
+Line segment from (-12.5000, 17.0000) --> (-12.5193, 17.0000) is too small.
+Line segment from (-63.4807, 17.0000) --> (-63.5000, 17.0000) is too small.
+Line segment from (-63.5000, 17.0000) --> (-63.5000, 17.0111) is too small.
+Line segment from (-12.5193, 37.0000) --> (-12.5000, 37.0000) is too small.
+Line segment from (42.7800, 15.9600) --> (42.7800, 18.5548) is too small.
+Line segment from (42.7800, 23.5252) --> (42.7800, 26.1200) is too small.
+Line segment from (27.5400, 26.1200) --> (27.5400, 25.6149) is too small.
+Line segment from (27.5400, 16.8739) --> (27.5400, 15.9600) is too small.
+Text string 'D1' is not at a suitable location
+(location: -59.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -62.0560, 8.6350)
+Text string 'D10' is not at a suitable location
+(location: 30.6000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, 8.6350)
+Text string '*' is not at a suitable location
+(location: 27.9440, 8.6350)
+Text string 'D11' is not at a suitable location
+(location: 40.6000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, 8.6350)
+Text string '*' is not at a suitable location
+(location: 37.9440, 8.6350)
+Text string 'D12' is not at a suitable location
+(location: -59.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -1.3650)
+Text string 'D13' is not at a suitable location
+(location: -49.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -1.3650)
+Text string 'D14' is not at a suitable location
+(location: -39.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -1.3650)
+Text string 'D15' is not at a suitable location
+(location: -29.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -1.3650)
+Text string 'D16' is not at a suitable location
+(location: -19.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -1.3650)
+Text string 'D17' is not at a suitable location
+(location: -9.4000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -1.3650)
+Text string 'D18' is not at a suitable location
+(location: 0.6000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -1.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -1.3650)
+Text string 'D19' is not at a suitable location
+(location: 10.6000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -1.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -1.3650)
+Text string 'D2' is not at a suitable location
+(location: -49.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -52.0560, 8.6350)
+Text string 'D20' is not at a suitable location
+(location: 20.6000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -1.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -1.3650)
+Text string 'D21' is not at a suitable location
+(location: 30.6000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -1.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -1.3650)
+Text string 'D22' is not at a suitable location
+(location: 40.6000, -1.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -1.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -1.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -1.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -1.3650)
+Text string 'D23' is not at a suitable location
+(location: -59.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -11.3650)
+Text string 'D24' is not at a suitable location
+(location: -49.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -11.3650)
+Text string 'D25' is not at a suitable location
+(location: -39.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -11.3650)
+Text string 'D26' is not at a suitable location
+(location: -29.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -11.3650)
+Text string 'D27' is not at a suitable location
+(location: -19.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -11.3650)
+Text string 'D28' is not at a suitable location
+(location: -9.4000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -11.3650)
+Text string 'D29' is not at a suitable location
+(location: 0.6000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -11.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -11.3650)
+Text string 'D3' is not at a suitable location
+(location: -39.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -42.0560, 8.6350)
+Text string 'D30' is not at a suitable location
+(location: 10.6000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -11.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -11.3650)
+Text string 'D31' is not at a suitable location
+(location: 20.6000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -11.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -11.3650)
+Text string 'D32' is not at a suitable location
+(location: 30.6000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -11.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -11.3650)
+Text string 'D33' is not at a suitable location
+(location: 40.6000, -11.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -11.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -11.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -11.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -11.3650)
+Text string 'D34' is not at a suitable location
+(location: -59.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -21.3650)
+Text string 'D35' is not at a suitable location
+(location: -49.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -21.3650)
+Text string 'D36' is not at a suitable location
+(location: -39.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -21.3650)
+Text string 'D37' is not at a suitable location
+(location: -29.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -21.3650)
+Text string 'D38' is not at a suitable location
+(location: -19.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -21.3650)
+Text string 'D39' is not at a suitable location
+(location: -9.4000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -21.3650)
+Text string 'D4' is not at a suitable location
+(location: -29.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -32.0560, 8.6350)
+Text string 'D40' is not at a suitable location
+(location: 0.6000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -21.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -21.3650)
+Text string 'D41' is not at a suitable location
+(location: 10.6000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -21.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -21.3650)
+Text string 'D42' is not at a suitable location
+(location: 20.6000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -21.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -21.3650)
+Text string 'D43' is not at a suitable location
+(location: 30.6000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -21.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -21.3650)
+Text string 'D44' is not at a suitable location
+(location: 40.6000, -21.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -21.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -21.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -21.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -21.3650)
+Text string 'D45' is not at a suitable location
+(location: -59.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -31.3650)
+Text string 'D46' is not at a suitable location
+(location: -49.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -31.3650)
+Text string 'D47' is not at a suitable location
+(location: -39.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -31.3650)
+Text string 'D48' is not at a suitable location
+(location: -29.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -31.3650)
+Text string 'D49' is not at a suitable location
+(location: -19.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -31.3650)
+Text string 'D5' is not at a suitable location
+(location: -19.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -22.0560, 8.6350)
+Text string 'D50' is not at a suitable location
+(location: -9.4000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -31.3650)
+Text string 'D51' is not at a suitable location
+(location: 0.6000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -31.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -31.3650)
+Text string 'D52' is not at a suitable location
+(location: 10.6000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -31.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -31.3650)
+Text string 'D53' is not at a suitable location
+(location: 20.6000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -31.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -31.3650)
+Text string 'D54' is not at a suitable location
+(location: 30.6000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -31.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -31.3650)
+Text string 'D55' is not at a suitable location
+(location: 40.6000, -31.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -31.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -31.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -31.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -31.3650)
+Text string 'D56' is not at a suitable location
+(location: -59.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -41.3650)
+Text string 'D57' is not at a suitable location
+(location: -49.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -41.3650)
+Text string 'D58' is not at a suitable location
+(location: -39.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -41.3650)
+Text string 'D59' is not at a suitable location
+(location: -29.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -41.3650)
+Text string 'D6' is not at a suitable location
+(location: -9.4000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -12.0560, 8.6350)
+Text string 'D60' is not at a suitable location
+(location: -19.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -41.3650)
+Text string 'D61' is not at a suitable location
+(location: -9.4000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -41.3650)
+Text string 'D62' is not at a suitable location
+(location: 0.6000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -41.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -41.3650)
+Text string 'D63' is not at a suitable location
+(location: 10.6000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -41.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -41.3650)
+Text string 'D64' is not at a suitable location
+(location: 20.6000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -41.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -41.3650)
+Text string 'D65' is not at a suitable location
+(location: 30.6000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -41.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -41.3650)
+Text string 'D66' is not at a suitable location
+(location: 40.6000, -41.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -41.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -41.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -41.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -41.3650)
+Text string 'D67' is not at a suitable location
+(location: -59.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -51.3650)
+Text string 'D68' is not at a suitable location
+(location: -49.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -51.3650)
+Text string 'D69' is not at a suitable location
+(location: -39.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -51.3650)
+Text string 'D7' is not at a suitable location
+(location: 0.6000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, 8.6350)
+Text string '*' is not at a suitable location
+(location: -2.0560, 8.6350)
+Text string 'D70' is not at a suitable location
+(location: -29.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -51.3650)
+Text string 'D71' is not at a suitable location
+(location: -19.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -51.3650)
+Text string 'D72' is not at a suitable location
+(location: -9.4000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -51.3650)
+Text string 'D73' is not at a suitable location
+(location: 0.6000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -51.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -51.3650)
+Text string 'D74' is not at a suitable location
+(location: 10.6000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -51.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -51.3650)
+Text string 'D75' is not at a suitable location
+(location: 20.6000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -51.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -51.3650)
+Text string 'D76' is not at a suitable location
+(location: 30.6000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -51.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -51.3650)
+Text string 'D77' is not at a suitable location
+(location: 40.6000, -51.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -51.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -51.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -51.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -51.3650)
+Text string 'D78' is not at a suitable location
+(location: -59.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -59.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -59.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -59.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -62.0560, -61.3650)
+Text string 'D79' is not at a suitable location
+(location: -49.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -49.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -49.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -49.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -52.0560, -61.3650)
+Text string 'D8' is not at a suitable location
+(location: 10.6000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, 8.6350)
+Text string '*' is not at a suitable location
+(location: 7.9440, 8.6350)
+Text string 'D80' is not at a suitable location
+(location: -39.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -39.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -39.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -39.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -42.0560, -61.3650)
+Text string 'D81' is not at a suitable location
+(location: -29.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -29.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -29.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -29.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -32.0560, -61.3650)
+Text string 'D82' is not at a suitable location
+(location: -19.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -19.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -19.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -19.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -22.0560, -61.3650)
+Text string 'D83' is not at a suitable location
+(location: -9.4000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: -9.4000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: -9.4000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: -9.4000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -12.0560, -61.3650)
+Text string 'D84' is not at a suitable location
+(location: 0.6000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 0.6000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: 0.6000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 0.6000, -61.3650)
+Text string '*' is not at a suitable location
+(location: -2.0560, -61.3650)
+Text string 'D85' is not at a suitable location
+(location: 10.6000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 10.6000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: 10.6000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 10.6000, -61.3650)
+Text string '*' is not at a suitable location
+(location: 7.9440, -61.3650)
+Text string 'D86' is not at a suitable location
+(location: 20.6000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, -61.3650)
+Text string '*' is not at a suitable location
+(location: 17.9440, -61.3650)
+Text string 'D87' is not at a suitable location
+(location: 30.6000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 30.6000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: 30.6000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 30.6000, -61.3650)
+Text string '*' is not at a suitable location
+(location: 27.9440, -61.3650)
+Text string 'D88' is not at a suitable location
+(location: 40.6000, -61.3650)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 40.6000, -61.3650)
+Text string 'PN' is not at a suitable location
+(location: 40.6000, -61.3650)
+Text string 'D1N4148' is not at a suitable location
+(location: 40.6000, -61.3650)
+Text string '*' is not at a suitable location
+(location: 37.9440, -61.3650)
+Text string 'D9' is not at a suitable location
+(location: 20.6000, 8.6350)
+Text string '1N4148_SOD123_DIO_D1N4148' is not at a suitable location
+(location: 20.6000, 8.6350)
+Text string 'PN' is not at a suitable location
+(location: 20.6000, 8.6350)
+Text string 'D1N4148' is not at a suitable location
+(location: 20.6000, 8.6350)
+Text string '*' is not at a suitable location
+(location: 17.9440, 8.6350)
+Total segments less than 10.0000, not copied: 10
+
+
+Total Failures: 797
+
+Log End
+

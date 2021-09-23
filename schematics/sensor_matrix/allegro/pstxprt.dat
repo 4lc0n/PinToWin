@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 09:49:15 }
+{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 15:14:49 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='SENSOR_BOARD';
@@ -1894,6 +1894,196 @@ SECTION_NUMBER 1
  '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS5758@MY_LIBRARY.R.NORMAL(CHIPS)':
  C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins5758@my_library.\r.normal\(chips)',
  P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins5758@my_library.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP1 'TEST POINT_TESTCOUP_ROW0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17116@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17116@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17116@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP10 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17810@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17810@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17810@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP11 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17722@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17722@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17722@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP12 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17832@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17832@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17832@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP13 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17744@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17744@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17744@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP14 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17854@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17854@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17854@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP15 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17766@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17766@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17766@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP16 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17876@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17876@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17876@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP17 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17788@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17788@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17788@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP18 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17898@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17898@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17898@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP19 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17920@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17920@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17920@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP2 'TEST POINT_TESTCOUP_ROW1':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17138@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17138@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17138@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP3 'TEST POINT_TESTCOUP_ROW2':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17270@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17270@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17270@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP4 'TEST POINT_TESTCOUP_ROW3':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17160@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17160@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17160@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP5 'TEST POINT_TESTCOUP_ROW4':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17182@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17182@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17182@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP6 'TEST POINT_TESTCOUP_ROW5':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17204@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17204@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17204@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP7 'TEST POINT_TESTCOUP_ROW6':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17226@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17226@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17226@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP8 'TEST POINT_TESTCOUP_ROW7':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17248@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17248@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17248@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP9 'TEST POINT_TESTCOUP_COL0':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17694@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17694@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17694@connector.\test point.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

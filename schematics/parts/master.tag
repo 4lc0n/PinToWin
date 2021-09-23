@@ -1,1 +1,1 @@
-blackpill_footprint.dra
+LDR1_NTE.dra

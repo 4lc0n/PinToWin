@@ -1,4 +1,4 @@
-Date and Time : 09/22/21 14:49:53
+Date and Time : 09/23/21 15:14:33
 
 --------------------------------------------------
 Checking Schematic:  SCHEMATIC1
@@ -100,7 +100,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4 Column of LDR Sensor Matrix
+Checking Schematic: m1/col3 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -109,7 +109,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D10 LDR-D-Unit
+Checking Schematic: m1/col3/R-D10 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -118,7 +118,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D14 LDR-D-Unit
+Checking Schematic: m1/col3/R-D14 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -127,7 +127,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D11 LDR-D-Unit
+Checking Schematic: m1/col3/R-D11 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -136,7 +136,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D15 LDR-D-Unit
+Checking Schematic: m1/col3/R-D15 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -145,7 +145,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D9 LDR-D-Unit
+Checking Schematic: m1/col3/R-D9 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -154,7 +154,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D12 LDR-D-Unit
+Checking Schematic: m1/col3/R-D12 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -163,7 +163,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D16 LDR-D-Unit
+Checking Schematic: m1/col3/R-D16 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -172,7 +172,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D13 LDR-D-Unit
+Checking Schematic: m1/col3/R-D13 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -181,7 +181,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6 Column of LDR Sensor Matrix
+Checking Schematic: m1/col5 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -190,7 +190,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D18 LDR-D-Unit
+Checking Schematic: m1/col5/R-D18 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -199,7 +199,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D22 LDR-D-Unit
+Checking Schematic: m1/col5/R-D22 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -208,7 +208,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D19 LDR-D-Unit
+Checking Schematic: m1/col5/R-D19 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -217,7 +217,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D23 LDR-D-Unit
+Checking Schematic: m1/col5/R-D23 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -226,7 +226,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D17 LDR-D-Unit
+Checking Schematic: m1/col5/R-D17 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -235,7 +235,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D20 LDR-D-Unit
+Checking Schematic: m1/col5/R-D20 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -244,7 +244,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D24 LDR-D-Unit
+Checking Schematic: m1/col5/R-D24 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -253,7 +253,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D21 LDR-D-Unit
+Checking Schematic: m1/col5/R-D21 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -262,7 +262,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8 Column of LDR Sensor Matrix
+Checking Schematic: m1/col7 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -271,7 +271,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D26 LDR-D-Unit
+Checking Schematic: m1/col7/R-D26 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -280,7 +280,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D30 LDR-D-Unit
+Checking Schematic: m1/col7/R-D30 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -289,7 +289,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D27 LDR-D-Unit
+Checking Schematic: m1/col7/R-D27 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -298,7 +298,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D31 LDR-D-Unit
+Checking Schematic: m1/col7/R-D31 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -307,7 +307,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D25 LDR-D-Unit
+Checking Schematic: m1/col7/R-D25 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -316,7 +316,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D28 LDR-D-Unit
+Checking Schematic: m1/col7/R-D28 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -325,7 +325,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D32 LDR-D-Unit
+Checking Schematic: m1/col7/R-D32 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -334,7 +334,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D29 LDR-D-Unit
+Checking Schematic: m1/col7/R-D29 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -343,7 +343,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10 Column of LDR Sensor Matrix
+Checking Schematic: m1/col9 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -352,7 +352,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D34 LDR-D-Unit
+Checking Schematic: m1/col9/R-D34 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -361,7 +361,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D38 LDR-D-Unit
+Checking Schematic: m1/col9/R-D38 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -370,7 +370,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D35 LDR-D-Unit
+Checking Schematic: m1/col9/R-D35 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -379,7 +379,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D39 LDR-D-Unit
+Checking Schematic: m1/col9/R-D39 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -388,7 +388,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D33 LDR-D-Unit
+Checking Schematic: m1/col9/R-D33 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -397,7 +397,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D36 LDR-D-Unit
+Checking Schematic: m1/col9/R-D36 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -406,7 +406,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D40 LDR-D-Unit
+Checking Schematic: m1/col9/R-D40 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -415,7 +415,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D37 LDR-D-Unit
+Checking Schematic: m1/col9/R-D37 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -505,7 +505,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5 Column of LDR Sensor Matrix
+Checking Schematic: m1/col4 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -514,7 +514,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D50 LDR-D-Unit
+Checking Schematic: m1/col4/R-D50 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -523,7 +523,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D54 LDR-D-Unit
+Checking Schematic: m1/col4/R-D54 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -532,7 +532,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D51 LDR-D-Unit
+Checking Schematic: m1/col4/R-D51 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -541,7 +541,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D55 LDR-D-Unit
+Checking Schematic: m1/col4/R-D55 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -550,7 +550,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D49 LDR-D-Unit
+Checking Schematic: m1/col4/R-D49 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -559,7 +559,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D52 LDR-D-Unit
+Checking Schematic: m1/col4/R-D52 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -568,7 +568,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D56 LDR-D-Unit
+Checking Schematic: m1/col4/R-D56 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -577,7 +577,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D53 LDR-D-Unit
+Checking Schematic: m1/col4/R-D53 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -586,7 +586,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7 Column of LDR Sensor Matrix
+Checking Schematic: m1/col6 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -595,7 +595,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D58 LDR-D-Unit
+Checking Schematic: m1/col6/R-D58 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -604,7 +604,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D62 LDR-D-Unit
+Checking Schematic: m1/col6/R-D62 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -613,7 +613,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D59 LDR-D-Unit
+Checking Schematic: m1/col6/R-D59 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -622,7 +622,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D63 LDR-D-Unit
+Checking Schematic: m1/col6/R-D63 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -631,7 +631,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D57 LDR-D-Unit
+Checking Schematic: m1/col6/R-D57 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -640,7 +640,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D60 LDR-D-Unit
+Checking Schematic: m1/col6/R-D60 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -649,7 +649,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D64 LDR-D-Unit
+Checking Schematic: m1/col6/R-D64 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -658,7 +658,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D61 LDR-D-Unit
+Checking Schematic: m1/col6/R-D61 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -667,7 +667,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9 Column of LDR Sensor Matrix
+Checking Schematic: m1/col8 Column of LDR Sensor Matrix
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -676,7 +676,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D66 LDR-D-Unit
+Checking Schematic: m1/col8/R-D66 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -685,7 +685,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D70 LDR-D-Unit
+Checking Schematic: m1/col8/R-D70 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -694,7 +694,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D67 LDR-D-Unit
+Checking Schematic: m1/col8/R-D67 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -703,7 +703,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D71 LDR-D-Unit
+Checking Schematic: m1/col8/R-D71 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -712,7 +712,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D65 LDR-D-Unit
+Checking Schematic: m1/col8/R-D65 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -721,7 +721,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D68 LDR-D-Unit
+Checking Schematic: m1/col8/R-D68 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -730,7 +730,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D72 LDR-D-Unit
+Checking Schematic: m1/col8/R-D72 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -739,7 +739,88 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D69 LDR-D-Unit
+Checking Schematic: m1/col8/R-D69 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10 Column of LDR Sensor Matrix
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D74 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D78 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D75 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D79 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D73 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D76 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D80 LDR-D-Unit
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D77 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -757,7 +838,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D74 LDR-D-Unit
+Checking Schematic: m1/col11/R-D82 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -766,7 +847,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D78 LDR-D-Unit
+Checking Schematic: m1/col11/R-D86 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -775,7 +856,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D75 LDR-D-Unit
+Checking Schematic: m1/col11/R-D83 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -784,7 +865,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D79 LDR-D-Unit
+Checking Schematic: m1/col11/R-D87 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -793,7 +874,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D73 LDR-D-Unit
+Checking Schematic: m1/col11/R-D81 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -802,7 +883,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D76 LDR-D-Unit
+Checking Schematic: m1/col11/R-D84 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -811,7 +892,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D80 LDR-D-Unit
+Checking Schematic: m1/col11/R-D88 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -820,88 +901,7 @@ Checking For Single Node Nets
 Checking For Unconnected Bus Nets
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D77 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3 Column of LDR Sensor Matrix
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D82 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D86 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D83 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D87 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D81 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D84 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D88 LDR-D-Unit
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D85 LDR-D-Unit
+Checking Schematic: m1/col11/R-D85 LDR-D-Unit
 --------------------------------------------------
 Checking Electrical Rules 
 
@@ -1025,7 +1025,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4 Column of LDR Sensor Matrix
+Checking Schematic: m1/col3 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1035,7 +1035,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D10 LDR-D-Unit
+Checking Schematic: m1/col3/R-D10 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1045,7 +1045,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D14 LDR-D-Unit
+Checking Schematic: m1/col3/R-D14 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1055,7 +1055,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D11 LDR-D-Unit
+Checking Schematic: m1/col3/R-D11 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1065,7 +1065,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D15 LDR-D-Unit
+Checking Schematic: m1/col3/R-D15 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1075,7 +1075,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D9 LDR-D-Unit
+Checking Schematic: m1/col3/R-D9 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1085,7 +1085,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D12 LDR-D-Unit
+Checking Schematic: m1/col3/R-D12 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1095,7 +1095,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D16 LDR-D-Unit
+Checking Schematic: m1/col3/R-D16 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1105,7 +1105,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col4/R-D13 LDR-D-Unit
+Checking Schematic: m1/col3/R-D13 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1115,7 +1115,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6 Column of LDR Sensor Matrix
+Checking Schematic: m1/col5 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1125,7 +1125,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D18 LDR-D-Unit
+Checking Schematic: m1/col5/R-D18 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1135,7 +1135,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D22 LDR-D-Unit
+Checking Schematic: m1/col5/R-D22 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1145,7 +1145,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D19 LDR-D-Unit
+Checking Schematic: m1/col5/R-D19 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1155,7 +1155,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D23 LDR-D-Unit
+Checking Schematic: m1/col5/R-D23 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1165,7 +1165,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D17 LDR-D-Unit
+Checking Schematic: m1/col5/R-D17 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1175,7 +1175,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D20 LDR-D-Unit
+Checking Schematic: m1/col5/R-D20 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1185,7 +1185,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D24 LDR-D-Unit
+Checking Schematic: m1/col5/R-D24 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1195,7 +1195,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col6/R-D21 LDR-D-Unit
+Checking Schematic: m1/col5/R-D21 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1205,7 +1205,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8 Column of LDR Sensor Matrix
+Checking Schematic: m1/col7 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1215,7 +1215,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D26 LDR-D-Unit
+Checking Schematic: m1/col7/R-D26 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1225,7 +1225,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D30 LDR-D-Unit
+Checking Schematic: m1/col7/R-D30 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1235,7 +1235,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D27 LDR-D-Unit
+Checking Schematic: m1/col7/R-D27 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1245,7 +1245,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D31 LDR-D-Unit
+Checking Schematic: m1/col7/R-D31 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1255,7 +1255,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D25 LDR-D-Unit
+Checking Schematic: m1/col7/R-D25 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1265,7 +1265,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D28 LDR-D-Unit
+Checking Schematic: m1/col7/R-D28 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1275,7 +1275,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D32 LDR-D-Unit
+Checking Schematic: m1/col7/R-D32 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1285,7 +1285,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col8/R-D29 LDR-D-Unit
+Checking Schematic: m1/col7/R-D29 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1295,7 +1295,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10 Column of LDR Sensor Matrix
+Checking Schematic: m1/col9 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1305,7 +1305,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D34 LDR-D-Unit
+Checking Schematic: m1/col9/R-D34 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1315,7 +1315,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D38 LDR-D-Unit
+Checking Schematic: m1/col9/R-D38 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1325,7 +1325,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D35 LDR-D-Unit
+Checking Schematic: m1/col9/R-D35 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1335,7 +1335,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D39 LDR-D-Unit
+Checking Schematic: m1/col9/R-D39 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1345,7 +1345,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D33 LDR-D-Unit
+Checking Schematic: m1/col9/R-D33 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1355,7 +1355,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D36 LDR-D-Unit
+Checking Schematic: m1/col9/R-D36 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1365,7 +1365,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D40 LDR-D-Unit
+Checking Schematic: m1/col9/R-D40 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1375,7 +1375,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col10/R-D37 LDR-D-Unit
+Checking Schematic: m1/col9/R-D37 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1475,7 +1475,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5 Column of LDR Sensor Matrix
+Checking Schematic: m1/col4 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1485,7 +1485,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D50 LDR-D-Unit
+Checking Schematic: m1/col4/R-D50 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1495,7 +1495,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D54 LDR-D-Unit
+Checking Schematic: m1/col4/R-D54 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1505,7 +1505,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D51 LDR-D-Unit
+Checking Schematic: m1/col4/R-D51 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1515,7 +1515,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D55 LDR-D-Unit
+Checking Schematic: m1/col4/R-D55 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1525,7 +1525,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D49 LDR-D-Unit
+Checking Schematic: m1/col4/R-D49 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1535,7 +1535,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D52 LDR-D-Unit
+Checking Schematic: m1/col4/R-D52 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1545,7 +1545,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D56 LDR-D-Unit
+Checking Schematic: m1/col4/R-D56 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1555,7 +1555,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col5/R-D53 LDR-D-Unit
+Checking Schematic: m1/col4/R-D53 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1565,7 +1565,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7 Column of LDR Sensor Matrix
+Checking Schematic: m1/col6 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1575,7 +1575,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D58 LDR-D-Unit
+Checking Schematic: m1/col6/R-D58 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1585,7 +1585,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D62 LDR-D-Unit
+Checking Schematic: m1/col6/R-D62 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1595,7 +1595,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D59 LDR-D-Unit
+Checking Schematic: m1/col6/R-D59 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1605,7 +1605,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D63 LDR-D-Unit
+Checking Schematic: m1/col6/R-D63 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1615,7 +1615,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D57 LDR-D-Unit
+Checking Schematic: m1/col6/R-D57 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1625,7 +1625,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D60 LDR-D-Unit
+Checking Schematic: m1/col6/R-D60 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1635,7 +1635,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D64 LDR-D-Unit
+Checking Schematic: m1/col6/R-D64 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1645,7 +1645,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col7/R-D61 LDR-D-Unit
+Checking Schematic: m1/col6/R-D61 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1655,7 +1655,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9 Column of LDR Sensor Matrix
+Checking Schematic: m1/col8 Column of LDR Sensor Matrix
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1665,7 +1665,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D66 LDR-D-Unit
+Checking Schematic: m1/col8/R-D66 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1675,7 +1675,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D70 LDR-D-Unit
+Checking Schematic: m1/col8/R-D70 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1685,7 +1685,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D67 LDR-D-Unit
+Checking Schematic: m1/col8/R-D67 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1695,7 +1695,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D71 LDR-D-Unit
+Checking Schematic: m1/col8/R-D71 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1705,7 +1705,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D65 LDR-D-Unit
+Checking Schematic: m1/col8/R-D65 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1715,7 +1715,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D68 LDR-D-Unit
+Checking Schematic: m1/col8/R-D68 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1725,7 +1725,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D72 LDR-D-Unit
+Checking Schematic: m1/col8/R-D72 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1735,7 +1735,97 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col9/R-D69 LDR-D-Unit
+Checking Schematic: m1/col8/R-D69 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10 Column of LDR Sensor Matrix
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D74 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D78 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D75 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D79 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D73 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D76 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D80 LDR-D-Unit
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+--------------------------------------------------
+Checking Schematic: m1/col10/R-D77 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1755,7 +1845,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D74 LDR-D-Unit
+Checking Schematic: m1/col11/R-D82 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1765,7 +1855,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D78 LDR-D-Unit
+Checking Schematic: m1/col11/R-D86 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1775,7 +1865,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D75 LDR-D-Unit
+Checking Schematic: m1/col11/R-D83 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1785,7 +1875,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D79 LDR-D-Unit
+Checking Schematic: m1/col11/R-D87 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1795,7 +1885,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D73 LDR-D-Unit
+Checking Schematic: m1/col11/R-D81 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1805,7 +1895,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D76 LDR-D-Unit
+Checking Schematic: m1/col11/R-D84 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1815,7 +1905,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D80 LDR-D-Unit
+Checking Schematic: m1/col11/R-D88 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1825,97 +1915,7 @@ Report for Invalid References
 Report for Duplicate References
 
 --------------------------------------------------
-Checking Schematic: m1/col11/R-D77 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3 Column of LDR Sensor Matrix
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D82 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D86 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D83 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D87 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D81 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D84 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D88 LDR-D-Unit
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: m1/col3/R-D85 LDR-D-Unit
+Checking Schematic: m1/col11/R-D85 LDR-D-Unit
 --------------------------------------------------
 
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
@@ -1941,8 +1941,8 @@ Checking Name Property for Hierarchical Instances
 INFO(ORCAP-2211): Check High Speed Properties Syntax
 
 INFO(ORCAP-2212): Check Power Ground Mismatch
-WARNING(ORCAP-1589): Net has two or more aliases that might lead to a short. Ensure nets are not shorted together or nets do not have two or more aliases. This message is displayed because 'Report all net names' is set in Design Rules Check dialog. 3V3  3V3  VCC  
-                    SCHEMATIC1, PAGE1  (106.68, 40.64) 
+WARNING(ORCAP-1589): Net has two or more aliases that might lead to a short. Ensure nets are not shorted together or nets do not have two or more aliases. This message is displayed because 'Report all net names' is set in Design Rules Check dialog. 3V3  VCC  3V3  
+                    SCHEMATIC1, PAGE1  (127.00, 40.64) 
 
 Reporting Unused Refdes in multiple part packages
 Part	                       Quantity	                       Reference
