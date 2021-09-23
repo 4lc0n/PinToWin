@@ -3,9 +3,85 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Thu Sep 23 12:25:59 2021  |
+|                                                    Thu Sep 23 16:32:38 2021  |
 |------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ TEST POINT_TESTCOUP_CUSTOM_COL0
+ TEST POINT_TESTCOUP_CUSTOM_ROW0
+ TEST POINT_TESTCOUP_CUSTOM_ROW1
+ TEST POINT_TESTCOUP_CUSTOM_ROW2
+ TEST POINT_TESTCOUP_CUSTOM_ROW3
+ TEST POINT_TESTCOUP_CUSTOM_ROW4
+ TEST POINT_TESTCOUP_CUSTOM_ROW5
+ TEST POINT_TESTCOUP_CUSTOM_ROW6
+ TEST POINT_TESTCOUP_CUSTOM_ROW7
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
+|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
+|                                                    Thu Sep 23 16:32:38 2021  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ TP1                 TEST POINT_TESTCOUP_CUSTOM_ROW0 -24.000 15.0000 TEST POINT_TESTCOUP_ROW0
+ TP2                 TEST POINT_TESTCOUP_CUSTOM_ROW1 -27.000 15.0000 TEST POINT_TESTCOUP_ROW1
+ TP3                 TEST POINT_TESTCOUP_CUSTOM_ROW2 -30.000 15.0000 TEST POINT_TESTCOUP_ROW2
+ TP4                 TEST POINT_TESTCOUP_CUSTOM_ROW3 -33.000 15.0000 TEST POINT_TESTCOUP_ROW3
+ TP5                 TEST POINT_TESTCOUP_CUSTOM_ROW4 -36.000 15.0000 TEST POINT_TESTCOUP_ROW4
+ TP6                 TEST POINT_TESTCOUP_CUSTOM_ROW5 -39.000 15.0000 TEST POINT_TESTCOUP_ROW5
+ TP7                 TEST POINT_TESTCOUP_CUSTOM_ROW6 -42.000 15.0000 TEST POINT_TESTCOUP_ROW6
+ TP8                 TEST POINT_TESTCOUP_CUSTOM_ROW7 -45.000 15.0000 TEST POINT_TESTCOUP_ROW7
+ TP9                 TEST POINT_TESTCOUP_CUSTOM_COL0 -61.000 15.0000 TEST POINT_TESTCOUP_COL0
+ TP10                TEST POINT_TESTCOUP_CUSTOM_COL0 -8.0000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP11                TEST POINT_TESTCOUP_CUSTOM_COL0 -55.000 15.0000 TEST POINT_TESTCOUP_COL0
+ TP12                TEST POINT_TESTCOUP_CUSTOM_COL0  0.0000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP13                TEST POINT_TESTCOUP_CUSTOM_COL0 -51.000 15.0000 TEST POINT_TESTCOUP_COL0
+ TP14                TEST POINT_TESTCOUP_CUSTOM_COL0 10.0000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP15                TEST POINT_TESTCOUP_CUSTOM_COL0 -48.000 15.0000 TEST POINT_TESTCOUP_COL0
+ TP16                TEST POINT_TESTCOUP_CUSTOM_COL0 13.0000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP17                TEST POINT_TESTCOUP_CUSTOM_COL0 -14.000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP18                TEST POINT_TESTCOUP_CUSTOM_COL0 16.0000 16.0000 TEST POINT_TESTCOUP_COL0
+ TP19                TEST POINT_TESTCOUP_CUSTOM_COL0 19.0000 16.0000 TEST POINT_TESTCOUP_COL0
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
+|                                                    Thu Sep 23 16:32:38 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ TP1.1          -24.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP2.1          -27.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP3.1          -30.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP4.1          -33.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP5.1          -36.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP6.1          -39.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP7.1          -42.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP8.1          -45.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP9.1          -61.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP10.1         -8.0000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP11.1         -55.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP12.1          0.0000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP13.1         -51.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP14.1         10.0000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP15.1         -48.000 15.0000 PRIM_FILE      .\pstchip.dat
+ TP16.1         13.0000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP17.1         -14.000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP18.1         16.0000 16.0000 PRIM_FILE      .\pstchip.dat
+ TP19.1         19.0000 16.0000 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Comp definitions added:       9                                        |
+|       Components changed    :      19                                        |
+|       Slot property added   :      19                                        |
 |                                                                              |
-|   Total ECO changes reported:       0                                        |
+|   Total ECO changes reported:      47                                        |
 |------------------------------------------------------------------------------|

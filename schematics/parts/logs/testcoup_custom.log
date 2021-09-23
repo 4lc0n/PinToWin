@@ -1,6 +1,6 @@
 (---------------------------------------------------------------------)
 (                                                                     )
-(    Downrev Design                                                   )
+(    CREATE SYMBOL                                                    )
 (                                                                     )
 (    Drawing          : testcoup_custom.dra                           )
 (    Software Version : 17.4S017                                      )
@@ -9,6 +9,15 @@
 (---------------------------------------------------------------------)
 
 
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts
+    Name      = testcoup_custom.psm
+    User      = markl
+    Machine   = DESKTOP-QOSR346
 
-Changes made to design for 17.2 compatibility.
+
+Create symbol started.
+ 
+
+Create symbol completed.
 

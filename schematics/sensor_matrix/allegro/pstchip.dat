@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 15:14:49}
+{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 16:32:27}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -138,7 +138,7 @@ primitive 'R_SMR0805_1K';
     VALUE='1k';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW0';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW0';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -146,11 +146,11 @@ primitive 'TEST POINT_TESTCOUP_ROW0';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW0';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_COL0';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_COL0';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -158,11 +158,11 @@ primitive 'TEST POINT_TESTCOUP_COL0';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='COL0';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW1';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW1';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -170,11 +170,11 @@ primitive 'TEST POINT_TESTCOUP_ROW1';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW1';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW2';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW2';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -182,11 +182,11 @@ primitive 'TEST POINT_TESTCOUP_ROW2';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW2';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW3';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW3';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -194,11 +194,11 @@ primitive 'TEST POINT_TESTCOUP_ROW3';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW3';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW4';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW4';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -206,11 +206,11 @@ primitive 'TEST POINT_TESTCOUP_ROW4';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW4';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW5';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW5';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -218,11 +218,11 @@ primitive 'TEST POINT_TESTCOUP_ROW5';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW5';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW6';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW6';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -230,11 +230,11 @@ primitive 'TEST POINT_TESTCOUP_ROW6';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW6';
   end_body;
 end_primitive;
-primitive 'TEST POINT_TESTCOUP_ROW7';
+primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW7';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -242,7 +242,7 @@ primitive 'TEST POINT_TESTCOUP_ROW7';
   end_pin;
   body
     PART_NAME='TEST POINT';
-    JEDEC_TYPE='TESTCOUP';
+    JEDEC_TYPE='TESTCOUP_CUSTOM';
     VALUE='ROW7';
   end_body;
 end_primitive;

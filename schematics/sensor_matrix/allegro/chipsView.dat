@@ -1,4 +1,193 @@
 FILE_TYPE=LIBRARY_PARTS;
+primitive 'TEST POINT_TESTCOUP_ROW0';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW0';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW0';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_COL0';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='COL0';
+	 BODY_NAME='TEST POINT_TESTCOUP_COL0';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW1';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW1';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW1';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW2';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW2';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW2';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW3';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW3';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW3';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW4';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW4';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW4';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW5';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW5';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW5';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW6';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW6';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW6';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
+primitive 'TEST POINT_TESTCOUP_ROW7';
+  pin
+	 '1':
+	   PIN_NUMBER='(1)';
+	   PINUSE='UNSPEC';
+	   NO_LOAD_CHECK='Both';
+	   NO_IO_CHECK='Both';
+	   NO_ASSERT_CHECK='TRUE';
+	   NO_DIR_CHECK='TRUE';
+	   ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+	 PART_NAME='TEST POINT';
+	 VALUE='ROW7';
+	 BODY_NAME='TEST POINT_TESTCOUP_ROW7';
+	 JEDEC_TYPE='TESTCOUP';
+	 PHYS_DES_PREFIX='TP';
+	 CLASS='IC';
+  end_body;
+end_primitive;
+
 primitive '1N4148_SOD123_DIO_D1N4148';
   pin
 	 '2':
