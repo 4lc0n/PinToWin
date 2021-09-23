@@ -2,69 +2,249 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
-|                                                    Wed Sep 22 22:47:02 2021  |
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENT DEFINITION added to design                                         |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  COL_SELECT_0 pins MOVED FROM this net (to net name listed on right)
-                                 U1.36           -51.970 19.3800
-                                                                   COL_SELECT_1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_1 pins MOVED FROM this net (to net name listed on right)
-                                 U1.35           -49.430 19.3800
-                                                                   COL_SELECT_2
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_2 pins MOVED FROM this net (to net name listed on right)
-                                 U1.34           -46.890 19.3800
-                                                                   COL_SELECT_3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_3 pins MOVED FROM this net (to net name listed on right)
-                                 U1.11           -36.730 34.6200
-                                                                   COL_SELECT_4
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_4 pins MOVED FROM this net (to net name listed on right)
-                                 U1.12           -34.190 34.6200
-                                                                   COL_SELECT_5
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_5 pins MOVED FROM this net (to net name listed on right)
-                                 U1.13           -31.650 34.6200
-                                                                   COL_SELECT_6
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_6 pins MOVED FROM this net (to net name listed on right)
-                                 U1.14           -29.110 34.6200
-                                                                   COL_SELECT_7
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_7 pins MOVED FROM this net (to net name listed on right)
-                                 U1.15           -26.570 34.6200
-                                                                   COL_SELECT_8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_8 pins MOVED FROM this net (to net name listed on right)
-                                 U1.16           -24.030 34.6200
-                                                                   COL_SELECT_9
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_9 pins MOVED FROM this net (to net name listed on right)
-                                 U1.17           -21.490 34.6200
-                                                                  COL_SELECT_10
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  COL_SELECT_10 pins MOVED FROM this net (to net name listed on right)
-                                 U1.37           -54.510 19.3800
-                                                                   COL_SELECT_0
+ 1N4148_SOD123_DIO_D1N4148
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
-|                                                    Wed Sep 22 22:47:02 2021  |
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENTS CHANGED from one device type to another in design                 |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ D1                  1N4148_SOD123_DIO_D1N4148 -61.500  9.5000 1N4148_SOD80_D1N4148
+ D2                  1N4148_SOD123_DIO_D1N4148 -51.500  9.5000 1N4148_SOD80_D1N4148
+ D3                  1N4148_SOD123_DIO_D1N4148 -41.500  9.5000 1N4148_SOD80_D1N4148
+ D4                  1N4148_SOD123_DIO_D1N4148 -31.500  9.5000 1N4148_SOD80_D1N4148
+ D5                  1N4148_SOD123_DIO_D1N4148 -21.500  9.5000 1N4148_SOD80_D1N4148
+ D6                  1N4148_SOD123_DIO_D1N4148 -11.500  9.5000 1N4148_SOD80_D1N4148
+ D7                  1N4148_SOD123_DIO_D1N4148 -1.5000  9.5000 1N4148_SOD80_D1N4148
+ D8                  1N4148_SOD123_DIO_D1N4148  8.5000  9.5000 1N4148_SOD80_D1N4148
+ D9                  1N4148_SOD123_DIO_D1N4148 18.5000  9.5000 1N4148_SOD80_D1N4148
+ D10                 1N4148_SOD123_DIO_D1N4148 28.5000  9.5000 1N4148_SOD80_D1N4148
+ D11                 1N4148_SOD123_DIO_D1N4148 38.5000  9.5000 1N4148_SOD80_D1N4148
+ D12                 1N4148_SOD123_DIO_D1N4148 -61.500 -0.5000 1N4148_SOD80_D1N4148
+ D13                 1N4148_SOD123_DIO_D1N4148 -51.500 -0.5000 1N4148_SOD80_D1N4148
+ D14                 1N4148_SOD123_DIO_D1N4148 -41.500 -0.5000 1N4148_SOD80_D1N4148
+ D15                 1N4148_SOD123_DIO_D1N4148 -31.500 -0.5000 1N4148_SOD80_D1N4148
+ D16                 1N4148_SOD123_DIO_D1N4148 -21.500 -0.5000 1N4148_SOD80_D1N4148
+ D17                 1N4148_SOD123_DIO_D1N4148 -11.500 -0.5000 1N4148_SOD80_D1N4148
+ D18                 1N4148_SOD123_DIO_D1N4148 -1.5000 -0.5000 1N4148_SOD80_D1N4148
+ D19                 1N4148_SOD123_DIO_D1N4148  8.5000 -0.5000 1N4148_SOD80_D1N4148
+ D20                 1N4148_SOD123_DIO_D1N4148 18.5000 -0.5000 1N4148_SOD80_D1N4148
+ D21                 1N4148_SOD123_DIO_D1N4148 28.5000 -0.5000 1N4148_SOD80_D1N4148
+ D22                 1N4148_SOD123_DIO_D1N4148 38.5000 -0.5000 1N4148_SOD80_D1N4148
+ D23                 1N4148_SOD123_DIO_D1N4148 -61.500 -10.500 1N4148_SOD80_D1N4148
+ D24                 1N4148_SOD123_DIO_D1N4148 -51.500 -10.500 1N4148_SOD80_D1N4148
+ D25                 1N4148_SOD123_DIO_D1N4148 -41.500 -10.500 1N4148_SOD80_D1N4148
+ D26                 1N4148_SOD123_DIO_D1N4148 -31.500 -10.500 1N4148_SOD80_D1N4148
+ D27                 1N4148_SOD123_DIO_D1N4148 -21.500 -10.500 1N4148_SOD80_D1N4148
+ D28                 1N4148_SOD123_DIO_D1N4148 -11.500 -10.500 1N4148_SOD80_D1N4148
+ D29                 1N4148_SOD123_DIO_D1N4148 -1.5000 -10.500 1N4148_SOD80_D1N4148
+ D30                 1N4148_SOD123_DIO_D1N4148  8.5000 -10.500 1N4148_SOD80_D1N4148
+ D31                 1N4148_SOD123_DIO_D1N4148 18.5000 -10.500 1N4148_SOD80_D1N4148
+ D32                 1N4148_SOD123_DIO_D1N4148 28.5000 -10.500 1N4148_SOD80_D1N4148
+ D33                 1N4148_SOD123_DIO_D1N4148 38.5000 -10.500 1N4148_SOD80_D1N4148
+ D34                 1N4148_SOD123_DIO_D1N4148 -61.500 -20.500 1N4148_SOD80_D1N4148
+ D35                 1N4148_SOD123_DIO_D1N4148 -51.500 -20.500 1N4148_SOD80_D1N4148
+ D36                 1N4148_SOD123_DIO_D1N4148 -41.500 -20.500 1N4148_SOD80_D1N4148
+ D37                 1N4148_SOD123_DIO_D1N4148 -31.500 -20.500 1N4148_SOD80_D1N4148
+ D38                 1N4148_SOD123_DIO_D1N4148 -21.500 -20.500 1N4148_SOD80_D1N4148
+ D39                 1N4148_SOD123_DIO_D1N4148 -11.500 -20.500 1N4148_SOD80_D1N4148
+ D40                 1N4148_SOD123_DIO_D1N4148 -1.5000 -20.500 1N4148_SOD80_D1N4148
+ D41                 1N4148_SOD123_DIO_D1N4148  8.5000 -20.500 1N4148_SOD80_D1N4148
+ D42                 1N4148_SOD123_DIO_D1N4148 18.5000 -20.500 1N4148_SOD80_D1N4148
+ D43                 1N4148_SOD123_DIO_D1N4148 28.5000 -20.500 1N4148_SOD80_D1N4148
+ D44                 1N4148_SOD123_DIO_D1N4148 38.5000 -20.500 1N4148_SOD80_D1N4148
+ D45                 1N4148_SOD123_DIO_D1N4148 -61.500 -30.500 1N4148_SOD80_D1N4148
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ D46                 1N4148_SOD123_DIO_D1N4148 -51.500 -30.500 1N4148_SOD80_D1N4148
+ D47                 1N4148_SOD123_DIO_D1N4148 -41.500 -30.500 1N4148_SOD80_D1N4148
+ D48                 1N4148_SOD123_DIO_D1N4148 -31.500 -30.500 1N4148_SOD80_D1N4148
+ D49                 1N4148_SOD123_DIO_D1N4148 -21.500 -30.500 1N4148_SOD80_D1N4148
+ D50                 1N4148_SOD123_DIO_D1N4148 -11.500 -30.500 1N4148_SOD80_D1N4148
+ D51                 1N4148_SOD123_DIO_D1N4148 -1.5000 -30.500 1N4148_SOD80_D1N4148
+ D52                 1N4148_SOD123_DIO_D1N4148  8.5000 -30.500 1N4148_SOD80_D1N4148
+ D53                 1N4148_SOD123_DIO_D1N4148 18.5000 -30.500 1N4148_SOD80_D1N4148
+ D54                 1N4148_SOD123_DIO_D1N4148 28.5000 -30.500 1N4148_SOD80_D1N4148
+ D55                 1N4148_SOD123_DIO_D1N4148 38.5000 -30.500 1N4148_SOD80_D1N4148
+ D56                 1N4148_SOD123_DIO_D1N4148 -61.500 -40.500 1N4148_SOD80_D1N4148
+ D57                 1N4148_SOD123_DIO_D1N4148 -51.500 -40.500 1N4148_SOD80_D1N4148
+ D58                 1N4148_SOD123_DIO_D1N4148 -41.500 -40.500 1N4148_SOD80_D1N4148
+ D59                 1N4148_SOD123_DIO_D1N4148 -31.500 -40.500 1N4148_SOD80_D1N4148
+ D60                 1N4148_SOD123_DIO_D1N4148 -21.500 -40.500 1N4148_SOD80_D1N4148
+ D61                 1N4148_SOD123_DIO_D1N4148 -11.500 -40.500 1N4148_SOD80_D1N4148
+ D62                 1N4148_SOD123_DIO_D1N4148 -1.5000 -40.500 1N4148_SOD80_D1N4148
+ D63                 1N4148_SOD123_DIO_D1N4148  8.5000 -40.500 1N4148_SOD80_D1N4148
+ D64                 1N4148_SOD123_DIO_D1N4148 18.5000 -40.500 1N4148_SOD80_D1N4148
+ D65                 1N4148_SOD123_DIO_D1N4148 28.5000 -40.500 1N4148_SOD80_D1N4148
+ D66                 1N4148_SOD123_DIO_D1N4148 38.5000 -40.500 1N4148_SOD80_D1N4148
+ D67                 1N4148_SOD123_DIO_D1N4148 -61.500 -50.500 1N4148_SOD80_D1N4148
+ D68                 1N4148_SOD123_DIO_D1N4148 -51.500 -50.500 1N4148_SOD80_D1N4148
+ D69                 1N4148_SOD123_DIO_D1N4148 -41.500 -50.500 1N4148_SOD80_D1N4148
+ D70                 1N4148_SOD123_DIO_D1N4148 -31.500 -50.500 1N4148_SOD80_D1N4148
+ D71                 1N4148_SOD123_DIO_D1N4148 -21.500 -50.500 1N4148_SOD80_D1N4148
+ D72                 1N4148_SOD123_DIO_D1N4148 -11.500 -50.500 1N4148_SOD80_D1N4148
+ D73                 1N4148_SOD123_DIO_D1N4148 -1.5000 -50.500 1N4148_SOD80_D1N4148
+ D74                 1N4148_SOD123_DIO_D1N4148  8.5000 -50.500 1N4148_SOD80_D1N4148
+ D75                 1N4148_SOD123_DIO_D1N4148 18.5000 -50.500 1N4148_SOD80_D1N4148
+ D76                 1N4148_SOD123_DIO_D1N4148 28.5000 -50.500 1N4148_SOD80_D1N4148
+ D77                 1N4148_SOD123_DIO_D1N4148 38.5000 -50.500 1N4148_SOD80_D1N4148
+ D78                 1N4148_SOD123_DIO_D1N4148 -61.500 -60.500 1N4148_SOD80_D1N4148
+ D79                 1N4148_SOD123_DIO_D1N4148 -51.500 -60.500 1N4148_SOD80_D1N4148
+ D80                 1N4148_SOD123_DIO_D1N4148 -41.500 -60.500 1N4148_SOD80_D1N4148
+ D81                 1N4148_SOD123_DIO_D1N4148 -31.500 -60.500 1N4148_SOD80_D1N4148
+ D82                 1N4148_SOD123_DIO_D1N4148 -21.500 -60.500 1N4148_SOD80_D1N4148
+ D83                 1N4148_SOD123_DIO_D1N4148 -11.500 -60.500 1N4148_SOD80_D1N4148
+ D84                 1N4148_SOD123_DIO_D1N4148 -1.5000 -60.500 1N4148_SOD80_D1N4148
+ D85                 1N4148_SOD123_DIO_D1N4148  8.5000 -60.500 1N4148_SOD80_D1N4148
+ D86                 1N4148_SOD123_DIO_D1N4148 18.5000 -60.500 1N4148_SOD80_D1N4148
+ D87                 1N4148_SOD123_DIO_D1N4148 28.5000 -60.500 1N4148_SOD80_D1N4148
+ D88                 1N4148_SOD123_DIO_D1N4148 38.5000 -60.500 1N4148_SOD80_D1N4148
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ D1.2           -61.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D2.2           -51.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D3.2           -41.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D4.2           -31.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D5.2           -21.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D6.2           -11.500  9.5000 PRIM_FILE      .\pstchip.dat
+ D7.2           -1.5000  9.5000 PRIM_FILE      .\pstchip.dat
+ D8.2            8.5000  9.5000 PRIM_FILE      .\pstchip.dat
+ D9.2           18.5000  9.5000 PRIM_FILE      .\pstchip.dat
+ D10.2          28.5000  9.5000 PRIM_FILE      .\pstchip.dat
+ D11.2          38.5000  9.5000 PRIM_FILE      .\pstchip.dat
+ D12.2          -61.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D13.2          -51.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D14.2          -41.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D15.2          -31.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D16.2          -21.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D17.2          -11.500 -0.5000 PRIM_FILE      .\pstchip.dat
+ D18.2          -1.5000 -0.5000 PRIM_FILE      .\pstchip.dat
+ D19.2           8.5000 -0.5000 PRIM_FILE      .\pstchip.dat
+ D20.2          18.5000 -0.5000 PRIM_FILE      .\pstchip.dat
+ D21.2          28.5000 -0.5000 PRIM_FILE      .\pstchip.dat
+ D22.2          38.5000 -0.5000 PRIM_FILE      .\pstchip.dat
+ D23.2          -61.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D24.2          -51.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D25.2          -41.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D26.2          -31.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D27.2          -21.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D28.2          -11.500 -10.500 PRIM_FILE      .\pstchip.dat
+ D29.2          -1.5000 -10.500 PRIM_FILE      .\pstchip.dat
+ D30.2           8.5000 -10.500 PRIM_FILE      .\pstchip.dat
+ D31.2          18.5000 -10.500 PRIM_FILE      .\pstchip.dat
+ D32.2          28.5000 -10.500 PRIM_FILE      .\pstchip.dat
+ D33.2          38.5000 -10.500 PRIM_FILE      .\pstchip.dat
+ D34.2          -61.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D35.2          -51.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D36.2          -41.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D37.2          -31.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D38.2          -21.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D39.2          -11.500 -20.500 PRIM_FILE      .\pstchip.dat
+ D40.2          -1.5000 -20.500 PRIM_FILE      .\pstchip.dat
+ D41.2           8.5000 -20.500 PRIM_FILE      .\pstchip.dat
+ D42.2          18.5000 -20.500 PRIM_FILE      .\pstchip.dat
+ D43.2          28.5000 -20.500 PRIM_FILE      .\pstchip.dat
+ D44.2          38.5000 -20.500 PRIM_FILE      .\pstchip.dat
+ D45.2          -61.500 -30.500 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ D46.2          -51.500 -30.500 PRIM_FILE      .\pstchip.dat
+ D47.2          -41.500 -30.500 PRIM_FILE      .\pstchip.dat
+ D48.2          -31.500 -30.500 PRIM_FILE      .\pstchip.dat
+ D49.2          -21.500 -30.500 PRIM_FILE      .\pstchip.dat
+ D50.2          -11.500 -30.500 PRIM_FILE      .\pstchip.dat
+ D51.2          -1.5000 -30.500 PRIM_FILE      .\pstchip.dat
+ D52.2           8.5000 -30.500 PRIM_FILE      .\pstchip.dat
+ D53.2          18.5000 -30.500 PRIM_FILE      .\pstchip.dat
+ D54.2          28.5000 -30.500 PRIM_FILE      .\pstchip.dat
+ D55.2          38.5000 -30.500 PRIM_FILE      .\pstchip.dat
+ D56.2          -61.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D57.2          -51.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D58.2          -41.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D59.2          -31.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D60.2          -21.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D61.2          -11.500 -40.500 PRIM_FILE      .\pstchip.dat
+ D62.2          -1.5000 -40.500 PRIM_FILE      .\pstchip.dat
+ D63.2           8.5000 -40.500 PRIM_FILE      .\pstchip.dat
+ D64.2          18.5000 -40.500 PRIM_FILE      .\pstchip.dat
+ D65.2          28.5000 -40.500 PRIM_FILE      .\pstchip.dat
+ D66.2          38.5000 -40.500 PRIM_FILE      .\pstchip.dat
+ D67.2          -61.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D68.2          -51.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D69.2          -41.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D70.2          -31.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D71.2          -21.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D72.2          -11.500 -50.500 PRIM_FILE      .\pstchip.dat
+ D73.2          -1.5000 -50.500 PRIM_FILE      .\pstchip.dat
+ D74.2           8.5000 -50.500 PRIM_FILE      .\pstchip.dat
+ D75.2          18.5000 -50.500 PRIM_FILE      .\pstchip.dat
+ D76.2          28.5000 -50.500 PRIM_FILE      .\pstchip.dat
+ D77.2          38.5000 -50.500 PRIM_FILE      .\pstchip.dat
+ D78.2          -61.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D79.2          -51.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D80.2          -41.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D81.2          -31.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D82.2          -21.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D83.2          -11.500 -60.500 PRIM_FILE      .\pstchip.dat
+ D84.2          -1.5000 -60.500 PRIM_FILE      .\pstchip.dat
+ D85.2           8.5000 -60.500 PRIM_FILE      .\pstchip.dat
+ D86.2          18.5000 -60.500 PRIM_FILE      .\pstchip.dat
+ D87.2          28.5000 -60.500 PRIM_FILE      .\pstchip.dat
+ D88.2          38.5000 -60.500 PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  c:.../schematics/sensor_matrix/allegro/sensor_board_place_repl.brd          |
+|                                                    Thu Sep 23 09:49:45 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |------------------------------------------------------------------------------|
-|       Nets changed          :      11                                        |
+|       Comp definitions added:       1                                        |
+|       Components changed    :      88                                        |
+|       Slot property added   :      88                                        |
 |                                                                              |
-|   Total ECO changes reported:      11                                        |
+|   Total ECO changes reported:     177                                        |
 |------------------------------------------------------------------------------|

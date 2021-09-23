@@ -1,4 +1,4 @@
-{ Using PSTWRITER 17.4.0 d001Sep-22-2021 at 22:46:52 }
+{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 09:49:15 }
 
 #1 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.18" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "VIN_5V".
 #2 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.40" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "VIN_5V".

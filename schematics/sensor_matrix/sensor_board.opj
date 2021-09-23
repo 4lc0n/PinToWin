@@ -1,6 +1,6 @@
 (ExpressProject "sensor_board"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/22/21]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/23/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library"
@@ -251,7 +251,7 @@
       (Path "Logs")
       (Select "Design Resources"
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
-         "Design Cache" "TitleBlock0"))
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -261,9 +261,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
-        (Scroll "-274 0")
-        (Zoom "94")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1097 24 816")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
@@ -272,8 +272,24 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 0 0 5 1674 24 816")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 0 0 5 1097 24 816")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/m1/col1/R-D1"))
+      (Frame
+        (Placement "44 2 3 -1 -1 5 24 5 1674 24 816")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/m1/col2/R-D41"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "LDR-D-Unit")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1097 24 816")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/m1"))
       (Path
@@ -283,24 +299,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1097 24 816")
+        (Scroll "0 0")
         (Zoom "100")
-        (Occurrence "/m1/col1"))
+        (Occurrence "/m1/col2"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "Column of LDR Sensor Matrix")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 816")
-        (Scroll "-239 0")
-        (Zoom "100")
-        (Occurrence "/m1/col1/R-D1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "LDR-D-Unit")
       (Page "PAGE1")))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))

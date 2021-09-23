@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-22-2021 at 22:46:52}
+{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 09:49:15}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -15,7 +15,7 @@ primitive 'CAP NP_SMC1206_1UF';
     VALUE='1uF';
   end_body;
 end_primitive;
-primitive '1N4148_SOD80_D1N4148';
+primitive '1N4148_SOD123_DIO_D1N4148';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -26,7 +26,7 @@ primitive '1N4148_SOD80_D1N4148';
   end_pin;
   body
     PART_NAME='1N4148';
-    JEDEC_TYPE='SOD80';
+    JEDEC_TYPE='SOD123_DIO';
     VALUE='D1N4148';
   end_body;
 end_primitive;

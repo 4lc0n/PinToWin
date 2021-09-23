@@ -38,7 +38,7 @@ if exist !StepFileName! (
 )))
 @echo exit >> builder.scr.txt
 @echo Creating footprints..
-START /W "" "allegro.exe" -s builder.scr.txt
+START /W "" "C:\Cadence\SPB_17.4\tools\bin\allegro.exe" -s builder.scr.txt
 
 exit
 

@@ -1,0 +1,335 @@
+\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Thu Sep 23 09:49:21 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=3004 CPUs=8
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.65
+   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function Find_Component_Routine redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function findAllOfType redefined
+   (00:00:00) function ashFindAllClines redefined
+   (00:00:00) function ashFindAllClinesegs redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "sensor_board_place_repl"
+\d (00:00:03) Design opened: c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd
+   (00:00:03) Loading skillExt.cxt 
+\t (00:00:03) Grids are drawn 2.0000, 2.0000 apart for enhanced viewing.
+\i (00:00:03) trapsize 23385
+\t (00:00:03) Grids are drawn 4.0000, 4.0000 apart for enhanced viewing.
+\i (00:00:03) trapsize 25610
+\t (00:00:03) Grids are drawn 2.0000, 2.0000 apart for enhanced viewing.
+\i (00:00:03) trapsize 23385
+\t (00:00:03) Grids are drawn 4.0000, 4.0000 apart for enhanced viewing.
+\i (00:00:03) trapsize 31722
+\i (00:00:03) trapsize 31722
+\i (00:00:04) trapsize 8578
+\i (00:00:04) etchedit 
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -49.6761 18.3582
+\i (00:00:06) trapsize 4289
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -49.7619 18.3582
+\i (00:00:06) trapsize 2145
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in -63.5303 8.4930
+\i (00:00:06) trapsize 1072
+\i (00:00:12) design sync eco 
+\t (00:00:12) > Generating Physical Netlist
+\t (00:00:12) Starting genfeedformat...
+\t (00:00:12) > Generating Physical Netlist successful
+\t (00:00:12) > Generating Differences
+\t (00:00:12) > Generating Differences successful
+\t (00:00:12) > Displaying differences output
+\i (00:00:12) QtSignal dsync_header dsync_header_filter_1 CurrentIndexChanged "*"
+\i (00:00:12) QtSignal dsync_header dsync_header_filter_3 CurrentIndexChanged "*"
+\t (00:00:12) > Displaying differences output successful
+\i (00:00:25) QtSignal DesignSyncDialog sync_button clicked
+\t (00:00:25) Starting Cadence Logic Import...
+\t (00:00:25) Opening existing design...
+\t (00:00:25) Grids are drawn 8.0000, 8.0000 apart for enhanced viewing.
+\i (00:00:25) trapsize 1072
+\i (00:00:25) etchedit 
+\i (00:00:29) zoom in 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom in -61.6430 7.9140
+\i (00:00:29) trapsize 536
+\i (00:00:33) pop dyn_option_select 'Application Mode@:@Placement Edit' 
+\i (00:00:33) placementedit 
+\i (00:00:35) pick grid -60.9889 8.7826
+\t (00:00:35) last pick:  -61.0000 8.8000
+\i (00:00:35) move 
+\t (00:00:35) last pick:  -61.0000 19.0000
+\t (00:00:35) Pick new location for the element(s).
+\i (00:00:37) prepopup -61.0103 8.7826
+\i (00:00:38) oops 
+\i (00:00:38) placementedit 
+\i (00:00:40) setwindow form.find
+\i (00:00:40) FORM find groups NO 
+\i (00:00:42) FORM find all_off  
+\i (00:00:43) FORM find symbols YES 
+\i (00:00:44) setwindow pcb
+\i (00:00:44) pick grid -59.3482 6.8310
+\t (00:00:44) last pick:  -59.4000 6.8000
+\i (00:00:45) pick grid -61.6001 8.5574
+\t (00:00:45) last pick:  -61.6000 8.6000
+\i (00:00:45) move 
+\t (00:00:45) last pick:  -61.5000 9.5000
+\t (00:00:45) Moving D1 / 1N4148_SOD123_DIO_D1N4148 / SOD123_DIO.
+\t (00:00:45) Pick new location for the element(s).
+\i (00:00:46) iangle 90 
+\t (00:00:46) last pick:  9.0000 0.0000
+\i (00:00:46) mouse_pos -61.5000 9.5000
+\i (00:00:50) pick grid -59.4447 9.4796
+\t (00:00:50) last pick:  -59.4000 9.4000
+\i (00:00:50) placementedit 
+\i (00:00:51) pick grid -58.4475 6.1340
+\t (00:00:51) last pick:  -58.4000 6.2000
+\i (00:00:55) pick grid -59.0373 8.7612
+\t (00:00:55) last pick:  -59.0000 8.8000
+\i (00:00:55) move 
+\t (00:00:55) last pick:  -59.4000 9.4000
+\t (00:00:55) Moving D1 / 1N4148_SOD123_DIO_D1N4148 / SOD123_DIO.
+\t (00:00:55) Pick new location for the element(s).
+\i (00:00:56) iangle 90 
+\t (00:00:56) last pick:  9.0000 0.0000
+\i (00:00:56) mouse_pos -59.4000 9.4000
+\i (00:00:56) iangle 90 
+\t (00:00:56) last pick:  9.0000 0.0000
+\i (00:00:56) mouse_pos -59.4000 9.4000
+\i (00:00:58) pick grid -59.4126 9.3080
+\t (00:00:58) last pick:  -59.4000 9.4000
+\i (00:00:58) placementedit 
+\i (00:00:59) pick grid -59.4876 6.8310
+\t (00:00:59) last pick:  -59.4000 6.8000
+\i (00:01:03) roam y -96 
+\i (00:01:03) roam y -96
+\i (00:01:05) pick grid -59.2410 8.7179
+\t (00:01:05) last pick:  -59.2000 8.8000
+\i (00:01:05) move 
+\t (00:01:05) last pick:  -59.4000 9.4000
+\t (00:01:05) Moving D1 / 1N4148_SOD123_DIO_D1N4148 / SOD123_DIO.
+\t (00:01:05) Pick new location for the element(s).
+\i (00:01:06) pick grid -59.4019 7.8922
+\t (00:01:06) last pick:  -59.4000 7.8000
+\i (00:01:06) placementedit 
+\i (00:01:08) pick grid -57.4717 9.3505
+\t (00:01:08) last pick:  -57.4000 9.4000
+\i (00:01:13) zoom out 1 
+\i (00:01:13) setwindow pcb
+\i (00:01:13) zoom out -54.3084 10.1333
+\i (00:01:13) trapsize 1072
+\i (00:01:13) zoom out 1 
+\i (00:01:13) setwindow pcb
+\i (00:01:13) zoom out -54.3513 10.1333
+\i (00:01:13) trapsize 2145
+\i (00:01:14) roam start
+\i (00:01:14) roam x 10
+\i (00:01:14) roam y 4
+\i (00:01:14) roam x 10
+\i (00:01:14) roam y 2
+\i (00:01:14) roam x 8
+\i (00:01:14) roam x 16
+\i (00:01:14) roam x 8
+\i (00:01:14) roam x 34
+\i (00:01:14) roam y 6
+\i (00:01:14) roam x 36
+\i (00:01:14) roam y 6
+\i (00:01:14) roam x 36
+\i (00:01:14) roam y 8
+\i (00:01:14) roam x 36
+\i (00:01:14) roam y 6
+\i (00:01:14) roam x 40
+\i (00:01:14) roam y 2
+\i (00:01:14) roam x 40
+\i (00:01:14) roam y 8
+\i (00:01:14) roam x 46
+\i (00:01:14) roam y 6
+\i (00:01:14) roam x 36
+\i (00:01:14) roam y 10
+\i (00:01:14) roam x 32
+\i (00:01:14) roam y 4
+\i (00:01:14) roam x 28
+\i (00:01:14) roam y 2
+\i (00:01:14) roam x 22
+\i (00:01:14) roam y 4
+\i (00:01:14) roam x 12
+\i (00:01:14) roam y 2
+\i (00:01:14) roam x 8
+\i (00:01:14) roam y 2
+\i (00:01:14) roam x 10
+\i (00:01:14) roam x 8
+\i (00:01:14) roam y 4
+\i (00:01:14) roam x 10
+\i (00:01:14) roam x 8
+\i (00:01:14) roam x 10
+\i (00:01:14) roam x 10
+\i (00:01:14) roam y 4
+\i (00:01:14) roam end
+\i (00:01:15) prepopup -59.4557 12.0529
+\i (00:01:20) pick grid -70.3075 17.3715
+\t (00:01:20) last pick:  -70.4000 17.4000
+\i (00:01:22) zoom in 1 
+\i (00:01:22) setwindow pcb
+\i (00:01:22) zoom in -59.5844 7.5063
+\i (00:01:22) trapsize 1072
+\i (00:01:23) zoom in 1 
+\i (00:01:23) setwindow pcb
+\i (00:01:23) zoom in -59.6059 7.5063
+\i (00:01:23) trapsize 536
+\i (00:01:23) roam start
+\i (00:01:23) roam y -8
+\i (00:01:23) roam y -8
+\i (00:01:23) roam y -8
+\i (00:01:23) roam y -10
+\i (00:01:23) roam x -6
+\i (00:01:23) roam y -8
+\i (00:01:23) roam x -8
+\i (00:01:23) roam y -10
+\i (00:01:23) roam x -18
+\i (00:01:23) roam y -12
+\i (00:01:23) roam x -4
+\i (00:01:23) roam y -8
+\i (00:01:23) roam x -6
+\i (00:01:23) roam y -8
+\i (00:01:23) roam x -4
+\i (00:01:23) roam y -10
+\i (00:01:23) roam x -2
+\i (00:01:23) roam y -8
+\i (00:01:23) roam x -6
+\i (00:01:23) roam y -14
+\i (00:01:23) roam x -4
+\i (00:01:23) roam y -8
+\i (00:01:24) roam end
+\i (00:01:43) setwindow form.find
+\i (00:01:43) FORM find nets YES 
+\i (00:01:46) setwindow pcb
+\i (00:01:46) pick grid -59.4344 9.5221
+\t (00:01:46) last pick:  -59.4000 9.6000
+\i (00:01:48) delete 
+\t (00:01:48) Selected item not valid for current operation, ignored: Net "N00105_M_Col_R-d"
+\t (00:01:48) No valid items selected for the current operation, exiting.
+\i (00:01:48) placementedit 
+\i (00:01:49) pick grid -59.1878 9.7902
+\t (00:01:49) last pick:  -59.2000 9.8000
+\i (00:01:49) delete 
+\i (00:01:50) pick grid -60.4746 9.3934
+\t (00:01:50) last pick:  -60.4000 9.4000
+\i (00:01:51) pick grid -60.4960 9.4792
+\t (00:01:51) last pick:  -60.4000 9.4000
+\i (00:01:53) pick grid -59.2521 7.5598
+\t (00:01:53) last pick:  -59.2000 7.6000
+\i (00:01:53) pick grid -59.2307 6.5840
+\t (00:01:53) last pick:  -59.2000 6.6000
+\i (00:01:56) pick grid -57.8367 6.1443
+\t (00:01:56) last pick:  -57.8000 6.2000
+\i (00:01:58) pick grid -58.6516 6.5089
+\t (00:01:58) last pick:  -58.6000 6.6000
+\i (00:02:02) pop dyn_option_select 'Application Mode@:@Etch Edit' 
+\i (00:02:02) etchedit 
+\i (00:02:03) pick grid -59.0270 10.3156
+\t (00:02:03) last pick:  -59.0000 10.0000
+\i (00:02:03) slide 
+\t (00:02:03) last pick:  -59.0000 10.0000
+\t (00:02:03) Waiting for the destination pick.
+\i (00:02:04) delete 
+\i (00:02:05) pick grid -59.2307 9.8760
+\t (00:02:05) last pick:  -59.0000 10.0000
+\i (00:02:06) delete 
+\i (00:02:06) pick grid -59.4023 9.5328
+\t (00:02:06) last pick:  -59.0000 10.0000
+\i (00:02:07) delete 
+\i (00:02:08) pick grid -60.2601 9.5007
+\t (00:02:08) last pick:  -60.0000 10.0000
+\i (00:02:08) delete 
+\i (00:02:11) pick grid -59.1342 10.0690
+\t (00:02:11) last pick:  -59.0000 10.0000
+\i (00:02:12) prepopup -59.7883 9.1790
+\i (00:02:13) pick grid -60.5925 9.0288
+\t (00:02:13) last pick:  -61.0000 9.0000
+\i (00:02:13) prepopup -60.5925 9.0181
+\i (00:02:15) pick grid -57.1290 5.6189
+\t (00:02:15) last pick:  -57.0000 6.0000
+\i (00:02:16) zoom out 1 
+\i (00:02:16) setwindow pcb
+\i (00:02:16) zoom out -60.2708 8.0316
+\i (00:02:16) trapsize 1072
+\i (00:02:17) prepopup -60.0135 11.0555
+\i (00:02:19) pick grid -64.7960 14.9587
+\t (00:02:19) last pick:  -65.0000 15.0000
+\i (00:02:19) roam y -96 
+\i (00:02:19) roam y -96
+\i (00:02:22) pop dyn_option_select 'Application Mode@:@Placement Edit' 
+\i (00:02:22) placementedit 
+\i (00:02:25) setwindow form.find
+\i (00:02:25) FORM find groups YES 
+\i (00:02:27) FORM find symbols NO 
+\i (00:02:28) setwindow pcb
+\i (00:02:28) pick grid -58.3622 12.8248
+\t (00:02:28) last pick:  -58.4000 12.8000
+\i (00:02:28) move 
+\t (00:02:28) last pick:  -61.0000 19.0000
+\t (00:02:28) Pick new location for the element(s).
+\i (00:02:30) pick grid -59.6704 17.8646
+\t (00:02:30) last pick:  -59.6000 17.8000
+\i (00:02:30) placementedit 
+\i (00:02:31) prepopup -57.5901 12.2029
+\i (00:02:34) pop dyn_option_select '@:@Disband group' 
+\i (00:02:34) disband group 
+\t (00:02:34) Group CR_LDR_DIODE_PLACE_REPLICATE_1 disbanded.
+\i (00:02:34) placementedit 
+\i (00:02:39) zoom out 1 
+\i (00:02:39) setwindow pcb
+\i (00:02:39) zoom out -59.7990 11.6024
+\i (00:02:39) trapsize 2145
+\i (00:02:40) zoom out 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom out -60.0993 11.4737
+\t (00:02:40) Grids are drawn 0.4000, 0.4000 apart for enhanced viewing.
+\i (00:02:40) trapsize 4289
+\i (00:02:40) zoom out 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom out -60.6999 11.3022
+\t (00:02:40) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:02:40) trapsize 8578
+\i (00:02:40) zoom out 1 
+\i (00:02:40) setwindow pcb
+\i (00:02:40) zoom out -64.3028 8.3856
+\t (00:02:40) Grids are drawn 1.6000, 1.6000 apart for enhanced viewing.
+\i (00:02:40) trapsize 17157
+\i (00:02:41) zoom in 1 
+\i (00:02:41) setwindow pcb
+\i (00:02:41) zoom in -44.1862 29.6961
+\t (00:02:41) Grids are drawn 0.8000, 0.8000 apart for enhanced viewing.
+\i (00:02:41) trapsize 8578
+\i (00:02:42) roam y 96 
+\i (00:02:42) roam y 96
+\i (00:02:42) roam y 96 
+\i (00:02:42) roam y 96
+\i (00:02:42) roam y 96 
+\i (00:02:42) roam y 96
+\i (00:02:42) roam y 96 
+\i (00:02:42) roam y 72
+\i (00:02:42) roam y 96 
+\i (00:02:43) zoom in 1 
+\i (00:

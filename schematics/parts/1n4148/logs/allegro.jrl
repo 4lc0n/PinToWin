@@ -1,0 +1,74 @@
+\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Thu Sep 23 09:26:32 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=2208 CPUs=8
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.65
+   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function Find_Component_Routine redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function findAllOfType redefined
+   (00:00:00) function ashFindAllClines redefined
+   (00:00:00) function ashFindAllClinesegs redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOD123_DIO"
+\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148/SOD123_DIO.dra
+   (00:00:03) Loading skillExt.cxt 
+\i (00:00:03) trapsize 2598
+\i (00:00:03) trapsize 2845
+\i (00:00:03) trapsize 2598
+\i (00:00:03) trapsize 2598
+\i (00:00:03) trapsize 869
+\i (00:00:04) etchedit 
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:07) roam y -96 
+\i (00:00:07) roam y -96
+\i (00:00:08) roam y 96 
+\i (00:00:08) roam y 96
+\i (00:00:08) roam y 96 
+\i (00:00:08) roam y 96
+\i (00:00:08) roam y 96 
+\i (00:00:08) roam y 96
+\i (00:00:08) roam y 96 
+\i (00:00:08) roam y 96
+\i (00:00:12) open 
+\i (00:00:24) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd"
+\i (00:00:24) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
+\t (00:00:24) Opening existing design...
+\i (00:00:25) trapsize 7824
+\i (00:00:25) trapsize 8058
+\i (00:00:25) trapsize 7824
+\i (00:00:25) trapsize 8968
+\t (00:00:25)     Journal end - Thu Sep 23 09:26:57 2021

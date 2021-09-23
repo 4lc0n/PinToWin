@@ -1,7 +1,7 @@
 \t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Wed Sep 22 22:09:56 2021
-\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=14776 CPUs=8
-\t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:00)     Journal start - Thu Sep 23 09:32:51 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=7956 CPUs=8
+\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\irf9530\TO220AB_VIS.dra
 \t (00:00:00) 
    (00:00:00) Loading axlcore.cxt 
    (00:00:00) Searching for nsWare programs v2.65
@@ -27,22 +27,37 @@
    (00:00:00) function findAllOfType redefined
    (00:00:00) function ashFindAllClines redefined
    (00:00:00) function ashFindAllClinesegs redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "TO220AB_VIS"
-\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/irf9530/TO220AB_VIS.dra
-   (00:00:03) Loading skillExt.cxt 
-\i (00:00:03) trapsize 10030
-\i (00:00:03) trapsize 10984
-\i (00:00:03) trapsize 10030
-\i (00:00:03) trapsize 10030
-\i (00:00:03) trapsize 3356
-\i (00:00:04) etchedit 
-\i (00:00:08) open 
-\i (00:00:26) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_place_repl.brd"
-\i (00:00:26) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
-\t (00:00:26) Opening existing design...
-\i (00:00:27) trapsize 7824
-\i (00:00:27) trapsize 8058
-\i (00:00:27) trapsize 7824
-\i (00:00:27) trapsize 8968
-\t (00:00:27)     Journal end - Wed Sep 22 22:10:22 2021
+\t (00:00:00) Opening existing design...
+\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "TO220AB_VIS"
+\d (00:00:00) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/irf9530/TO220AB_VIS.dra
+   (00:00:01) Loading skillExt.cxt 
+\i (00:00:01) trapsize 10030
+\i (00:00:01) trapsize 10984
+\i (00:00:01) trapsize 10030
+\i (00:00:01) trapsize 10030
+\i (00:00:01) trapsize 3356
+\i (00:00:01) etchedit 
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:03) roam y 96 
+\i (00:00:03) roam y 96
+\i (00:00:05) roam y 96 
+\i (00:00:05) roam y 96
+\i (00:00:05) roam y 96 
+\i (00:00:05) roam y 96
+\i (00:00:05) roam y 96 
+\i (00:00:05) roam y 96
+\i (00:00:05) roam y 96 
+\i (00:00:05) roam y 96
+\i (00:00:05) roam y 96 
+\i (00:00:05) roam y 96
+\i (00:00:06) exit 
+\t (00:00:07)     Journal end - Thu Sep 23 09:32:57 2021

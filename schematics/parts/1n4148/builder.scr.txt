@@ -1,0 +1,36 @@
+skill load "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148/builder.ile" 
+skill changeWorkingDir "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148" 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148/SOD123_DIO-L.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOD123_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148/SOD123_DIO-M.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOD123_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/1n4148/SOD123_DIO.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOD123_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 
