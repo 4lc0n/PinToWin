@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:11:46}
+{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:27:28}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -72,7 +72,7 @@ primitive 'JUMPER_BLKCON100VHTM1SQW1002_JUMPER';
     VALUE='JUMPER';
   end_body;
 end_primitive;
-primitive 'IRF9530N/TO_0_TO220ABH_WO_HOLE_IRF9530N/TO220';
+primitive 'IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220';
   pin
     'D':
       PIN_NUMBER='(2)';
@@ -83,13 +83,10 @@ primitive 'IRF9530N/TO_0_TO220ABH_WO_HOLE_IRF9530N/TO220';
     'S':
       PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='IRF9530N/TO_0';
-    JEDEC_TYPE='TO220ABH_WO_HOLE';
+    PART_NAME='IRF9530N/TO_1';
+    JEDEC_TYPE='TO220ABHwohole';
     VALUE='IRF9530N/TO220';
   end_body;
 end_primitive;

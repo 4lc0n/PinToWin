@@ -1,18 +1,79 @@
-Thu Sep 23 12:37:56 2021				Page     1
+Fri Sep 24 19:17:24 2021				Page     1
 
 
  
 Update Symbols/Modules Logfile
-	Thu Sep 23 12:37:56 2021
+	Fri Sep 24 19:17:24 2021
 
 ------ Module Refresh Messages ------
 
-Updating instances of place replicate module 'LDR_DIODE_PLACE_REPLICATE'.
-88 of 88 instances of place replicate module definition LDR_DIODE_PLACE_REPLICATE updated.
-
-SUMMARY:    Updated 1 out of 1 modules
+SUMMARY:    Updated 0 out of 0 modules
 
 ------ End Module Messages     ------
 
 
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : sensor_board_routing.brd                      )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Fri Sep 24 19:17:24 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Fri Sep 24 19:17:24 2021				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'NO'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'NO'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+Symbol list file                       = 'c:/windows/temp/#Taaaadb15892.tmp'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           C:\Cadence\Company\pcb\symbols\connector 
+           C:\Cadence\Company\pcb\symbols\ic 
+           C:\Cadence\Company\pcb\symbols\other_symbols 
+           C:\Cadence\Company\pcb\symbols\padsyms 
+           C:\Cadence\Company\pcb\symbols\smd_misc 
+           C:\Cadence\Company\pcb\symbols\tht_misc 
+           C:\Cadence\Company\pcb\symbols\student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+
+PADPATH =  . 
+           symbols 
+           padstacks 
+           C:/Cadence/Company/pcb/padstacks 
+           C:/Cadence/Company/pcb/padstacks/student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+
+
+------ Symbol Refresh Messages ------
+
+'TO220ABH'  symbol refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 1 out 1
+    Design updated.
 

@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : sensor_board.brd                              )
+(    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Tue Sep 21 22:03:24 2021                      )
+(    Date/Time        : Fri Sep 24 19:26:03 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -19,10 +19,10 @@ Missing symbol has error:    No
 DRC update:                  Yes
 Schematic directory:         '.'
 Design Directory:            'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro'
-Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board.brd'
-New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board.brd'
+Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
+New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 
-CmdLine: netrev -$ -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaai08492.tmp
+CmdLine: netrev -$ -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaar04440.tmp
 
 ------ Preparing to read pst files ------
 
@@ -36,103 +36,13 @@ Starting to read ./pstxnet.dat
 ------ Oversights/Warnings/Errors ------
 
 
-#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+#1   WARNING(SPMHNI-184): Device library warning detected.
 
-WARNING(SPMHNI-194): Symbol 'SMC0805' used by RefDes C1 for device 'CAP NP_SMC0805_100N' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
+WARNING: Q1 component device pin number mismatch; cannot replace.
 
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
+#1   ERROR(SPMHNI-191): Device/Symbol check error detected.
 
-#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SMC1206' used by RefDes C3 for device 'CAP NP_SMC1206_1UF' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#3   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SMD1206' used by RefDes D1 for device 'LED_SMD1206_LED' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#4   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'DAX2DO35' used by RefDes D10 for device '1N4148_DAX2DO35_D1N4148' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#5   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SIPTML5005' used by RefDes J1 for device 'CON5_SIPTML5005_BOARD_INTERFACE' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old sy
-
-#6   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SIPTML2002' used by RefDes J2 for device 'JUMPER_SIPTML2002_JUMPER' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#7   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SIPTML6006' used by RefDes J3 for device 'CON6_SIPTML6006_PROGRAMMER' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols
-
-#8   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'TO220ABH' used by RefDes Q1 for device 'IRF9530N/TO_TO220ABH_IRF9530N/TO' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old sym
-
-#9   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SMR0805' used by RefDes R1 for device 'R_SMR0805_1K' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#10  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'LDR1_NTE' used by RefDes R10 for device 'LDR_LDR1_NTE_5K-20K' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#11  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SMR0805' used by RefDes R3 for device 'R_SMR0805_100' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#12  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SMR0805' used by RefDes R4 for device 'R_SMR0805_10K' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbols.
-
-#13  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'SIPTML2002' used by RefDes SW1 for device 'SW PUSHBUTTON_SIPTML2002_SW PUSHBUTTON' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrat
-
-#14  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'TQFP32' used by RefDes U1 for device 'ATMEGA168PV_1_TQFP32_ATMEGA168PV' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symbo
+ERROR(SPMHNI-195): Symbol 'TO220ABHWOHOLE' for device 'IRF9530N/TO_0_TO220ABHWOHOLE_IRF9530N/TO220' is missing pin '4'.
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -147,18 +57,24 @@ PSMPATH =  .
            C:\Cadence\Company\pcb\symbols\smd_misc 
            C:\Cadence\Company\pcb\symbols\tht_misc 
            C:\Cadence\Company\pcb\symbols\student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
 
 PADPATH =  . 
            symbols 
            padstacks 
-           C:\Cadence\Company\pcb\padstacks 
-           C:\Cadence\Company\pcb\padstacks\student 
+           C:/Cadence/Company/pcb/padstacks 
+           C:/Cadence/Company/pcb/padstacks/student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
 
 
 ------ Summary Statistics ------
 
 
-netrev run on Sep 21 22:03:24 2021
+#2   Run stopped because errors were detected
+
+netrev run on Sep 24 19:26:03 2021
    DESIGN NAME : 'SENSOR_BOARD'
    PACKAGING ON Apr 19 2021 16:22:31
 
@@ -179,10 +95,10 @@ netrev run on Sep 21 22:03:24 2021
    SUPPRESS   20
    WARNINGS ON
 
- No error detected
+  2 errors detected
  No oversight detected
- 14 warnings detected
+  1 warnings detected
 
-cpu time      0:00:15
+cpu time      0:00:13
 elapsed time  0:00:00
 

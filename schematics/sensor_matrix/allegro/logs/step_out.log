@@ -3,7 +3,7 @@
 (    STEP Export                                                      )
 (                                                                     )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Fri Sep 24 18:19:33 2021                      )
+(    Date/Time        : Fri Sep 24 21:37:52 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -11,7 +11,7 @@
 
 
 STEP file: sensor_board_routing
-Design file: C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd
+Design file: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd
 Export units: Millimeter
 STEP protocol: AP-214
 Source identification: allegro_17.4S017

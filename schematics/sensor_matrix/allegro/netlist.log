@@ -1,4 +1,4 @@
-{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:11:46 }
+{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:27:28 }
 
 #1 WARNING(ORCAP-36038): "No_connect" property on Pin "U1.20" ignored for U1: SCHEMATIC1, PAGE1 (60.96, 99.06). Connecting pin to net "3V3".
 #2 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#19" as visible power pin of same name already exists in Package STM32_Bluepill , U1: SCHEMATIC1, PAGE1 (60.96, 99.06).

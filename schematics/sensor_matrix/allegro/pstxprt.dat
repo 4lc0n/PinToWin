@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:11:46 }
+{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:27:28 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='SENSOR_BOARD';
@@ -918,12 +918,12 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
- Q1 'IRF9530N/TO_0_TO220ABH_WO_HOLE_IRF9530N/TO220':;
+ Q1 'IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220':;
 
 SECTION_NUMBER 1
- '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS11806@SENSOR_BOARD.IRF9530N/TO_0.NORMAL(CHIPS)':
- C_PATH='@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)',
- P_PATH='@sensor_board.schematic1(sch_1):page1_ins11806@sensor_board.\irf9530n/to_0.normal\(chips)',
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS11806@SENSOR_BOARD.IRF9530N/TO_1.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_1.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins11806@sensor_board.\irf9530n/to_1.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

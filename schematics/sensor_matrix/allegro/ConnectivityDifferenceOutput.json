@@ -52,10 +52,35 @@
 		{
 			"Name" : "Q1",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_0.normal\\(chips)",
-			"Logical" : "IRF9530N\/TO_0_TO220ABH_WO_HOLE_IRF9530N\/TO220",
-			"Physical" : "IRF9530N\/TO_0_TO220ABH_IRF9530N\/TO220"
+			"Logical" : null,
+			"Physical" : "Q1"
+		},
+		{
+			"Name" : "Q1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips)",
+			"Logical" : "Q1",
+			"Physical" : null
 		}
 	],
 	"Net" : [],
-	"Connection" : []
+	"Connection" : [
+		{
+			"Name" : "Q1.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):D",
+			"Logical" : "N18545",
+			"Physical" : null
+		},
+		{
+			"Name" : "Q1.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):G",
+			"Logical" : "N18612",
+			"Physical" : null
+		},
+		{
+			"Name" : "Q1.3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):S",
+			"Logical" : "3V3",
+			"Physical" : null
+		}
+	]
 }

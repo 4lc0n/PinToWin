@@ -95,7 +95,7 @@
     ("Allegro Netlist Remove Etch" "FALSE")
     ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
     ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
-    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Backup Versions" "1")
     ("Allegro Setup Ignore Constraints" "FALSE")
     ("Allegro Setup Part Type Length" "255")
     ("Allegro Netlist Combine Property String" "PCB Footprint")
@@ -260,13 +260,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 359 0 684"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 359 0 678"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1515 24 702")
-        (Scroll "-159 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1509 24 696")
+        (Scroll "-156 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
