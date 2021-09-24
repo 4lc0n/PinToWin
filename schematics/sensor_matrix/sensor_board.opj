@@ -242,49 +242,36 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn")
+         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn")
       (Path "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
          "SCHEMATIC1")
       (Path "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
-         "matrix")
-      (Path "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
          "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\private_lib.olb")
       (Path "Layout")
       (Path "Outputs")
       (Path "Logs")
       (Select "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
-         "Design Cache" "STM32_Bluepill"))
+         "C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\sensor_matrix\sensor_board.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 684"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 359 0 684"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 702")
-        (Scroll "69 2010")
-        (Zoom "372")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1515 24 702")
+        (Scroll "-159 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrPrmBrowserDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 5 1674 24 702"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
-      (Package "STM32_BLUEPILL")
-      (PartType "1")))
+      (Page "PAGE1")))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))

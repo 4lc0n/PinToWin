@@ -48,27 +48,14 @@
 	],
 	"Net Property" : [],
 	"Pin Property" : [],
-	"Component" : [],
-	"Net" : [
+	"Component" : [
 		{
-			"Name" : "VIN_5V",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):vin_5v",
-			"Logical" : null,
-			"Physical" : "VIN_5V"
+			"Name" : "Q1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_0.normal\\(chips)",
+			"Logical" : "IRF9530N\/TO_0_TO220ABH_WO_HOLE_IRF9530N\/TO220",
+			"Physical" : "IRF9530N\/TO_0_TO220ABH_IRF9530N\/TO220"
 		}
 	],
-	"Connection" : [
-		{
-			"Name" : "U1.18",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@private_lib.\\stm32_bluepill.normal\\(chips):VIN_5V",
-			"Logical" : "NC",
-			"Physical" : null
-		},
-		{
-			"Name" : "U1.40",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@private_lib.\\stm32_bluepill.normal\\(chips):\\vin_5v*\\",
-			"Logical" : "NC",
-			"Physical" : null
-		}
-	]
+	"Net" : [],
+	"Connection" : []
 }

@@ -1,6 +1,6 @@
 \t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Thu Sep 23 12:33:27 2021
-\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=15000 CPUs=8
+\t (00:00:00)     Journal start - Fri Sep 24 18:54:33 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=11864 CPUs=8
 \t (00:00:00) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
 \t (00:00:00) 
    (00:00:00) Loading axlcore.cxt 
@@ -27,22 +27,23 @@
    (00:00:00) function findAllOfType redefined
    (00:00:00) function ashFindAllClines redefined
    (00:00:00) function ashFindAllClinesegs redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "LDR1_NTE"
-\d (00:00:03) Design opened: C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/parts/LDR1_NTE.dra
+\t (00:00:03) Starting new design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged to220abh
    (00:00:03) Loading skillExt.cxt 
-\i (00:00:03) trapsize 5145
-\i (00:00:03) trapsize 5634
-\i (00:00:03) trapsize 5145
-\i (00:00:03) trapsize 5145
-\i (00:00:03) trapsize 1721
+\i (00:00:03) trapsize 5940
+\i (00:00:03) trapsize 6505
+\i (00:00:03) trapsize 5940
+\i (00:00:03) trapsize 5940
+\i (00:00:03) trapsize 1987
 \i (00:00:04) etchedit 
-\i (00:00:09) open 
-\i (00:00:18) fillin "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
-\i (00:00:18) cd "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro"
-\t (00:00:18) Opening existing design...
-\i (00:00:18) trapsize 978
-\i (00:00:18) trapsize 1007
-\i (00:00:18) trapsize 978
-\i (00:00:18) trapsize 1122
-\t (00:00:18)     Journal end - Thu Sep 23 12:33:44 2021
+\i (00:00:05) open 
+\e (00:00:05) Do you want to save the changes you made to to220abh.dra?
+\i (00:00:07) fillin no 
+\i (00:00:16) fillin "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
+\i (00:00:16) cd "C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro"
+\t (00:00:16) Opening existing design...
+\i (00:00:16) trapsize 3912
+\i (00:00:16) trapsize 4029
+\i (00:00:16) trapsize 3912
+\i (00:00:16) trapsize 4488
+\t (00:00:16)     Journal end - Fri Sep 24 18:54:49 2021
