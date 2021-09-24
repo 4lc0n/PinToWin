@@ -18,6 +18,20 @@
 			"Physical" : "2"
 		},
 		{
+			"Name" : "D23",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d2\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips)",
+			"PropName" : "REUSE_ID",
+			"Logical" : null,
+			"Physical" : "1"
+		},
+		{
+			"Name" : "R24",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d2\\@sensor_board.\\ldr-d-unit\\(sch_1):ins36@my_library.\\ldr.normal\\(chips)",
+			"PropName" : "REUSE_ID",
+			"Logical" : null,
+			"Physical" : "2"
+		},
+		{
 			"Name" : "D3",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col13@sensor_board.\\column of ldr sensor matrix\\(sch_1):\\r-d\\@sensor_board.\\ldr-d-unit\\(sch_1):ins89@ediode.\\1n4148.normal\\(chips)",
 			"PropName" : "REUSE_ID",
@@ -34,122 +48,27 @@
 	],
 	"Net Property" : [],
 	"Pin Property" : [],
-	"Component" : [
+	"Component" : [],
+	"Net" : [
 		{
-			"Name" : "TP1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17116@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW0",
-			"Physical" : "TEST POINT_TESTCOUP_ROW0"
-		},
-		{
-			"Name" : "TP10",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17810@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP11",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17722@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP12",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17832@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP13",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17744@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP14",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17854@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP15",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17766@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP16",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17876@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP17",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17788@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP18",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17898@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP19",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17920@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
-		},
-		{
-			"Name" : "TP2",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17138@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW1",
-			"Physical" : "TEST POINT_TESTCOUP_ROW1"
-		},
-		{
-			"Name" : "TP3",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17270@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW2",
-			"Physical" : "TEST POINT_TESTCOUP_ROW2"
-		},
-		{
-			"Name" : "TP4",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17160@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW3",
-			"Physical" : "TEST POINT_TESTCOUP_ROW3"
-		},
-		{
-			"Name" : "TP5",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17182@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW4",
-			"Physical" : "TEST POINT_TESTCOUP_ROW4"
-		},
-		{
-			"Name" : "TP6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17204@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW5",
-			"Physical" : "TEST POINT_TESTCOUP_ROW5"
-		},
-		{
-			"Name" : "TP7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17226@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW6",
-			"Physical" : "TEST POINT_TESTCOUP_ROW6"
-		},
-		{
-			"Name" : "TP8",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17248@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_ROW7",
-			"Physical" : "TEST POINT_TESTCOUP_ROW7"
-		},
-		{
-			"Name" : "TP9",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17694@connector.\\test point.normal\\(chips)",
-			"Logical" : "TEST POINT_TESTCOUP_CUSTOM_COL0",
-			"Physical" : "TEST POINT_TESTCOUP_COL0"
+			"Name" : "VIN_5V",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):vin_5v",
+			"Logical" : null,
+			"Physical" : "VIN_5V"
 		}
 	],
-	"Net" : [],
-	"Connection" : []
+	"Connection" : [
+		{
+			"Name" : "U1.18",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@private_lib.\\stm32_bluepill.normal\\(chips):VIN_5V",
+			"Logical" : "NC",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.40",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@private_lib.\\stm32_bluepill.normal\\(chips):\\vin_5v*\\",
+			"Logical" : "NC",
+			"Physical" : null
+		}
+	]
 }

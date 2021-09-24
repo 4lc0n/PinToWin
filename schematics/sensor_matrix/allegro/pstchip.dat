@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-23-2021 at 16:32:27}
+{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 17:47:29}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -299,9 +299,9 @@ primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
     'PB9':
       PIN_NUMBER='(17)';
       PINUSE='UNSPEC';
-    'VIN_5V#18':
+    'VIN_5V':
       PIN_NUMBER='(18)';
-      PINUSE='POWER';
+      PINUSE='UNSPEC';
     'GND#19':
       PIN_NUMBER='(19)';
       PINUSE='POWER';
@@ -365,9 +365,9 @@ primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
     'GND#39':
       PIN_NUMBER='(39)';
       PINUSE='POWER';
-    'VIN_5V#40':
+    'VIN_5V*':
       PIN_NUMBER='(40)';
-      PINUSE='POWER';
+      PINUSE='UNSPEC';
   end_pin;
   body
     PART_NAME='STM32_Bluepill';

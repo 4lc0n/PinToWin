@@ -1,4 +1,4 @@
-Date and Time : 09/23/21 15:14:33
+Date and Time : 09/24/21 17:47:19
 
 --------------------------------------------------
 Checking Schematic:  SCHEMATIC1
@@ -1942,7 +1942,7 @@ INFO(ORCAP-2211): Check High Speed Properties Syntax
 
 INFO(ORCAP-2212): Check Power Ground Mismatch
 WARNING(ORCAP-1589): Net has two or more aliases that might lead to a short. Ensure nets are not shorted together or nets do not have two or more aliases. This message is displayed because 'Report all net names' is set in Design Rules Check dialog. 3V3  VCC  3V3  
-                    SCHEMATIC1, PAGE1  (127.00, 40.64) 
+                    SCHEMATIC1, PAGE1  (106.68, 40.64) 
 
 Reporting Unused Refdes in multiple part packages
 Part	                       Quantity	                       Reference

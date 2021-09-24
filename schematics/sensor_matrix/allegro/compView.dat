@@ -1,5 +1,5 @@
 A!REFDES!COMP_VOLTAGE!COMP_CDS_FSP_LIB_PART_MODEL!COMP_CDS_FSP_INSTANCE_NAME!COMP_ROOM!COMP_GROUP!COMP_CDS_FSP_INSTANCE_ID!COMP_CDS_FSP_IS_FPGA!COMP_PARENT_PPT!COMP_PARENT_PPT_PART!COMP_REUSE_ID!COMP_REUSE_NAME!COMP_REUSE_INSTANCE!
-J!C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Thu Sep 23 16:32:37 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
+J!C:/Users/markl/documents/Sem7/smartsystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Fri Sep 24 17:47:35 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
 S!TP1!!!!!!!!!!!!!
 S!TP10!!!!!!!!!!!!!
 S!TP11!!!!!!!!!!!!!
@@ -34,7 +34,7 @@ S!D2!!!!!!!!!!!!!
 S!D20!!!!!!!!!!!!!
 S!D21!!!!!!!!!!!!!
 S!D22!!!!!!!!!!!!!
-S!D23!!!!!!!!!!!!!
+S!D23!!!!!!!!!!1!!!
 S!D24!!!!!!!!!!!!!
 S!D25!!!!!!!!!!!!!
 S!D26!!!!!!!!!!!!!
@@ -139,7 +139,7 @@ S!R20!!!!!!!!!!!!!
 S!R21!!!!!!!!!!!!!
 S!R22!!!!!!!!!!!!!
 S!R23!!!!!!!!!!!!!
-S!R24!!!!!!!!!!!!!
+S!R24!!!!!!!!!!2!!!
 S!R25!!!!!!!!!!!!!
 S!R26!!!!!!!!!!!!!
 S!R27!!!!!!!!!!!!!
