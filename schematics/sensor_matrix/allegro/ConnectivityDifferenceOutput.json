@@ -1,14 +1,7 @@
 {
 	"Gate Swap" : [],
 	"Ref Des" : [],
-	"Pin Swap" : [
-		{
-			"Name" : "J1.6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18698@connector.\\con6.normal\\(chips):\\6\\",
-			"Logical" : "J1.6",
-			"Physical" : "J1.1"
-		}
-	],
+	"Pin Swap" : [],
 	"Component Property" : [
 		{
 			"Name" : "D1",
@@ -697,6 +690,13 @@
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
+		},
+		{
+			"Name" : "N26283",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):n26283",
+			"PropName" : "MIN_LINE_WIDTH",
+			"Logical" : null,
+			"Physical" : "0.8 MM"
 		},
 		{
 			"Name" : "N00105_M_COL15_R-D3",
@@ -1582,39 +1582,14 @@
 		}
 	],
 	"Pin Property" : [],
-	"Component" : [],
-	"Net" : [
+	"Component" : [
 		{
-			"Name" : "N18549",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):n18549",
-			"Logical" : null,
-			"Physical" : "N18549"
-		},
-		{
-			"Name" : "N26283",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):n26283",
-			"Logical" : "N26283",
-			"Physical" : null
+			"Name" : "Q1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips)",
+			"Logical" : "IRF9530N\/TO_1_SOT-323_DIO_WPM1488",
+			"Physical" : "IRF9530N\/TO_1_TO220ABHWOHOLE_IRF9530N\/TO220"
 		}
 	],
-	"Connection" : [
-		{
-			"Name" : "J1.6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18698@connector.\\con6.normal\\(chips):\\6\\",
-			"Logical" : "GND",
-			"Physical" : "N18549"
-		},
-		{
-			"Name" : "J1.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18698@connector.\\con6.normal\\(chips):\\1\\",
-			"Logical" : "N26283",
-			"Physical" : "GND"
-		},
-		{
-			"Name" : "J2.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18495@connector.\\jumper.normal\\(chips):\\1\\",
-			"Logical" : "N26283",
-			"Physical" : "N18549"
-		}
-	]
+	"Net" : [],
+	"Connection" : []
 }

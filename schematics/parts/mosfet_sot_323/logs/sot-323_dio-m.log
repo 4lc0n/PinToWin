@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : SOT-323_DIO-M.dra                             )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Sat Sep 25 16:12:05 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323
+    Name      = sot-323_dio-m.psm
+    User      = markl
+    Machine   = DESKTOP-QOSR346
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

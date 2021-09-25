@@ -1,0 +1,36 @@
+skill load "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323/builder.ile" 
+skill changeWorkingDir "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323" 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323/SOT-323_DIO-L.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOT-323_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323/SOT-323_DIO-M.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOT-323_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+skill LB_createFootprint "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/mosfet_sot_323/SOT-323_DIO.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist SOT-323_DIO.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 
