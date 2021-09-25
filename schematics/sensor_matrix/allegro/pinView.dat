@@ -1,5 +1,8 @@
 A!NET_NAME!REFDES!PIN_NUMBER!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!PIN_NO_SWAP_PIN!PIN_NO_PIN_ESCAPE!PIN_PIN_ESCAPE!PIN_NO_DRC!PIN_NO_SHAPE_CONNECT!
-J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Fri Sep 24 19:27:44 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!UP TO DATE!
+J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 12:15:20 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!UP TO DATE!
+S!N18545!Q1!2!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_1.normal\(chips)!IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220!!!F117!!!!!!
+S!N18612!Q1!1!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_1.normal\(chips)!IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220!!!F117!!!!!!
+S!3V3!Q1!3!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_1.normal\(chips)!IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220!!!F117!!!!!!
 S!3V3!U1!20!@sensor_board.schematic1(sch_1):ins16858@private_lib.\stm32_bluepill.normal\(chips)!STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411!!!F0!!!!!!
 S!3V3!U1!38!@sensor_board.schematic1(sch_1):ins16858@private_lib.\stm32_bluepill.normal\(chips)!STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411!!!F0!!!!!!
 S!GND!U1!19!@sensor_board.schematic1(sch_1):ins16858@private_lib.\stm32_bluepill.normal\(chips)!STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411!!!F0!!!!!!
@@ -243,10 +246,6 @@ S!SCK!J1!5!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chip
 S!N18549!J1!6!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F119!!!!!!
 S!N18549!J2!1!@sensor_board.schematic1(sch_1):ins18495@connector.\jumper.normal\(chips)!JUMPER_BLKCON100VHTM1SQW1002_JUMPER!!!F118!!!!!!
 S!N18545!J2!2!@sensor_board.schematic1(sch_1):ins18495@connector.\jumper.normal\(chips)!JUMPER_BLKCON100VHTM1SQW1002_JUMPER!!!F118!!!!!!
-S!!Q1!4!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)!IRF9530N/TO_0_TO220ABH_IRF9530N/TO220!!!F117!!!!!!
-S!N18545!Q1!2!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)!IRF9530N/TO_0_TO220ABH_IRF9530N/TO220!!!F117!!!!!!
-S!N18612!Q1!1!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)!IRF9530N/TO_0_TO220ABH_IRF9530N/TO220!!!F117!!!!!!
-S!3V3!Q1!3!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_0.normal\(chips)!IRF9530N/TO_0_TO220ABH_IRF9530N/TO220!!!F117!!!!!!
 S!N18612!R1!1!@sensor_board.schematic1(sch_1):ins11906@my_library.\r.normal\(chips)!R_SMR0805_100!!!F116!!!!!!
 S!GND!R1!2!@sensor_board.schematic1(sch_1):ins11906@my_library.\r.normal\(chips)!R_SMR0805_100!!!F116!!!!!!
 S!3V3!C1!1!@sensor_board.schematic1(sch_1):ins5040@discrete.\cap np.normal\(chips)!CAP NP_SMC1206_1UF!!!F208!!!!!!

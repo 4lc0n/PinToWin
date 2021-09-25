@@ -50,36 +50,241 @@
 	"Pin Property" : [],
 	"Component" : [
 		{
-			"Name" : "Q1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_0.normal\\(chips)",
+			"Name" : "U1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@private_lib.\\stm32_bluepill.normal\\(chips)",
 			"Logical" : null,
-			"Physical" : "Q1"
+			"Physical" : "U1"
 		},
 		{
-			"Name" : "Q1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips)",
-			"Logical" : "Q1",
+			"Name" : "J3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins25675@sensor_board.\\jumper_0.normal\\(chips)",
+			"Logical" : "J3",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips)",
+			"Logical" : "U1",
 			"Physical" : null
 		}
 	],
-	"Net" : [],
-	"Connection" : [
+	"Net" : [
 		{
-			"Name" : "Q1.2",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):D",
-			"Logical" : "N18545",
+			"Name" : "VCC",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):vcc",
+			"Logical" : "VCC",
 			"Physical" : null
 		},
 		{
-			"Name" : "Q1.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):G",
-			"Logical" : "N18612",
+			"Name" : "5V",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\5v\\",
+			"Logical" : "5V",
+			"Physical" : null
+		}
+	],
+	"Connection" : [
+		{
+			"Name" : "C1.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins5040@discrete.\\cap np.normal\\(chips):\\1\\",
+			"Logical" : "VCC",
+			"Physical" : "3V3"
+		},
+		{
+			"Name" : "J3.3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins25675@sensor_board.\\jumper_0.normal\\(chips):\\3\\",
+			"Logical" : "3V3",
+			"Physical" : null
+		},
+		{
+			"Name" : "J3.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins25675@sensor_board.\\jumper_0.normal\\(chips):\\1\\",
+			"Logical" : "VCC",
+			"Physical" : null
+		},
+		{
+			"Name" : "J3.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins25675@sensor_board.\\jumper_0.normal\\(chips):\\2\\",
+			"Logical" : "5V",
 			"Physical" : null
 		},
 		{
 			"Name" : "Q1.3",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):ins11806@sensor_board.\\irf9530n\/to_1.normal\\(chips):S",
+			"Logical" : "VCC",
+			"Physical" : "3V3"
+		},
+		{
+			"Name" : "U1.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB12",
+			"Logical" : "NCS",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.39",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\gnd#39\\",
+			"Logical" : "GND",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.19",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\gnd#19\\",
+			"Logical" : "GND",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB14",
+			"Logical" : "MISO",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.29",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA3",
+			"Logical" : "ADC3",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.20",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\3v3 \\",
 			"Logical" : "3V3",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.38",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\3v3#38\\",
+			"Logical" : "3V3",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.16",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB8",
+			"Logical" : "COL_SELECT_9",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.26",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA0",
+			"Logical" : "ADC0",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.27",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA1",
+			"Logical" : "ADC1",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.28",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA2",
+			"Logical" : "ADC2",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.30",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA4",
+			"Logical" : "ADC4",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.31",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA5",
+			"Logical" : "ADC5",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.32",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA6",
+			"Logical" : "ADC6",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.33",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PA7",
+			"Logical" : "ADC7",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.18",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\5v#18\\",
+			"Logical" : "5V",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.40",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):\\5v#40\\",
+			"Logical" : "5V",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.2",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB13",
+			"Logical" : "SCK",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.4",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB15",
+			"Logical" : "MOSI",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.37",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB10",
+			"Logical" : "COL_SELECT_0",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.36",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB2",
+			"Logical" : "COL_SELECT_1",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.35",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB1",
+			"Logical" : "COL_SELECT_2",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.34",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB0",
+			"Logical" : "COL_SELECT_3",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.11",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB3",
+			"Logical" : "COL_SELECT_4",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.12",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB4",
+			"Logical" : "COL_SELECT_5",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.13",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB5",
+			"Logical" : "COL_SELECT_6",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.14",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB6",
+			"Logical" : "COL_SELECT_7",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.15",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB7",
+			"Logical" : "COL_SELECT_8",
+			"Physical" : null
+		},
+		{
+			"Name" : "U1.17",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins16858@sensor_board.\\stm32_bluepill_1.normal\\(chips):PB9",
+			"Logical" : "COL_SELECT_10",
 			"Physical" : null
 		}
 	]

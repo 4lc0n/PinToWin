@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Fri Sep 24 19:27:47 2021                      )
+(    Date/Time        : Sat Sep 25 12:15:21 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -22,7 +22,7 @@ Design Directory:            'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWi
 Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 
-CmdLine: netrev -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaak14492.tmp
+CmdLine: netrev -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaak10804.tmp
 
 ------ Preparing to read pst files ------
 
@@ -35,6 +35,10 @@ Starting to read ./pstxnet.dat
 
 ------ Oversights/Warnings/Errors ------
 
+
+#1   ERROR(SPMHNI-191): Device/Symbol check error detected.
+
+ERROR(SPMHNI-195): Symbol 'BLKCON100VHTM1SQW1002' for device 'JUMPER_0_BLKCON100VHTM1SQW1002_JUMPER SELECTOR' is missing pin '3'.
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -64,7 +68,9 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Sep 24 19:27:47 2021
+#2   Run stopped because errors were detected
+
+netrev run on Sep 25 12:15:21 2021
    DESIGN NAME : 'SENSOR_BOARD'
    PACKAGING ON Apr 19 2021 16:22:31
 
@@ -85,10 +91,10 @@ netrev run on Sep 24 19:27:47 2021
    SUPPRESS   20
    WARNINGS ON
 
- No error detected
+  2 errors detected
  No oversight detected
  No warning detected
 
-cpu time      0:00:19
-elapsed time  0:00:00
+cpu time      0:00:12
+elapsed time  0:00:01
 

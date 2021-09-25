@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:27:28}
+{ Using PSTWRITER 17.4.0 d001Sep-25-2021 at 12:17:06}
 primitive 'CAP NP_SMC1206_1UF';
   pin
     '1':
@@ -70,6 +70,24 @@ primitive 'JUMPER_BLKCON100VHTM1SQW1002_JUMPER';
     PART_NAME='JUMPER';
     JEDEC_TYPE='BLKCON100VHTM1SQW1002';
     VALUE='JUMPER';
+  end_body;
+end_primitive;
+primitive 'JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR';
+  pin
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='JUMPER_1';
+    JEDEC_TYPE='BLKCON100VHTM1SQW1003';
+    VALUE='JUMPER Selector';
   end_body;
 end_primitive;
 primitive 'IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220';
@@ -243,7 +261,7 @@ primitive 'TEST POINT_TESTCOUP_CUSTOM_ROW7';
     VALUE='ROW7';
   end_body;
 end_primitive;
-primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
+primitive 'STM32_BLUEPILL_1_BLACKPILL_FOOTPRINT_STM32F411';
   pin
     'PB12':
       PIN_NUMBER='(1)';
@@ -296,9 +314,9 @@ primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
     'PB9':
       PIN_NUMBER='(17)';
       PINUSE='UNSPEC';
-    'VIN_5V':
+    '5V#18':
       PIN_NUMBER='(18)';
-      PINUSE='UNSPEC';
+      PINUSE='POWER';
     'GND#19':
       PIN_NUMBER='(19)';
       PINUSE='POWER';
@@ -362,12 +380,12 @@ primitive 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411';
     'GND#39':
       PIN_NUMBER='(39)';
       PINUSE='POWER';
-    'VIN_5V*':
+    '5V#40':
       PIN_NUMBER='(40)';
-      PINUSE='UNSPEC';
+      PINUSE='POWER';
   end_pin;
   body
-    PART_NAME='STM32_Bluepill';
+    PART_NAME='STM32_Bluepill_1';
     JEDEC_TYPE='blackpill_footprint';
     VALUE='STM32F411';
   end_body;

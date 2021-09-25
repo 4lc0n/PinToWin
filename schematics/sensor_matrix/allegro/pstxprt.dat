@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.4.0 d001Sep-24-2021 at 19:27:28 }
+{ Using PSTWRITER 17.4.0 d001Sep-25-2021 at 12:17:06 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='SENSOR_BOARD';
@@ -914,6 +914,16 @@ SECTION_NUMBER 1
  '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS18495@CONNECTOR.JUMPER.NORMAL(CHIPS)':
  C_PATH='@sensor_board.schematic1(sch_1):ins18495@connector.\jumper.normal\(chips)',
  P_PATH='@sensor_board.schematic1(sch_1):page1_ins18495@connector.\jumper.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS25675@SENSOR_BOARD.JUMPER_1.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins25675@sensor_board.\jumper_1.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins25675@sensor_board.\jumper_1.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -2088,12 +2098,12 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
- U1 'STM32_BLUEPILL_BLACKPILL_FOOTPRINT_STM32F411':;
+ U1 'STM32_BLUEPILL_1_BLACKPILL_FOOTPRINT_STM32F411':;
 
 SECTION_NUMBER 1
- '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS16858@PRIVATE_LIB.STM32_BLUEPILL.NORMAL(CHIPS)':
- C_PATH='@sensor_board.schematic1(sch_1):ins16858@private_lib.\stm32_bluepill.normal\(chips)',
- P_PATH='@sensor_board.schematic1(sch_1):page1_ins16858@private_lib.\stm32_bluepill.normal\(chips)',
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS16858@SENSOR_BOARD.STM32_BLUEPILL_1.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins16858@sensor_board.\stm32_bluepill_1.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins16858@sensor_board.\stm32_bluepill_1.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
