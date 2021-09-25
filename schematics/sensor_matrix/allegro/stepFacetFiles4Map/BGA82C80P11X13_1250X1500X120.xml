@@ -2,6 +2,14 @@
 <step-assembly root="id4012">
 <product id="id4012" name="face1_BC" shape="id4006"/>
 <shape id="id4006" unit="mm 0.001000" shell="id243 id367 id437 id481 id525 id569 id613 id657 id701 id745 id789 id833 id877 id921 id965 id1009 id1053 id1097 id1141 id1185 id1229 id1273 id1317 id1361 id1405 id1449 id1493 id1537 id1581 id1625 id1669 id1713 id1757 id1801 id1845 id1889 id1933 id1977 id2021 id2065 id2109 id2153 id2197 id2241 id2285 id2329 id2373 id2417 id2461 id2505 id2549 id2593 id2637 id2681 id2725 id2769 id2813 id2857 id2901 id2945 id2989 id3033 id3077 id3121 id3165 id3209 id3253 id3297 id3341 id3385 id3429 id3473 id3517 id3561 id3605 id3649 id3693 id3737 id3781 id3825 id3869 id3913 id3957 id4001"/>
+<shell id="id437" color="c0c0c0">
+    <verts>
+        <v p="-4 0 0"/>
+        <v p="-4 0 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
 <shell id="id243" color="404040">
     <verts>
         <v p="6.12772783512216 1.1997268069253499 -7.3499999999999996"/>
@@ -798,10 +806,10 @@
         </f>
     </facets>
 </shell>
-<shell id="id437" color="c0c0c0">
+<shell id="id481" color="c0c0c0">
     <verts>
-        <v p="-4 0 0"/>
-        <v p="-4 0 0"/>
+        <v p="-3 2000000 0"/>
+        <v p="-3 2000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -810,14 +818,6 @@
     <verts>
         <v p="-2 4000000 0"/>
         <v p="-2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
-<shell id="id481" color="c0c0c0">
-    <verts>
-        <v p="-3 2000000 0"/>
-        <v p="-3 2000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -838,42 +838,10 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id789" color="c0c0c0">
-    <verts>
-        <v p="-3 2000000 0"/>
-        <v p="-3 2000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id657" color="c0c0c0">
     <verts>
         <v p="2 4000000 0"/>
         <v p="2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
-<shell id="id833" color="c0c0c0">
-    <verts>
-        <v p="-2 4000000 0"/>
-        <v p="-2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
-<shell id="id877" color="c0c0c0">
-    <verts>
-        <v p="-1 6000000 0"/>
-        <v p="-1 6000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
-<shell id="id921" color="c0c0c0">
-    <verts>
-        <v p="1 6000000 0"/>
-        <v p="1 6000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -886,14 +854,6 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id965" color="c0c0c0">
-    <verts>
-        <v p="2 4000000 0"/>
-        <v p="2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id745" color="c0c0c0">
     <verts>
         <v p="4 0 0"/>
@@ -902,10 +862,10 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id1009" color="c0c0c0">
+<shell id="id789" color="c0c0c0">
     <verts>
-        <v p="3 2000000 0"/>
-        <v p="3 2000000 0"/>
+        <v p="-3 2000000 0"/>
+        <v p="-3 2000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -1606,6 +1566,46 @@
         </f>
     </facets>
 </shell>
+<shell id="id833" color="c0c0c0">
+    <verts>
+        <v p="-2 4000000 0"/>
+        <v p="-2 4000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id877" color="c0c0c0">
+    <verts>
+        <v p="-1 6000000 0"/>
+        <v p="-1 6000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id921" color="c0c0c0">
+    <verts>
+        <v p="1 6000000 0"/>
+        <v p="1 6000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id965" color="c0c0c0">
+    <verts>
+        <v p="2 4000000 0"/>
+        <v p="2 4000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id1009" color="c0c0c0">
+    <verts>
+        <v p="3 2000000 0"/>
+        <v p="3 2000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
 <shell id="id1053" color="c0c0c0">
     <verts>
         <v p="-3 2000000 0"/>
@@ -1638,18 +1638,18 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id1229" color="c0c0c0">
-    <verts>
-        <v p="2 4000000 0"/>
-        <v p="2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id1273" color="c0c0c0">
     <verts>
         <v p="3 2000000 0"/>
         <v p="3 2000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id1229" color="c0c0c0">
+    <verts>
+        <v p="2 4000000 0"/>
+        <v p="2 4000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -1678,18 +1678,18 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id1449" color="c0c0c0">
-    <verts>
-        <v p="1 6000000 0"/>
-        <v p="1 6000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id1493" color="c0c0c0">
     <verts>
         <v p="2 4000000 0"/>
         <v p="2 4000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id1449" color="c0c0c0">
+    <verts>
+        <v p="1 6000000 0"/>
+        <v p="1 6000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -1846,14 +1846,6 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id2373" color="c0c0c0">
-    <verts>
-        <v p="-3 2000000 0"/>
-        <v p="-3 2000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id2417" color="c0c0c0">
     <verts>
         <v p="-2 4000000 0"/>
@@ -1866,6 +1858,14 @@
     <verts>
         <v p="-1 6000000 0"/>
         <v p="-1 6000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id2373" color="c0c0c0">
+    <verts>
+        <v p="-3 2000000 0"/>
+        <v p="-3 2000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
@@ -1998,18 +1998,18 @@
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>
 </shell>
-<shell id="id3209" color="c0c0c0">
-    <verts>
-        <v p="-2 4000000 0"/>
-        <v p="-2 4000000 0"/>
-    </verts>
-    <facets color="c0c0c0"/>
-    <facets color="c0c0c0"/>
-</shell>
 <shell id="id3253" color="c0c0c0">
     <verts>
         <v p="-1 6000000 0"/>
         <v p="-1 6000000 0"/>
+    </verts>
+    <facets color="c0c0c0"/>
+    <facets color="c0c0c0"/>
+</shell>
+<shell id="id3209" color="c0c0c0">
+    <verts>
+        <v p="-2 4000000 0"/>
+        <v p="-2 4000000 0"/>
     </verts>
     <facets color="c0c0c0"/>
     <facets color="c0c0c0"/>

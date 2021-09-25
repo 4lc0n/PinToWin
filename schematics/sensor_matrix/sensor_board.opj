@@ -245,11 +245,18 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Layout")
       (Path "Outputs")
       (Path "Logs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\sensor_board.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -259,13 +266,201 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1284 24 735")
-        (Scroll "-79 0")
-        (Zoom "94")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 735")
+        (Scroll "217 113")
+        (Zoom "324")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "matrix")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col8"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col3"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col9"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col6"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col7"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col11"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col1"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col4"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col10"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col5"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 137")
+        (Zoom "100")
+        (Occurrence "/m1/col2"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "Column of LDR Sensor Matrix")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col8/R-D69"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col3/R-D13"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col9/R-D37"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col6/R-D61"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col7/R-D29"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col11/R-D85"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col1/R-D5"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col4/R-D53"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col10/R-D77"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col5/R-D21"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col2/R-D45"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col8/R-D72"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col3/R-D16"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col9/R-D40"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col6/R-D64"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col7/R-D32"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col11/R-D88"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col1/R-D8"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col4/R-D56"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col10/R-D80"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col5/R-D24"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
+        (Scroll "-239 30")
+        (Zoom "100")
+        (Occurrence "/m1/col2/R-D48"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
+      (Schematic "LDR-D-Unit")
       (Page "PAGE1")))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))

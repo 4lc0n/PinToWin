@@ -1,5 +1,5 @@
 A!NET_NAME!REFDES!PIN_NUMBER!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!PIN_NO_SWAP_PIN!PIN_NO_PIN_ESCAPE!PIN_PIN_ESCAPE!PIN_NO_DRC!PIN_NO_SHAPE_CONNECT!
-J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 12:23:03 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
+J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 14:46:15 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!UP TO DATE!
 S!5V!J3!1!@sensor_board.schematic1(sch_1):ins25675@sensor_board.\jumper_1.normal\(chips)!JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR!!!F118!!!!!!
 S!VCC!J3!2!@sensor_board.schematic1(sch_1):ins25675@sensor_board.\jumper_1.normal\(chips)!JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR!!!F118!!!!!!
 S!3V3!J3!3!@sensor_board.schematic1(sch_1):ins25675@sensor_board.\jumper_1.normal\(chips)!JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR!!!F118!!!!!!
@@ -242,10 +242,10 @@ S!ADC7!D88!2!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@s
 S!N00105_M_COL19_R-D!D9!1!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)!1N4148_SOD123_DIO_D1N4148!!!F121!!!!!!
 S!ADC0!D9!2!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col19@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)!1N4148_SOD123_DIO_D1N4148!!!F121!!!!!!
 S!GND!J1!1!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
-S!MISO!J1!2!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
-S!MOSI!J1!3!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
-S!NCS!J1!4!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
-S!SCK!J1!5!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
+S!MOSI!J1!2!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
+S!MISO!J1!3!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
+S!SCK!J1!4!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
+S!NCS!J1!5!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
 S!N18549!J1!6!@sensor_board.schematic1(sch_1):ins18698@connector.\con6.normal\(chips)!CON6_BLKCON100VHTM1SQW1006_CON6!!!F120!!!!!!
 S!N18549!J2!1!@sensor_board.schematic1(sch_1):ins18495@connector.\jumper.normal\(chips)!JUMPER_BLKCON100VHTM1SQW1002_JUMPER!!!F119!!!!!!
 S!N18545!J2!2!@sensor_board.schematic1(sch_1):ins18495@connector.\jumper.normal\(chips)!JUMPER_BLKCON100VHTM1SQW1002_JUMPER!!!F119!!!!!!

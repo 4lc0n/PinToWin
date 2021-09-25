@@ -1,120 +1,120 @@
 A!NET_NAME!NET_LOGICAL_PATH!NET_CDS_FSP_UID!NET_SHIELD_NET!NET_RELATIVE_PROPAGATION_DELAY!NET_NO_PIN_ESCAPE!NET_VOLTAGE_LAYER!NET_VOLTAGE!NET_RATSNEST_SCHEDULE!NET_CLOCK_NET!NET_ASSIGN_TOPOLOGY!NET_NET_PHYSICAL_TYPE!NET_MAX_FINAL_SETTLE!NET_NO_TEST!NET_MAX_EXPOSED_LENGTH!NET_ELECTRICAL_CONSTRAINT_SET!NET_CDS_FSP_BUS_INDEX!NET_STUB_LENGTH!NET_SHIELD_TYPE!NET_NO_RAT!NET_PROPAGATION_DELAY!NET_NO_RIPUP!NET_MIN_HOLD!NET_DIFFERENTIAL_PAIR!NET_MIN_SETUP!NET_MIN_NECK_WIDTH!NET_BUS_NAME!NET_MIN_NOISE_MARGIN!NET_MATCHED_DELAY!NET_ECL!NET_DIFFP_LENGTH_TOL!NET_DIFFP_2ND_LENGTH!NET_SUBNET_NAME!NET_MIN_BOND_LENGTH!NET_MAX_OVERSHOOT!NET_TS_ALLOWED!NET_MAX_VIA_COUNT!NET_EMC_CRITICAL_NET!NET_CDS_FSP_NET!NET_PROBE_NUMBER!NET_NO_ROUTE!NET_MIN_LINE_WIDTH!NET_ECL_TEMP!NET_NO_GLOSS!NET_ROUTE_PRIORITY!NET_NET_SPACING_TYPE!NET_IMPEDANCE_RULE!
-J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 12:23:03 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
-S!5V!@sensor_board.schematic1(sch_1):\5v\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!VCC!@sensor_board.schematic1(sch_1):vcc!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!3V3!@sensor_board.schematic1(sch_1):\3v3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N18612!@sensor_board.schematic1(sch_1):n18612!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N18549!@sensor_board.schematic1(sch_1):n18549!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N18545!@sensor_board.schematic1(sch_1):n18545!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!NCS!@sensor_board.schematic1(sch_1):ncs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!MISO!@sensor_board.schematic1(sch_1):miso!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_10!@sensor_board.schematic1(sch_1):col_select_10!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_9!@sensor_board.schematic1(sch_1):col_select_9!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_8!@sensor_board.schematic1(sch_1):col_select_8!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_7!@sensor_board.schematic1(sch_1):col_select_7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_6!@sensor_board.schematic1(sch_1):col_select_6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_5!@sensor_board.schematic1(sch_1):col_select_5!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_4!@sensor_board.schematic1(sch_1):col_select_4!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_3!@sensor_board.schematic1(sch_1):col_select_3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_2!@sensor_board.schematic1(sch_1):col_select_2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_1!@sensor_board.schematic1(sch_1):col_select_1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!COL_SELECT_0!@sensor_board.schematic1(sch_1):col_select_0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!MOSI!@sensor_board.schematic1(sch_1):mosi!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!SCK!@sensor_board.schematic1(sch_1):sck!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC7!@sensor_board.schematic1(sch_1):adc7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC6!@sensor_board.schematic1(sch_1):adc6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC5!@sensor_board.schematic1(sch_1):adc5!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC4!@sensor_board.schematic1(sch_1):adc4!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC3!@sensor_board.schematic1(sch_1):adc3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC2!@sensor_board.schematic1(sch_1):adc2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC1!@sensor_board.schematic1(sch_1):adc1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!ADC0!@sensor_board.schematic1(sch_1):adc0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL13_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL15_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL17_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!GND!@sensor_board.schematic1(sch_1):gnd!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL19_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL1_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL12_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL14_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL16_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL18_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL20_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-S!N00105_M_COL_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 14:46:15 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!UP TO DATE!
+S!5V!@sensor_board.schematic1(sch_1):\5v\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!VCC!@sensor_board.schematic1(sch_1):vcc!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!3V3!@sensor_board.schematic1(sch_1):\3v3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!N18612!@sensor_board.schematic1(sch_1):n18612!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!N18549!@sensor_board.schematic1(sch_1):n18549!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!N18545!@sensor_board.schematic1(sch_1):n18545!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.8 MM!!!!!!
+S!NCS!@sensor_board.schematic1(sch_1):ncs!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!MISO!@sensor_board.schematic1(sch_1):miso!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_10!@sensor_board.schematic1(sch_1):col_select_10!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_9!@sensor_board.schematic1(sch_1):col_select_9!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_8!@sensor_board.schematic1(sch_1):col_select_8!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_7!@sensor_board.schematic1(sch_1):col_select_7!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_6!@sensor_board.schematic1(sch_1):col_select_6!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_5!@sensor_board.schematic1(sch_1):col_select_5!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_4!@sensor_board.schematic1(sch_1):col_select_4!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_3!@sensor_board.schematic1(sch_1):col_select_3!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_2!@sensor_board.schematic1(sch_1):col_select_2!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_1!@sensor_board.schematic1(sch_1):col_select_1!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!COL_SELECT_0!@sensor_board.schematic1(sch_1):col_select_0!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!MOSI!@sensor_board.schematic1(sch_1):mosi!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!SCK!@sensor_board.schematic1(sch_1):sck!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC7!@sensor_board.schematic1(sch_1):adc7!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC6!@sensor_board.schematic1(sch_1):adc6!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC5!@sensor_board.schematic1(sch_1):adc5!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC4!@sensor_board.schematic1(sch_1):adc4!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC3!@sensor_board.schematic1(sch_1):adc3!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC2!@sensor_board.schematic1(sch_1):adc2!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC1!@sensor_board.schematic1(sch_1):adc1!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!ADC0!@sensor_board.schematic1(sch_1):adc0!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL13_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col13_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL15_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col15_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL17_R-D2!@sensor_board.schematic1(sch_1):\n00105_m_col17_r-d2\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D5!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d5\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D1!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d1\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!GND!@sensor_board.schematic1(sch_1):gnd!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL19_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col19_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL1_R-D3!@sensor_board.schematic1(sch_1):\n00105_m_col1_r-d3\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL12_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col12_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL14_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col14_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D4!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d4\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL16_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col16_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL18_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col18_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL20_R-D6!@sensor_board.schematic1(sch_1):\n00105_m_col20_r-d6\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!
+S!N00105_M_COL_R-D7!@sensor_board.schematic1(sch_1):\n00105_m_col_r-d7\!!!!!!!!!!!!!!!!!!!!!!!!0.25 MM!!!!!!!!!!!!!!!!0.25 MM!!!!!!
