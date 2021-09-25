@@ -3,41 +3,9 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Fri Sep 24 19:27:47 2021  |
+|                                                    Sat Sep 25 12:23:04 2021  |
 |------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to design                                         |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Fri Sep 24 19:27:47 2021  |
-|------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in design                 |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q1                  IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220 23.0000 18.0000 IRF9530N/TO_0_TO220ABH_IRF9530N/TO220
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Fri Sep 24 19:27:47 2021  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to design                                              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q1.3           23.0000 18.0000 PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|       Comp definitions added:       1                                        |
-|       Components changed    :       1                                        |
-|       Slot property added   :       1                                        |
 |                                                                              |
-|   Total ECO changes reported:       3                                        |
+|   Total ECO changes reported:       0                                        |
 |------------------------------------------------------------------------------|
