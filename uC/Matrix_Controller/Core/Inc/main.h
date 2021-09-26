@@ -58,7 +58,34 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define COL_SELECT_3_Pin GPIO_PIN_0
+#define COL_SELECT_3_GPIO_Port GPIOB
+#define COL_SELECT_2_Pin GPIO_PIN_1
+#define COL_SELECT_2_GPIO_Port GPIOB
+#define COL_SELECT_1_Pin GPIO_PIN_2
+#define COL_SELECT_1_GPIO_Port GPIOB
+#define COL_SELECT_0_Pin GPIO_PIN_10
+#define COL_SELECT_0_GPIO_Port GPIOB
+#define COL_SELECT_4_Pin GPIO_PIN_3
+#define COL_SELECT_4_GPIO_Port GPIOB
+#define COL_SELECT_5_Pin GPIO_PIN_4
+#define COL_SELECT_5_GPIO_Port GPIOB
+#define COL_SELECT_6_Pin GPIO_PIN_5
+#define COL_SELECT_6_GPIO_Port GPIOB
+#define COL_SELECT_7_Pin GPIO_PIN_6
+#define COL_SELECT_7_GPIO_Port GPIOB
+#define COL_SELECT_8_Pin GPIO_PIN_7
+#define COL_SELECT_8_GPIO_Port GPIOB
+#define COL_SELECT_9_Pin GPIO_PIN_8
+#define COL_SELECT_9_GPIO_Port GPIOB
+#define COL_SELECT_10_Pin GPIO_PIN_9
+#define COL_SELECT_10_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
+
+
+#define N_COL 11
+#define N_ROW 8
+
 
 /* USER CODE END Private defines */
 
