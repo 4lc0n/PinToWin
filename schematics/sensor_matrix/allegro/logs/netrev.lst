@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Fri Sep 24 19:26:03 2021                      )
+(    Date/Time        : Mon Sep 27 19:29:21 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -22,7 +22,7 @@ Design Directory:            'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWi
 Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 
-CmdLine: netrev -$ -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaar04440.tmp
+CmdLine: netrev -$ -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaci04492.tmp
 
 ------ Preparing to read pst files ------
 
@@ -36,13 +36,119 @@ Starting to read ./pstxnet.dat
 ------ Oversights/Warnings/Errors ------
 
 
-#1   WARNING(SPMHNI-184): Device library warning detected.
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-WARNING: Q1 component device pin number mismatch; cannot replace.
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW0' has extra pin '2'.
 
-#1   ERROR(SPMHNI-191): Device/Symbol check error detected.
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW0' is missing pin '1'.
 
-ERROR(SPMHNI-195): Symbol 'TO220ABHWOHOLE' for device 'IRF9530N/TO_0_TO220ABHWOHOLE_IRF9530N/TO220' is missing pin '4'.
+#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL5' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL5' is missing pin '1'.
+
+#3   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL1' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL1' is missing pin '1'.
+
+#4   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL6' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL6' is missing pin '1'.
+
+#5   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL2' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL2' is missing pin '1'.
+
+#6   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL7' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL7' is missing pin '1'.
+
+#7   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL3' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL3' is missing pin '1'.
+
+#8   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL8' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL8' is missing pin '1'.
+
+#9   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL4' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL4' is missing pin '1'.
+
+#10  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL9' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL9' is missing pin '1'.
+
+#11  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL10' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL10' is missing pin '1'.
+
+#12  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW1' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW1' is missing pin '1'.
+
+#13  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW2' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW2' is missing pin '1'.
+
+#14  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW3' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW3' is missing pin '1'.
+
+#15  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW4' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW4' is missing pin '1'.
+
+#16  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW5' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW5' is missing pin '1'.
+
+#17  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW6' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW6' is missing pin '1'.
+
+#18  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW7' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_ROW7' is missing pin '1'.
+
+#19  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL0' has extra pin '2'.
+
+ERROR(SPMHNI-195): Symbol 'TESTPAD_SMD' for device 'TEST POINT_TESTPAD_SMD_COL0' is missing pin '1'.
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -59,6 +165,8 @@ PSMPATH =  .
            C:\Cadence\Company\pcb\symbols\student 
            C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
            C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/symbols 
 
 PADPATH =  . 
            symbols 
@@ -67,14 +175,14 @@ PADPATH =  .
            C:/Cadence/Company/pcb/padstacks/student 
            C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
            C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/padstacks 
 
 
 ------ Summary Statistics ------
 
 
-#2   Run stopped because errors were detected
-
-netrev run on Sep 24 19:26:03 2021
+netrev run on Sep 27 19:29:21 2021
    DESIGN NAME : 'SENSOR_BOARD'
    PACKAGING ON Apr 19 2021 16:22:31
 
@@ -95,10 +203,10 @@ netrev run on Sep 24 19:26:03 2021
    SUPPRESS   20
    WARNINGS ON
 
-  2 errors detected
+ No error detected
  No oversight detected
-  1 warnings detected
+ 19 warnings detected
 
-cpu time      0:00:13
+cpu time      0:00:18
 elapsed time  0:00:00
 

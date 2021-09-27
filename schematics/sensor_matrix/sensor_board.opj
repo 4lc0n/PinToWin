@@ -1,7 +1,6 @@
 (ExpressProject "sensor_board"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/25/21]")
-  (ProjectType "Analog or A/D Mixed Mode")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[09/27/21]")
   (Folder "Design Resources"
     (Folder "Library"
       (File "..\private_lib.olb"
@@ -91,7 +90,7 @@
     ("View Allegro Netlist Files" "FALSE")
     ("Allegro Netlist Create DCF File" "FALSE")
     ("Update Allegro Board" "FALSE")
-    ("Allegro Netlist Output Board File" ".\allegro\sensor_board.brd")
+    ("Allegro Netlist Output Board File" ".\allegro\sensor_board_routing.brd")
     ("Allegro Netlist Remove Etch" "FALSE")
     ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
     ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
@@ -107,7 +106,7 @@
       (Type "Board File")
       (OutputBoard ".\allegro\sensor_board.brd")
       (NetListPath ".\allegro")
-      (ActiveBoard "1"))
+      (ActiveBoard "0"))
     (File ".\allegro\autosave_markl.brd"
       (Type "Board File")
       (OutputBoard ".\allegro\autosave_markl.brd")
@@ -137,7 +136,7 @@
       (Type "Board File")
       (OutputBoard ".\allegro\sensor_board_routing.brd")
       (NetListPath ".\allegro")
-      (ActiveBoard "0")))
+      (ActiveBoard "1")))
   (Folder "Outputs"
     (File ".\sensor_board.drc"
       (Type "Report"))
@@ -163,7 +162,15 @@
     (File ".\allegro\netlist.log"
       (Type "Log File")
       (LogFile
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\netlist.log")))
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\netlist.log"))
+    (File ".\allegro\netrev.lst"
+      (Type "Log File")
+      (LogFile
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\netrev.lst"))
+    (File ".\allegro\eco.txt"
+      (Type "Log File")
+      (LogFile
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro\eco.txt")))
   (PartMRUSelector
     (CON3
       (FullPartName "CON3.Normal")
@@ -267,8 +274,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 5 24 5 1674 24 735")
-        (Scroll "217 113")
-        (Zoom "324")
+        (Scroll "-239 137")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
@@ -277,8 +284,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 735")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1"))
       (Path
@@ -289,57 +296,57 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col8"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col3"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col9"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col6"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col7"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col11"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col1"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col4"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col10"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col5"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 137")
+        (Scroll "-239 0")
         (Zoom "100")
         (Occurrence "/m1/col2"))
       (Path
@@ -352,112 +359,57 @@
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col8/R-D69"))
+        (Occurrence "/m1/col8/R-D65"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col3/R-D13"))
+        (Occurrence "/m1/col3/R-D9"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col9/R-D37"))
+        (Occurrence "/m1/col9/R-D33"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col6/R-D61"))
+        (Occurrence "/m1/col6/R-D57"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col7/R-D29"))
+        (Occurrence "/m1/col7/R-D25"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col11/R-D85"))
+        (Occurrence "/m1/col11/R-D81"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col1/R-D5"))
+        (Occurrence "/m1/col1/R-D1"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col4/R-D53"))
+        (Occurrence "/m1/col4/R-D49"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col10/R-D77"))
+        (Occurrence "/m1/col10/R-D73"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col5/R-D21"))
+        (Occurrence "/m1/col5/R-D17"))
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
         (Scroll "-239 30")
         (Zoom "100")
-        (Occurrence "/m1/col2/R-D45"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col8/R-D72"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col3/R-D16"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col9/R-D40"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col6/R-D64"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col7/R-D32"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col11/R-D88"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col1/R-D8"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col4/R-D56"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col10/R-D80"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col5/R-D24"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 735")
-        (Scroll "-239 30")
-        (Zoom "100")
-        (Occurrence "/m1/col2/R-D48"))
+        (Occurrence "/m1/col2/R-D41"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
       (Schematic "LDR-D-Unit")

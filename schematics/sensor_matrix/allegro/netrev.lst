@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Sat Sep 25 16:13:42 2021                      )
+(    Date/Time        : Mon Sep 27 20:01:07 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -17,21 +17,21 @@ Ripup retain bondwire:       No
 Ripup symbols:               Always
 Missing symbol has error:    No
 DRC update:                  Yes
-Schematic directory:         '.'
-Design Directory:            'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro'
-Old design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
-New design name:             'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
+Schematic directory:         'c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro'
+Design Directory:            'c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro'
+Old design name:             'c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
+New design name:             'c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd'
 
-CmdLine: netrev -i . -y 1 -h -q netrev_constraint_report.xml C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaal18656.tmp
+CmdLine: netrev -y 1 -i c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\sensor_matrix\allegro -h -q netrev_constraint_report.xml c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/#Taaaaat12860.tmp
 
 ------ Preparing to read pst files ------
 
-Starting to read ./pstchip.dat 
-   Finished reading ./pstchip.dat (00:00:00.01)
-Starting to read ./pstxprt.dat 
-   Finished reading ./pstxprt.dat (00:00:00.00)
-Starting to read ./pstxnet.dat 
-   Finished reading ./pstxnet.dat (00:00:00.00)
+Starting to read c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstchip.dat 
+   Finished reading c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstchip.dat (00:00:00.01)
+Starting to read c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxprt.dat 
+   Finished reading c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxprt.dat (00:00:00.00)
+Starting to read c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxnet.dat 
+   Finished reading c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxnet.dat (00:00:00.00)
 
 ------ Oversights/Warnings/Errors ------
 
@@ -51,6 +51,8 @@ PSMPATH =  .
            C:\Cadence\Company\pcb\symbols\student 
            C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
            C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/symbols 
 
 PADPATH =  . 
            symbols 
@@ -59,12 +61,14 @@ PADPATH =  .
            C:/Cadence/Company/pcb/padstacks/student 
            C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
            C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/padstacks 
 
 
 ------ Summary Statistics ------
 
 
-netrev run on Sep 25 16:13:42 2021
+netrev run on Sep 27 20:01:07 2021
    DESIGN NAME : 'SENSOR_BOARD'
    PACKAGING ON Apr 19 2021 16:22:31
 
@@ -89,6 +93,6 @@ netrev run on Sep 25 16:13:42 2021
  No oversight detected
  No warning detected
 
-cpu time      0:00:27
+cpu time      0:00:17
 elapsed time  0:00:00
 

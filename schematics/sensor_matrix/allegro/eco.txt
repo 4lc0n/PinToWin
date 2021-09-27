@@ -2,42 +2,93 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Sat Sep 25 16:13:42 2021  |
+|  c:.../pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
+|                                                    Mon Sep 27 20:01:07 2021  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to design                                         |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- IRF9530N/TO_1_SOT-323_DIO_WPM1488
+ TEST POINT_TESTPAD_SMD2_COL0
+ TEST POINT_TESTPAD_SMD2_COL1
+ TEST POINT_TESTPAD_SMD2_COL2
+ TEST POINT_TESTPAD_SMD2_COL3
+ TEST POINT_TESTPAD_SMD2_COL4
+ TEST POINT_TESTPAD_SMD2_COL5
+ TEST POINT_TESTPAD_SMD2_COL6
+ TEST POINT_TESTPAD_SMD2_COL7
+ TEST POINT_TESTPAD_SMD2_COL8
+ TEST POINT_TESTPAD_SMD2_COL9
+ TEST POINT_TESTPAD_SMD2_COL10
+ TEST POINT_TESTPAD_SMD2_ROW1
+ TEST POINT_TESTPAD_SMD2_ROW2
+ TEST POINT_TESTPAD_SMD2_ROW3
+ TEST POINT_TESTPAD_SMD2_ROW4
+ TEST POINT_TESTPAD_SMD2_ROW5
+ TEST POINT_TESTPAD_SMD2_ROW6
+ TEST POINT_TESTPAD_SMD2_ROW7
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Sat Sep 25 16:13:42 2021  |
+|  c:.../pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
+|                                                    Mon Sep 27 20:01:07 2021  |
 |------------------------------------------------------------------------------|
 | COMPONENTS CHANGED from one device type to another in design                 |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q1                  IRF9530N/TO_1_SOT-323_DIO_WPM1488 23.8000 20.0000 IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220
+ TP2                 TEST POINT_TESTPAD_SMD2_ROW1                 TEST POINT_TESTPAD_SMD_ROW1
+ TP3                 TEST POINT_TESTPAD_SMD2_ROW2                 TEST POINT_TESTPAD_SMD_ROW2
+ TP4                 TEST POINT_TESTPAD_SMD2_ROW3                 TEST POINT_TESTPAD_SMD_ROW3
+ TP5                 TEST POINT_TESTPAD_SMD2_ROW4                 TEST POINT_TESTPAD_SMD_ROW4
+ TP6                 TEST POINT_TESTPAD_SMD2_ROW5                 TEST POINT_TESTPAD_SMD_ROW5
+ TP7                 TEST POINT_TESTPAD_SMD2_ROW6                 TEST POINT_TESTPAD_SMD_ROW6
+ TP8                 TEST POINT_TESTPAD_SMD2_ROW7                 TEST POINT_TESTPAD_SMD_ROW7
+ TP9                 TEST POINT_TESTPAD_SMD2_COL0                 TEST POINT_TESTPAD_SMD_COL0
+ TP10                TEST POINT_TESTPAD_SMD2_COL5                 TEST POINT_TESTPAD_SMD_COL5
+ TP11                TEST POINT_TESTPAD_SMD2_COL1                 TEST POINT_TESTPAD_SMD_COL1
+ TP12                TEST POINT_TESTPAD_SMD2_COL6                 TEST POINT_TESTPAD_SMD_COL6
+ TP13                TEST POINT_TESTPAD_SMD2_COL2                 TEST POINT_TESTPAD_SMD_COL2
+ TP14                TEST POINT_TESTPAD_SMD2_COL7                 TEST POINT_TESTPAD_SMD_COL7
+ TP15                TEST POINT_TESTPAD_SMD2_COL3                 TEST POINT_TESTPAD_SMD_COL3
+ TP16                TEST POINT_TESTPAD_SMD2_COL8                 TEST POINT_TESTPAD_SMD_COL8
+ TP17                TEST POINT_TESTPAD_SMD2_COL4                 TEST POINT_TESTPAD_SMD_COL4
+ TP18                TEST POINT_TESTPAD_SMD2_COL9                 TEST POINT_TESTPAD_SMD_COL9
+ TP19                TEST POINT_TESTPAD_SMD2_COL10                 TEST POINT_TESTPAD_SMD_COL10
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
-|  C:.../PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
-|                                                    Sat Sep 25 16:13:42 2021  |
+|  c:.../pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd    |
+|                                                    Mon Sep 27 20:01:07 2021  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to design                                              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Q1.3           23.8000 20.0000 PRIM_FILE      .\pstchip.dat
+ TP2.1                          PRIM_FILE      .\pstchip.dat
+ TP3.1                          PRIM_FILE      .\pstchip.dat
+ TP4.1                          PRIM_FILE      .\pstchip.dat
+ TP5.1                          PRIM_FILE      .\pstchip.dat
+ TP6.1                          PRIM_FILE      .\pstchip.dat
+ TP7.1                          PRIM_FILE      .\pstchip.dat
+ TP8.1                          PRIM_FILE      .\pstchip.dat
+ TP9.1                          PRIM_FILE      .\pstchip.dat
+ TP10.1                         PRIM_FILE      .\pstchip.dat
+ TP11.1                         PRIM_FILE      .\pstchip.dat
+ TP12.1                         PRIM_FILE      .\pstchip.dat
+ TP13.1                         PRIM_FILE      .\pstchip.dat
+ TP14.1                         PRIM_FILE      .\pstchip.dat
+ TP15.1                         PRIM_FILE      .\pstchip.dat
+ TP16.1                         PRIM_FILE      .\pstchip.dat
+ TP17.1                         PRIM_FILE      .\pstchip.dat
+ TP18.1                         PRIM_FILE      .\pstchip.dat
+ TP19.1                         PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
-|       Comp definitions added:       1                                        |
-|       Components changed    :       1                                        |
-|       Slot property added   :       1                                        |
+|       Comp definitions added:      18                                        |
+|       Components changed    :      18                                        |
+|       Slot property added   :      18                                        |
 |                                                                              |
-|   Total ECO changes reported:       3                                        |
+|   Total ECO changes reported:      54                                        |
 |------------------------------------------------------------------------------|

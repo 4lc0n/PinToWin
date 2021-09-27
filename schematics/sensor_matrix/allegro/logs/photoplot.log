@@ -1,0 +1,426 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : sensor_board_routing.brd                      )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Mon Sep 27 18:23:25 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          MM
+    FILM-SIZE             2400000 1600000
+    FORMAT                3.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  NO
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        NO
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < 1_TOP >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/1_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (-55.0000 -66.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (-55.0000 35.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (35.0000 -66.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (35.0000 35.0000).
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     1.27000                                  DARK 
+  CIRCLE     1.47320                                  DARK 
+  SQUARE     1.27000                     0.000 NO     DARK 
+  SQUARE     1.47320                     0.000 NO     DARK 
+
+     1_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < 2_BOTTOM >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/2_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (-55.0000 -66.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (-55.0000 35.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (35.0000 -66.0000).
+    WARNING: Null REGULAR-PAD specified for padstack MNN3_5 at (35.0000 35.0000).
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     0.80000                                  DARK 
+  CIRCLE     1.27000                                  DARK 
+  CIRCLE     1.47320                                  DARK 
+  SQUARE     1.27000                     0.000 NO     DARK 
+  SQUARE     1.47320                     0.000 NO     DARK 
+  SQUARE     1.52400                     0.000 NO     DARK 
+  RECTANGLE  0.46000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  1.10000     x 0.61000       0.000 NO     DARK 
+
+     2_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < NCLEGEND-1-2 >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/NCLEGEND-1-2.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: 0 width line found at (78.2500 31.0500)
+           ... using undefined line width of 0.2500
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2500
+
+    WARNING: text composed 0 width line found at (89.6650 64.3875)
+           ... using undefined line width of 0.2500
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2500
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.25000                                  DARK 
+
+     NCLEGEND-1-2 created with warnings
+
+
+================================================================
+     PROCESSING FILM < Board_outline >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Board_outline.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.25000                                  DARK 
+
+     Board_outline created.
+
+
+================================================================
+     PROCESSING FILM < Soldermask_top >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Soldermask_top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     1.27000                                  DARK 
+  CIRCLE     1.47320                                  DARK 
+  CIRCLE     4.50000                                  DARK 
+  SQUARE     1.27000                     0.000 NO     DARK 
+  SQUARE     1.47320                     0.000 NO     DARK 
+
+     Soldermask_top created.
+
+
+================================================================
+     PROCESSING FILM < Soldermask_bot >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Soldermask_bot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     1.27000                                  DARK 
+  CIRCLE     1.47320                                  DARK 
+  CIRCLE     4.50000                                  DARK 
+  SQUARE     1.27000                     0.000 NO     DARK 
+  SQUARE     1.47320                     0.000 NO     DARK 
+  SQUARE     1.52400                     0.000 NO     DARK 
+  RECTANGLE  0.46000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  1.10000     x 0.61000       0.000 NO     DARK 
+
+     Soldermask_bot created.
+
+
+================================================================
+     PROCESSING FILM < Solderpaste_top >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Solderpaste_top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  SQUARE     1.27000                     0.000 NO     DARK 
+
+     Solderpaste_top created.
+
+
+================================================================
+     PROCESSING FILM < Solderpaste_bot >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Solderpaste_bot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  SQUARE     1.27000                     0.000 NO     DARK 
+  SQUARE     1.52400                     0.000 NO     DARK 
+  RECTANGLE  0.46000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  1.10000     x 0.61000       0.000 NO     DARK 
+
+     Solderpaste_bot created.
+
+
+================================================================
+     PROCESSING FILM < Assembly_top >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Assembly_top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.20000                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+
+     Assembly_top created.
+
+
+================================================================
+     PROCESSING FILM < Assembly_bot >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Assembly_bot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.20320                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+
+     Assembly_bot created.
+
+
+================================================================
+     PROCESSING FILM < Silkscreen_top >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Silkscreen_top.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+
+     Silkscreen_top created.
+
+
+================================================================
+     PROCESSING FILM < Silkscreen_bot >
+     TO FILE < C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/output/Silkscreen_bot.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2500
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.15240                                  DARK 
+  CIRCLE     0.20320                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+
+     Silkscreen_bot created.
+
+
+------------------------------------------------------
+ SUMMARY:
+        1_TOP created with warnings
+        2_BOTTOM created with warnings
+        NCLEGEND-1-2 created with warnings
+        Board_outline created.
+        Soldermask_top created.
+        Soldermask_bot created.
+        Solderpaste_top created.
+        Solderpaste_bot created.
+        Assembly_top created.
+        Assembly_bot created.
+        Silkscreen_top created.
+        Silkscreen_bot created.
+
+ ARTWORK had warnings

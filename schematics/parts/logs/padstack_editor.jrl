@@ -1,0 +1,62 @@
+\t (00:00:00) padstack_editor 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Mon Sep 27 18:46:51 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=16576 CPUs=8
+\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\padstack_editor.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\testpad.pad
+\t (00:00:00) 
+\d (00:00:05) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:06) QtSignal GuidedTabsParent GuidedTabs currentChanged Summary
+\d (00:00:10) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:00:10) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:12) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:13) QtSignal GuidedTabsParent GuidedTabs currentChanged Drill
+\d (00:00:14) QtSignal GuidedTabsParent GuidedTabs currentChanged Start
+\d (00:00:17) QtSignal MainWindow Save triggered
+\d (00:25:55) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:25:58) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:25:59) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:26:00) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:26:02) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:26:05) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:26:06) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:26:06) QtSignal GuidedTabsParent GuidedTabs currentChanged Summary
+\d (00:26:11) QtSignal MainWindow SaveAs triggered
+\d (00:26:15) QtFillin "testpad_pad.pad"
+\d (00:35:47) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:35:51) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:35:54) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:35:55) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:35:55) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:35:56) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged
+\d (00:35:56) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Keep Out"
+\d (00:35:56) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Keep Out" 0 5
+\d (00:35:58) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Keep Out" 0 5
+\d (00:36:02) QtSignal MainWindow Save triggered
+\d (00:37:49) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:37:50) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:37:51) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:37:53) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:37:54) QtSignal GuidedTabsParent GuidedTabs currentChanged Summary
+\d (00:38:10) QtSignal GuidedSummaryTab Save clicked
+\d (00:38:12) QtFillin ""
+\d (00:49:45) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:49:45) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:49:46) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:49:47) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged
+\d (00:49:48) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 1 "Keep Out"
+\d (00:49:48) QtSignal GuidedDesignLayersTab LayersTable cellClicked 1 "Keep Out" 1 5
+\d (00:49:48) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Keep Out"
+\d (00:49:48) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Keep Out" 0 5
+\d (00:49:49) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged
+\d (00:49:49) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Layer Name"
+\d (00:49:51) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:49:56) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:49:57) QtSignal GuidedTabsParent GuidedTabs currentChanged Summary
+\d (00:49:59) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:50:02) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:50:04) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:50:04) QtSignal GuidedTabsParent GuidedTabs currentChanged Options
+\d (00:50:04) QtSignal GuidedTabsParent GuidedTabs currentChanged Summary
+\d (00:50:07) QtSignal MainWindow Save triggered
+\d (00:50:08) QtSignal MainWindow SaveAs triggered
+\d (00:50:11) QtFillin "testpad_pad2.pad"
+\t (00:52:40)     Journal end - Mon Sep 27 19:39:31 2021

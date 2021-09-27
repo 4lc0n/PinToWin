@@ -1,27 +1,27 @@
 A!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!REFDES!FUNC_PRIM_FILE!COMP_PARENT_PPT!COMP_PARENT_PPT_PART!COMP_PARENT_PART_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!FUNC_GROUP!FUNC_ROOM!FUNC_CDS_FSP_UID!FUNC_NO_SWAP_PIN!FUNC_HARD_LOCATION!FUNC_NO_SWAP_GATE_EXT!FUNC_CDS_FSP_MAPPED_CELL!FUNC_CDS_FSP_FPGA_SYMBOL!FUNC_CDS_FSP_TERM_TYPE!FUNC_CDS_FSP_TERM_NAME!FUNC_ROOM!FUNC_GROUP!FUNC_CDS_FSP_TERM_INDEX!FUNC_NO_SWAP_GATE!
-J!C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Sat Sep 25 16:13:41 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!UP TO DATE!
+J!c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/sensor_board_routing.brd!Mon Sep 27 20:01:06 2021!-148.5000!-105.0000!271.5000!192.0000!0.0001!millimeters!SENSOR_BOARD!10.400000 mil!2!OUT OF DATE!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17116@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD2_ROW0!TP1!.\chipsView.dat!!!!!!F19!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17810@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL5!TP10!.\chipsView.dat!!!!!!F18!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17722@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL1!TP11!.\chipsView.dat!!!!!!F17!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17832@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL6!TP12!.\chipsView.dat!!!!!!F16!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17744@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL2!TP13!.\chipsView.dat!!!!!!F15!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17854@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL7!TP14!.\chipsView.dat!!!!!!F14!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17766@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL3!TP15!.\chipsView.dat!!!!!!F13!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17876@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL8!TP16!.\chipsView.dat!!!!!!F12!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17788@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL4!TP17!.\chipsView.dat!!!!!!F11!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17898@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL9!TP18!.\chipsView.dat!!!!!!F10!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17920@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL10!TP19!.\chipsView.dat!!!!!!F9!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17138@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW1!TP2!.\chipsView.dat!!!!!!F8!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17270@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW2!TP3!.\chipsView.dat!!!!!!F7!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17160@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW3!TP4!.\chipsView.dat!!!!!!F6!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17182@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW4!TP5!.\chipsView.dat!!!!!!F5!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17204@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW5!TP6!.\chipsView.dat!!!!!!F4!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17226@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW6!TP7!.\chipsView.dat!!!!!!F3!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17248@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_ROW7!TP8!.\chipsView.dat!!!!!!F2!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17694@connector.\test point.normal\(chips)!TEST POINT_TESTPAD_SMD_COL0!TP9!.\chipsView.dat!!!!!!F1!!!!!!!!!!!!!!!
+S!@sensor_board.schematic1(sch_1):ins27056@private_lib.\p dgs.normal\(chips)!P DGS_SOT-323_DIO_WPM1488!Q1!.\chipsView.dat!!!!!!F117!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):ins25675@sensor_board.\jumper_1.normal\(chips)!JUMPER_1_BLKCON100VHTM1SQW1003_JUMPER SELECTOR!J3!.\chipsView.dat!!!!!!F118!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):ins16858@sensor_board.\stm32_bluepill_1.normal\(chips)!STM32_BLUEPILL_1_BLACKPILL_FOOTPRINT_STM32F411!U1!.\chipsView.dat!!!!!!F0!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):ins11806@sensor_board.\irf9530n/to_1.normal\(chips)!IRF9530N/TO_1_TO220ABHWOHOLE_IRF9530N/TO220!Q1!.\chipsView.dat!!!!!!F117!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17116@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW0!TP1!.\chipsView.dat!!!!!!F19!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17810@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP10!.\chipsView.dat!!!!!!F18!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17722@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP11!.\chipsView.dat!!!!!!F17!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17832@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP12!.\chipsView.dat!!!!!!F16!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17744@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP13!.\chipsView.dat!!!!!!F15!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17854@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP14!.\chipsView.dat!!!!!!F14!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17766@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP15!.\chipsView.dat!!!!!!F13!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17876@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP16!.\chipsView.dat!!!!!!F12!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17788@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP17!.\chipsView.dat!!!!!!F11!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17898@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP18!.\chipsView.dat!!!!!!F10!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17920@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP19!.\chipsView.dat!!!!!!F9!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17694@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_COL0!TP9!.\chipsView.dat!!!!!!F8!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17138@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW1!TP2!.\chipsView.dat!!!!!!F7!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17270@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW2!TP3!.\chipsView.dat!!!!!!F6!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17160@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW3!TP4!.\chipsView.dat!!!!!!F5!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17182@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW4!TP5!.\chipsView.dat!!!!!!F4!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17204@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW5!TP6!.\chipsView.dat!!!!!!F3!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17226@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW6!TP7!.\chipsView.dat!!!!!!F2!!!!!!!!!!!!!!!
-S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17248@connector.\test point.normal\(chips)!TEST POINT_TESTCOUP_CUSTOM_ROW7!TP8!.\chipsView.dat!!!!!!F1!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)!1N4148_SOD123_DIO_D1N4148!D1!.\chipsView.dat!!!!!!F208!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col20@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)!1N4148_SOD123_DIO_D1N4148!D10!.\chipsView.dat!!!!!!F207!!!!!!!!!!!!!!!
 S!@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):col1@sensor_board.\column of ldr sensor matrix\(sch_1):\r-d\@sensor_board.\ldr-d-unit\(sch_1):ins89@ediode.\1n4148.normal\(chips)!1N4148_SOD123_DIO_D1N4148!D11!.\chipsView.dat!!!!!!F206!!!!!!!!!!!!!!!
