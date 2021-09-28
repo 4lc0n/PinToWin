@@ -111,6 +111,8 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 
+  // start first dma conversion: rest will be handled in the IRQ of DMA
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -118,23 +120,23 @@ int main(void)
   while (1)
   {
 
-  	if(adc_error == 1){
-			adc_error = 0;
-			// sprintf(output, "ADC Error\r\n");
-			// HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
-			while(1);
-		}
-
-		for(int i = 0; i < N_COL; i++){
-			set_col_active(i);
-			// HAL_Delay(1);
-			HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[i], N_ROW);
-
-			while(adc_complete != 1);
-			adc_complete = 0;
-			HAL_ADC_Stop_DMA(&hadc1);
-		}
-
+//  	if(adc_error == 1){
+//			adc_error = 0;
+//			// sprintf(output, "ADC Error\r\n");
+//			// HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
+//			while(1);
+//		}
+//
+//		for(int i = 0; i < N_COL; i++){
+////			set_col_active(i);
+////			// HAL_Delay(1);
+////			HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[i], N_ROW);
+////
+////			while(adc_complete != 1);
+////			adc_complete = 0;
+////			HAL_ADC_Stop_DMA(&hadc1);
+//		}
+//
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -374,7 +376,7 @@ static void MX_GPIO_Init(void)
                           |COL_SELECT_8_Pin|COL_SELECT_9_Pin|COL_SELECT_10_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
@@ -454,7 +456,17 @@ void set_col_active(int8_t col)
 // Called when buffer is completely filled
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
-	adc_complete = 1;
+//	adc_complete = 1;
+	static int active_col = 0;
+
+	HAL_ADC_Stop_DMA(&hadc1);
+
+	active_col = (++active_col) % N_COL;
+
+	set_col_active(active_col);
+	// HAL_Delay(1);
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+
 
 
 }
