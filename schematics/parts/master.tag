@@ -1,1 +1,1 @@
-testpad_smd2.dra
+SOD123_DIO.dra

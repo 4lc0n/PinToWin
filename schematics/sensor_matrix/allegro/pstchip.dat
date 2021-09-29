@@ -1,6 +1,6 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-29-2021 at 10:55:26}
-primitive 'CAP NP_SMC1206_100UF';
+{ Using PSTWRITER 17.4.0 d001Sep-29-2021 at 22:22:32}
+primitive 'CAP NP_CPCYL1D300LS200031_100UF';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -11,7 +11,7 @@ primitive 'CAP NP_SMC1206_100UF';
   end_pin;
   body
     PART_NAME='CAP NP';
-    JEDEC_TYPE='SMC1206';
+    JEDEC_TYPE='CPCYL1D300LS200031';
     VALUE='100uF';
   end_body;
 end_primitive;

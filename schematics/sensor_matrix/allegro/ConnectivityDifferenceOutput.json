@@ -783,6 +783,13 @@
 			"Physical" : "0.25 MM"
 		},
 		{
+			"Name" : "VIN",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):vin",
+			"PropName" : "MIN_LINE_WIDTH",
+			"Logical" : null,
+			"Physical" : "0.8 MM"
+		},
+		{
 			"Name" : "COL_SELECT_3",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_3",
 			"PropName" : "MIN_NECK_WIDTH",
@@ -1577,62 +1584,12 @@
 	"Pin Property" : [],
 	"Component" : [
 		{
-			"Name" : "TP20",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28458@connector.\\test point.normal\\(chips)",
-			"Logical" : "TP20",
-			"Physical" : null
-		},
-		{
-			"Name" : "TP21",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28478@connector.\\test point.normal\\(chips)",
-			"Logical" : "TP21",
-			"Physical" : null
-		},
-		{
 			"Name" : "C1",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):ins5040@discrete.\\cap np.normal\\(chips)",
-			"Logical" : "CAP NP_SMC1206_100UF",
-			"Physical" : "CAP NP_SMC1206_1UF"
+			"Logical" : "CAP NP_CPCYL1D300LS200031_100UF",
+			"Physical" : "CAP NP_SMC1206_100UF"
 		}
 	],
-	"Net" : [
-		{
-			"Name" : "N26283",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):n26283",
-			"Logical" : null,
-			"Physical" : "N26283"
-		},
-		{
-			"Name" : "VIN",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):vin",
-			"Logical" : "VIN",
-			"Physical" : null
-		}
-	],
-	"Connection" : [
-		{
-			"Name" : "J1.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18698@connector.\\con6.normal\\(chips):\\1\\",
-			"Logical" : "VIN",
-			"Physical" : "N26283"
-		},
-		{
-			"Name" : "J2.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18495@connector.\\jumper.normal\\(chips):\\1\\",
-			"Logical" : "VIN",
-			"Physical" : "N26283"
-		},
-		{
-			"Name" : "TP20.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28458@connector.\\test point.normal\\(chips):\\1\\",
-			"Logical" : "VCC",
-			"Physical" : null
-		},
-		{
-			"Name" : "TP21.1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28478@connector.\\test point.normal\\(chips):\\1\\",
-			"Logical" : "GND",
-			"Physical" : null
-		}
-	]
+	"Net" : [],
+	"Connection" : []
 }
