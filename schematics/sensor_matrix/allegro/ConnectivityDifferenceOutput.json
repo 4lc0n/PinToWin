@@ -440,29 +440,29 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc1",
+			"Name" : "N00105_M_COL17_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col17_r-d6\\",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC1",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc1",
+			"Name" : "N00105_M_COL17_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col17_r-d6\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL17_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col17_r-d6\\",
+			"Name" : "ADC1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc1",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL17_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col17_r-d6\\",
+			"Name" : "ADC1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc1",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -482,29 +482,29 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC4",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc4",
+			"Name" : "N00105_M_COL15_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d6\\",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC4",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc4",
+			"Name" : "N00105_M_COL15_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d6\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL15_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d6\\",
+			"Name" : "ADC4",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc4",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL15_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d6\\",
+			"Name" : "ADC4",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc4",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -538,29 +538,29 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc7",
+			"Name" : "N00105_M_COL13_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d6\\",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "ADC7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):adc7",
+			"Name" : "N00105_M_COL13_R-D6",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d6\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL13_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d6\\",
+			"Name" : "ADC7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc7",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL13_R-D6",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d6\\",
+			"Name" : "ADC7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):adc7",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -692,11 +692,18 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N26283",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):n26283",
+			"Name" : "N00105_M_COL15_R-D3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d3\\",
+			"PropName" : "MIN_NECK_WIDTH",
+			"Logical" : null,
+			"Physical" : "0.25 MM"
+		},
+		{
+			"Name" : "N00105_M_COL15_R-D3",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d3\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
-			"Physical" : "0.8 MM"
+			"Physical" : "0.25 MM"
 		},
 		{
 			"Name" : "COL_SELECT_0",
@@ -708,20 +715,6 @@
 		{
 			"Name" : "COL_SELECT_0",
 			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_0",
-			"PropName" : "MIN_LINE_WIDTH",
-			"Logical" : null,
-			"Physical" : "0.25 MM"
-		},
-		{
-			"Name" : "N00105_M_COL15_R-D3",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d3\\",
-			"PropName" : "MIN_NECK_WIDTH",
-			"Logical" : null,
-			"Physical" : "0.25 MM"
-		},
-		{
-			"Name" : "N00105_M_COL15_R-D3",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d3\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -818,29 +811,29 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "COL_SELECT_5",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_5",
+			"Name" : "N00105_M_COL15_R-D7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d7\\",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "COL_SELECT_5",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_5",
+			"Name" : "N00105_M_COL15_R-D7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d7\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL15_R-D7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d7\\",
+			"Name" : "COL_SELECT_5",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_5",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL15_R-D7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col15_r-d7\\",
+			"Name" : "COL_SELECT_5",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_5",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -874,29 +867,29 @@
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "COL_SELECT_8",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_8",
+			"Name" : "N00105_M_COL13_R-D7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d7\\",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "COL_SELECT_8",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_8",
+			"Name" : "N00105_M_COL13_R-D7",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d7\\",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL13_R-D7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d7\\",
+			"Name" : "COL_SELECT_8",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_8",
 			"PropName" : "MIN_NECK_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
 		},
 		{
-			"Name" : "N00105_M_COL13_R-D7",
-			"C_PATH" : "@sensor_board.schematic1(sch_1):\\n00105_m_col13_r-d7\\",
+			"Name" : "COL_SELECT_8",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):col_select_8",
 			"PropName" : "MIN_LINE_WIDTH",
 			"Logical" : null,
 			"Physical" : "0.25 MM"
@@ -1582,7 +1575,64 @@
 		}
 	],
 	"Pin Property" : [],
-	"Component" : [],
-	"Net" : [],
-	"Connection" : []
+	"Component" : [
+		{
+			"Name" : "TP20",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28458@connector.\\test point.normal\\(chips)",
+			"Logical" : "TP20",
+			"Physical" : null
+		},
+		{
+			"Name" : "TP21",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28478@connector.\\test point.normal\\(chips)",
+			"Logical" : "TP21",
+			"Physical" : null
+		},
+		{
+			"Name" : "C1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins5040@discrete.\\cap np.normal\\(chips)",
+			"Logical" : "CAP NP_SMC1206_100UF",
+			"Physical" : "CAP NP_SMC1206_1UF"
+		}
+	],
+	"Net" : [
+		{
+			"Name" : "N26283",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):n26283",
+			"Logical" : null,
+			"Physical" : "N26283"
+		},
+		{
+			"Name" : "VIN",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):vin",
+			"Logical" : "VIN",
+			"Physical" : null
+		}
+	],
+	"Connection" : [
+		{
+			"Name" : "J1.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18698@connector.\\con6.normal\\(chips):\\1\\",
+			"Logical" : "VIN",
+			"Physical" : "N26283"
+		},
+		{
+			"Name" : "J2.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins18495@connector.\\jumper.normal\\(chips):\\1\\",
+			"Logical" : "VIN",
+			"Physical" : "N26283"
+		},
+		{
+			"Name" : "TP20.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28458@connector.\\test point.normal\\(chips):\\1\\",
+			"Logical" : "VCC",
+			"Physical" : null
+		},
+		{
+			"Name" : "TP21.1",
+			"C_PATH" : "@sensor_board.schematic1(sch_1):ins28478@connector.\\test point.normal\\(chips):\\1\\",
+			"Logical" : "GND",
+			"Physical" : null
+		}
+	]
 }

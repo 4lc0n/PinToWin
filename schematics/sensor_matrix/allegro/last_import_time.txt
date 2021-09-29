@@ -162,3 +162,7 @@
 2021-09-27T20:01:07 ===> "c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxnet.dat"
 2021-09-27T20:01:07 ===> "c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstxprt.dat"
 2021-09-27T20:01:07 ===> "c:/users/markl/documents/sem7/smartsystems/pintowin/schematics/sensor_matrix/allegro/pstdmlmodels.dat"
+2021-09-29T10:55:29 ===> "./pstchip.dat"
+2021-09-29T10:55:29 ===> "./pstxnet.dat"
+2021-09-29T10:55:29 ===> "./pstxprt.dat"
+2021-09-29T10:55:29 ===> "./pstdmlmodels.dat"

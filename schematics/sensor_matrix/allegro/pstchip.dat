@@ -1,6 +1,6 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.4.0 d001Sep-27-2021 at 20:01:06}
-primitive 'CAP NP_SMC1206_1UF';
+{ Using PSTWRITER 17.4.0 d001Sep-29-2021 at 10:55:26}
+primitive 'CAP NP_SMC1206_100UF';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -12,7 +12,7 @@ primitive 'CAP NP_SMC1206_1UF';
   body
     PART_NAME='CAP NP';
     JEDEC_TYPE='SMC1206';
-    VALUE='1uF';
+    VALUE='100uF';
   end_body;
 end_primitive;
 primitive '1N4148_SOD123_DIO_D1N4148';
@@ -295,6 +295,30 @@ primitive 'TEST POINT_TESTPAD_SMD2_ROW1';
     PART_NAME='TEST POINT';
     JEDEC_TYPE='testpad_smd2';
     VALUE='ROW1';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPAD_SMD2_VCC';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpad_smd2';
+    VALUE='VCC';
+  end_body;
+end_primitive;
+primitive 'TEST POINT_TESTPAD_SMD2_GND';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='TEST POINT';
+    JEDEC_TYPE='testpad_smd2';
+    VALUE='GND';
   end_body;
 end_primitive;
 primitive 'TEST POINT_TESTPAD_SMD2_ROW2';

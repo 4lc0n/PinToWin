@@ -1,52 +1,55 @@
-\t (00:00:01) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Mon Sep 27 20:21:54 2021
-\t (00:00:01)         Host=DESKTOP-QOSR346 User=markl Pid=10552 CPUs=8
-\t (00:00:01) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
-\t (00:00:01) 
-   (00:00:01) Loading axlcore.cxt 
-   (00:00:01) Searching for nsWare programs v2.65
-   (00:00:01) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
-   (00:00:01) 	NsWare programs must reside in this directory!
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function Find_Component_Routine redefined
-   (00:00:01) function AFn_formEnd redefined
-   (00:00:01) function AFn_formMessage redefined
-   (00:00:01) function AFn_formGroup redefined
-   (00:00:01) function AFn_formText redefined
-   (00:00:01) function AFn_formButton redefined
-   (00:00:01) function AFn_formChecklistItem redefined
-   (00:00:01) function AFn_formRealFillin redefined
-   (00:00:01) function AFn_formPop redefined
-   (00:00:01) function AFn_formThumbnail redefined
-   (00:00:01) function AFn_formOptionsString redefined
-   (00:00:01) function AFn_formSizeString redefined
-   (00:00:01) function AFn_formOptionalString redefined
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function findAllOfType redefined
-   (00:00:01) function ashFindAllClines redefined
-   (00:00:01) function ashFindAllClinesegs redefined
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "testpad_smd2"
-\d (00:00:04) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/testpad_smd2.dra
-   (00:00:04) Loading skillExt.cxt 
-\i (00:00:04) trapsize 1
-\i (00:00:04) trapsize 2
-\i (00:00:04) trapsize 2
-\i (00:00:04) trapsize 1
-\i (00:00:05) etchedit 
-\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "Start Page"
-\i (00:00:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "testpad_smd2"
-\i (00:00:09) opencd C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd 
-\t (00:00:09) Opening existing design...
-\t (00:00:10) Grids are drawn 0.5000, 0.5000 apart for enhanced viewing.
-\i (00:00:10) trapsize 3203
-\i (00:00:10) trapsize 3339
-\i (00:00:10) trapsize 3203
-\t (00:00:10) Grids are drawn 32.0000, 32.0000 apart for enhanced viewing.
-\t (00:00:10) Grids are drawn 0.5000, 0.5000 apart for enhanced viewing.
-\i (00:00:10) trapsize 2277
-\i (00:00:10) trapsize 2277
-\t (00:00:10) > Sending response DoneOpenBoard
-\t (00:00:10)     Journal end - Mon Sep 27 20:22:03 2021
+\t (01:49:27) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (01:49:27)     Journal start - Wed Sep 29 11:09:42 2021
+\t (01:49:27)         Host=DESKTOP-QOSR346 User=markl Pid=13176 CPUs=8
+\t (01:49:27) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (01:49:27) 
+\d (01:49:27) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOT-323_DIO.dra
+\i (01:49:27) trapsize 1469
+\i (01:49:27) etchedit 
+\i (01:49:31) trapsize 2957
+\i (01:49:31) trapsize 11395
+\i (01:49:35) trapsize 11212
+\i (01:49:35) trapsize 10230
+\i (01:49:35) trapsize 8392
+\i (01:49:36) trapsize 7078
+\i (01:49:36) trapsize 6371
+\i (01:49:36) trapsize 6094
+\i (01:49:36) trapsize 6015
+\i (01:49:36) trapsize 5989
+\i (01:49:36) trapsize 5964
+\i (01:49:36) trapsize 5914
+\i (01:49:36) trapsize 5889
+\i (01:49:36) trapsize 5349
+\i (01:49:36) trapsize 5078
+\i (01:49:36) trapsize 4147
+\i (01:49:36) trapsize 3915
+\i (01:49:36) trapsize 3469
+\i (01:49:36) trapsize 3435
+\i (01:49:37) trapsize 3427
+\i (01:49:37) trapsize 3101
+\i (01:49:37) trapsize 3027
+\i (01:49:37) trapsize 2963
+\i (01:49:37) trapsize 2976
+\i (01:49:37) trapsize 3135
+\i (01:49:37) trapsize 3229
+\i (01:49:37) trapsize 3369
+\i (01:49:37) trapsize 3486
+\i (01:49:37) trapsize 3513
+\i (01:49:37) trapsize 3486
+\i (01:49:37) trapsize 3444
+\i (01:49:37) trapsize 3313
+\i (01:49:37) trapsize 3094
+\i (01:49:37) trapsize 3080
+\i (01:49:37) trapsize 3074
+\i (01:49:38) pick grid -28.387 -36.970
+\t (01:49:38) last pick:  -28.400 -37.000
+\i (01:49:58) open 
+\i (01:50:07) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
+\i (01:50:07) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
+\t (01:50:07) Opening existing design...
+\i (01:50:07) trapsize 1824
+\i (01:50:07) trapsize 1994
+\i (01:50:07) trapsize 1824
+\i (01:50:08) trapsize 1824
+\t (01:50:08) > Sending response DoneOpenBoard
+\t (01:50:08)     Journal end - Wed Sep 29 11:10:22 2021

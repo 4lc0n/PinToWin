@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.4.0 d001Sep-27-2021 at 20:01:06 }
+{ Using PSTWRITER 17.4.0 d001Sep-29-2021 at 10:55:26 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='SENSOR_BOARD';
@@ -8,7 +8,7 @@ DIRECTIVES
 END_DIRECTIVES;
 
 PART_NAME
- C1 'CAP NP_SMC1206_1UF':;
+ C1 'CAP NP_SMC1206_100UF':;
 
 SECTION_NUMBER 1
  '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS5040@DISCRETE.CAP NP.NORMAL(CHIPS)':
@@ -2024,6 +2024,26 @@ SECTION_NUMBER 1
  '@SENSOR_BOARD.SCHEMATIC1(SCH_1):M@SENSOR_BOARD.MATRIX(SCH_1):INS17138@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
  C_PATH='@sensor_board.schematic1(sch_1):m@sensor_board.matrix(sch_1):ins17138@connector.\test point.normal\(chips)',
  P_PATH='@sensor_board.schematic1(sch_1):page1_m@sensor_board.matrix(sch_1):page101_ins17138@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP20 'TEST POINT_TESTPAD_SMD2_VCC':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS28458@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins28458@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins28458@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP21 'TEST POINT_TESTPAD_SMD2_GND':;
+
+SECTION_NUMBER 1
+ '@SENSOR_BOARD.SCHEMATIC1(SCH_1):INS28478@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@sensor_board.schematic1(sch_1):ins28478@connector.\test point.normal\(chips)',
+ P_PATH='@sensor_board.schematic1(sch_1):page1_ins28478@connector.\test point.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
