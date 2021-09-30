@@ -4,10 +4,15 @@
 (                                                                     )
 (    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Thu Sep 30 10:02:10 2021                      )
+(    Date/Time        : Thu Sep 30 11:32:55 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
+
+
+ ******************************************
+ WARNING: DRC OUT OF DATE on this layout.
+ ******************************************
 
  ---- Photoplot outline rectangle not found; using drawing extents.
 
@@ -126,26 +131,9 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
-    WARNING: 0 width line found at (78.2500 31.0500)
-           ... using undefined line width of 0.2500
-
-    WARNING: Multiple 0 width lines; all will be treated the same as the first.
-           ... using undefined line width of 0.2500
-
-    WARNING: text composed 0 width line found at (89.6650 64.3875)
-           ... using undefined line width of 0.2500
-
-    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
-           ... using undefined line width of 0.2500
 
 
-
-  APERTURES USED:
-  ---------------------------------------------------------
-  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
-  ---------------------------------------------------------
-  CIRCLE     0.25000                                  DARK 
-
+  APERTURES USED:  NONE
      NCLEGEND-1-2 created with warnings
 
 
@@ -173,7 +161,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.25000                                  DARK 
 
-     Board_outline created.
+     Board_outline created with warnings
 
 
 ================================================================
@@ -209,7 +197,7 @@ Results from parameter file ...
   SQUARE     1.34620                     0.000 NO     DARK 
   SQUARE     1.47320                     0.000 NO     DARK 
 
-     Soldermask_top created.
+     Soldermask_top created with warnings
 
 
 ================================================================
@@ -246,7 +234,7 @@ Results from parameter file ...
   RECTANGLE  0.46000     x 1.10000      90.000 NO     DARK 
   RECTANGLE  1.00000     x 0.85000       0.000 NO     DARK 
 
-     Soldermask_bot created.
+     Soldermask_bot created with warnings
 
 
 ================================================================
@@ -274,7 +262,7 @@ Results from parameter file ...
   CIRCLE     1.30000                                  DARK 
   SQUARE     1.27000                     0.000 NO     DARK 
 
-     Solderpaste_top created.
+     Solderpaste_top created with warnings
 
 
 ================================================================
@@ -303,7 +291,7 @@ Results from parameter file ...
   RECTANGLE  0.46000     x 1.10000      90.000 NO     DARK 
   RECTANGLE  1.00000     x 0.85000       0.000 NO     DARK 
 
-     Solderpaste_bot created.
+     Solderpaste_bot created with warnings
 
 
 ================================================================
@@ -322,6 +310,18 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
+    WARNING: text composed 0 width line found at (-60.0982 -60.6350)
+           ... using undefined line width of 0.2500
+
+    WARNING: 0 width line found at (-57.5455 -60.0000)
+           ... using undefined line width of 0.2500
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2500
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.2500
+
 
 
   APERTURES USED:
@@ -333,7 +333,7 @@ Results from parameter file ...
   CIRCLE     0.20000                                  DARK 
   CIRCLE     0.25000                                  DARK 
 
-     Assembly_top created.
+     Assembly_top created with warnings
 
 
 ================================================================
@@ -362,7 +362,7 @@ Results from parameter file ...
   CIRCLE     0.20320                                  DARK 
   CIRCLE     0.25000                                  DARK 
 
-     Assembly_bot created.
+     Assembly_bot created with warnings
 
 
 ================================================================
@@ -391,7 +391,7 @@ Results from parameter file ...
   CIRCLE     0.15240                                  DARK 
   CIRCLE     0.25000                                  DARK 
 
-     Silkscreen_top created.
+     Silkscreen_top created with warnings
 
 
 ================================================================
@@ -420,7 +420,7 @@ Results from parameter file ...
   CIRCLE     0.20320                                  DARK 
   CIRCLE     0.25000                                  DARK 
 
-     Silkscreen_bot created.
+     Silkscreen_bot created with warnings
 
 
 ------------------------------------------------------
@@ -428,14 +428,14 @@ Results from parameter file ...
         1_TOP created with warnings
         2_BOTTOM created with warnings
         NCLEGEND-1-2 created with warnings
-        Board_outline created.
-        Soldermask_top created.
-        Soldermask_bot created.
-        Solderpaste_top created.
-        Solderpaste_bot created.
-        Assembly_top created.
-        Assembly_bot created.
-        Silkscreen_top created.
-        Silkscreen_bot created.
+        Board_outline created with warnings
+        Soldermask_top created with warnings
+        Soldermask_bot created with warnings
+        Solderpaste_top created with warnings
+        Solderpaste_bot created with warnings
+        Assembly_top created with warnings
+        Assembly_bot created with warnings
+        Silkscreen_top created with warnings
+        Silkscreen_bot created with warnings
 
  ARTWORK had warnings

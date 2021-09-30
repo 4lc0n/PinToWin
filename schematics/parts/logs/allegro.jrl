@@ -1,143 +1,55 @@
-\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Thu Sep 30 11:22:53 2021
-\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=15704 CPUs=8
-\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\SOD123_DIO.dra
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-   (00:00:00) Searching for nsWare programs v2.65
-   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
-   (00:00:00) 	NsWare programs must reside in this directory!
-   (00:00:00) function _saveSelSet redefined
-   (00:00:00) function _restoreSelSet redefined
-   (00:00:00) function Find_Component_Routine redefined
-   (00:00:00) function AFn_formEnd redefined
-   (00:00:00) function AFn_formMessage redefined
-   (00:00:00) function AFn_formGroup redefined
-   (00:00:00) function AFn_formText redefined
-   (00:00:00) function AFn_formButton redefined
-   (00:00:00) function AFn_formChecklistItem redefined
-   (00:00:00) function AFn_formRealFillin redefined
-   (00:00:00) function AFn_formPop redefined
-   (00:00:00) function AFn_formThumbnail redefined
-   (00:00:00) function AFn_formOptionsString redefined
-   (00:00:00) function AFn_formSizeString redefined
-   (00:00:00) function AFn_formOptionalString redefined
-   (00:00:00) function _saveSelSet redefined
-   (00:00:00) function _restoreSelSet redefined
-   (00:00:00) function findAllOfType redefined
-   (00:00:00) function ashFindAllClines redefined
-   (00:00:00) function ashFindAllClinesegs redefined
-\t (00:00:00) Opening existing design...
-\i (00:00:03) fillin yes 
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOD123_DIO"
-\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra
-   (00:00:03) Loading skillExt.cxt 
-\t (00:00:03) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:00:03) trapsize 233
-\i (00:00:03) trapsize 240
-\i (00:00:03) trapsize 233
-\i (00:00:03) trapsize 221
-\t (00:00:03) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:00:03) trapsize 242
-\i (00:00:04) etchedit 
-\i (00:00:04) roam start
-\i (00:00:04) roam x 12
-\i (00:00:04) roam y 10
-\i (00:00:04) roam x 14
-\i (00:00:04) roam y 12
-\i (00:00:04) roam x 14
-\i (00:00:04) roam y 10
-\i (00:00:04) roam x 10
-\i (00:00:04) roam y 8
-\i (00:00:04) roam x 16
-\i (00:00:04) roam y 12
-\i (00:00:04) roam x 18
-\i (00:00:04) roam y 12
-\i (00:00:04) roam x 20
-\i (00:00:04) roam y 6
-\i (00:00:04) roam x 14
-\i (00:00:04) roam y 6
-\i (00:00:04) roam x 10
-\i (00:00:04) roam y 2
-\i (00:00:04) roam x 16
-\i (00:00:04) roam y 6
-\i (00:00:04) roam x 10
-\i (00:00:04) roam y 2
-\i (00:00:04) roam x 12
-\i (00:00:04) roam y 2
-\i (00:00:04) roam x 18
-\i (00:00:04) roam y 4
-\i (00:00:04) roam x 20
-\i (00:00:04) roam y 6
-\i (00:00:04) roam x 22
-\i (00:00:04) roam y 2
-\i (00:00:04) roam x 24
-\i (00:00:04) roam y 4
-\i (00:00:04) roam x 28
-\i (00:00:04) roam y 6
-\i (00:00:04) roam x 24
-\i (00:00:04) roam y 4
-\i (00:00:04) roam x 26
-\i (00:00:04) roam y 2
-\i (00:00:05) roam x 8
-\i (00:00:05) roam y -4
-\i (00:00:05) roam y -8
-\i (00:00:05) roam y -14
-\i (00:00:05) roam x -2
-\i (00:00:05) roam y -14
-\i (00:00:05) roam x -4
-\i (00:00:05) roam y -12
-\i (00:00:05) roam x -6
-\i (00:00:05) roam y -10
-\i (00:00:05) roam x -6
-\i (00:00:05) roam y -14
-\i (00:00:05) roam x -10
-\i (00:00:05) roam y -8
-\i (00:00:05) roam x -8
-\i (00:00:05) roam y -2
-\i (00:00:05) roam end
-\i (00:00:05) prepopup -1.9554 0.0010
-\i (00:00:07) pop dyn_option_select '@:@Show element' 
-\i (00:00:07) show element 
-\i (00:00:07) etchedit 
-\i (00:00:34) setwindow text
-\i (00:00:34) close
-\i (00:00:42) setwindow pcb
-\i (00:00:42) padeditdb 
-\i (00:00:43) setwindow form.mini
-\i (00:00:43) FORM mini padlist RECT100X085SMD 
-\i (00:00:44) FORM mini padlist R110_61 
-\i (00:00:44) FORM mini padlist RECT100X085SMD 
-\i (00:00:47) FORM mini pad_stack_edit  
-\i (00:02:14) setwindow pcb
-\i (00:02:14) redraw 
-\i (00:02:29) refresh padstack 
-\i (00:02:32) setwindow form.rf_pad
-\i (414 -1.1412
-\i (00:00:30) generaledit 
-\i (00:00:32) text edit 
-\i (00:00:33) setwindow form.textedit
-\i (00:00:33) FORM textedit done  
-\i (00:00:33) setwindow pcb
-\i (00:00:33) pick 0.0000 0.0000
-\i (00:00:34) setwindow pcb
-\i (00:00:34) generaledit 
-\i (00:00:34) pick grid -3.1284 -0.8560
-\t (00:00:34) last pick:  -3.1275 -0.8550
-\i (00:00:44) pick grid -4.2646 0.7781
-\t (00:00:44) last pick:  -4.2650 0.7775
-\i (00:00:45) prepopup -4.2259 0.7781
-\i (00:00:45) pick grid -4.1050 1.0199
-\t (00:00:45) last pick:  -4.1050 1.0200
-\i (00:00:46) save 
-\i (00:00:48) fillin yes 
-\t (00:00:48) Symbol 'sod123_dio.psm' created.
-\i (00:00:48) generaledit 
-\i (00:05:58) pick grid -2.9640 -0.7496
-\t (00:05:58) last pick:  -2.9650 -0.7500
-\i (00:06:00) save 
-\i (00:06:01) fillin yes 
-\t (00:06:02) Symbol 'sod123_dio.psm' created.
-\i (00:06:02) generaledit 
-\i (00:25:47) exit 
-\t (00:25:47)     Journal end - Thu Sep 30 11:25:47 2021
+\t (00:00:01) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Thu Sep 30 11:33:57 2021
+\t (00:00:01)         Host=DESKTOP-QOSR346 User=markl Pid=10608 CPUs=8
+\t (00:00:01) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:01) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.65
+   (00:00:01) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function _saveSelSet redefined
+   (00:00:01) function _restoreSelSet redefined
+   (00:00:01) function Find_Component_Routine redefined
+   (00:00:01) function AFn_formEnd redefined
+   (00:00:01) function AFn_formMessage redefined
+   (00:00:01) function AFn_formGroup redefined
+   (00:00:01) function AFn_formText redefined
+   (00:00:01) function AFn_formButton redefined
+   (00:00:01) function AFn_formChecklistItem redefined
+   (00:00:01) function AFn_formRealFillin redefined
+   (00:00:01) function AFn_formPop redefined
+   (00:00:01) function AFn_formThumbnail redefined
+   (00:00:01) function AFn_formOptionsString redefined
+   (00:00:01) function AFn_formSizeString redefined
+   (00:00:01) function AFn_formOptionalString redefined
+   (00:00:01) function _saveSelSet redefined
+   (00:00:01) function _restoreSelSet redefined
+   (00:00:01) function findAllOfType redefined
+   (00:00:01) function ashFindAllClines redefined
+   (00:00:01) function ashFindAllClinesegs redefined
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOD123_DIO"
+\d (00:00:04) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra
+   (00:00:04) Loading skillExt.cxt 
+\t (00:00:04) Grids are drawn 0.0400, 0.0400 apart for enhanced viewing.
+\i (00:00:04) trapsize 398
+\i (00:00:04) trapsize 417
+\i (00:00:04) trapsize 398
+\i (00:00:04) trapsize 365
+\t (00:00:04) Grids are drawn 0.0400, 0.0400 apart for enhanced viewing.
+\i (00:00:04) trapsize 376
+\i (00:00:05) etchedit 
+\i (00:00:06) open 
+\i (00:00:18) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
+\i (00:00:18) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
+\t (00:00:18) Opening existing design...
+\i (00:00:19) fillin yes 
+\t (00:00:19) Grids are drawn 1.0000, 1.0000 apart for enhanced viewing.
+\i (00:00:19) trapsize 8391
+\i (00:00:19) trapsize 8755
+\i (00:00:19) trapsize 8391
+\t (00:00:19) Grids are drawn 64.0000, 64.0000 apart for enhanced viewing.
+\t (00:00:19) Grids are drawn 1.0000, 1.0000 apart for enhanced viewing.
+\i (00:00:19) trapsize 10660
+\t (00:00:21) > Sending response DoneOpenBoard
+\t (00:00:21)     Journal end - Thu Sep 30 11:34:16 2021
