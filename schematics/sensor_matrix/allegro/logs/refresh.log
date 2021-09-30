@@ -1,9 +1,9 @@
-Wed Sep 29 21:59:23 2021				Page     1
+Thu Sep 30 11:26:06 2021				Page     1
 
 
  
 Update Symbols/Modules Logfile
-	Wed Sep 29 21:59:23 2021
+	Thu Sep 30 11:26:06 2021
 
 ------ Module Refresh Messages ------
 
@@ -19,12 +19,12 @@ SUMMARY:    Updated 0 out of 0 modules
 (                                                                     )
 (    Drawing          : sensor_board_routing.brd                      )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Wed Sep 29 21:59:23 2021                      )
+(    Date/Time        : Thu Sep 30 11:26:06 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
-Wed Sep 29 21:59:23 2021				Page     1
+Thu Sep 30 11:26:06 2021				Page     1
 
 
 ------ Symbol Refresh Directives ------
@@ -34,14 +34,15 @@ Output design = ''
 
 Update mechanical symbols              = 'NO'
 Update format symbols                  = 'NO'
-Update package symbols                 = 'YES'
+Update package symbols                 = 'NO'
 Update shape/flash symbols             = 'NO'
-Update symbol padstacks                = 'YES'
+Update symbol padstacks                = 'NO'
 Preserve padstacks replaced on pins    = 'NO'
 Reset symbol text and size locations   = 'NO'
 Reset Pin Escapes (fanouts)            = 'NO'
 Ripup Etch                             = 'NO'
 Reset custom drill data                = 'NO'
+Symbol list file                       = 'c:/windows/temp/#Taaaadj12320.tmp'
 
 
 ------ Library Paths ------
@@ -72,36 +73,11 @@ PADPATH =  .
 
 ------ Symbol Refresh Messages ------
 
-'TESTPAD_SMD2'  symbol refreshed successfully.
-'SOT-323_DIO'  symbol refreshed successfully.
-'SMC1206'  symbol refreshed successfully.
-'BLKCON100VHTM1SQW1003'  symbol refreshed successfully.
-'LDR1_NTE'  symbol refreshed successfully.
-'BLKCON100VHTM1SQW1006'  symbol refreshed successfully.
-'BLKCON100VHTM1SQW1002'  symbol refreshed successfully.
-'SMR0805'  symbol refreshed successfully.
 'SOD123_DIO'  symbol refreshed successfully.
-'BLACKPILL_FOOTPRINT'  symbol refreshed successfully.
-
-
------- Pad Stack Refresh Messages ------
-
-'C127H76'  pad stack refreshed successfully.
-'DIP100T_LLB_PAD3_1'  pad stack refreshed successfully.
-'DIP100T_LLB_PAD4_1'  pad stack refreshed successfully.
-'BCON100T_LLB_PAD1'  pad stack refreshed successfully.
-'BCON100T_LLB_PAD2'  pad stack refreshed successfully.
-'SM_LIB_PAD88'  pad stack refreshed successfully.
-'S127H76'  pad stack refreshed successfully.
-'TESTPAD_PAD3'  pad stack refreshed successfully.
-'SM_LLB_PAD10_1'  pad stack refreshed successfully.
-'SM_LLB_PAD9_1'  pad stack refreshed successfully.
-'R110_61'  pad stack refreshed successfully.
-'R46_110'  pad stack refreshed successfully.
 
 
 ----- Symbol Update Summary ----
 
-Updated symbols: 10 out 10
+Updated symbols: 1 out 1
     Design updated.
 

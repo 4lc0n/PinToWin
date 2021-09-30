@@ -1,7 +1,7 @@
 \t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Wed Sep 29 21:41:46 2021
-\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=10796 CPUs=8
-\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\SOT-323_DIO.dra
+\t (00:00:00)     Journal start - Thu Sep 30 11:22:53 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=15704 CPUs=8
+\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\SOD123_DIO.dra
 \t (00:00:00) 
    (00:00:00) Loading axlcore.cxt 
    (00:00:00) Searching for nsWare programs v2.65
@@ -27,541 +27,117 @@
    (00:00:00) function findAllOfType redefined
    (00:00:00) function ashFindAllClines redefined
    (00:00:00) function ashFindAllClinesegs redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOT-323_DIO"
-\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOT-323_DIO.dra
+\t (00:00:00) Opening existing design...
+\i (00:00:03) fillin yes 
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOD123_DIO"
+\d (00:00:03) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra
    (00:00:03) Loading skillExt.cxt 
-\i (00:00:03) trapsize 1555
-\i (00:00:03) trapsize 1629
-\i (00:00:03) trapsize 1555
-\i (00:00:03) trapsize 1429
-\i (00:00:03) trapsize 1429
-\i (00:00:03) trapsize 945
+\t (00:00:03) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
+\i (00:00:03) trapsize 233
+\i (00:00:03) trapsize 240
+\i (00:00:03) trapsize 233
+\i (00:00:03) trapsize 221
+\t (00:00:03) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
+\i (00:00:03) trapsize 242
 \i (00:00:04) etchedit 
-\i (00:40:42) exit 
-\t (00:40:42)     Journal end - Wed Sep 29 22:22:27 2021
-9 -5.942
-\i (00:00:23) trapsize 823
-\i (00:00:26) open 
-\i (00:00:31) fillin "SOD123_DIO-L.dra"
-\t (00:00:31) Opening existing design...
-\i (00:00:31) trapsize 1035
-\d (00:00:31) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO-L.dra
-\i (00:00:31) etchedit 
-\i (00:00:35) open 
-\i (00:00:38) fillin "SOD123_DIO-M.dra"
-\t (00:00:38) Opening existing design...
-\i (00:00:38) trapsize 969
-\d (00:00:38) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO-M.dra
-\i (00:00:38) etchedit 
-\i (00:03:52) pick grid -92.110 8.874
-\t (00:03:52) last pick:  -92.100 8.900
-\i (00:03:53) prepopup -92.110 8.874
-\i (00:03:54) pop dyn_option_select '@:@Show element' 
-\i (00:03:54) show element 
-\i (00:03:55) etchedit 
-\i (00:04:25) show measure 
-\i (00:04:28) pick grid 65.899 10.812
-\t (00:04:28) last pick:  65.900 10.800
-\i (00:04:29) setwindow text
-\i (00:04:29) close
-\i (00:04:29) setwindow pcb
-\i (00:04:29) prepopup 60.858 61.608
-\i (00:04:30) done 
-\i (00:04:31) etchedit 
-\i (00:04:31) prepopup 66.481 60.445
-\i (00:04:32) pop dyn_option_select 'Quick Utilities@:@Grids...' 
-\i (00:04:32) define grid 
-\t (00:04:32) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:04:34) setwindow form.grid
-\i (00:04:34) FORM grid non_etch non_etch_x_grids 1 
-\i (00:04:35) FORM grid non_etch non_etch_y_grids 1 
-\i (00:04:36) FORM grid done  
-\i (00:04:37) setwindow pcb
-\i (00:04:37) prepopup 64.736 56.761
-\i (00:04:38) pick grid 60.664 63.159
-\t (00:04:38) last pick:  60.700 63.200
-\i (00:04:39) grid toggle 
-\t (00:04:39) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:04:40) etchedit 
-\i (00:04:41) zoom in 1 
-\i (00:04:41) setwindow pcb
-\i (00:04:41) zoom in 90.909 -1.208
-\t (00:04:41) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:04:41) trapsize 485
-\i (00:04:41) zoom in 1 
-\i (00:04:41) setwindow pcb
-\i (00:04:41) zoom in 90.909 -1.208
-\t (00:04:41) Grids are drawn 0.200, 0.200 apart for enhanced viewing.
-\i (00:04:41) trapsize 242
-\i (00:04:42) show measure 
-\i (00:04:44) pick grid 86.305 12.849
-\t (00:04:44) last pick:  86.300 12.800
-\i (00:04:45) roam y 96 
-\i (00:04:45) roam y 96
-\i (00:04:46) roam y 96 
-\i (00:04:46) roam y 96
-\i (00:04:46) roam y 96 
-\i (00:04:46) roam y 96
-\i (00:04:46) roam y -96 
-\i (00:04:46) roam y -96
-\i (00:04:48) pick grid 85.869 -12.776
-\t (00:04:48) last pick:  85.900 -12.800
-\i (00:04:51) pick grid 87.129 -12.727
-\t (00:04:51) last pick:  87.100 -12.700
-\i (00:04:51) pick grid 86.983 -12.824
-\t (00:04:51) last pick:  87.000 -12.800
-\i (00:04:53) pick grid 87.177 12.816
-\t (00:04:53) last pick:  87.200 12.800
-\i (00:05:17) setwindow text
-\i (00:05:17) close
-\i (00:05:19) setwindow pcb
-\i (00:05:19) open 
-\e (00:05:19) Do you want to save the changes you made to SOD123_DIO-M.dra?
-\i (00:05:19) fillin no 
-\i (00:05:24) fillin "SOD123_DIO-L.dra"
-\t (00:05:24) Opening existing design...
-\i (00:05:24) trapsize 1035
-\d (00:05:24) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO-L.dra
-\i (00:05:24) etchedit 
-\i (00:05:26) zoom in 1 
-\i (00:05:26) setwindow pcb
-\i (00:05:26) zoom in 90.300 -3.353
-\i (00:05:26) trapsize 518
-\i (00:05:26) zoom in 1 
-\i (00:05:26) setwindow pcb
-\i (00:05:26) zoom in 88.333 -3.352
-\i (00:05:26) trapsize 259
-\i (00:05:29) show measure 
-\i (00:05:36) pick grid 77.874 11.300
-\t (00:05:36) last pick:  77.900 11.300
-\i (00:05:40) show measure 
-\i (00:05:40) zoom in 1 
-\i (00:05:40) setwindow pcb
-\i (00:05:40) zoom in 80.152 -11.843
-\i (00:05:40) trapsize 129
-\i (00:05:42) grid toggle 
-\t (00:05:42) Grids are drawn 0.200, 0.200 apart for enhanced viewing.
-\i (00:05:42) zoom out 1 
-\i (00:05:42) setwindow pcb
-\i (00:05:42) zoom out 76.243 4.519
-\t (00:05:42) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:05:42) trapsize 259
-\i (00:05:46) pick grid 78.677 11.146
-\t (00:05:46) last pick:  78.700 11.100
-\i (00:05:48) pick grid 78.055 -11.117
-\t (00:05:48) last pick:  78.100 -11.100
-\i (00:05:52) pick grid 76.709 11.302
-\t (00:05:52) last pick:  76.700 11.300
-\i (00:05:55) pick grid 76.347 -11.169
-\t (00:05:55) last pick:  76.300 -11.200
-\i (00:05:57) pick grid 75.829 -11.325
-\t (00:05:57) last pick:  75.800 -11.300
-\i (00:06:00) pick grid 75.674 11.250
-\t (00:06:00) last pick:  75.700 11.300
-\i (00:06:08) open 
-\e (00:06:08) Do you want to save the changes you made to SOD123_DIO-L.dra?
-\i (00:06:09) fillin no 
-\i (00:06:12) fillin "SOD123_DIO.dra"
-\t (00:06:12) Opening existing design...
-\i (00:06:12) trapsize 1738
-\d (00:06:12) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra
-\i (00:06:13) etchedit 
-\i (00:06:13) zoom in 1 
-\i (00:06:13) setwindow pcb
-\i (00:06:13) zoom in 90.206 4.165
-\i (00:06:13) trapsize 869
-\i (00:06:14) zoom in 1 
-\i (00:06:14) setwindow pcb
-\i (00:06:14) zoom in 82.558 5.382
-\i (00:06:14) trapsize 435
-\i (00:06:14) zoom in 1 
-\i (00:06:14) setwindow pcb
-\i (00:06:14) zoom in 69.782 6.512
-\i (00:06:14) trapsize 217
-\i (00:06:17) shadow toggle 
-\i (00:06:17) shadow toggle 
-\i (00:06:18) grid toggle 
-\t (00:06:18) Grids are drawn 0.200, 0.200 apart for enhanced viewing.
-\i (00:06:18) etchedit 
-\i (00:06:19) show measure 
-\i (00:06:27) pick grid 79.733 12.030
-\t (00:06:27) last pick:  79.700 12.000
-\i (00:06:30) pick grid 80.863 -12.000
-\t (00:06:30) last pick:  80.900 -12.000
-\i (00:06:32) pick grid 80.776 -12.000
-\t (00:06:32) last pick:  80.800 -12.000
-\i (00:06:34) pick grid 81.558 12.161
-\t (00:06:34) last pick:  81.600 12.200
-\i (00:06:35) pick grid 81.297 -12.087
-\t (00:06:35) last pick:  81.300 -12.100
-\i (00:07:09) setwindow text
-\i (00:07:09) close
-\i (00:07:10) setwindow pcb
-\i (00:07:10) prepopup 81.645 8.163
-\i (00:07:10) pick grid 77.082 8.684
-\t (00:07:10) last pick:  77.100 8.700
-\i (00:07:11) setwindow text
-\i (00:07:11) close
-\i (00:07:11) setwindow pcb
-\i (00:07:11) pick grid 79.993 7.468
-\t (00:07:11) last pick:  80.000 7.500
-\i (00:07:13) setwindow text
-\i (00:07:13) close
-\i (00:07:13) setwindow pcb
-\i (00:07:13) zoom out 1 
-\i (00:07:13) setwindow pcb
-\i (00:07:13) zoom out 83.253 11.943
-\t (00:07:13) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:07:13) trapsize 435
-\i (00:07:17) zoom out 1 
-\i (00:07:17) setwindow pcb
-\i (00:07:17) zoom out 88.989 9.337
-\t (00:07:17) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:07:17) trapsize 869
-\i (00:07:20) zoom in 1 
-\i (00:07:20) setwindow pcb
-\i (00:07:20) zoom in -38.942 -5.785
-\t (00:07:20) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:07:20) trapsize 435
-\i (00:07:28) zoom out 1 
-\i (00:07:28) setwindow pcb
-\i (00:07:28) zoom out 0.167 0.646
-\t (00:07:28) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:07:28) trapsize 869
-\i (00:07:28) pick grid 57.526 -5.611
-\t (00:07:28) last pick:  57.500 -5.600
-\i (00:07:30) setwindow text
-\i (00:07:30) close
-\i (00:07:59) setwindow pcb
-\i (00:07:59) pick grid 69.346 6.209
-\t (00:07:59) last pick:  69.300 6.200
-\i (00:08:02) setwindow text
-\i (00:08:02) close
-\i (00:08:03) setwindow pcb
-\i (00:08:03) zoom in 1 
-\i (00:08:03) setwindow pcb
-\i (00:08:03) zoom in 83.599 3.428
-\t (00:08:03) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:08:03) trapsize 435
-\i (00:08:03) zoom in 1 
-\i (00:08:03) setwindow pcb
-\i (00:08:03) zoom in 83.599 3.428
-\t (00:08:03) Grids are drawn 0.200, 0.200 apart for enhanced viewing.
-\i (00:08:03) trapsize 217
-\i (00:08:05) pick grid 76.038 12.032
-\t (00:08:05) last pick:  76.000 12.000
-\i (00:08:16) zoom out 1 
-\i (00:08:16) setwindow pcb
-\i (00:08:16) zoom out 75.255 -10.608
-\t (00:08:16) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:08:16) trapsize 435
-\i (00:08:16) zoom out 1 
-\i (00:08:16) setwindow pcb
-\i (00:08:16) zoom out 75.257 -10.607
-\t (00:08:16) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:08:16) trapsize 869
-\i (00:08:17) pick grid 96.462 26.591
-\t (00:08:17) last pick:  96.500 26.600
-\i (00:08:18) zoom in 1 
-\i (00:08:18) setwindow pcb
-\i (00:08:18) zoom in 76.473 -12.692
-\t (00:08:18) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:08:18) trapsize 435
-\i (00:08:19) zoom in 1 
-\i (00:08:19) setwindow pcb
-\i (00:08:19) zoom in 76.473 -12.170
-\t (00:08:19) Grids are drawn 0.200, 0.200 apart for enhanced viewing.
-\i (00:08:19) trapsize 217
-\i (00:08:21) pick grid 76.516 -11.996
-\t (00:08:21) last pick:  76.500 -12.000
-\i (00:08:33) zoom out 1 
-\i (00:08:33) setwindow pcb
-\i (00:08:33) zoom out 77.038 -11.953
-\t (00:08:33) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:08:33) trapsize 435
-\i (00:08:33) zoom out 1 
-\i (00:08:33) setwindow pcb
-\i (00:08:33) zoom out 77.038 -11.953
-\t (00:08:33) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:08:33) trapsize 869
-\i (00:13:45) pick grid 90.595 60.356
-\t (00:13:45) last pick:  90.600 60.400
-\i (00:13:46) zoom in 1 
-\i (00:13:46) setwindow pcb
-\i (00:13:46) zoom in -82.181 -5.174
-\t (00:13:46) Grids are drawn 0.400, 0.400 apart for enhanced viewing.
-\i (00:13:46) trapsize 435
-\i (00:13:48) pick grid -79.400 -0.133
-\t (00:13:48) last pick:  -79.400 -0.100
-\i (00:13:49) setwindow text
-\i (00:13:49) close
-\i (00:13:50) setwindow pcb
-\i (00:13:50) pick grid -69.666 4.300
-\t (00:13:50) last pick:  -69.700 4.300
-\i (00:13:50) roam start
-\i (00:13:50) roam x -12
-\i (00:13:50) roam x -8
-\i (00:13:50) roam x -12
-\i (00:13:50) roam x -10
-\i (00:13:50) roam x -26
-\i (00:13:50) roam x -10
-\i (00:13:50) roam x -10
-\i (00:13:50) roam y 2
-\i (00:13:50) roam x -10
-\i (00:13:50) roam y 2
-\i (00:13:50) roam x -10
-\i (00:13:50) roam x -12
-\i (00:13:50) roam x -14
-\i (00:13:50) roam x -10
-\i (00:13:50) roam x -8
-\i (00:13:50) roam x -16
-\i (00:13:50) roam y 4
-\i (00:13:50) roam x -12
-\i (00:13:50) roam x -14
-\i (00:13:50) roam y 6
-\i (00:13:50) roam x -10
-\i (00:13:51) roam x -8
-\i (00:13:51) roam x -12
-\i (00:13:51) roam y -14
-\i (00:13:51) roam x -8
-\i (00:13:51) roam y -12
-\i (00:13:51) roam x -4
-\i (00:13:51) roam y -10
-\i (00:13:51) roam x -8
-\i (00:13:51) roam y -6
-\i (00:13:51) roam x -10
-\i (00:13:51) roam y -10
-\i (00:13:51) roam x -2
-\i (00:13:51) roam y -8
-\i (00:13:51) roam x -10
-\i (00:13:51) roam y -6
-\i (00:13:51) roam x -12
-\i (00:13:51) roam x -10
-\i (00:13:51) roam end
-\i (00:13:52) setwindow text
-\i (00:13:52) close
-\i (00:13:52) setwindow pcb
-\i (00:13:52) prepopup -85.170 3.370
-\i (00:13:54) cancel 
-\i (00:13:54) etchedit 
-\i (00:13:55) prepopup -83.953 4.066
-\i (00:13:56) pop dyn_option_select '@:@Show element' 
-\i (00:13:56) show element 
-\i (00:13:56) etchedit 
-\i (00:13:59) setwindow text
-\i (00:13:59) close
-\i (00:13:59) setwindow pcb
-\i (00:13:59) zoom out 1 
-\i (00:13:59) setwindow pcb
-\i (00:13:59) zoom out -66.311 28.139
-\t (00:13:59) Grids are drawn 0.800, 0.800 apart for enhanced viewing.
-\i (00:13:59) trapsize 869
-\i (00:14:00) roam start
-\i (00:14:00) roam x 8
-\i (00:14:00) roam x 8
-\i (00:14:00) roam x 12
-\i (00:14:00) roam x 8
-\i (00:14:00) roam x 18
-\i (00:14:00) roam y -6
-\i (00:14:00) roam x 24
-\i (00:14:00) roam y -6
-\i (00:14:00) roam x 8
-\i (00:14:00) roam x 12
-\i (00:14:00) roam y -2
-\i (00:14:00) roam x 10
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 10
-\i (00:14:00) roam y -2
-\i (00:14:00) roam x 12
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 14
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 10
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 14
-\i (00:14:00) roam y -8
-\i (00:14:00) roam x 10
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 12
-\i (00:14:00) roam y -8
-\i (00:14:00) roam x 10
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 14
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 14
-\i (00:14:00) roam y -4
-\i (00:14:00) roam x 14
-\i (00:14:00) roam y -2
-\i (00:14:00) roam x 12
-\i (00:14:00) roam y -8
-\i (00:14:00) roam end
-\i (00:14:01) delete 
-\i (00:14:02) etchedit 
-\i (00:14:03) pick grid 84.573 2.598
-\t (00:14:03) last pick:  84.600 2.600
-\i (00:14:03) delete 
-\i (00:14:03) etchedit 
-\i (00:14:08) add pin 
-\i (00:14:10) setwindow form.mini
-\i (00:14:10) FORM mini pad_browse  
-\t (00:14:18) No valid name selected.
-\i (00:14:20) fillin "Rect100x085smd"
-\w (00:14:20) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\t (00:14:20) Using 'RECT100X085SMD.pad'.
-\i (00:14:49) setwindow pcb
-\i (00:14:49) prmed 
-\t (00:14:49) Exiting from Add Pin.
-\i (00:14:49) FORM prmedit design 
-\i (00:14:49) setwindow form.prmedit
-\i (00:14:49) FORM prmedit design  
-\i (00:14:49) setwindow pcb
-\i (00:14:49) trapsize 869
-\i (00:14:52) setwindow form.prmedit
-\i (00:14:52) FORM prmedit units Millimeter 
-   (00:14:52) Accuracy or unit changes can cause design round-off issues. DRCs and physical changes should be checked.
-\i (00:14:54) fillin confirm
-\e (00:14:54) Change may cause round-off; run dbcheck.
-\i (00:14:56) FORM prmedit done  
-\w (00:14:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\t (00:14:56) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:14:56) setwindow pcb
-\i (00:14:56) trapsize 221
-\t (00:14:56) Performing DRC...
-\t (00:14:56) No DRC errors detected.
-\i (00:14:56) trapsize 227
-\i (00:14:56) trapsize 221
-\i (00:14:56) etchedit 
-\i (00:14:58) pick grid 1.8437 1.1301
-\t (00:14:58) last pick:  1.8425 1.1300
-\i (00:15:01) add pin 
-\t (00:15:01) Using 'RECT100X085SMD.pad'.
-\e (00:15:24) Command not found: <x 1.72 0
-\i (00:15:39) zoom in 1 
-\i (00:15:39) setwindow pcb
-\i (00:15:39) zoom in -1.7591 -0.0046
-\t (00:15:39) Grids are drawn 0.0100, 0.0100 apart for enhanced viewing.
-\i (00:15:39) trapsize 110
-\i (00:15:40) zoom in 1 
-\i (00:15:40) setwindow pcb
-\i (00:15:40) zoom in -1.7590 -0.0046
-\t (00:15:40) Grids are drawn 0.0050, 0.0050 apart for enhanced viewing.
-\i (00:15:40) trapsize 55
-\i (00:15:41) roam start
-\i (00:15:41) roam x -10
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -10
-\i (00:15:41) roam y -6
-\i (00:15:41) roam x -8
-\i (00:15:41) roam x -8
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -18
-\i (00:15:41) roam x -14
-\i (00:15:41) roam x -10
-\i (00:15:41) roam x -12
-\i (00:15:41) roam x -16
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -16
-\i (00:15:41) roam y -4
-\i (00:15:41) roam x -10
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -8
-\i (00:15:41) roam x -10
-\i (00:15:41) roam x -8
-\i (00:15:41) roam x -10
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -8
-\i (00:15:41) roam y -2
-\i (00:15:41) roam x -8
-\i (00:15:41) roam end
-\i (00:15:41) roam y -96 
-\i (00:15:41) roam y -96
-\i (00:15:42) roam y -96 
-\i (00:15:42) roam y -96
-\i (00:15:42) roam y 96 
-\i (00:15:42) roam y 96
-\i (00:15:42) roam y 96 
-\i (00:15:42) roam y 96
-\i (00:15:43) zoom in 1 
-\i (00:15:43) setwindow pcb
-\i (00:15:43) zoom in -1.6897 -0.0553
-\i (00:15:43) trapsize 28
-\i (00:15:53) pick grid -1.7509 0.0005
-\t (00:15:53) last pick:  -1.7500 0.0000
-\t (00:15:53) Using 'RECT100X085SMD.pad'.
-\i (00:15:53) zoom out 1 
-\i (00:15:54) setwindow pcb
-\i (00:15:54) zoom out -1.7493 -0.0001
-\i (00:15:54) trapsize 55
-\i (00:15:54) zoom out 1 
-\i (00:15:54) setwindow pcb
-\i (00:15:54) zoom out -1.7492 0.0000
-\t (00:15:54) Grids are drawn 0.0100, 0.0100 apart for enhanced viewing.
-\i (00:15:54) trapsize 110
-\i (00:15:54) zoom out 1 
-\i (00:15:54) setwindow pcb
-\i (00:15:54) zoom out -1.7493 0.0000
-\t (00:15:54) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:15:54) trapsize 221
-\i (00:15:57) zoom in 1 
-\i (00:15:57) setwindow pcb
-\i (00:15:57) zoom in 2.0346 0.0176
-\t (00:15:57) Grids are drawn 0.0100, 0.0100 apart for enhanced viewing.
-\i (00:15:57) trapsize 110
-\i (00:15:58) zoom in 1 
-\i (00:15:58) setwindow pcb
-\i (00:15:58) zoom in 2.0347 0.0176
-\t (00:15:58) Grids are drawn 0.0050, 0.0050 apart for enhanced viewing.
-\i (00:15:58) trapsize 55
-\i (00:15:58) zoom in 1 
-\i (00:15:58) setwindow pcb
-\i (00:15:58) zoom in 1.9674 0.0176
-\i (00:15:58) trapsize 28
-\w (00:16:12) Save pending
-\i (00:16:14) pick grid 1.7506 0.0011
-\t (00:16:14) last pick:  1.7500 0.0000
-\t (00:16:14) Using 'RECT100X085SMD.pad'.
-\i (00:16:14) zoom out 1 
-\i (00:16:14) setwindow pcb
-\i (00:16:14) zoom out 1.7506 0.0011
-\i (00:16:14) trapsize 55
-\i (00:16:14) zoom out 1 
-\i (00:16:14) setwindow pcb
-\i (00:16:14) zoom out 1.7505 0.0011
-\t (00:16:14) Grids are drawn 0.0100, 0.0100 apart for enhanced viewing.
-\i (00:16:14) trapsize 110
-\i (00:16:14) zoom out 1 
-\i (00:16:14) setwindow pcb
-\i (00:16:14) zoom out 1.7505 0.0011
-\t (00:16:14) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:16:14) trapsize 221
-\i (00:16:14) zoom out 1 
-\i (00:16:14) setwindow pcb
-\i (00:16:14) zoom out 1.7505 0.0010
-\t (00:16:14) Grids are drawn 0.0400, 0.0400 apart for enhanced viewing.
-\i (00:16:14) trapsize 442
-\i (00:16:16) prepopup 0.4437 -0.5994
-\i (00:16:16) done 
-\t (00:16:16) Exiting from Add Pin.
-\t (00:16:16) Performing autosave...
-\t (00:16:16) Autosave successful
-\i (00:16:16) etchedit 
-\i (00:16:17) zoom in 1 
-\i (00:16:17) setwindow pcb
-\i (00:16:17) zoom in -0.2716 -0.2550
-\t (00:16:17) Grids are drawn 0.0200, 0.0200 apart for enhanced viewing.
-\i (00:16:17) trapsize 221
-\i (00:16:42) save 
-\i (00:16:43) fillin yes 
-\t (00:16:43) Symbol 'sod123_dio.psm' created.
-\i (00:16:43) etchedit 
-\i (00:16:51) open 
-\i (00:17:05) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
-\i (00:17:05) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
-\t (00:17:05) Opening existing design...
-\i (00:17:06) trapsize 2346
-\i (00:17:06) trapsize 2412
-\i (00:17:06) trapsize 2346
-\i (00:17:06) trapsize 2591
-\t (00:17:06) > Sending response DoneOpenBoard
-\t (00:17:06)     Journal end - Wed Sep 29 21:59:02 2021
+\i (00:00:04) roam start
+\i (00:00:04) roam x 12
+\i (00:00:04) roam y 10
+\i (00:00:04) roam x 14
+\i (00:00:04) roam y 12
+\i (00:00:04) roam x 14
+\i (00:00:04) roam y 10
+\i (00:00:04) roam x 10
+\i (00:00:04) roam y 8
+\i (00:00:04) roam x 16
+\i (00:00:04) roam y 12
+\i (00:00:04) roam x 18
+\i (00:00:04) roam y 12
+\i (00:00:04) roam x 20
+\i (00:00:04) roam y 6
+\i (00:00:04) roam x 14
+\i (00:00:04) roam y 6
+\i (00:00:04) roam x 10
+\i (00:00:04) roam y 2
+\i (00:00:04) roam x 16
+\i (00:00:04) roam y 6
+\i (00:00:04) roam x 10
+\i (00:00:04) roam y 2
+\i (00:00:04) roam x 12
+\i (00:00:04) roam y 2
+\i (00:00:04) roam x 18
+\i (00:00:04) roam y 4
+\i (00:00:04) roam x 20
+\i (00:00:04) roam y 6
+\i (00:00:04) roam x 22
+\i (00:00:04) roam y 2
+\i (00:00:04) roam x 24
+\i (00:00:04) roam y 4
+\i (00:00:04) roam x 28
+\i (00:00:04) roam y 6
+\i (00:00:04) roam x 24
+\i (00:00:04) roam y 4
+\i (00:00:04) roam x 26
+\i (00:00:04) roam y 2
+\i (00:00:05) roam x 8
+\i (00:00:05) roam y -4
+\i (00:00:05) roam y -8
+\i (00:00:05) roam y -14
+\i (00:00:05) roam x -2
+\i (00:00:05) roam y -14
+\i (00:00:05) roam x -4
+\i (00:00:05) roam y -12
+\i (00:00:05) roam x -6
+\i (00:00:05) roam y -10
+\i (00:00:05) roam x -6
+\i (00:00:05) roam y -14
+\i (00:00:05) roam x -10
+\i (00:00:05) roam y -8
+\i (00:00:05) roam x -8
+\i (00:00:05) roam y -2
+\i (00:00:05) roam end
+\i (00:00:05) prepopup -1.9554 0.0010
+\i (00:00:07) pop dyn_option_select '@:@Show element' 
+\i (00:00:07) show element 
+\i (00:00:07) etchedit 
+\i (00:00:34) setwindow text
+\i (00:00:34) close
+\i (00:00:42) setwindow pcb
+\i (00:00:42) padeditdb 
+\i (00:00:43) setwindow form.mini
+\i (00:00:43) FORM mini padlist RECT100X085SMD 
+\i (00:00:44) FORM mini padlist R110_61 
+\i (00:00:44) FORM mini padlist RECT100X085SMD 
+\i (00:00:47) FORM mini pad_stack_edit  
+\i (00:02:14) setwindow pcb
+\i (00:02:14) redraw 
+\i (00:02:29) refresh padstack 
+\i (00:02:32) setwindow form.rf_pad
+\i (414 -1.1412
+\i (00:00:30) generaledit 
+\i (00:00:32) text edit 
+\i (00:00:33) setwindow form.textedit
+\i (00:00:33) FORM textedit done  
+\i (00:00:33) setwindow pcb
+\i (00:00:33) pick 0.0000 0.0000
+\i (00:00:34) setwindow pcb
+\i (00:00:34) generaledit 
+\i (00:00:34) pick grid -3.1284 -0.8560
+\t (00:00:34) last pick:  -3.1275 -0.8550
+\i (00:00:44) pick grid -4.2646 0.7781
+\t (00:00:44) last pick:  -4.2650 0.7775
+\i (00:00:45) prepopup -4.2259 0.7781
+\i (00:00:45) pick grid -4.1050 1.0199
+\t (00:00:45) last pick:  -4.1050 1.0200
+\i (00:00:46) save 
+\i (00:00:48) fillin yes 
+\t (00:00:48) Symbol 'sod123_dio.psm' created.
+\i (00:00:48) generaledit 
+\i (00:05:58) pick grid -2.9640 -0.7496
+\t (00:05:58) last pick:  -2.9650 -0.7500
+\i (00:06:00) save 
+\i (00:06:01) fillin yes 
+\t (00:06:02) Symbol 'sod123_dio.psm' created.
+\i (00:06:02) generaledit 
+\i (00:25:47) exit 
+\t (00:25:47)     Journal end - Thu Sep 30 11:25:47 2021

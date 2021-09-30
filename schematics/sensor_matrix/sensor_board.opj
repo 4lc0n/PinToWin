@@ -284,40 +284,7 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 530"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 548")
-        (Scroll "-239 0")
-        (Zoom "100")
-        (Occurrence "/m1/col2/R-D41"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "LDR-D-Unit")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 548")
-        (Scroll "-274 0")
-        (Zoom "94")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 548")
-        (Scroll "-239 0")
-        (Zoom "100")
-        (Occurrence "/m1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\SENSOR_MATRIX\SENSOR_BOARD.DSN")
-      (Schematic "matrix")
-      (Page "PAGE1")))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 783"))
+      (Tab 0)))
   (MPSSessionName "markl")
   (ISPCBBASICLICENSE "false"))

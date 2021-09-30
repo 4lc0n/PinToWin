@@ -1,0 +1,58 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Padstack                                                 )
+(                                                                     )
+(    Drawing          : SOD123_DIO.dra                                )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Thu Sep 30 11:25:24 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Thu Sep 30 11:25:24 2021				Page     1
+
+
+------ Pad Stack Refresh Options ------
+
+Input design  = 'C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra'
+Output design = ''
+Reset symbol text and size locations   = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           C:\Cadence\Company\pcb\symbols\connector 
+           C:\Cadence\Company\pcb\symbols\ic 
+           C:\Cadence\Company\pcb\symbols\other_symbols 
+           C:\Cadence\Company\pcb\symbols\padsyms 
+           C:\Cadence\Company\pcb\symbols\smd_misc 
+           C:\Cadence\Company\pcb\symbols\tht_misc 
+           C:\Cadence\Company\pcb\symbols\student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/symbols 
+
+PADPATH =  . 
+           symbols 
+           padstacks 
+           C:/Cadence/Company/pcb/padstacks 
+           C:/Cadence/Company/pcb/padstacks/student 
+           C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Users/markl/Documents/Sem7/ED/Projects/09_Transisotr 
+           C:/Users/markl/DOCUMENTS/Sem7/ED/footprints/padstacks 
+
+
+------ Pad Stack Refresh Messages ------
+
+'RECT100X085SMD'  pad stack refresh starting.
+
+     'RECT100X085SMD'  pad stack refreshed successfully.
+     
+'R110_61'  pad stack refresh starting.
+
+     'R110_61'  pad stack refreshed successfully.
+     
+Completed refreshing all pad stacks successfully.

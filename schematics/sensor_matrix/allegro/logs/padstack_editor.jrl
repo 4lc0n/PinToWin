@@ -1,0 +1,7 @@
+\t (00:00:00) padstack_editor 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Thu Sep 30 10:11:04 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=8272 CPUs=8
+\t (00:00:00) CmdLine= padstack_editor -mpssession markl -file c:/windows/temp/#Taaaaay07892.tmp -pname MNN3_5 -data c:/windows/temp/#Taaaabb07892.tmp
+\t (00:00:00) 
+\d (00:00:31) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged
+\t (00:00:31)     Journal end - Thu Sep 30 10:11:35 2021
