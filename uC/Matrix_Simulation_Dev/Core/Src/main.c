@@ -1,5 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
+*
+ *
+ *
+ *
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
@@ -11,7 +15,7 @@
   * 	A ADC pin is sampled for random noise on the system
   * 	A pattern is introduced to verify data
   *
-  * 	SPI Mode is Master, Full Duplex at 9 MHz clock rate
+  * 	SPI Mode is in slave mode, as Rapsberry only supports master mode!
   *
   *
   ******************************************************************************
@@ -59,6 +63,7 @@
 ADC_HandleTypeDef hadc1;
 
 SPI_HandleTypeDef hspi1;
+DMA_HandleTypeDef hdma_spi1_tx;
 
 /* USER CODE BEGIN PV */
 
@@ -72,6 +77,7 @@ uint8_t matrix_data[N_ROW][N_COL] = {0};
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
@@ -111,6 +117,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
@@ -138,31 +145,21 @@ int main(void)
   			if(i == j){
   				matrix_data[i][j] = 200;
   			}
-  			HAL_ADC_Start(&hadc1);															// start conversion
-				while(HAL_ADC_PollForConversion(&hadc1, 100000));		// wait for conversion to finish
-  			matrix_data[i][j] = (uint8_t)(HAL_ADC_GetValue(&hadc1) >> 4);				// get value, shift, so it fits in 8bit variable
+  			else{
+  				HAL_ADC_Start(&hadc1);															// start conversion
+					while(HAL_ADC_PollForConversion(&hadc1, 100000));		// wait for conversion to finish
+					matrix_data[i][j] = (uint8_t)(HAL_ADC_GetValue(&hadc1) >> 4);				// get value, shift, so it fits in 8bit variable
+
+  			}
 
   		}
   	}
 
-  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
 
 
 
 
   	// finished conversion
-  	// transmit via SPI
-
-  	// NCS to low:
-  	HAL_GPIO_WritePin(SPI_NCS_GPIO_Port, SPI_NCS_Pin, RESET);
-
-  	// transmit row by row
-  	for(int i = 0; i  < N_ROW; i++){
-			HAL_SPI_Transmit(&hspi1, matrix_data[i], N_COL, HAL_MAX_DELAY);
-  	}
-
-  	// reset NCS
-  	HAL_GPIO_WritePin(SPI_NCS_GPIO_Port, SPI_NCS_Pin, SET);
 
 
 		// delay for 100 ms, for now
@@ -282,7 +279,7 @@ static void MX_SPI1_Init(void)
   /* USER CODE END SPI1_Init 1 */
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
-  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Mode = SPI_MODE_SLAVE;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
@@ -304,6 +301,22 @@ static void MX_SPI1_Init(void)
 }
 
 /**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -316,12 +329,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI_NCS_GPIO_Port, SPI_NCS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : USER_LED_Pin */
   GPIO_InitStruct.Pin = USER_LED_Pin;
@@ -332,14 +343,61 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : SPI_NCS_Pin */
   GPIO_InitStruct.Pin = SPI_NCS_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(SPI_NCS_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 
 /* USER CODE BEGIN 4 */
+
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+
+	// i have to figure it out myself which interrupt was created!
+
+	if(GPIO_Pin == GPIO_PIN_6){
+
+		// it was PB6
+
+		// is it high
+		if(GPIOB->IDR & GPIO_IDR_IDR6_Msk){
+			// : rising edge: transmission ended
+
+			// : reset DMA
+			HAL_SPI_DMAStop(&hspi1);
+	  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
+
+
+
+		}
+		else{
+
+			// write 0 to SPI data
+			SPI1->DR = 0;
+			HAL_SPI_Transmit_DMA(&hspi1, (uint8_t*)matrix_data, N_COL * N_ROW);
+
+	  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, RESET);
+
+		}
+
+
+
+
+
+	}
+
+
+
+
+}
+
+
+
 
 /* USER CODE END 4 */
 
