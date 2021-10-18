@@ -10,12 +10,29 @@
   ******************************************************************************
   *
   * 	This device is used to simiulate the matrix controller
-  * 	Provide Data via SPI at modearte high speed to the CPU
+  * 	Provide Data via SPI at modearte high speed to the CPU (Clock set to 9MHz,
+  * 	no clue if relevant as slave)
+  *
+  *
+  *		SPI1: analog mode
   *
   * 	A ADC pin is sampled for random noise on the system
   * 	A pattern is introduced to verify data
   *
   * 	SPI Mode is in slave mode, as Rapsberry only supports master mode!
+  * 	data is transferred in 11 bytes a row  x 8 rows
+  *
+  *
+  *
+  * 	SPI2: digital mode
+  *
+  * 	a ADC pin is used as reference for random number generator
+  * 	a pin at a time is lighted up to simulate a ball rolling down in a straight line
+  * 	if it disappears at the bottom, a new one will be generated
+  *
+  * 	Data format: Byte: row with bit at 0 == y = 0
+  * 	11 bytes gets transferred with each requrest
+  *
   *
   *
   ******************************************************************************
@@ -63,13 +80,17 @@
 ADC_HandleTypeDef hadc1;
 
 SPI_HandleTypeDef hspi1;
+SPI_HandleTypeDef hspi2;
 DMA_HandleTypeDef hdma_spi1_tx;
+DMA_HandleTypeDef hdma_spi2_tx;
 
 /* USER CODE BEGIN PV */
 
 
-uint8_t matrix_data[N_ROW][N_COL] = {0};
+uint8_t matrix_data[N_ROW][N_COL] = {0};		// use for analog values --> SPI1
 
+uint8_t matrix_bool[N_COL] = {0};						// use for digital values --> SPI2
+uint8_t curr_col = 0, curr_row = 0;
 
 
 /* USER CODE END PV */
@@ -80,6 +101,7 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_SPI1_Init(void);
+static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -120,6 +142,7 @@ int main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_SPI1_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 
 
@@ -160,6 +183,30 @@ int main(void)
 
 
   	// finished conversion
+
+
+
+  	// create artificial user data for SPI2: some balls raining down from  top
+
+
+  	// todo: test this
+  	for(int i = 0; i < N_COL; i++){
+  		// simply shift data left
+  		matrix_bool[i] = matrix_bool[i] << 1;
+  	}
+  	curr_row++;
+
+  	if(curr_row == 7){
+			//  get new column to start raining down
+			// pseudo_random:
+
+			curr_col = matrix_data[0][1] % 11;
+			matrix_bool[curr_col] = 1;
+			curr_row = 0;
+
+		}
+
+
 
 
 		// delay for 100 ms, for now
@@ -301,6 +348,44 @@ static void MX_SPI1_Init(void)
 }
 
 /**
+  * @brief SPI2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI2_Init(void)
+{
+
+  /* USER CODE BEGIN SPI2_Init 0 */
+
+  /* USER CODE END SPI2_Init 0 */
+
+  /* USER CODE BEGIN SPI2_Init 1 */
+
+  /* USER CODE END SPI2_Init 1 */
+  /* SPI2 parameter configuration*/
+  hspi2.Instance = SPI2;
+  hspi2.Init.Mode = SPI_MODE_SLAVE;
+  hspi2.Init.Direction = SPI_DIRECTION_1LINE;
+  hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi2.Init.NSS = SPI_NSS_SOFT;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
+  hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi2.Init.CRCPolynomial = 10;
+  if (HAL_SPI_Init(&hspi2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI2_Init 2 */
+
+  /* USER CODE END SPI2_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -313,6 +398,9 @@ static void MX_DMA_Init(void)
   /* DMA1_Channel3_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
+  /* DMA1_Channel5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel5_IRQn);
 
 }
 
@@ -341,15 +429,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(USER_LED_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SPI_NCS_Pin */
-  GPIO_InitStruct.Pin = SPI_NCS_Pin;
+  /*Configure GPIO pins : SPI2_NCS_Pin SPI_NCS_Pin */
+  GPIO_InitStruct.Pin = SPI2_NCS_Pin|SPI_NCS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(SPI_NCS_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 
@@ -372,8 +463,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 			HAL_SPI_DMAStop(&hspi1);
 	  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
 
-
-
 		}
 		else{
 
@@ -384,16 +473,31 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, RESET);
 
 		}
-
-
-
-
-
 	}
 
+	else if(GPIO_Pin == GPIO_PIN_12){
 
+			// it was PB6
 
+			// is it high
+			if(GPIOB->IDR & GPIO_IDR_IDR12_Msk){
+				// : rising edge: transmission ended
 
+				// : reset DMA
+				HAL_SPI_DMAStop(&hspi2);
+		  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
+
+			}
+			else{
+
+				// write 0 to SPI data
+				SPI1->DR = 0;
+				HAL_SPI_Transmit_DMA(&hspi2, (uint8_t*)matrix_bool, N_COL);
+
+		  	HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, RESET);
+
+			}
+		}
 }
 
 
