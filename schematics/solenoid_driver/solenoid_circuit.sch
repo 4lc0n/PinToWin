@@ -181,8 +181,6 @@ F 3 "" H 8150 3550 50  0001 C CNN
 	1    8150 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 3050 8150 3550
 $Comp
 L Device:L_Core_Ferrite L1
 U 1 1 613B2B5C
@@ -289,4 +287,19 @@ F 3 "~" H 7000 3100 50  0001 C CNN
 	1    7000 3100
 	1    0    0    1   
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 616C6F19
+P 8150 3300
+F 0 "R?" H 8080 3254 50  0000 R CNN
+F 1 "0.1" H 8080 3345 50  0000 R CNN
+F 2 "" V 8080 3300 50  0001 C CNN
+F 3 "~" H 8150 3300 50  0001 C CNN
+	1    8150 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 3450 8150 3550
+Wire Wire Line
+	8150 3150 8150 3050
 $EndSCHEMATC

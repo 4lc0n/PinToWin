@@ -65,6 +65,7 @@ U 613AB37F
 F0 "Sheet613AB37E" 50
 F1 "solenoid_circuit.sch" 50
 F2 "Sig_in" I L 8100 5150 50 
+F3 "Shunt_out" I L 8100 5450 50 
 $EndSheet
 Wire Wire Line
 	7750 5150 8100 5150
@@ -209,4 +210,78 @@ Wire Wire Line
 Connection ~ 3550 2000
 Wire Wire Line
 	3550 2000 3850 2000
+$Comp
+L Amplifier_Operational:LM324 U?
+U 1 1 616CD86C
+P 5150 5450
+F 0 "U?" H 5150 5817 50  0000 C CNN
+F 1 "LM324" H 5150 5726 50  0000 C CNN
+F 2 "" H 5100 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5200 5650 50  0001 C CNN
+	1    5150 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 5450 0    50   Input ~ 0
+Shunt1_out
+Wire Wire Line
+	7750 5450 8100 5450
+Text GLabel 4350 5350 0    50   Input ~ 0
+Shunt1_out
+Wire Wire Line
+	4350 5350 4850 5350
+$Comp
+L Device:R R?
+U 1 1 616D0DDE
+P 5650 5700
+F 0 "R?" H 5720 5746 50  0000 L CNN
+F 1 "66k" H 5720 5655 50  0000 L CNN
+F 2 "" V 5580 5700 50  0001 C CNN
+F 3 "~" H 5650 5700 50  0001 C CNN
+	1    5650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616D1600
+P 5650 6100
+F 0 "R?" H 5720 6146 50  0000 L CNN
+F 1 "10k" H 5720 6055 50  0000 L CNN
+F 2 "" V 5580 6100 50  0001 C CNN
+F 3 "~" H 5650 6100 50  0001 C CNN
+	1    5650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D1B4E
+P 5650 6350
+F 0 "#PWR?" H 5650 6100 50  0001 C CNN
+F 1 "GND" H 5655 6177 50  0000 C CNN
+F 2 "" H 5650 6350 50  0001 C CNN
+F 3 "" H 5650 6350 50  0001 C CNN
+	1    5650 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6350 5650 6250
+Wire Wire Line
+	5650 5950 5650 5900
+Wire Wire Line
+	5650 5550 5650 5450
+Wire Wire Line
+	5650 5450 5450 5450
+Wire Wire Line
+	4850 5550 4650 5550
+Wire Wire Line
+	4650 5550 4650 5900
+Wire Wire Line
+	4650 5900 5650 5900
+Connection ~ 5650 5900
+Wire Wire Line
+	5650 5900 5650 5850
+Text GLabel 5900 5450 2    50   Input ~ 0
+Sol1_Current_Sense
+Wire Wire Line
+	5900 5450 5650 5450
+Connection ~ 5650 5450
 $EndSCHEMATC

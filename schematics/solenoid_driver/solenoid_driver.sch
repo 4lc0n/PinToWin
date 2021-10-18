@@ -65,6 +65,7 @@ U 613AB37F
 F0 "Sheet613AB37E" 50
 F1 "solenoid_circuit.sch" 50
 F2 "Sig_in" I L 8100 5150 50 
+F3 "Shunt_out" I L 8100 5450 50 
 $EndSheet
 Wire Wire Line
 	7750 5150 8100 5150
@@ -209,4 +210,82 @@ Wire Wire Line
 Connection ~ 3550 2000
 Wire Wire Line
 	3550 2000 3850 2000
+$Comp
+L Amplifier_Operational:LM324 U?
+U 1 1 616CD86C
+P 8050 1650
+F 0 "U?" H 8050 2017 50  0000 C CNN
+F 1 "LM324" H 8050 1926 50  0000 C CNN
+F 2 "" H 8000 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8100 1850 50  0001 C CNN
+	1    8050 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 5450 0    50   Input ~ 0
+Shunt1_out
+Wire Wire Line
+	7750 5450 8100 5450
+Text GLabel 7250 1550 0    50   Input ~ 0
+Shunt1_out
+Wire Wire Line
+	7250 1550 7750 1550
+$Comp
+L Device:R R?
+U 1 1 616D0DDE
+P 8550 1900
+F 0 "R?" H 8620 1946 50  0000 L CNN
+F 1 "66k" H 8620 1855 50  0000 L CNN
+F 2 "" V 8480 1900 50  0001 C CNN
+F 3 "~" H 8550 1900 50  0001 C CNN
+	1    8550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616D1600
+P 8550 2300
+F 0 "R?" H 8620 2346 50  0000 L CNN
+F 1 "10k" H 8620 2255 50  0000 L CNN
+F 2 "" V 8480 2300 50  0001 C CNN
+F 3 "~" H 8550 2300 50  0001 C CNN
+	1    8550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D1B4E
+P 8550 2550
+F 0 "#PWR?" H 8550 2300 50  0001 C CNN
+F 1 "GND" H 8555 2377 50  0000 C CNN
+F 2 "" H 8550 2550 50  0001 C CNN
+F 3 "" H 8550 2550 50  0001 C CNN
+	1    8550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2550 8550 2450
+Wire Wire Line
+	8550 2150 8550 2100
+Wire Wire Line
+	8550 1750 8550 1650
+Wire Wire Line
+	8550 1650 8350 1650
+Wire Wire Line
+	7750 1750 7550 1750
+Wire Wire Line
+	7550 1750 7550 2100
+Wire Wire Line
+	7550 2100 8550 2100
+Connection ~ 8550 2100
+Wire Wire Line
+	8550 2100 8550 2050
+Text GLabel 8800 1650 2    50   Input ~ 0
+Sol1_Current_Sense
+Wire Wire Line
+	8800 1650 8550 1650
+Connection ~ 8550 1650
+Text Notes 7350 1200 0    50   ~ 0
+ampl. factor: 7.5
+Text GLabel 3500 3550 2    50   Input ~ 0
+Sol1_Current_Sense
 $EndSCHEMATC
