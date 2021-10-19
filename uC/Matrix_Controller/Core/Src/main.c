@@ -44,6 +44,7 @@ ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
 SPI_HandleTypeDef hspi2;
+DMA_HandleTypeDef hdma_spi2_tx;
 
 /* USER CODE BEGIN PV */
 
@@ -112,7 +113,60 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // start first dma conversion: rest will be handled in the IRQ of DMA
-  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+  // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+
+
+  uint8_t data[11] = {0};
+
+  uint8_t col = 0, row = 0;
+
+  while(1){
+
+  	for(int i = 0; i < 11; i++){
+  		data[i] = data[i] << 1;
+  	}
+
+  	row++;
+
+  	if(row > 8){
+  		row = 0;
+
+  		data[col % 11] = 1;
+  		col++;
+
+  	}
+
+  	HAL_SPI_Transmit_DMA(&hspi2, data, 11);
+
+  	HAL_Delay(90);
+
+  }
+
+
+//  	if(HAL_GPIO_ReadPin(SPI2_NCS_GPIO_Port, SPI2_NCS_Pin) == GPIO_PIN_RESET){
+
+//  		HAL_SPI_Transmit_DMA(&hspi2, buff, 11);
+//  		LL_SPI_SetMode(&hspi2, SPI_CR1_SSI);
+//  		SPI2->CR1 |= (SPI_CR1_SSI);
+//  		HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_SET);
+//
+//  		while(HAL_GPIO_ReadPin(SPI2_NCS_GPIO_Port, SPI2_NCS_Pin) != GPIO_PIN_SET)
+//  			;
+//  		HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
+//
+//  		HAL_SPI_DMAStop(&hspi2);
+////  		LL_SPI_SetMode(&hspi2, 0);
+//
+//  		SPI2->CR1 &= ~(SPI_CR1_SSI);
+
+//  	}
+
+  		HAL_Delay(1000);
+
+
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -312,13 +366,12 @@ static void MX_SPI2_Init(void)
   /* USER CODE END SPI2_Init 1 */
   /* SPI2 parameter configuration*/
   hspi2.Instance = SPI2;
-  hspi2.Init.Mode = SPI_MODE_MASTER;
+  hspi2.Init.Mode = SPI_MODE_SLAVE;
   hspi2.Init.Direction = SPI_DIRECTION_2LINES;
   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi2.Init.NSS = SPI_NSS_SOFT;
-  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi2.Init.NSS = SPI_NSS_HARD_INPUT;
   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -341,8 +394,12 @@ static void MX_DMA_Init(void)
 
   /* DMA controller clock enable */
   __HAL_RCC_DMA2_CLK_ENABLE();
+  __HAL_RCC_DMA1_CLK_ENABLE();
 
   /* DMA interrupt init */
+  /* DMA1_Stream4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
   /* DMA2_Stream0_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
@@ -359,14 +416,25 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, COL_SELECT_3_Pin|COL_SELECT_2_Pin|COL_SELECT_1_Pin|COL_SELECT_0_Pin
                           |COL_SELECT_4_Pin|COL_SELECT_5_Pin|COL_SELECT_6_Pin|COL_SELECT_7_Pin
                           |COL_SELECT_8_Pin|COL_SELECT_9_Pin|COL_SELECT_10_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : USER_LED_Pin */
+  GPIO_InitStruct.Pin = USER_LED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(USER_LED_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : COL_SELECT_3_Pin COL_SELECT_2_Pin COL_SELECT_1_Pin COL_SELECT_0_Pin
                            COL_SELECT_4_Pin COL_SELECT_5_Pin COL_SELECT_6_Pin COL_SELECT_7_Pin
