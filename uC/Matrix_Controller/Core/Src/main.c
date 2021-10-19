@@ -49,13 +49,14 @@ DMA_HandleTypeDef hdma_spi2_tx;
 /* USER CODE BEGIN PV */
 
 
-uint16_t raw_data[N_COL][N_ROW];
+volatile uint16_t raw_data[N_COL][N_ROW];				// form [COL][ROW] used, as data is generated column by column, so indexing is easier
+uint16_t base_level[N_COL][N_ROW];							// form [COL][ROW] used, as data is generated column by column, so indexing is easier
 
-uint8_t active_col = 0;
+volatile uint8_t active_col = 0;								// holds the active column that is currently processed
 
 
-volatile int8_t adc_error = 0;
-volatile int8_t adc_complete = 0;
+volatile int8_t adc_error = 0;				// 1 indicates an error
+volatile int8_t adc_complete = 0;			// 1 indicates matrix scan complete
 
 
 
@@ -70,7 +71,11 @@ static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
+
 void set_col_active(int8_t col);
+
+void get_baselevel(uint8_t **base_data);
+
 
 /* USER CODE END PFP */
 
@@ -113,55 +118,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // start first dma conversion: rest will be handled in the IRQ of DMA
-  // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+//   HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
 
-
-  uint8_t data[11] = {0};
-
-  uint8_t col = 0, row = 0;
-
-  while(1){
-
-  	for(int i = 0; i < 11; i++){
-  		data[i] = data[i] << 1;
-  	}
-
-  	row++;
-
-  	if(row > 8){
-  		row = 0;
-
-  		data[col % 11] = 1;
-  		col++;
-
-  	}
-
-  	HAL_SPI_Transmit_DMA(&hspi2, data, 11);
-
-  	HAL_Delay(90);
-
-  }
-
-
-//  	if(HAL_GPIO_ReadPin(SPI2_NCS_GPIO_Port, SPI2_NCS_Pin) == GPIO_PIN_RESET){
-
-//  		HAL_SPI_Transmit_DMA(&hspi2, buff, 11);
-//  		LL_SPI_SetMode(&hspi2, SPI_CR1_SSI);
-//  		SPI2->CR1 |= (SPI_CR1_SSI);
-//  		HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_SET);
-//
-//  		while(HAL_GPIO_ReadPin(SPI2_NCS_GPIO_Port, SPI2_NCS_Pin) != GPIO_PIN_SET)
-//  			;
-//  		HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, GPIO_PIN_RESET);
-//
-//  		HAL_SPI_DMAStop(&hspi2);
-////  		LL_SPI_SetMode(&hspi2, 0);
-//
-//  		SPI2->CR1 &= ~(SPI_CR1_SSI);
-
-//  	}
-
-  		HAL_Delay(1000);
 
 
 
@@ -519,21 +477,69 @@ void set_col_active(int8_t col)
 }
 
 
+/**
+ * @brief Function to scan matrix to determine base light level of all elements
+ * @param base_data: 2 dimensional vector for base level data of form uint8_t [COL][ROW]
+ */
+void get_baselevel(uint8_t **base_data){
 
 
-// Called when buffer is completely filled
+	// loop over every column and get data
+	for(int i = 0; i < N_COL; i++){
+
+		// activate column
+		set_col_active(i);						// select column
+		active_col = N_COL - 1;				// prevent ConvCpltCallback from starting a new conversion:
+																	// trick into thinking this is the last conversion
+
+		// do one full converion, store into base_data
+		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)base_data[i], N_ROW);
+
+
+
+		adc_complete = 0;							// wait for adc conversion to be finished
+
+		while(adc_complete == 0)			// while not finished
+			__asm('nop');								// do nothing
+
+
+
+	}
+
+
+	adc_complete = 0;								// reset used variables
+
+
+}
+
+
+
+/**
+ * @brief Callback function when ADC conversion is finished
+ */
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
-//	adc_complete = 1;
-	static int active_col = 0;
+
 
 	HAL_ADC_Stop_DMA(&hadc1);
 
-	active_col = (++active_col) % N_COL;
+	active_col = (active_col + 1) % N_COL;
 
 	set_col_active(active_col);
-	// HAL_Delay(1);
-	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+
+
+	// TODO: test if delay is needed!
+	HAL_Delay(1);
+
+	if(active_col != 0){
+		// start another DMA conversion
+		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+	}
+	{
+		// this sacn is finnished
+		adc_complete = 1;
+	}
+
 
 
 
