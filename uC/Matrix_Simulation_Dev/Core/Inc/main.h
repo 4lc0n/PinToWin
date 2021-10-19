@@ -60,9 +60,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define USER_LED_Pin GPIO_PIN_13
 #define USER_LED_GPIO_Port GPIOC
-#define SPI2_NCS_Pin GPIO_PIN_12
-#define SPI2_NCS_GPIO_Port GPIOB
-#define SPI2_NCS_EXTI_IRQn EXTI15_10_IRQn
 #define SPI_NCS_Pin GPIO_PIN_6
 #define SPI_NCS_GPIO_Port GPIOB
 #define SPI_NCS_EXTI_IRQn EXTI9_5_IRQn
