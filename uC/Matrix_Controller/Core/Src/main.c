@@ -27,7 +27,7 @@
 
 
 #include "usbd_cdc_if.h"			// usb transmit util
-
+#include "matrix_util.h"
 
 /* USER CODE END Includes */
 
@@ -55,9 +55,7 @@ TIM_HandleTypeDef htim9;
 
 
 volatile uint16_t raw_data[N_COL][N_ROW];				// form [COL][ROW] used, as data is generated column by column, so indexing is easier
-uint16_t base_level[N_COL][N_ROW];							// form [COL][ROW] used, as data is generated column by column, so indexing is easier
 
-uint16_t treshold_level[N_COL][N_ROW];					// form [COL][ROW] used, ..., compare data with trheshold level to get bool_matrix
 
 
 uint8_t bool_matrix[N_COL];											// form: [COL] used, rows are represented by each byte, bit 0: row 0
@@ -83,12 +81,9 @@ static void MX_ADC1_Init(void);
 static void MX_TIM9_Init(void);
 /* USER CODE BEGIN PFP */
 
-void set_col_active(int8_t col);
-
-void get_baselevel(uint16_t base_data[N_COL][N_ROW]);
 
 
-void compare();
+
 
 
 
@@ -136,7 +131,7 @@ int main(void)
 
   // setup
 
-  get_baselevel(base_level);								// determine the base light level
+  matr_get_baselevel(hadc1);								// determine the base light level
 
 
   // calculate threshold for every single sensor
@@ -431,113 +426,7 @@ static void MX_GPIO_Init(void)
 
 
 
-/**
- * @brief Function to activate corresponding column
- * @param col: column to be activated, if col == -1: deactivate all
- * @return None
- */
-void set_col_active(int8_t col)
-{
-	switch(col)
-	{
-	case 0:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_0_Pin, SET);
 
-		break;
-	case 1:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_1_Pin, SET);
-
-		break;
-	case 2:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_2_Pin, SET);
-
-		break;
-	case 3:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_3_Pin, SET);
-		break;
-	case 4:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_4_Pin, SET);
-			break;
-	case 5:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_5_Pin, SET);
-			break;
-	case 6:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_6_Pin, SET);
-			break;
-	case 7:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_7_Pin, SET);
-			break;
-	case 8:
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-				HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_8_Pin, SET);
-				break;
-	case 9:
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-				HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_9_Pin, SET);
-				break;
-	case 10:
-			HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-				HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, COL_SELECT_10_Pin, SET);
-				break;
-	case -1:
-		HAL_GPIO_WritePin(COL_SELECT_0_GPIO_Port, (COL_SELECT_0_Pin | COL_SELECT_1_Pin | COL_SELECT_2_Pin | COL_SELECT_3_Pin| COL_SELECT_4_Pin| COL_SELECT_5_Pin| COL_SELECT_6_Pin| COL_SELECT_7_Pin| COL_SELECT_8_Pin| COL_SELECT_9_Pin| COL_SELECT_10_Pin), RESET);
-
-		break;
-	}
-
-}
-
-
-/**
- * @brief Function to scan matrix to determine base light level of all elements
- * @param base_data: 2 dimensional vector for base level data of form uint8_t [COL][ROW]
- */
-void get_baselevel(uint16_t base_data[N_COL][N_ROW]){
-
-	adc_complete = 0;							// reset value
-
-
-	// loop over every column and get data
-	for(int i = 0; i < N_COL; i++){
-
-		// activate column
-		set_col_active(i);						// select column
-		active_col = N_COL - 1;				// prevent ConvCpltCallback from starting a new conversion:
-																	// trick into thinking this is the last conversion
-
-
-
-		// do one full converion, store into base_data
-		if(HAL_ADC_Start_DMA(&hadc1, (uint32_t*)(base_data[i]), N_ROW) != HAL_OK){
-			while(1);
-			// failed to start adc
-		}
-
-
-
-
-
-		while(adc_complete == 0 && adc_error == 0)			// while not finished
-			__asm("nop");								// do nothing
-
-		if(adc_error){
-			while(1);										// fuck
-		}
-
-
-		adc_complete = 0;							// reset value
-	}
-	adc_complete = 0;								// reset used variables
-
-}
 
 
 /**
@@ -552,7 +441,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	// prepare for first conversion:
 	adc_complete = 0;
 	active_col = 0;
-	set_col_active(0);
+	matr_set_col_active(0);
 	// start ADC conversion
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[0], N_ROW);
 
@@ -573,7 +462,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
 	active_col = (active_col + 1) % N_COL;
 
-	set_col_active(active_col);
+	matr_set_col_active(active_col);
 
 
 	// TODO: test if delay is needed!

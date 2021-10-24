@@ -89,6 +89,8 @@ void Error_Handler(void);
 #define N_ROW 8
 
 
+#define TRIGGER_LEVEL (0.7)
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
