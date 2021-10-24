@@ -13,62 +13,21 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Isolator:SFH617A-1 U2
-U 1 1 613B2AF2
-P 5600 3200
-F 0 "U2" H 5600 3525 50  0000 C CNN
-F 1 "SFH617A-1" H 5600 3434 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 5400 3000 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 5600 3200 50  0001 L CNN
-	1    5600 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 613B2AF8
-P 5150 3500
-F 0 "#PWR08" H 5150 3250 50  0001 C CNN
-F 1 "GND" H 5155 3327 50  0000 C CNN
-F 2 "" H 5150 3500 50  0001 C CNN
-F 3 "" H 5150 3500 50  0001 C CNN
-	1    5150 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 3500 5150 3300
-Wire Wire Line
-	5150 3300 5300 3300
 Wire Wire Line
 	5300 2400 5300 2650
-$Comp
-L Device:R R1
-U 1 1 613B2B01
-P 5300 2800
-F 0 "R1" V 5093 2800 50  0000 C CNN
-F 1 "R" V 5184 2800 50  0000 C CNN
-F 2 "" V 5230 2800 50  0001 C CNN
-F 3 "~" H 5300 2800 50  0001 C CNN
-	1    5300 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 3100 5300 2950
 $Comp
 L power:GND #PWR010
 U 1 1 613B2B09
-P 6150 3450
-F 0 "#PWR010" H 6150 3200 50  0001 C CNN
-F 1 "GND" H 6155 3277 50  0000 C CNN
-F 2 "" H 6150 3450 50  0001 C CNN
-F 3 "" H 6150 3450 50  0001 C CNN
-	1    6150 3450
+P 5650 3600
+F 0 "#PWR010" H 5650 3350 50  0001 C CNN
+F 1 "GND" H 5655 3427 50  0000 C CNN
+F 2 "" H 5650 3600 50  0001 C CNN
+F 3 "" H 5650 3600 50  0001 C CNN
+	1    5650 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6150 3450 6150 3250
-Wire Wire Line
-	6150 3250 5900 3250
 $Comp
 L power:+12V #PWR09
 U 1 1 613B2B11
@@ -93,8 +52,6 @@ F 3 "~" H 6150 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 2550 6150 2800
-Wire Wire Line
-	6150 3100 5900 3100
 Wire Wire Line
 	6150 2050 6150 2150
 $Comp
@@ -137,8 +94,6 @@ F 3 "" H 7100 3500 50  0001 C CNN
 	1    7100 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 3550 6150 3550
 Wire Wire Line
 	7100 3500 7100 3300
 Wire Wire Line
@@ -262,7 +217,6 @@ F 3 "" H 5300 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 3100 5300 3100
-Connection ~ 5300 3100
 Text HLabel 4700 3100 0    50   Input ~ 0
 Sig_in
 $Comp
@@ -301,5 +255,43 @@ $EndComp
 Wire Wire Line
 	8150 3450 8150 3550
 Wire Wire Line
-	8150 3150 8150 3050
+	8150 3150 8150 3100
+Text HLabel 8750 3100 2    50   Input ~ 0
+Shunt_out
+Wire Wire Line
+	8750 3100 8150 3100
+Connection ~ 8150 3100
+Wire Wire Line
+	8150 3100 8150 3050
+$Comp
+L Device:R R1
+U 1 1 613B2B01
+P 5300 2800
+F 0 "R1" V 5093 2800 50  0000 C CNN
+F 1 "R" V 5184 2800 50  0000 C CNN
+F 2 "" V 5230 2800 50  0001 C CNN
+F 3 "~" H 5300 2800 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_EBC Q?
+U 1 1 617048FD
+P 5550 3300
+F 0 "Q?" H 5740 3254 50  0000 L CNN
+F 1 "2N3906" H 5740 3345 50  0000 L CNN
+F 2 "" H 5750 3400 50  0001 C CNN
+F 3 "~" H 5550 3300 50  0001 C CNN
+	1    5550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3600 5650 3500
+Wire Wire Line
+	5650 3100 6150 3100
+Wire Wire Line
+	5300 3100 5300 3300
+Wire Wire Line
+	5300 3300 5350 3300
+Connection ~ 5300 3100
 $EndSCHEMATC
