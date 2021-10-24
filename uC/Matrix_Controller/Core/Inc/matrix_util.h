@@ -34,7 +34,7 @@ void matr_get_baselevel(ADC_HandleTypeDef hadc);
  * @param data: input data in format uint16_t array [N_COL][N_ROW]
  * @param output: output vector of uint8_t with length [N_COL]
  */
-void matr_compare(uint16_t data[N_COL][N_ROW], uint8_t* output[N_COL]);
+void matr_compare(volatile uint16_t data[N_COL][N_ROW], uint8_t* output);
 
 
 #endif /* INC_MATRIX_UTIL_H_ */

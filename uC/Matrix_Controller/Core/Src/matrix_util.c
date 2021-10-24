@@ -130,6 +130,13 @@ void matr_get_baselevel(ADC_HandleTypeDef hadc){
 
 	// TODO: calculate threshold level according to a fixed value TRIGGER_LEVEL
 
+	for(int i = 0; i < N_COL; i++){
+		for(int j = 0; j < N_ROW; j++){
+
+			treshold_level[i][j] = base_level[i][j] * TRIGGER_LEVEL;
+
+		}
+	}
 
 
 }
@@ -142,23 +149,23 @@ void matr_get_baselevel(ADC_HandleTypeDef hadc){
  * @param data: input data in format uint16_t array [N_COL][N_ROW]
  * @param output: pointer to output vector of uint8_t with length [N_COL]
  */
-void matr_compare(uint16_t data[N_COL][N_ROW], uint8_t* output[N_COL]){
+void matr_compare(volatile uint16_t data[N_COL][N_ROW], uint8_t* output){
 
 	// loop over all columns first, as output is column sorted
 	for(int i = 0; i < N_COL; i++){
 
-		*output[i] = 0;																	// preload
+		output[i] = 255;																	// preload
 
 		// loop over all rows
 		for(int j = 0; j < N_ROW; j++){
-
-			if(data[i][j] < treshold_level[i][j]){
-				*output[i] |= (1 << j);											// mark as dark
+			uint16_t m = data[i][j];
+			if(m < treshold_level[i][j]){																		// TODO: compare with base_level[i][j]
+				output[i] &= ~(1 << j);											// mark as dark
 			}
 
 		}
 
-		*output[i] = ~output[i];													// invert, as only dark should be highlighted
+		//*(output[i]) = ~(uint8_t)(output[i]);													// invert, as only dark should be highlighted
 
 	}
 
