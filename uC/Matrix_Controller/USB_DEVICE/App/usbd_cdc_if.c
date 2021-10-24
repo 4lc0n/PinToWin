@@ -34,10 +34,13 @@
 /* Private variables ---------------------------------------------------------*/
 
 // usb receive destination buffer
-extern char usb_rx_buffer[2048];
+extern volatile char usb_rx_buffer[2048];
 
 // dma stream for memory to memory
 extern DMA_HandleTypeDef hdma_memtomem_dma2_stream1;
+
+// something was sent on usb
+extern volatile uint8_t usb_rec;
 
 /* USER CODE END PV */
 
@@ -272,7 +275,11 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 	// transfer data with dma to buffer
 
 	/*DMA configuration*/
-	HAL_DMA_Start(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
+//	HAL_DMA_Start(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
+	//strncpy(usb_rx_buffer, (char*)Buf, *Len);
+	usb_rec = 1;
+
+
 
 
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);

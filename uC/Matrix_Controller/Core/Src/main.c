@@ -68,8 +68,8 @@ volatile int8_t adc_error = 0;				// 1 indicates an error
 volatile int8_t adc_complete = 0;			// 1 indicates matrix scan complete
 
 
-char usb_rx_buffer[2048];							// buffer for usb rx data to be stored for processing
-
+volatile char usb_rx_buffer[2048];							// buffer for usb rx data to be stored for processing
+volatile uint8_t usb_rec = 0;
 
 /* USER CODE END PV */
 
@@ -129,9 +129,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // set callback for mem2mem dma transfer on usb receive
-  hdma_memtomem_dma2_stream1.XferCpltCallback = DMA2_Mem2MemCallback;
+  //hdma_memtomem_dma2_stream1.XferCpltCallback = DMA2_Mem2MemCallback;
+  // dma didn't work here
+
 
   // setup
+  char txbuf[30] = "Init abgeschlossen\n";
+  CDC_Transmit_FS((uint8_t*)txbuf, strlen(txbuf));
 
   matr_get_baselevel(hadc1);								// determine the base light level
 
@@ -151,8 +155,22 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  	HAL_Delay(1000);
+  	HAL_Delay(10);
   	matr_compare(raw_data, bool_matrix);
+  	char txbuf1[30] = "tick\n";
+
+
+  	if(usb_rec == 1){
+  		usb_rec = 0;
+
+  		strcpy(txbuf1, "takkk\n");
+  		HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
+
+
+//			HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
+  	}
+
+  	CDC_Transmit_FS((uint8_t*)txbuf1, strlen(txbuf1));
 //  	if(adc_error == 1){
 //			adc_error = 0;
 //			// sprintf(output, "ADC Error\r\n");
