@@ -19,9 +19,15 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usb_device.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+
+#include "usbd_cdc_if.h"			// usb transmit util
+
 
 /* USER CODE END Includes */
 
@@ -43,14 +49,19 @@
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
-SPI_HandleTypeDef hspi2;
-DMA_HandleTypeDef hdma_spi2_tx;
+TIM_HandleTypeDef htim9;
 
 /* USER CODE BEGIN PV */
 
 
 volatile uint16_t raw_data[N_COL][N_ROW];				// form [COL][ROW] used, as data is generated column by column, so indexing is easier
 uint16_t base_level[N_COL][N_ROW];							// form [COL][ROW] used, as data is generated column by column, so indexing is easier
+
+uint16_t treshold_level[N_COL][N_ROW];					// form [COL][ROW] used, ..., compare data with trheshold level to get bool_matrix
+
+
+uint8_t bool_matrix[N_COL];											// form: [COL] used, rows are represented by each byte, bit 0: row 0
+
 
 volatile uint8_t active_col = 0;								// holds the active column that is currently processed
 
@@ -69,12 +80,16 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
-static void MX_SPI2_Init(void);
+static void MX_TIM9_Init(void);
 /* USER CODE BEGIN PFP */
 
 void set_col_active(int8_t col);
 
-void get_baselevel(uint8_t **base_data);
+void get_baselevel(uint16_t base_data[N_COL][N_ROW]);
+
+
+void compare();
+
 
 
 /* USER CODE END PFP */
@@ -114,16 +129,24 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_ADC1_Init();
-  MX_SPI2_Init();
+  MX_TIM9_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
-  // start first dma conversion: rest will be handled in the IRQ of DMA
-//   HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
+
+  // setup
+
+  get_baselevel(base_level);								// determine the base light level
+
+
+  // calculate threshold for every single sensor
+  // will be faster to just compare than to redo the threshold every single time
 
 
 
 
 
+  HAL_TIM_Base_Start_IT(&htim9);						// starts time base for regular ADC scans
 
   /* USER CODE END 2 */
 
@@ -172,13 +195,12 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 100;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 25;
+  RCC_OscInitStruct.PLL.PLLN = 192;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -308,39 +330,40 @@ static void MX_ADC1_Init(void)
 }
 
 /**
-  * @brief SPI2 Initialization Function
+  * @brief TIM9 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_SPI2_Init(void)
+static void MX_TIM9_Init(void)
 {
 
-  /* USER CODE BEGIN SPI2_Init 0 */
+  /* USER CODE BEGIN TIM9_Init 0 */
 
-  /* USER CODE END SPI2_Init 0 */
+  /* USER CODE END TIM9_Init 0 */
 
-  /* USER CODE BEGIN SPI2_Init 1 */
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
 
-  /* USER CODE END SPI2_Init 1 */
-  /* SPI2 parameter configuration*/
-  hspi2.Instance = SPI2;
-  hspi2.Init.Mode = SPI_MODE_SLAVE;
-  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi2.Init.NSS = SPI_NSS_HARD_INPUT;
-  hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
-  hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
-  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-  hspi2.Init.CRCPolynomial = 10;
-  if (HAL_SPI_Init(&hspi2) != HAL_OK)
+  /* USER CODE BEGIN TIM9_Init 1 */
+
+  /* USER CODE END TIM9_Init 1 */
+  htim9.Instance = TIM9;
+  htim9.Init.Prescaler = 100 - 1;
+  htim9.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim9.Init.Period = 9600 - 1;
+  htim9.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim9.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim9) != HAL_OK)
   {
     Error_Handler();
   }
-  /* USER CODE BEGIN SPI2_Init 2 */
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim9, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM9_Init 2 */
 
-  /* USER CODE END SPI2_Init 2 */
+  /* USER CODE END TIM9_Init 2 */
 
 }
 
@@ -352,12 +375,8 @@ static void MX_DMA_Init(void)
 
   /* DMA controller clock enable */
   __HAL_RCC_DMA2_CLK_ENABLE();
-  __HAL_RCC_DMA1_CLK_ENABLE();
 
   /* DMA interrupt init */
-  /* DMA1_Stream4_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
   /* DMA2_Stream0_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
@@ -481,7 +500,9 @@ void set_col_active(int8_t col)
  * @brief Function to scan matrix to determine base light level of all elements
  * @param base_data: 2 dimensional vector for base level data of form uint8_t [COL][ROW]
  */
-void get_baselevel(uint8_t **base_data){
+void get_baselevel(uint16_t base_data[N_COL][N_ROW]){
+
+	adc_complete = 0;							// reset value
 
 
 	// loop over every column and get data
@@ -492,25 +513,52 @@ void get_baselevel(uint8_t **base_data){
 		active_col = N_COL - 1;				// prevent ConvCpltCallback from starting a new conversion:
 																	// trick into thinking this is the last conversion
 
+
+
 		// do one full converion, store into base_data
-		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)base_data[i], N_ROW);
+		if(HAL_ADC_Start_DMA(&hadc1, (uint32_t*)(base_data[i]), N_ROW) != HAL_OK){
+			while(1);
+			// failed to start adc
+		}
 
 
 
-		adc_complete = 0;							// wait for adc conversion to be finished
-
-		while(adc_complete == 0)			// while not finished
-			__asm('nop');								// do nothing
 
 
+		while(adc_complete == 0 && adc_error == 0)			// while not finished
+			__asm("nop");								// do nothing
 
+		if(adc_error){
+			while(1);										// fuck
+		}
+
+
+		adc_complete = 0;							// reset value
 	}
-
-
 	adc_complete = 0;								// reset used variables
+
+}
+
+
+/**
+ * @brief Callback function of Timer 9 on overflow: used to start ADC conversion
+ */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	// dunno if i have to reset interrupt flag
+
+
+
+	// prepare for first conversion:
+	adc_complete = 0;
+	active_col = 0;
+	set_col_active(0);
+	// start ADC conversion
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[0], N_ROW);
 
 
 }
+
 
 
 
@@ -521,7 +569,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
 
 
-	HAL_ADC_Stop_DMA(&hadc1);
+//	HAL_ADC_Stop_DMA(&hadc1);
 
 	active_col = (active_col + 1) % N_COL;
 
@@ -529,7 +577,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
 
 	// TODO: test if delay is needed!
-	HAL_Delay(1);
+	// HAL_Delay(3);
 
 	if(active_col != 0){
 		// start another DMA conversion
