@@ -129,22 +129,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // set callback for mem2mem dma transfer on usb receive
- HAL_DMA_RegisterCallback(&hdma_memtomem_dma2_stream1, HAL_DMA_XFER_CPLT_CB_ID, &DMA2_Mem2MemCallback);
-  // dma didn't work here
-
-
-
-  // TEST DMA
-
-  char buf1[11];
-  char buf2[11] = "Hei Verden";
-
-  HAL_DMA_Start_IT(&hdma_memtomem_dma2_stream1, (uint32_t)buf2, (uint32_t)buf1, strlen(buf2));
-
-  HAL_Delay(100);
-
-  // TODO: end test
-  while(1);
+  HAL_DMA_RegisterCallback(&hdma_memtomem_dma2_stream1, HAL_DMA_XFER_CPLT_CB_ID, &DMA2_Mem2MemCallback);
 
 
 
@@ -152,15 +137,11 @@ int main(void)
 
 
 
-  // setup
-  char txbuf[30] = "Init abgeschlossen\n";
-  CDC_Transmit_FS((uint8_t*)txbuf, strlen(txbuf));
+
 
   matr_get_baselevel(hadc1);								// determine the base light level
 
 
-  // calculate threshold for every single sensor
-  // will be faster to just compare than to redo the threshold every single time
 
 
 
@@ -174,39 +155,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  	HAL_Delay(10);
-  	matr_compare(raw_data, bool_matrix);
-  	char txbuf1[30] = "tick\n";
 
 
-  	if(usb_rec == 1){
+
+  	if(adc_error == 1){
+			adc_error = 0;
+			// sprintf(output, "ADC Error\r\n");
+			// HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
+			while(1);
+		}
+
+
+  	if(usb_rec == 1 && adc_complete == 1){
+  		adc_complete = 0;
   		usb_rec = 0;
+  		char usb_buffer[3 * N_COL] = {0};
 
-  		strcpy(txbuf1, "takkk\n");
-  		HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
-
-
-//			HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, SET);
+  		sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", bool_matrix[0], bool_matrix[1], bool_matrix[2], bool_matrix[3], bool_matrix[4], bool_matrix[5], bool_matrix[6], bool_matrix[7], bool_matrix[8], bool_matrix[9], bool_matrix[10] );
+  		CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
   	}
 
-  	CDC_Transmit_FS((uint8_t*)txbuf1, strlen(txbuf1));
-//  	if(adc_error == 1){
-//			adc_error = 0;
-//			// sprintf(output, "ADC Error\r\n");
-//			// HAL_UART_Transmit(&huart1, (uint8_t*)output, strlen(output), HAL_MAX_DELAY);
-//			while(1);
-//		}
-//
-//		for(int i = 0; i < N_COL; i++){
-////			set_col_active(i);
-////			// HAL_Delay(1);
-////			HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[i], N_ROW);
-////
-////			while(adc_complete != 1);
-////			adc_complete = 0;
-////			HAL_ADC_Stop_DMA(&hadc1);
-//		}
-//
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -537,7 +505,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
 	}
 	{
-		// this sacn is finnished
+		// this scan is finnished
 		adc_complete = 1;
 	}
 

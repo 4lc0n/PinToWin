@@ -274,7 +274,9 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
 	// transfer data with dma to buffer
 
-	/*DMA configuration*/
+	// move packet to buffer in main context
+
+	// todo: check if enough space in buffer & accomodate if still data in puffer!
   HAL_DMA_Start_IT(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
 
 

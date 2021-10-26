@@ -199,26 +199,6 @@ int main(void)
 
 
 
-  	// create artificial user data for SPI2: some balls raining down from  top
-
-
-//  	// todo: test this
-//  	for(int i = 0; i < N_COL; i++){
-//  		// simply shift data left
-//  		// matrix_bool[i] = matrix_bool[i] << 1;
-//  	}
-//  	curr_row++;
-//
-//  	if(curr_row == 7){
-//			//  get new column to start raining down
-//			// pseudo_random:
-//
-//			curr_col = matrix_data[0][1] % 11;
-//			//matrix_bool[curr_col] = 1;
-//			curr_row = 0;
-//
-//		}
-
 
 
   	uint8_t data[11] = {0};

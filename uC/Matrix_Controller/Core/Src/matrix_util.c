@@ -16,7 +16,7 @@ extern volatile int8_t adc_error;
 
 
 uint16_t base_level[N_COL][N_ROW];							// form [COL][ROW] used, as data is generated column by column, so indexing is easier
-uint16_t treshold_level[N_COL][N_ROW];					// form [COL][ROW] used, ..., compare data with trheshold level to get bool_matrix
+uint16_t threshold_level[N_COL][N_ROW];					// form [COL][ROW] used, ..., compare data with trheshold level to get bool_matrix
 
 
 
@@ -128,12 +128,12 @@ void matr_get_baselevel(ADC_HandleTypeDef hadc){
 	adc_complete = 0;								// reset used variables
 
 
-	// TODO: calculate threshold level according to a fixed value TRIGGER_LEVEL
+	// calculate threshold level according to a fixed value TRIGGER_LEVEL
 
 	for(int i = 0; i < N_COL; i++){
 		for(int j = 0; j < N_ROW; j++){
 
-			treshold_level[i][j] = base_level[i][j] * TRIGGER_LEVEL;
+			threshold_level[i][j] = base_level[i][j] * TRIGGER_LEVEL;
 
 		}
 	}
@@ -159,7 +159,7 @@ void matr_compare(volatile uint16_t data[N_COL][N_ROW], uint8_t* output){
 		// loop over all rows
 		for(int j = 0; j < N_ROW; j++){
 			uint16_t m = data[i][j];
-			if(m < treshold_level[i][j]){																		// TODO: compare with base_level[i][j]
+			if(m < threshold_level[i][j]){																		// compare with threshold
 				output[i] &= ~(1 << j);											// mark as dark
 			}
 
