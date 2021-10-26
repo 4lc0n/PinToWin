@@ -275,9 +275,9 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 	// transfer data with dma to buffer
 
 	/*DMA configuration*/
-//	HAL_DMA_Start(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
-	//strncpy(usb_rx_buffer, (char*)Buf, *Len);
-	usb_rec = 1;
+  HAL_DMA_Start_IT(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
+
+
 
 
 

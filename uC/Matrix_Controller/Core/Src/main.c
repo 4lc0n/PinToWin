@@ -129,8 +129,27 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // set callback for mem2mem dma transfer on usb receive
-  //hdma_memtomem_dma2_stream1.XferCpltCallback = DMA2_Mem2MemCallback;
+ HAL_DMA_RegisterCallback(&hdma_memtomem_dma2_stream1, HAL_DMA_XFER_CPLT_CB_ID, &DMA2_Mem2MemCallback);
   // dma didn't work here
+
+
+
+  // TEST DMA
+
+  char buf1[11];
+  char buf2[11] = "Hei Verden";
+
+  HAL_DMA_Start_IT(&hdma_memtomem_dma2_stream1, (uint32_t)buf2, (uint32_t)buf1, strlen(buf2));
+
+  HAL_Delay(100);
+
+  // TODO: end test
+  while(1);
+
+
+
+
+
 
 
   // setup
@@ -532,7 +551,8 @@ void HAL_ADC_ErrorCallback(ADC_HandleTypeDef* hadc){
 }
 
 void DMA2_Mem2MemCallback( struct __DMA_HandleTypeDef * hdma){
-	;
+	// new USB data received!
+	usb_rec = 1;
 }
 
 
