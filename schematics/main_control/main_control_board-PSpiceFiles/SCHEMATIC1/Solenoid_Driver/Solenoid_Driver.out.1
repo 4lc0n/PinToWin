@@ -1,0 +1,105 @@
+
+**** 10/27/21 21:04:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Solenoid_Driver.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\markl\Documents\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MAIN_CONTROL_BOARD
+Q_P1_Q3         0 P1_N00192 P1_N00204 Q2N3906
+Q_P1_Q2         12V P1_N00192 P1_N00204 Q2N3904
+Q_P1_Q1         P1_N00228 P1_N00243 0 Q2N3904
+R_P1_R12         P1_N00228 12V  4.7k TC=0,0 
+R_P1_R11         P1_N00243 12V  10k TC=0,0 
+R_P1_R10         P1_N00243 PWM_SOLENOID1  330 TC=0,0 
+R_P1_R13         P1_N00192 P1_N00228  1k TC=0,0 
+R_P1_R14         P1_N00409 P1_N00204  33 TC=0,0 
+R_P1_R15         SHUNT_SIG1 0  0.1 TC=0,0 
+R_P1_R16         P1_N00739 30V  12 TC=0,0 
+L_P1_L1         P1_N00739 P1_N00612  33 uH  
+----------------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
+V_P1_V5         PWM_SOLENOID1 0  
++PULSE 0 3 10u 1u 1u 50u 100u
+X_P1_M1         P1_N00612 P1_N00409 SHUNT_SIG1 IRF520
+D_P1_D1         P1_N00612 30V D1N5819 
+R_P2_R20         P2_N00192 P2_N00228  1k TC=0,0 
+R_P2_R17         P2_N00243 PWM_SOLENOID2  330 TC=0,0 
+R_P2_R18         P2_N00243 12V  10k TC=0,0 
+R_P2_R19         P2_N00228 12V  4.7k TC=0,0 
+R_P2_R23         P2_N00739 30V  12 TC=0,0 
+D_P2_D2         P2_N00612 30V D1N5819 
+Q_P2_Q5         12V P2_N00192 P2_N00204 Q2N3904
+R_P2_R22         SHUNT_SIG2 0  0.1 TC=0,0 
+Q_P2_Q4         P2_N00228 P2_N00243 0 Q2N3904
+V_P2_V6         PWM_SOLENOID2 0  
++PULSE 0 3 10u 1u 1u 50u 100u
+X_P2_M2         P2_N00612 P2_N00409 SHUNT_SIG2 IRF520
+R_P2_R21         P2_N00409 P2_N00204  33 TC=0,0 
+Q_P2_Q6         0 P2_N00192 P2_N00204 Q2N3906
+L_P2_L2         P2_N00739 P2_N00612  33 uH  
+----------------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
+R_P3_R27         P3_N00192 P3_N00228  1k TC=0,0 
+R_P3_R24         P3_N00243 PWM_SOLENOID3  330 TC=0,0 
+R_P3_R25         P3_N00243 12V  10k TC=0,0 
+R_P3_R26         P3_N00228 12V  4.7k TC=0,0 
+R_P3_R30         P3_N00739 30V  12 TC=0,0 
+D_P3_D3         P3_N00612 30V D1N5819 
+Q_P3_Q8         12V P3_N00192 P3_N00204 Q2N3904
+R_P3_R29         SHUNT_SIG3 0  0.1 TC=0,0 
+Q_P3_Q7         P3_N00228 P3_N00243 0 Q2N3904
+V_P3_V7         PWM_SOLENOID3 0  
++PULSE 0 3 10u 1u 1u 50u 100u
+X_P3_M3         P3_N00612 P3_N00409 SHUNT_SIG3 IRF520
+R_P3_R28         P3_N00409 P3_N00204  33 TC=0,0 
+Q_P3_Q9         0 P3_N00192 P3_N00204 Q2N3906
+L_P3_L3         P3_N00739 P3_N00612  33 uH  
+----------------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
+X_P4_U2A         SHUNT_SIG1 P4_N01115 5V 0 CURRENT_SIG1 LM324/5_1/TI
+X_P4_U2B         SHUNT_SIG3 P4_N01126 5V 0 CURRENT_SIG3 LM324/5_1/TI
+X_P4_U2C         SHUNT_SIG2 P4_N01148 5V 0 CURRENT_SIG2 LM324/5_1/TI
+X_P4_U2D         N00384 P4_N01137 5V 0 CURRENT_SIG4 LM324/5_1/TI
+R_P4_R8         P4_N01137 CURRENT_SIG4  47k TC=0,0 
+R_P4_R9         0 P4_N01137  5.2k TC=0,0 
+R_P4_R7         0 P4_N01148  5.2k TC=0,0 
+R_P4_R6         P4_N01148 CURRENT_SIG2  47k TC=0,0 
+R_P4_R5         0 P4_N01115  5.2k TC=0,0 
+R_P4_R4         P4_N01115 CURRENT_SIG1  47k TC=0,0 
+R_P4_R3         0 P4_N01126  5.2k TC=0,0 
+R_P4_R2         P4_N01126 CURRENT_SIG3  47k TC=0,0 
+R_R1         0 N00384  10k TC=0,0 
+V_P5_V1         3V3 0 3.3Vdc
+V_P5_V2         5V 0 5Vdc
+V_P5_V3         12V 0 12Vdc
+V_P5_V4         30V 0 30Vdc
+
+**** RESUMING Solenoid_Driver.cir ****
+.END
+

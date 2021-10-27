@@ -1,0 +1,5 @@
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\diode.lib, offset=459170, size=174
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\bipolar.lib, offset=201483, size=305
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\bipolar.lib, offset=200861, size=315
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\irf.lib, offset=142463, size=1745
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\tex_inst.lib, offset=45393, size=1228

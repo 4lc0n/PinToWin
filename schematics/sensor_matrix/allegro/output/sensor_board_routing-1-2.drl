@@ -10,7 +10,7 @@ T07C3.5
 ;LEADER: 12 
 ;HEADER: 
 ;CODE  : ASCII 
-;FILE  : sensor_board_routing-1-2.drl for board C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaaf10608.tmp ... layers TOP and BOTTOM
+;FILE  : sensor_board_routing-1-2.drl for board C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/#Taaaaah08300.tmp ... layers TOP and BOTTOM
 ;T01 Holesize 1. = 0.200000 Tolerance = +0.100000/-0.100000 PLATED MM Quantity = 18
 ;T02 Holesize 2. = 0.762000 Tolerance = +0.000000/-0.000000 PLATED MM Quantity = 88
 ;T03 Holesize 3. = 0.787400 Tolerance = +0.000000/-0.000000 PLATED MM Quantity = 2
