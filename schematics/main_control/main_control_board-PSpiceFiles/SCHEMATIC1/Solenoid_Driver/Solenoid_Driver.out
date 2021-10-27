@@ -1,5 +1,5 @@
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -97,7 +97,7 @@ V_P5_V4         30V 0 30Vdc
 **** RESUMING Solenoid_Driver.cir ****
 .END
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -166,7 +166,7 @@ V_P5_V4         30V 0 30Vdc
           IS  800.000000E-18 
 
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -241,7 +241,7 @@ V_P5_V4         30V 0 30Vdc
            D     .52             .52         
 
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -286,7 +286,7 @@ V_P5_V4         30V 0 30Vdc
        XPART    0               0               0            
 
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -473,7 +473,7 @@ V_P5_V4         30V 0 30Vdc
 
           JOB CONCLUDED
 
-**** 10/27/21 21:06:53 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/27/21 22:08:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Solenoid_Driver"  [ c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control
 
@@ -485,6 +485,6 @@ V_P5_V4         30V 0 30Vdc
 
 
 
-  License check-out time            =         .72
+  License check-out time            =        4.73
   Total job time (using Solver 1)   =        1.16
 
