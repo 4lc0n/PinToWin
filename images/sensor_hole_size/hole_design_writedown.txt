@@ -1,0 +1,34 @@
+R1 = LDR
+
+R2 = 2k
+
+ambient light: 630 lx
+
+19 to 15: too dark
+
+1: works
+1 all the way up: base level is much higher, amplitude difference more clear
+
+
+5: works also but with two light sources: two steps of darkening
+5: all the way up: not that precise, small detection radius
+
+
+
+10: base level low, on dark: 0.5
+
+12: ambient light might work, as it tunnels the shade
+
+
+
+14: works, on dark: 0.5, but very dependent on angle
+minimum reached when at 30-40% passed
+
+
+
+
+
+
+
+
+

@@ -351,7 +351,7 @@ static void MX_GPIO_Init(void)
 
 void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin)
 {
-	// TODO: transfer to deferred interrupt handler
+
 	if(GPIO_Pin == USER_BUTTON_Pin)
 	{
 		if(HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin))
