@@ -37,6 +37,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+#define ANALOG_OUTPUT
+
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -133,17 +137,7 @@ int main(void)
 
 
 
-
-
-
-
-
-
   matr_get_baselevel(hadc1);								// determine the base light level
-
-
-
-
 
 
 
@@ -153,9 +147,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  uint8_t o = 0;
+  char usb_buffer[3 * N_COL] = {0};
+
   while (1)
   {
-
 
 
   	if(adc_error == 1){
@@ -165,14 +162,32 @@ int main(void)
 			while(1);
 		}
 
+  	if(adc_complete == 1){
+  		o++;
+  		if(o > 9){
 
-  	if(usb_rec == 1 && adc_complete == 1){
-  		adc_complete = 0;
-  		usb_rec = 0;
-  		char usb_buffer[3 * N_COL] = {0};
+  			//if(usb_rec == 1 && adc_complete == 1){
+  			  		adc_complete = 0;
+  			  		usb_rec = 0;
+#ifdef ANALOG_OUTPUT
+  			  		for(int i = 0; i < 8; i++){
+  			  			sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", raw_data[0][i], raw_data[1][i], raw_data[2][i], raw_data[3][i], raw_data[4][i], raw_data[5][i], raw_data[6][i], raw_data[7][i], raw_data[8][i], raw_data[9][i], raw_data[10][i]);
+								CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+  			  		}
 
-  		sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", bool_matrix[0], bool_matrix[1], bool_matrix[2], bool_matrix[3], bool_matrix[4], bool_matrix[5], bool_matrix[6], bool_matrix[7], bool_matrix[8], bool_matrix[9], bool_matrix[10] );
-  		CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+							o = 0;
+#else
+  			  		matr_compare(raw_data, bool_matrix);
+
+
+
+							sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", bool_matrix[0], bool_matrix[1], bool_matrix[2], bool_matrix[3], bool_matrix[4], bool_matrix[5], bool_matrix[6], bool_matrix[7], bool_matrix[8], bool_matrix[9], bool_matrix[10] );
+							CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+							o = 0;
+#endif
+
+  		}
+
   	}
 
     /* USER CODE END WHILE */
