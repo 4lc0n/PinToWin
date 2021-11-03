@@ -271,15 +271,10 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
-
 	// transfer data with dma to buffer
 
-	// move packet to buffer in main context
-
-	// todo: check if enough space in buffer & accomodate if still data in puffer!
+	// todo: check if enough space in buffer & check if still data in puffer!
   HAL_DMA_Start_IT(&hdma_memtomem_dma2_stream1, (uint32_t)Buf, (uint32_t)usb_rx_buffer, (uint32_t)*Len);
-
-
 
 
 
