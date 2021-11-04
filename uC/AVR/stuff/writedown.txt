@@ -1,0 +1,21 @@
+
+
+to use jtag, setting the fuses is required: 
+
+
+read fuses: avrdude -c atmelice_isp -p atmega2560 -F -P usb -U lfuse:r:-:i    
+
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+
+required fuses: OCD and JTAG
+
+new fuses: E:FD, H:18, L:FF
+
+to set high fuse: 
+
+avrdude -c atmelice_isp -p atmega2560 -F -P usb -U hfuse:w:0x18:m
+
+
+
