@@ -29,7 +29,7 @@
 #ifndef PORTHARDWARE_H
 #define PORTHARDWARE_H
 
-#include "FreeRTOSConfig.h"
+#include "../../../../Demo/AVR_ATMega2560/FreeRTOSConfig.h"
 
 /*-----------------------------------------------------------*/
 
@@ -45,15 +45,17 @@
 
 #if ( configUSE_TIMER_INSTANCE == 0 )
 
-    #define TICK_INT_vect    TCB0_INT_vect
-    #define INT_FLAGS        TCB0_INTFLAGS
-    #define INT_MASK         TCB_CAPT_bm
+    #define TICK_INT_vect    TIMER0_COMPA_vect
+    #define INT_FLAGS        TIFR0
+    #define INT_MASK         0x02
+    #define TIM_CLK_DIV      64
 
     #define TICK_init()                                      \
     {                                                        \
-        TCB0.CCMP = configCPU_CLOCK_HZ / configTICK_RATE_HZ; \
-        TCB0.INTCTRL = TCB_CAPT_bm;                          \
-        TCB0.CTRLA = TCB_ENABLE_bm;                          \
+        TCCR0A = 2; \
+        TCCR0B = 3; \
+        OCR0A  = configCPU_CLOCK_HZ / configTICK_RATE_HZ / TIM_CLK_DIV; \
+        TIMSK0 = INT_MASK;                          \
     }
 
 #elif ( configUSE_TIMER_INSTANCE == 1 )

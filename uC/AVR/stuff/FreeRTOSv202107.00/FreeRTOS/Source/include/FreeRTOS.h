@@ -56,7 +56,7 @@
 /* *INDENT-ON* */
 
 /* Application specific configuration options. */
-#include "FreeRTOSConfig.h"
+#include "../../Demo/AVR_ATMega2560/FreeRTOSConfig.h"
 
 /* Basic FreeRTOS definitions. */
 #include "projdefs.h"
