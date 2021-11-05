@@ -204,7 +204,7 @@ static void blinkTask(void *pvParameters)
     {
 
         PORTB ^=(1 << 7);
-        vTaskDelay(300 / portTICK_PERIOD_MS);
+        vTaskDelay(3 / portTICK_PERIOD_MS);
 
     }
 }

@@ -31,31 +31,61 @@
 
 #include "FreeRTOSConfig.h"
 
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <avr/sleep.h>
+#include <avr/wdt.h>
+
 /*-----------------------------------------------------------*/
 
 #define CLR_INT( FLAG_REG, FLAG_MASK )                                         \
     asm volatile (                                                             \
-        "push r16\n\t"                                                         \
-        "ldi r16, %1\n\t"                                                      \
-        "sts %0, r16\n\t"                                                      \
-        "pop r16\n\t"                                                          \
-        :                                                                      \
-        : "i" ( _SFR_MEM_ADDR( FLAG_REG ) ), "i" ( ( uint8_t ) ( FLAG_MASK ) ) \
+        "nop\n\t"\
         );
 
-#if ( configUSE_TIMER_INSTANCE == 0 )
-
-    #define TICK_INT_vect    TIMER0_COMPA_vect
+#if ( configUSE_TIMER_INSTANCE == 0 )       /* rather watchdog setting: */
+    #define VALUE WDTO_15MS
+    #define TICK_INT_vect    WDT_vect
     #define INT_FLAGS        TIFR0
     #define INT_MASK         OCF0A
 
     #define TICK_init()                                      \
-    {                                                        \
-        TCCR0A = 2;\
-        TCCR0B = 3;\
-        TCCR0B = configCPU_CLOCK_HZ / configTICK_RATE_HZ / 64; \
-        TIMSK0 = 2;                          \
-    }
+    {   \
+    if (_SFR_IO_REG_P (_WD_CONTROL_REG))\
+    {\
+        __asm__ __volatile__ (\
+                "in __tmp_reg__,__SREG__"   "\n\t"\
+                "cli"                       "\n\t"\
+                "wdr"                       "\n\t"\
+                "out %0, %1"                "\n\t"\
+                "out __SREG__,__tmp_reg__"  "\n\t"\
+                "out %0, %2"                "\n\t"\
+                : /* no outputs */\
+                : "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),\
+                "r" ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE))),\
+                "r" ((uint8_t) ((VALUE & 0x08 ? _WD_PS3_MASK : 0x00) |\
+                        _BV(WDIF) | _BV(WDIE) | (VALUE & 0x07)) )\
+                : "r0"\
+        );\
+    }\
+    else\
+    {\
+        __asm__ __volatile__ (\
+                "in __tmp_reg__,__SREG__"   "\n\t"\
+                "cli"                       "\n\t"\
+                "wdr"                       "\n\t"\
+                "sts %0, %1"                "\n\t"\
+                "out __SREG__,__tmp_reg__"  "\n\t"\
+                "sts %0, %2"                "\n\t"\
+                : /* no outputs */\
+                : "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),\
+                "r" ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE))),\
+                "r" ((uint8_t) ((VALUE & 0x08 ? _WD_PS3_MASK : 0x00) |\
+                        _BV(WDIF) | _BV(WDIE) | (VALUE & 0x07)) )\
+                : "r0"\
+        );\
+    }\
+}
 
 #elif ( configUSE_TIMER_INSTANCE == 1 )
 
