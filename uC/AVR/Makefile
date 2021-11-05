@@ -17,18 +17,18 @@
 # project name
 PRJ = main
 # avr mcu
-MCU = atmega328p
+MCU = atmega2560
 # mcu clock frequency
 CLK = 16000000
 # avr programmer (and port if necessary)
 # e.g. PRG = usbtiny -or- PRG = arduino -P /dev/tty.usbmodem411
-PRG = usbtiny
+PRG = atmelice_isp
 # fuse values for avr: low, high, and extended
 # these values are from an Arduino Uno (ATMega328P)
 # see http://www.engbedded.com/fusecalc/ for other MCUs and options
 LFU = 0xFF
-HFU = 0xDE
-EFU = 0x05
+HFU = 0x18
+EFU = 0xFD
 # program source files (not including external libraries)
 SRC = $(PRJ).cpp
 # where to look for external libraries (consisting of .c/.cpp files and .h files)
@@ -48,7 +48,7 @@ CFLAGS    = -Wall -Os -DF_CPU=$(CLK) -mmcu=$(MCU) $(INCLUDE)
 CPPFLAGS =
 
 # executables
-AVRDUDE = avrdude -c $(PRG) -p $(MCU)
+AVRDUDE = avrdude -v -P usb -F -c $(PRG) -p $(MCU)
 OBJCOPY = avr-objcopy
 OBJDUMP = avr-objdump
 SIZE    = avr-size --format=avr --mcu=$(MCU)

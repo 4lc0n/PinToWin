@@ -1,16 +1,14 @@
-#include <stdlib.h>
 #include <avr/io.h>
+#include <util/delay.h>
 
 
 int main(){
 
-	DDRB |= (0x01 << 5);
+	DDRB |= (0x01 << 7);
 
 	while(1)
 	{
-		PORTB ^= (1 << 5);
-		for(int i = 0; i < 100000; i++)
-			__asm("nop");
-
-	}
+		PORTB ^= (1 << 7);
+		_delay_ms(300);
+	}	
 }
