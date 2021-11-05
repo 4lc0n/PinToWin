@@ -39,6 +39,10 @@ STM32CubeIDE-Project for a µC to send random data to simulate the matrix, as it
 #### pinbal detection V0
 STM32CubeIDE for breadboard prototype of LDR matrix with a 4x4 matrix
 
+#### AVR
+contains FreeRTOS implementation on ATMega2560 (Arduino Mega). Main project lies in PlatformIO workspace, the Arduino_FreeRTOS port is used, as the native didn't feel like running
+Multi-Tasking firmware with custom drivers for ADC and UART for effective data throughput
+
 ### schematics
 
 Schematics and other files related to this for the projects PCBs
