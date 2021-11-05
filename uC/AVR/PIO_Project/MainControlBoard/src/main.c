@@ -5,9 +5,21 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+
+
+#include "uart.h"
+
+
+
+
+
 void blink(void* param);
 
 void setup() {
+
+
+  uart_init(0, 9600);
+
   
     xTaskCreate(
     blink
@@ -33,7 +45,7 @@ void blink(void* param){
 
     PORTB ^= (1 << 7);
 
-    _delay_ms(300);
+    vTaskDelay(200 / portTICK_PERIOD_MS);
 
 
 
