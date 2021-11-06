@@ -58,11 +58,11 @@ go to  /usr/share/arduino/hardware/arduino/avr/
 in boards.txt
 check which fuses and bootloader should be loaded onto
 
-for atmega2560 (Arduino Mega): stk500v2/stk500boot_v2_mega2560.hex
+for atmega2560 (Arduino Mega): bootloaders/stk500v2/stk500boot_v2_mega2560.hex
 
 burn bootloader via ISP (as jtag is now disabled with fuses)
 
-avrdude -v -P usb -F -c atmelice_isp -p atmega2560 -Uflash:w:stk500boot_v2_mega2560.hex:i
+avrdude -v -P usb -F -c atmelice_isp -p atmega2560 -Uflash:w:/usr/share/arduino/hardware/arduino/avr/bootloaders/stk500v2/stk500boot_v2_mega2560.hex:i
 
 
 happy uploading via usb
