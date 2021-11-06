@@ -13,7 +13,7 @@
 
 #include <stdint.h>
 
-#define BUFFER_SIZE 64
+
 
 #define DEFAULT_BAUD 119200
 

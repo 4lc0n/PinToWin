@@ -14,6 +14,8 @@
 #include <avr/io.h>
 #include <stdlib.h>
 
+#include "ringbuffer.h"
+
 // ------------------------------------
 //          private variables
 // ------------------------------------
@@ -21,15 +23,9 @@
 // buffer implementation: head will point at 0 at start, tail will point to last variable. actual buffer size = BUFFER_SIZE - 1
 // on write: check if ( head + 1 )==tail --> full, else write
 // on read: if tail + 1 == head --> empty, else read
-typedef struct ring_buffer{
-    char* buf;
-    uint8_t head;
-    uint8_t tail;
-    uint8_t initialized;
-    uint8_t transmitting;
-}rbuff;
 
-rbuff uarttx[4], uartrx[4];
+
+rbuff uarttx[4] = {{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0}}, uartrx[4] = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}};
 
 
 
@@ -113,19 +109,14 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
 
     char* c = malloc(BUFFER_SIZE);  // allocate memory for buffer
     if(c != NULL){
-        uarttx[uart_if].buf = c;    // store to pointer
-        uarttx[uart_if].head = 0;   // set head to 0
-        uarttx[uart_if].tail = BUFFER_SIZE - 1; // set tail to end of buffer
-
+        rbuff_init(&uarttx[uart_if], c);
     }
     else{
         return 0;       // failed to allocate space for buffer
     }
     c = malloc(BUFFER_SIZE);
     if(c != NULL){
-        uartrx[uart_if].buf = c;
-        uartrx[uart_if].head = 0;
-        uartrx[uart_if].tail = BUFFER_SIZE - 1;
+        rbuff_init(&uartrx[uart_if], c);
         
     }
     else{
@@ -133,8 +124,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
         return 0;       // failed to allocate space for buffer
     }   
 
-    uarttx[uart_if].initialized = 1;
-    uartrx[uart_if].initialized = 1;
+    
     return 1;
 
 }
@@ -155,9 +145,8 @@ uint8_t uart_tx_buffer_state(uint8_t uart_if)
     
 
     // buffer size - ( head - (tail + 1) ), as if tail + 1 == head --> empty            // -1, as one item always need to be in between head and tail
-    return BUFFER_SIZE - ( (uarttx[uart_if].head) % BUFFER_SIZE - (uarttx[uart_if].tail + 1) % BUFFER_SIZE) - 1;
+    return rbuffer_free(&uarttx[uart_if]);
 }
-
 
 /**
  *  @brief transmit a byte string via a selected uart port in interrupt mode
@@ -226,10 +215,8 @@ void uart_putc(uint8_t uart_if, char c)
             }
         }                                   // if not transmitting
 
-        else if((uarttx[uart_if].head + 1) % BUFFER_SIZE != uarttx[uart_if].tail)        // check if buffer is full
-        {
-            uarttx[uart_if].buf[uarttx[uart_if].head] = c;                          // store to buffer
-            uarttx[uart_if].head = (uarttx[uart_if].head + 1) % BUFFER_SIZE;        // increase head index
+        else{
+            rbuffer_write(&uarttx[uart_if], c);
         }
 
     }   // check if already initialized
