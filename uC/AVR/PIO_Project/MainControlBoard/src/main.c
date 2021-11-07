@@ -8,7 +8,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "main.h"
 #include "uart.h"
+
 #include "misc.h"
 
 
