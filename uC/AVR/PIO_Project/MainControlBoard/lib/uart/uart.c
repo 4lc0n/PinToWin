@@ -231,7 +231,7 @@ void uart_putc(uint8_t uart_if, char c)
 
 
 
-
+// TODO: implement getLine
 /**
  * @brief read a char array until a newline sign, returns NULL on no data
  * 
@@ -246,8 +246,12 @@ char* uart_getLine(uint8_t uart_if);
  * 
  * @param uart_if: selects uart interface
  * 
+ * @param return: returns char, if buffer is empty, returns NULL
  * */
-char uart_getChar(uint8_t uart_if);
+char uart_getChar(uint8_t uart_if){
+    char c = rbuffer_read(&uartrx[uart_if]);
+    return c;
+}
 
 
 ISR(USART0_TX_vect){
@@ -258,15 +262,14 @@ ISR(USART0_TX_vect){
     }
 
     UDR0 = c;                               // else add new data
-
-
 }
-
 
 ISR(USART0_RX_vect){
-    ;
-
+    char c = UDR0;
+    rbuffer_write(&uartrx[0], c);           // store into buffer. do not check if full
 }
+
+
 ISR(USART1_TX_vect){
     char c = rbuffer_read(&uarttx[1]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
     if(c == 0){                             // if returns 0 (empty)
@@ -275,15 +278,13 @@ ISR(USART1_TX_vect){
     }
 
     UDR1 = c;                               // else add new data
-
-
 }
-
 
 ISR(USART1_RX_vect){
-    ;
-
+    char c = UDR1;
+    rbuffer_write(&uartrx[1], c);           // store into buffer. do not check if full
 }
+
 
 ISR(USART2_TX_vect){
     char c = rbuffer_read(&uarttx[2]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
@@ -293,15 +294,13 @@ ISR(USART2_TX_vect){
     }
 
     UDR2 = c;                               // else add new data
-
-
 }
-
 
 ISR(USART2_RX_vect){
-    ;
-
+    char c = UDR2;
+    rbuffer_write(&uartrx[2], c);           // store into buffer. do not check if full
 }
+
 
 ISR(USART3_TX_vect){
     char c = rbuffer_read(&uarttx[3]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
@@ -311,12 +310,9 @@ ISR(USART3_TX_vect){
     }
 
     UDR3 = c;                               // else add new data
-
-
 }
 
-
 ISR(USART3_RX_vect){
-    ;
-
+    char c = UDR3;
+    rbuffer_write(&uartrx[3], c);           // store into buffer. do not check if full
 }

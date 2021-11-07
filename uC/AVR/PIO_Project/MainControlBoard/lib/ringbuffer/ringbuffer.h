@@ -69,18 +69,20 @@ uint8_t rbuffer_free(rbuff *b){
  *  @return 1 on success, 0 on fail
  * */
 uint8_t rbuffer_write(rbuff *b, char c){
-    // check if not full
+    uint8_t mSREG = SREG;       // store original state of SREG to restore later
     cli();          // disable interrupt: data integrity needs to be perserved
+    // check if not full
+    
     if(b->head  != b->tail)        // check if buffer is full
     {
         b->buf[b->head] = c;      // put into buffer                       // store to buffer
         b->head = (b->head + 1) % BUFFER_SIZE;        // increase head pointer  // increase head index
     }
     else{
-        sei();          // reenable interrupt
+        SREG = mSREG;         // reenable interrupt
         return 0;
     }
-    sei();          // reenable interrupt
+    SREG = mSREG;          // reenable interrupt
     return 1;
 
 }
