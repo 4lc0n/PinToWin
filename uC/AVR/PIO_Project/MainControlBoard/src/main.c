@@ -115,35 +115,14 @@ void draw_welcome(void){
   // sprintf(temp_buff, "\033[2J");    // clear serial screen
   // uart_puts(DEBUG_UART, temp_buff);
 
-    print_debug("========================================\n"); //_delay_ms(10);
-//   sprintf(temp_buff, "========================================\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
-  print_debug("||            Main Control            ||\n");//_delay_ms(10);
-//   sprintf(temp_buff, "||            Main Control            ||\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
-  print_debug("||               Board                ||\n");_delay_ms(10);
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
-  print_debug("||------------------------------------||\n");_delay_ms(10);
-//   sprintf(temp_buff, "||------------------------------------||\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
-  print_debug("||        Firmware: 2021-11-07        ||\n");_delay_ms(10);
-//   sprintf(temp_buff, "||        Firmware: 2021-11-07        ||\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
-  print_debug("========================================\n");_delay_ms(10);
-//   sprintf(temp_buff, "========================================\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
+  print_debug("========================================\n"); 
+  print_debug("||            Main Control            ||\n");
+  print_debug("||               Board                ||\n");
+  print_debug("||------------------------------------||\n");
+  print_debug("||        Firmware: 2021-11-07        ||\n");
+  print_debug("========================================\n");
+ 
   print_debug("UART0: initialized\n");_delay_ms(10);
-//   sprintf(temp_buff, "UART0: initialized\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
+
   print_debug("UART1: initialized\n");_delay_ms(10);
-//   sprintf(temp_buff, "UART1: initialized\n");
-//   while(uart_tx_buffer_state(DEBUG_UART) < strlen(temp_buff)) _delay_ms(10);
-//   uart_puts(DEBUG_UART, temp_buff);
 }
