@@ -229,19 +229,7 @@ void uart_putc(uint8_t uart_if, char c)
 }
 
 
-/**
- *  @brief transmits debug messages (const char*) via UART1
- * 
- *  @param c: char pointer with debug message
- * 
- * */
-void print_debug(const char *c)
-{
-    char tbuff[BUFFER_SIZE];                                // allocate buffer
-    sprintf(tbuff, c);                                      // print to buffer
-    while(uart_tx_buffer_state(DEBUG_UART) < strlen(tbuff));         // wait until enough space is free in tx buffer
-    uart_puts(DEBUG_UART, tbuff);                                    // simply call function
-}
+
 
 
 /**

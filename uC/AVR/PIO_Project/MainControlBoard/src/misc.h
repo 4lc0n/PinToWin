@@ -10,6 +10,12 @@
  * */
 void toggle_led();
 
-
+/**
+ *  @brief transmits debug messages (const char*) via UART1
+ * 
+ *  @param c: char pointer with debug message
+ * 
+ * */
+void print_debug(const char *c);
 
 #endif

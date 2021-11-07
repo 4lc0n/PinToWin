@@ -11,6 +11,8 @@
 #define RINGBUFFER_H
 
 #include <stdint.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
 
 #define BUFFER_SIZE 64
@@ -50,7 +52,12 @@ void rbuffer_init(rbuff *b, char* mem)
  * 
  * */
 uint8_t rbuffer_free(rbuff *b){
-    return (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
+    uint8_t state;
+
+    cli();          // disable interrupt: data integrity needs to be perserved
+    state = (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
+    sei();          // reenable interrupt
+    return state;
 }
 
 /**
@@ -63,14 +70,17 @@ uint8_t rbuffer_free(rbuff *b){
  * */
 uint8_t rbuffer_write(rbuff *b, char c){
     // check if not full
+    cli();          // disable interrupt: data integrity needs to be perserved
     if(b->head  != b->tail)        // check if buffer is full
     {
         b->buf[b->head] = c;      // put into buffer                       // store to buffer
         b->head = (b->head + 1) % BUFFER_SIZE;        // increase head pointer  // increase head index
     }
     else{
+        sei();          // reenable interrupt
         return 0;
     }
+    sei();          // reenable interrupt
     return 1;
 
 }
@@ -82,13 +92,16 @@ uint8_t rbuffer_write(rbuff *b, char c){
  *  @return char from buffer
  * */
 char rbuffer_read(rbuff *b){
+    char c = 0;
+    cli();          // disable interrupt: data integrity needs to be perserved
     if((b->tail + 1) % BUFFER_SIZE != b->head){        // check if buffer is not empty
-        char c = b->buf[(b->tail + 1) % BUFFER_SIZE];
+        c = b->buf[(b->tail + 1) % BUFFER_SIZE];
         b->tail = (b->tail + 1) % BUFFER_SIZE;
-        return c;
+        
     }
 
-    return 0;
+    sei();          // reenable interrupt
+    return c;
 
 
 }
