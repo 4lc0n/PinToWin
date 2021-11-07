@@ -17,6 +17,8 @@
 
 #define DEFAULT_BAUD 119200
 
+#define DEBUG_UART 0
+
 
 
 /**
@@ -58,6 +60,16 @@ void uart_puts(uint8_t uart_if, char* s);
  *  
  * */
 void uart_putc(uint8_t uart_if, char c);
+
+
+/**
+ *  @brief transmits debug messages (const char*) via UART1
+ * 
+ *  @param c: char pointer with debug message
+ * 
+ * */
+void print_debug(const char *c);
+
 
 
 /**

@@ -16,6 +16,8 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 #include <avr/interrupt.h>
 
@@ -150,7 +152,7 @@ uint8_t uart_tx_buffer_state(uint8_t uart_if)
     
 
     // buffer size - ( head - (tail + 1) ), as if tail + 1 == head --> empty            // -1, as one item always need to be in between head and tail
-    return rbuffer_free(&uarttx[uart_if]);
+    return rbuffer_free(&(uarttx[uart_if]));
 }
 
 /**
@@ -167,7 +169,6 @@ void uart_puts(uint8_t uart_if, char* s)
         return;                         // uart > 3 doesn't exist!
     }
     
-
     uint8_t n = 0;          // variable to keep track on bytes, so it desn't exceed BUFFER_SIZE (safety feature)
     
     while(*s != '\0'){
@@ -225,6 +226,21 @@ void uart_putc(uint8_t uart_if, char c)
         }
 
     }   // check if already initialized
+}
+
+
+/**
+ *  @brief transmits debug messages (const char*) via UART1
+ * 
+ *  @param c: char pointer with debug message
+ * 
+ * */
+void print_debug(const char *c)
+{
+    char tbuff[BUFFER_SIZE];                                // allocate buffer
+    sprintf(tbuff, c);                                      // print to buffer
+    while(uart_tx_buffer_state(DEBUG_UART) < strlen(tbuff));         // wait until enough space is free in tx buffer
+    uart_puts(DEBUG_UART, tbuff);                                    // simply call function
 }
 
 
