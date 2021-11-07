@@ -5,6 +5,9 @@
  *  runs all transmit and receive function in interrupt mode, non blocking
  *  transmit and receive via a buffer, allocated on uart_init for the specific uart interface
  * 
+ * 
+ *  IMPLEMENTED YET: TRANSMIT
+ * 
  * */
 
 
@@ -13,6 +16,8 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include <stdlib.h>
+
+#include <avr/interrupt.h>
 
 #include "ringbuffer.h"
 
@@ -109,14 +114,14 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
 
     char* c = malloc(BUFFER_SIZE);  // allocate memory for buffer
     if(c != NULL){
-        rbuff_init(&uarttx[uart_if], c);
+        rbuffer_init(&uarttx[uart_if], c);
     }
     else{
         return 0;       // failed to allocate space for buffer
     }
     c = malloc(BUFFER_SIZE);
     if(c != NULL){
-        rbuff_init(&uartrx[uart_if], c);
+        rbuffer_init(&uartrx[uart_if], c);
         
     }
     else{
@@ -242,12 +247,72 @@ char uart_getChar(uint8_t uart_if);
 
 
 ISR(USART0_TX_vect){
-    ;
+    char c = rbuffer_read(&uarttx[0]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
+    if(c == 0){                             // if returns 0 (empty)
+        uarttx[0].transmitting = 0;         // stop transmitting flag
+        return; 
+    }
+
+    UDR0 = c;                               // else add new data
+
 
 }
 
 
 ISR(USART0_RX_vect){
+    ;
+
+}
+ISR(USART1_TX_vect){
+    char c = rbuffer_read(&uarttx[1]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
+    if(c == 0){                             // if returns 0 (empty)
+        uarttx[1].transmitting = 0;         // stop transmitting flag
+        return; 
+    }
+
+    UDR1 = c;                               // else add new data
+
+
+}
+
+
+ISR(USART1_RX_vect){
+    ;
+
+}
+
+ISR(USART2_TX_vect){
+    char c = rbuffer_read(&uarttx[2]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
+    if(c == 0){                             // if returns 0 (empty)
+        uarttx[2].transmitting = 0;         // stop transmitting flag
+        return; 
+    }
+
+    UDR2 = c;                               // else add new data
+
+
+}
+
+
+ISR(USART2_RX_vect){
+    ;
+
+}
+
+ISR(USART3_TX_vect){
+    char c = rbuffer_read(&uarttx[3]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
+    if(c == 0){                             // if returns 0 (empty)
+        uarttx[3].transmitting = 0;         // stop transmitting flag
+        return; 
+    }
+
+    UDR3 = c;                               // else add new data
+
+
+}
+
+
+ISR(USART3_RX_vect){
     ;
 
 }
