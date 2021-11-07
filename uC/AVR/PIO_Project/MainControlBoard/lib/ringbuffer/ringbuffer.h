@@ -92,6 +92,7 @@ uint8_t rbuffer_write(rbuff *b, char c){
  *  @return char from buffer
  * */
 char rbuffer_read(rbuff *b){
+    uint8_t mSREG = SREG;
     char c = 0;
     cli();          // disable interrupt: data integrity needs to be perserved
     if((b->tail + 1) % BUFFER_SIZE != b->head){        // check if buffer is not empty
@@ -100,7 +101,7 @@ char rbuffer_read(rbuff *b){
         
     }
 
-    sei();          // reenable interrupt
+    SREG = mSREG;    // restore sreg rather than reactivating interrupt, as could also be called from ISR, nested interrupt not wanted
     return c;
 
 
