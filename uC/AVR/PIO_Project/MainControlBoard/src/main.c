@@ -8,8 +8,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "uart.h"
 #include "misc.h"
+#include "uart.h"
+
 
 
 
@@ -46,7 +47,7 @@ void setup() {
   
     
 }
-void loop() {}  // nothing goes here, as all will be handeled in tasks.
+void loop() {;}  // nothing goes here, as all will be handeled in tasks.
 
 
 void blink(void* param){
@@ -93,7 +94,7 @@ void init_task(void *param){
     ,  1  // Priority
     ,  NULL ); //Task Handle
   print_debug("OK\n");
-  toggle_led();
+
 
 
 

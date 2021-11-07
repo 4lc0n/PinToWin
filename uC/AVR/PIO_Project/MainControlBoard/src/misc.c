@@ -5,12 +5,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <task.h>
-#include <Arduino_FreeRTOS.h>
 
 
-#include "uart.h"
 #include "ringbuffer.h"
+#include "uart.h"
+
 
 /**
  *  @brief toggle LED on PB7

@@ -49,7 +49,7 @@ void rbuffer_init(rbuff *b, char* mem)
  *  @return free space in bytes
  * 
  * */
-volatile uint8_t rbuffer_free(rbuff *b){
+uint8_t rbuffer_free(rbuff *b){
     uint8_t state;
     
     cli();      // disable interrupt, as uart may interfere

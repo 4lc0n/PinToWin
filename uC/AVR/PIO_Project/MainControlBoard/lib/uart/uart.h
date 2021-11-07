@@ -39,7 +39,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate);
  *  
  *  @return   size in byte
  * */
-volatile uint8_t uart_tx_buffer_state(uint8_t uart_if);
+uint8_t uart_tx_buffer_state(uint8_t uart_if);
 
 
 /**

@@ -33,7 +33,8 @@
 // on read: if tail + 1 == head --> empty, else read
 
 
-rbuff uarttx[4] = {{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0}}, uartrx[4] = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}};
+rbuff uarttx[4] = {{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0}};
+rbuff uartrx[4] = {{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0}};
 
 
 
@@ -145,7 +146,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
  *  
  *  @return   size in byte
  * */
-volatile uint8_t uart_tx_buffer_state(uint8_t uart_if)
+uint8_t uart_tx_buffer_state(uint8_t uart_if)
 {
     if(uart_if > 3){
         return 0;                         // uart > 3 doesn't exist!
