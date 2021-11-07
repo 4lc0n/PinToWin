@@ -9,7 +9,7 @@
  *  @brief toggle LED on PB7
  * 
  * */
-void toggle_led(void);
+void toggle_led();
 
 /**
  *  @brief transmits debug messages (const char*) via UART1

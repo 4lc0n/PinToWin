@@ -10,6 +10,12 @@
 #include "ringbuffer.h"
 #include "uart.h"
 
+#include <stdio.h>
+#include <string.h>
+
+
+#include "uart.h"
+
 
 /**
  *  @brief toggle LED on PB7
@@ -24,7 +30,6 @@ void toggle_led(void)
     PORTB ^= (1 << PB7);
 }
 
-
 /**
  *  @brief transmits debug messages (const char*) via UART1
  * 
@@ -33,9 +38,8 @@ void toggle_led(void)
  * */
 void print_debug(const char *c)
 {
-    char tbuff[BUFFER_SIZE];                                // allocate buffer
+    char tbuff[64];                                // allocate buffer
     sprintf(tbuff, c);                                      // print to buffer
-        
-    while(uart_tx_buffer_state(DEBUG_UART) <= strlen(tbuff)) ;//vTaskDelay(15/ portTICK_PERIOD_MS);         // wait until enough space is free in tx buffer, meanwhile service another task
+    while(uart_tx_buffer_state(DEBUG_UART) < strlen(tbuff));         // wait until enough space is free in tx buffer
     uart_puts(DEBUG_UART, tbuff);                                    // simply call function
 }

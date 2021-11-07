@@ -11,6 +11,8 @@
 #define RINGBUFFER_H
 
 #include <stdint.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
 
 #define BUFFER_SIZE 64
@@ -51,11 +53,18 @@ void rbuffer_init(rbuff *b, char* mem)
  * */
 uint8_t rbuffer_free(rbuff *b){
     uint8_t state;
+<<<<<<< HEAD
     
     cli();      // disable interrupt, as uart may interfere
     state = (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
     sei();      // reactivating
 
+=======
+
+    cli();          // disable interrupt: data integrity needs to be perserved
+    state = (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
+    sei();          // reenable interrupt
+>>>>>>> rescue_uart
     return state;
 }
 
@@ -69,7 +78,11 @@ uint8_t rbuffer_free(rbuff *b){
  * */
 uint8_t rbuffer_write(rbuff *b, char c){
     // check if not full
+<<<<<<< HEAD
     cli();      // disable interrupt, as uart may interfere
+=======
+    cli();          // disable interrupt: data integrity needs to be perserved
+>>>>>>> rescue_uart
     if(b->head  != b->tail)        // check if buffer is full
     {
         
@@ -78,9 +91,14 @@ uint8_t rbuffer_write(rbuff *b, char c){
         sei();      // reactivating
     }
     else{
+<<<<<<< HEAD
         sei();      // reactivating
+=======
+        sei();          // reenable interrupt
+>>>>>>> rescue_uart
         return 0;
     }
+    sei();          // reenable interrupt
     return 1;
 
 }
@@ -93,6 +111,7 @@ uint8_t rbuffer_write(rbuff *b, char c){
  * */
 char rbuffer_read(rbuff *b){
     char c = 0;
+<<<<<<< HEAD
     uint8_t mSREG = SREG;       // store SREG for interrupt restoration, if disabled (call from ISR, do not reactivate)
 
     cli();      // disable interrupt, as uart may interfere
@@ -103,6 +122,19 @@ char rbuffer_read(rbuff *b){
     // restore interrupt flag (nested interrupt is not wanted here)
     SREG = mSREG;
     return c;
+=======
+    cli();          // disable interrupt: data integrity needs to be perserved
+    if((b->tail + 1) % BUFFER_SIZE != b->head){        // check if buffer is not empty
+        c = b->buf[(b->tail + 1) % BUFFER_SIZE];
+        b->tail = (b->tail + 1) % BUFFER_SIZE;
+        
+    }
+
+    sei();          // reenable interrupt
+    return c;
+
+
+>>>>>>> rescue_uart
 }
 
 
