@@ -20,6 +20,7 @@
 #include <string.h>
 
 #include <avr/interrupt.h>
+#include <task.h>
 
 #include "ringbuffer.h"
 
@@ -144,7 +145,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
  *  
  *  @return   size in byte
  * */
-uint8_t uart_tx_buffer_state(uint8_t uart_if)
+volatile uint8_t uart_tx_buffer_state(uint8_t uart_if)
 {
     if(uart_if > 3){
         return 0;                         // uart > 3 doesn't exist!
@@ -229,19 +230,7 @@ void uart_putc(uint8_t uart_if, char c)
 }
 
 
-/**
- *  @brief transmits debug messages (const char*) via UART1
- * 
- *  @param c: char pointer with debug message
- * 
- * */
-void print_debug(const char *c)
-{
-    char tbuff[BUFFER_SIZE];                                // allocate buffer
-    sprintf(tbuff, c);                                      // print to buffer
-    while(uart_tx_buffer_state(DEBUG_UART) < strlen(tbuff));         // wait until enough space is free in tx buffer
-    uart_puts(DEBUG_UART, tbuff);                                    // simply call function
-}
+
 
 
 /**

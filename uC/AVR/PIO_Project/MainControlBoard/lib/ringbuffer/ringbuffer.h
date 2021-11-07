@@ -49,8 +49,14 @@ void rbuffer_init(rbuff *b, char* mem)
  *  @return free space in bytes
  * 
  * */
-uint8_t rbuffer_free(rbuff *b){
-    return (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
+volatile uint8_t rbuffer_free(rbuff *b){
+    uint8_t state;
+    
+    cli();      // disable interrupt, as uart may interfere
+    state = (b->tail < b->head) ? (b->tail + BUFFER_SIZE - b->head) : (b->tail - b->head);
+    sei();      // reactivating
+
+    return state;
 }
 
 /**
@@ -63,12 +69,16 @@ uint8_t rbuffer_free(rbuff *b){
  * */
 uint8_t rbuffer_write(rbuff *b, char c){
     // check if not full
+    cli();      // disable interrupt, as uart may interfere
     if(b->head  != b->tail)        // check if buffer is full
     {
+        
         b->buf[b->head] = c;      // put into buffer                       // store to buffer
         b->head = (b->head + 1) % BUFFER_SIZE;        // increase head pointer  // increase head index
+        sei();      // reactivating
     }
     else{
+        sei();      // reactivating
         return 0;
     }
     return 1;
@@ -82,15 +92,17 @@ uint8_t rbuffer_write(rbuff *b, char c){
  *  @return char from buffer
  * */
 char rbuffer_read(rbuff *b){
-    if((b->tail + 1) % BUFFER_SIZE != b->head){        // check if buffer is not empty
-        char c = b->buf[(b->tail + 1) % BUFFER_SIZE];
+    char c = 0;
+    uint8_t mSREG = SREG;       // store SREG for interrupt restoration, if disabled (call from ISR, do not reactivate)
+
+    cli();      // disable interrupt, as uart may interfere
+    if(((b->tail + 1) % BUFFER_SIZE) != b->head){        // check if buffer is not empty
         b->tail = (b->tail + 1) % BUFFER_SIZE;
-        return c;
+        c = b->buf[b->tail];
     }
-
-    return 0;
-
-
+    // restore interrupt flag (nested interrupt is not wanted here)
+    SREG = mSREG;
+    return c;
 }
 
 

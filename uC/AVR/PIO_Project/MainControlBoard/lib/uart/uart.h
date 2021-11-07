@@ -39,7 +39,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate);
  *  
  *  @return   size in byte
  * */
-uint8_t uart_tx_buffer_state(uint8_t uart_if);
+volatile uint8_t uart_tx_buffer_state(uint8_t uart_if);
 
 
 /**
@@ -62,13 +62,6 @@ void uart_puts(uint8_t uart_if, char* s);
 void uart_putc(uint8_t uart_if, char c);
 
 
-/**
- *  @brief transmits debug messages (const char*) via UART1
- * 
- *  @param c: char pointer with debug message
- * 
- * */
-void print_debug(const char *c);
 
 
 
