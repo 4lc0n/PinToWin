@@ -27,10 +27,11 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" ".\private_lib.olb")
-      (Select "Design Resources" ".\private_lib.olb"))
+      (Select "Design Resources" ".\private_lib.olb" "STM32F103_BluePill"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 615"))
-      (Tab 0))))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 730"))
+      (Tab 0)))
+  (MPSSessionName "markl"))

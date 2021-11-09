@@ -1,6 +1,6 @@
 (ExpressProject "main_control_board"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[10/27/21]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/09/21]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
@@ -108,11 +108,73 @@
       (Sort User)))
   (Folder "Logs")
   (PartMRUSelector
-    (VCC_ARROW
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+    (D1N5819
+      (FullPartName "D1N5819.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    ("DIODE ZENER"
+      (FullPartName "DIODE ZENER.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
+      (DeviceIndex "0"))
+    (IRF9530
+      (FullPartName "IRF9530.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (CON4
+      (FullPartName "CON4.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON5
+      (FullPartName "CON5.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
       (DeviceIndex "0"))
     (0
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\EDIODE.OLB")
+      (DeviceIndex "0"))
+    (LDR
+      (FullPartName "LDR.Normal")
+      (LibraryName
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C_elect
+      (FullPartName "C_elect.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LM7812C
+      (FullPartName "LM7812C.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM7805C
+      (FullPartName "LM7805C.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (STM32F103_BluePill
+      (FullPartName "STM32F103_BluePill.Normal")
+      (LibraryName
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
       (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
@@ -121,11 +183,6 @@
       (DeviceIndex "0"))
     (STM32_Bluepill
       (FullPartName "STM32_Bluepill.Normal")
-      (LibraryName
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
       (DeviceIndex "0"))
@@ -139,10 +196,6 @@
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
       (DeviceIndex "3"))
-    (D1N5819
-      (FullPartName "D1N5819.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
-      (DeviceIndex "0"))
     (IRF520
       (FullPartName "IRF520.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
@@ -157,10 +210,6 @@
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (CON2
-      (FullPartName "CON2.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
-      (DeviceIndex "0"))
     (IRLML2502
       (FullPartName "IRLML2502.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
@@ -169,32 +218,36 @@
       (FullPartName "Q2N3904.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
-      (DeviceIndex "0"))
-    (Q2N3906
-      (FullPartName "Q2N3906.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
       (DeviceIndex "0")))
   (MPSSessionName "markl")
-  (LastUsedLibraryBrowseDirectory
-     "C:\Cadence\SPB_17.4\tools\capture\library\pspice")
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.4\tools\capture\library")
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"
+         "Design Cache")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"
+         "LDR Row Termination"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 638"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 734"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 656")
-        (Scroll "-398 -3")
-        (Zoom "72")
+        (Placement "44 0 1 -1 -1 5 24 5 1376 24 752")
+        (Scroll "-172 0")
+        (Zoom "85")
         (Occurrence "/"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
@@ -203,9 +256,42 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 656")
-        (Scroll "-398 -3")
-        (Zoom "72")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
+        (Scroll "-85 0")
+        (Zoom "100")
+        (Occurrence "/J14"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
+      (Schematic "LDR Matrix")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
+        (Scroll "-85 0")
+        (Zoom "100")
+        (Occurrence "/P5"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
+      (Schematic "Power Supply")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
+        (Scroll "-85 0")
+        (Zoom "100")
+        (Occurrence "/P4"))
+      (Path
+         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
+      (Schematic "Current_Sensing")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
+        (Scroll "-184 -5")
+        (Zoom "83")
         (Occurrence "/P1"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
