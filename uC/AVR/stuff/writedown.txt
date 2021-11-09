@@ -1,0 +1,69 @@
+
+
+to use jtag, setting the fuses is required: 
+
+
+read fuses: avrdude -c atmelice_isp -p atmega2560 -F -P usb -U lfuse:r:-:i    
+
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+
+required fuses: OCD and JTAG
+
+new fuses: E:FD, H:18, L:FF
+
+to set high fuse: 
+
+avrdude -c atmelice_isp -p atmega2560 -F -P usb -U hfuse:w:0x18:m -U lfuse:w:0xFF:m -U efuse:w:0xFD:m
+
+
+flashing a program: 
+
+-F is needed, otherwise flashing might not work (also setting fuses)
+
+# -c not sure, but else: avrdude -c jtag2 -p atmega2560 -v -P usb -F -U flash:w:main.hex:i
+
+
+
+JTAG debug connection: 
+JTAGPIN9->TDI->ADC7
+JTAGPIN3->TDO->ADC6
+JTAGPIN5->TMS->ADC5
+JTAGPIN1->TCK->ADC4
+JTAGPIN10->ARDUINO GRND
+JTAGPIN6->ARDUINO RESET
+JTAGPIN4->ARDUINO 5V
+
+looking at the connector: 
+	 ___
+GND 	|o o|.	TCK  -> ADC4
+VCC	|o o|	TDO  -> ADC6
+NRES	|o o|	TMS  -> ADC5
+(TRST)	|o o|	(NC)
+GND	|o o|	TDI  -> ADC7
+
+
+
+
+
+===============================
+    burn arduino bootloader
+===============================
+
+to go back to the arduino bootloader: 
+set fuses back to original (lock fuse doesn't matter)
+
+go to  /usr/share/arduino/hardware/arduino/avr/
+in boards.txt
+check which fuses and bootloader should be loaded onto
+
+for atmega2560 (Arduino Mega): bootloaders/stk500v2/stk500boot_v2_mega2560.hex
+
+burn bootloader via ISP (as jtag is now disabled with fuses)
+
+avrdude -v -P usb -F -c atmelice_isp -p atmega2560 -Uflash:w:/usr/share/arduino/hardware/arduino/avr/bootloaders/stk500v2/stk500boot_v2_mega2560.hex:i
+
+
+happy uploading via usb
+

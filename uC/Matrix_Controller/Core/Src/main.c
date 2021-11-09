@@ -4,6 +4,12 @@
   * @file           : main.c
   * @brief          : Main program body
   ******************************************************************************
+  *
+  * 	TODO: not working sensors are
+  * 	R2, R7, R18, R24, R35, R58, R64, R72
+  *
+  *
+  *
   * @attention
   *
   * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
@@ -37,6 +43,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+#define ANALOG_OUTPUT
+
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -133,17 +143,7 @@ int main(void)
 
 
 
-
-
-
-
-
-
   matr_get_baselevel(hadc1);								// determine the base light level
-
-
-
-
 
 
 
@@ -153,9 +153,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+
+  char usb_buffer[N_ROW * N_COL * 2] = {0};
+
   while (1)
   {
-
 
 
   	if(adc_error == 1){
@@ -165,14 +168,65 @@ int main(void)
 			while(1);
 		}
 
-
   	if(usb_rec == 1 && adc_complete == 1){
+
   		adc_complete = 0;
   		usb_rec = 0;
-  		char usb_buffer[3 * N_COL] = {0};
 
-  		sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", bool_matrix[0], bool_matrix[1], bool_matrix[2], bool_matrix[3], bool_matrix[4], bool_matrix[5], bool_matrix[6], bool_matrix[7], bool_matrix[8], bool_matrix[9], bool_matrix[10] );
-  		CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+
+//  		if(usb_rec == 1 && adc_complete == 1){
+
+
+#ifdef ANALOG_OUTPUT
+
+  			  		//sprintf(usb_buffer, "\033[2J");
+  						//sprintf(usb_buffer, "\n\n");
+  			  		//CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));		// clear screen
+
+  			  		for(int i = 0; i < N_ROW; i++){
+  			  			// sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", raw_data[0][i], raw_data[1][i], raw_data[2][i], raw_data[3][i], raw_data[4][i], raw_data[5][i], raw_data[6][i], raw_data[7][i], raw_data[8][i], raw_data[9][i], raw_data[10][i]);
+								if(i < 7)
+	  			  			sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\t", raw_data[0][i], raw_data[1][i], raw_data[2][i], raw_data[3][i], raw_data[4][i], raw_data[5][i], raw_data[6][i], raw_data[7][i], raw_data[8][i], raw_data[9][i], raw_data[10][i]);
+								else
+	  			  			sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", raw_data[0][i], raw_data[1][i], raw_data[2][i], raw_data[3][i], raw_data[4][i], raw_data[5][i], raw_data[6][i], raw_data[7][i], raw_data[8][i], raw_data[9][i], raw_data[10][i]);
+
+								CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+								HAL_Delay(1);
+  			  		}
+
+
+
+
+#else
+#ifdef BINARY_OUTPUT
+  			  		matr_compare(raw_data, bool_matrix);
+
+
+
+							sprintf(usb_buffer, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", bool_matrix[0], bool_matrix[1], bool_matrix[2], bool_matrix[3], bool_matrix[4], bool_matrix[5], bool_matrix[6], bool_matrix[7], bool_matrix[8], bool_matrix[9], bool_matrix[10] );
+							CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+							o = 0;
+#else
+#ifdef RAW_OUTPUT
+
+
+							for(int i = 0; i < N_ROW; i++){
+								for(int j = 0; j < N_COL; j++){
+									usb_buffer[i * N_COL + j] = (raw_data[j][i] == 0) ? (char)1 : (char)(raw_data[j][i] & 0xFF);
+//									usb_buffer[i * N_COL + j] = i * 8+j;
+								}
+
+
+
+
+							}
+							CDC_Transmit_FS((uint8_t*)usb_buffer, (N_ROW * N_COL));
+
+#endif
+#endif
+#endif
+
+
   	}
 
     /* USER CODE END WHILE */
@@ -504,7 +558,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 		// start another DMA conversion
 		HAL_ADC_Start_DMA(&hadc1, (uint32_t*)raw_data[active_col], N_ROW);
 	}
-	{
+	else{
 		// this scan is finnished
 		adc_complete = 1;
 	}
