@@ -23,8 +23,6 @@ char b[100];
 volatile uint8_t buttonl;
 volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr input, 1: active, 0: inactive
 
-volatile uint8_t buttonr_prev, buttonl_prev;    // private variable of previous state of buttons
-volatile TickType_t last_buttonr_tick = 0, last_buttonl_tick = 0;
 
 
 // ##############################################
@@ -146,12 +144,12 @@ void solenoid_task(void *param){
 
   while(1)
   {
-    if(buttonl){
-      // PORTB |= (1 << 7);
+    if(buttonr){
+      PORTB |= (1 << 7);
     
     }
     else{
-      // PORTB &= ~(1 << 7);
+      PORTB &= ~(1 << 7);
       
     }
     vTaskDelay(100 / portTICK_PERIOD_MS);
@@ -226,7 +224,9 @@ void setup_button_inputs(void){
  * 
  * */
 ISR(PCINT1_vect){
-  
+  static uint8_t buttonr_prev = (1 << BUTTONR_P), buttonl_prev = (1 << BUTTONL_P);    // private variable of previous state of buttons
+  static TickType_t last_buttonr_tick = 0, last_buttonl_tick = 0;
+
   
   TickType_t now = xTaskGetTickCount();
   uint8_t bl = BUTTONL_PIN & (1 << BUTTONL_P);  // buffer input so it won't change during ISR
@@ -234,39 +234,34 @@ ISR(PCINT1_vect){
   
 
   // // check buttonl if changed
-  // if((buttonl_prev != bl) && ((now - last_buttonl_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
+  if((buttonl_prev != bl) && ((now - last_buttonl_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
     
   //   // update last_tick
-  //   last_buttonl_tick = now;
+    last_buttonl_tick = now;
 
     
   //   // update last button state
-  //   buttonl_prev = bl;
+    buttonl_prev = bl;
 
   //   // set new button state
-  //   buttonl = (bl & BUTTONL_P);    // inverse signal, as pullup resistor: active low
+    buttonl = !(bl & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
     
-  // }
+  }
 
   // check buttonr if changed
-  if((buttonr_prev != br) ){//&& ((now - last_buttonr_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
+  if((buttonr_prev != br) && ((now - last_buttonr_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
     
     // update last_tick
-    // last_buttonr_tick = now;
+    last_buttonr_tick = now;
 
     // update last button state
     buttonr_prev = br;
 
     // set new button state
-    // buttonr = (BUTTONR_PIN & BUTTONR_P);    // inverse signal, as pullup resistor: active low
-    // if(br){
-    //   PORTB |= (1 << PB7);
-    // }
-    // else
-    // {
-      
-    // }
-    PORTB ^=(1 << PB7);  
+    buttonr = !(br & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
+    
+ 
+    
   }
 
   

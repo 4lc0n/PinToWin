@@ -36,7 +36,7 @@
 //          Timing Definitions
 // ----------------------------------
 
-#define BUTTON_DEBOUNCE_MS  100
+#define BUTTON_DEBOUNCE_MS  50
 
 
 
