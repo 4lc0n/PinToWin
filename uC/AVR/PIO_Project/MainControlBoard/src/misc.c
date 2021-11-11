@@ -17,11 +17,11 @@
  * */
 void toggle_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB ^= (1 << PB7);
+    // PORTB ^= (1 << PB7);
 }
 
 /**
