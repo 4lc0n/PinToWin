@@ -65,7 +65,7 @@ void loop() {}  // nothing goes here, as all will be handeled in tasks.
 
 void blink(void* param){
 
-  
+  DDRB |= (1 << 6);
   // char s[] = "blink\n";
 
   TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
@@ -77,12 +77,12 @@ void blink(void* param){
     // uart_puts(0, s);
     // uart_puts(1, b);
     // if(br){
-      // PORTB |= (1 << PB7);
+      PORTB |= (1 << PB6);
     
     // else
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
     
-      // PORTB &= ~(1 << PB7);
+      PORTB &= ~(1 << PB6);
     
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
   }
@@ -228,10 +228,10 @@ void setup_button_inputs(void){
 ISR(PCINT1_vect){
   
   
-  // TickType_t now = xTaskGetTickCount();
-  uint8_t bl = BUTTONL_PIN & BUTTONL_P;  // buffer input so it won't change during ISR
-  uint8_t br = BUTTONR_PIN & BUTTONR_P;  // buffer input so it won't change during ISR
-
+  TickType_t now = xTaskGetTickCount();
+  uint8_t bl = BUTTONL_PIN & (1 << BUTTONL_P);  // buffer input so it won't change during ISR
+  uint8_t br = BUTTONR_PIN & (1 << BUTTONR_P);  // buffer input so it won't change during ISR
+  
 
   // // check buttonl if changed
   // if((buttonl_prev != bl) && ((now - last_buttonl_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
@@ -249,7 +249,7 @@ ISR(PCINT1_vect){
   // }
 
   // check buttonr if changed
-  if((buttonr_prev != br) ){// && ((now - last_buttonr_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
+  if((buttonr_prev != br) ){//&& ((now - last_buttonr_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
     
     // update last_tick
     // last_buttonr_tick = now;
@@ -266,8 +266,8 @@ ISR(PCINT1_vect){
     // {
       
     // }
-    
+    PORTB ^=(1 << PB7);  
   }
 
-  PORTB ^=(1 << PB7);
+  
 }
