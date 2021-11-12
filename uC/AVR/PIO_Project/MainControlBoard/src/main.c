@@ -63,31 +63,10 @@ void setup() {
 void loop() {}  // nothing goes here, as all will be handeled in tasks.
 
 
-void blink(void* param){
 
-  DDRB |= (1 << 6);
-  // char s[] = "blink\n";
-
-  TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
-  
-  while(1)
-  {
-
-    
-    // uart_puts(0, s);
-    // uart_puts(1, b);
-    // if(br){
-      PORTB |= (1 << PB6);
-    
-    // else
-    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-    
-      PORTB &= ~(1 << PB6);
-    
-    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-  }
-}
-
+// ##############################################
+// #               init_task                    #
+// ##############################################
 /** 
  *  @brief task to initialize all other tasks
  * 
@@ -103,8 +82,10 @@ void init_task(void *param){
   // uart_init(1, 57600);  
 
   draw_welcome(); 
-  DDRB |= (1 << 7);         // set led pin as output
+  clear_led();
 
+  setup_pwm_outputs();
+  print_debug("PWM module: initialized\n");
 
 
   
@@ -133,6 +114,31 @@ void init_task(void *param){
   vTaskDelete(NULL);
 }
 
+
+void blink(void* param){
+
+  DDRB |= (1 << 6);
+  // char s[] = "blink\n";
+
+  TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
+  
+  while(1)
+  {
+
+    
+    // uart_puts(0, s);
+    // uart_puts(1, b);
+    // if(br){
+      PORTB |= (1 << PB6);
+    
+    // else
+    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
+    
+      PORTB &= ~(1 << PB6);
+    
+    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
+  }
+}
 
 /**
  *  @brief task to control solenoids with PWM
