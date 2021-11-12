@@ -17,12 +17,38 @@
  * */
 void toggle_led()
 {
-    // if(!(DDRB & (1 << PB7))){
-    //     DDRB |= (1 << PB7);
-    // }
+    if(!(DDRB & (1 << PB7))){
+        DDRB |= (1 << PB7);
+    }
 
-    // PORTB ^= (1 << PB7);
+    PORTB ^= (1 << PB7);
 }
+/**
+ *  @brief set LED on PB7
+ * 
+ * */
+void set_led()
+{
+    if(!(DDRB & (1 << PB7))){
+        DDRB |= (1 << PB7);
+    }
+
+    PORTB |= (1 << PB7);
+}
+/**
+ *  @brief clear LED on PB7
+ * 
+ * */
+void clear_led()
+{
+    if(!(DDRB & (1 << PB7))){
+        DDRB |= (1 << PB7);
+    }
+
+    PORTB &= ~(1 << PB7);
+}
+
+
 
 /**
  *  @brief transmits debug messages (const char*) via UART1
