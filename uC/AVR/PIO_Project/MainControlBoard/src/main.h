@@ -25,6 +25,22 @@
 
 
 
+#define SOL1_DDR        DDRH
+#define SOL1_P          PH3
+#define SOL1_TIM_OCR    OCR4A
+
+#define SOL2_DDR        DDRH
+#define SOL2_P          PH4
+#define SOL2_TIM_OCR    OCR4B
+
+#define SOL3_DDR        DDRH
+#define SOL3_P          PH5
+#define SOL3_TIM_OCR    OCR4C
+
+#define PWM_FREQ        10e3
+
+
+
 #define MATRIX_ROW0     PF0
 #define MATRIX_ROW1     PF1
 #define MATRIX_ROW2     PF2

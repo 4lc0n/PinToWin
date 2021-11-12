@@ -23,6 +23,7 @@ char b[100];
 volatile uint8_t buttonl;
 volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr input, 1: active, 0: inactive
 
+uint16_t PWM_RANGE;
 
 
 // ##############################################
@@ -40,6 +41,7 @@ void solenoid_task(void *param);
 
 void draw_welcome(void);
 void setup_button_inputs(void);
+void setup_pwm_outputs(void);
 
 // ##############################################
 // #                  setup                     #
@@ -144,7 +146,7 @@ void solenoid_task(void *param){
 
   while(1)
   {
-    if(buttonr){
+    if(buttonl){
       PORTB |= (1 << 7);
     
     }
@@ -202,7 +204,7 @@ void setup_button_inputs(void){
   BUTTONL_DDR &= ~(1 << BUTTONL_P);
   BUTTONR_DDR &= ~(1 << BUTTONR_P);
 
-  // enable pullup
+  // enable internal pullup (around 35k)
   BUTTONL_PORT |= (1 << BUTTONL_P);
   BUTTONR_PORT |= (1 << BUTTONR_P);
 
@@ -215,6 +217,42 @@ void setup_button_inputs(void){
   // enable interrupt for PCIE1 pins
   PCMSK1 |= (1 << BUTTONL_INT) | (1 << BUTTONR_INT);
 }
+
+
+
+/**
+ *  @brief setup function to setup timers for pwm operation on solenoids
+ *  TIMER 4, pins PH3, PH4, PH5 
+ * 
+ * */
+void setup_pwm_outputs(void)
+{
+
+  // using timer 4 for pins
+  // up counting, with max accordingly set to match pwm frequency in ICRn
+  // fast pwm  mode with set on compare, so a value of 0 means always on, as input of 
+  // solenoid drivers is inverted
+
+  
+  ICR4 = (F_CPU / (1 * PWM_FREQ)) - 1;                                              // calculate max. value for set PWM frequency, MUST NOT EXCEED 16 bit!
+
+  // no interrupt needed, so none is ste
+
+  OCR4A = 0;
+  OCR4B = 0;
+  OCR4C = 0;
+
+  TCCR4A = (0x3 << COM4A0) | (0x3 << COM4B0) | (0x3 << COM4C0) | (0x2 << WGM40);    // set to set on compare, fast pwm
+
+  TCCR4B = (0x1 << CS40) | (0x3 << WGM42);                                          // clock prescaler = 1, fast pwms
+
+
+  // set PWM_RANGE to ICR4 value, to have a reference frame for pwm signal
+  PWM_RANGE = ICR4;
+
+
+}
+
 
 
 
