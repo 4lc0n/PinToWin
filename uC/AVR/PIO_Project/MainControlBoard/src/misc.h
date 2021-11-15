@@ -9,6 +9,16 @@
  * 
  * */
 void toggle_led();
+/**
+ *  @brief clears LED on PB7
+ * 
+ * */
+void clear_led();
+/**
+ *  @brief sets LED on PB7
+ * 
+ * */
+void set_led();
 
 /**
  *  @brief transmits debug messages (const char*) via UART1

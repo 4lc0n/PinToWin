@@ -9,10 +9,10 @@
 #include <stdio.h>
 
 #include "main.h"
-#include "uart.h"
+
 
 #include "misc.h"
-
+#include "uart.h"
 
 
 // ##############################################
@@ -47,8 +47,7 @@ void setup_pwm_outputs(void);
 // #                  setup                     #
 // ##############################################
 void setup() {
-  DDRB |= (1 << PB7);
-  PORTB &= ~(1 << PB7);
+
 
   xTaskCreate(
     init_task
@@ -145,22 +144,55 @@ void blink(void* param){
  * 
  *  @param param: parameter pointer (unused)
  * */
+/**
+ *  @brief task to control solenoids with PWM
+ * 
+ *  @param param: parameter pointer (unused)
+ * */
 void solenoid_task(void *param){
+
+  TickType_t lastTick = xTaskGetTickCount();
 
   // TODO: this is just a test function to verify the workings of the ISR function
   setup_button_inputs();
 
+  // set pins as output: 
+
+  SOL1_DDR |= (1 << SOL1_P);
+  SOL2_DDR |= (1 << SOL2_P);
+  SOL3_DDR |= (1 << SOL3_P);
+
   while(1)
   {
     if(buttonl){
-      PORTB |= (1 << 7);
-    
+      set_led();
+
+      // set solenoid left output: 
+      FLIPPER_L_OCR = PWM_RANGE / 5;    // set to 20% output
+
     }
     else{
-      PORTB &= ~(1 << 7);
+      clear_led();
+      FLIPPER_L_OCR = 0;
       
     }
-    vTaskDelay(100 / portTICK_PERIOD_MS);
+
+    if(buttonr){
+      set_led();
+
+      // set solenoid right output: 
+      FLIPPER_R_OCR = PWM_RANGE / 5;    // set to 20% output
+    }
+    else{
+      clear_led();
+      FLIPPER_R_OCR = 0;
+    }
+
+    // TODO: implement starter flipper mechanism
+
+    xTaskDelayUntil(&lastTick, 50 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
+                                                              // delays of up to 100 ms feel 'natural'
+    
   }
 }
 
