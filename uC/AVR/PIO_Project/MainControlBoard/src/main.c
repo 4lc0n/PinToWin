@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <Arduino_FreeRTOS.h>
-
+#include <semphr.h>
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -25,6 +25,11 @@ volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr in
 
 uint16_t PWM_RANGE;
 
+// ##############################################
+// #            FreeRTOS specifics              #
+// ##############################################
+SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button;
+
 
 // ##############################################
 // #            global tasks                    #
@@ -33,6 +38,9 @@ uint16_t PWM_RANGE;
 void blink(void* param);
 void init_task(void *param);
 void solenoid_task(void *param);
+
+void check_input_l_task(void *param);
+void check_input_r_task(void *param);
 
 
 // ##############################################
@@ -99,10 +107,29 @@ void init_task(void *param){
   print_debug("OK\n");
 
   print_debug("create solenoid task... ");
-
   xTaskCreate(
     solenoid_task
     ,  "Solenoid" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  print_debug("create button input handler task right... ");
+  xTaskCreate(
+    check_input_r_task
+    ,  "Button_r" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  print_debug("create button input handler task left... ");
+  xTaskCreate(
+    check_input_l_task
+    ,  "Button_l" // A name just for humans
     ,  128  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
@@ -193,6 +220,65 @@ void solenoid_task(void *param){
     xTaskDelayUntil(&lastTick, 50 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
                                                               // delays of up to 100 ms feel 'natural'
     
+  }
+}
+
+
+/**
+ *  @brief task to ckeck button state after a debounce interval
+ * 
+ * */
+void check_input_l_task(void *param)
+{
+  xSemaphore_l_button = xSemaphoreCreateBinary();
+  if( xSemaphore_l_button == NULL){
+    // failed to create semaphore!
+    print_debug("failed to create semaphore in check_input_l_task\n");
+    while(1);
+  }
+
+  TickType_t lastTick = xTaskGetTickCount();
+
+  while(1){
+
+
+    xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
+
+    // debounce: wait until state is settled
+    xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
+
+    // read button state:
+    buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
+
+  }
+
+}
+/**
+ *  @brief task to ckeck button state after a debounce interval
+ * 
+ * */
+void check_input_r_task(void *param)
+{
+xSemaphore_r_button = xSemaphoreCreateBinary();
+  if( xSemaphore_r_button == NULL){
+    // failed to create semaphore!
+    print_debug("failed to create semaphore in check_input_l_task\n");
+    while(1);
+  }
+
+  TickType_t lastTick = xTaskGetTickCount();
+
+  while(1){
+
+
+    xSemaphoreTake(xSemaphore_r_button, portMAX_DELAY);
+
+    // debounce: wait until state is settled
+    xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
+
+    // read button state:
+    buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
+
   }
 }
 
@@ -302,42 +388,32 @@ void setup_pwm_outputs(void)
  * */
 ISR(PCINT1_vect){
   static uint8_t buttonr_prev = (1 << BUTTONR_P), buttonl_prev = (1 << BUTTONL_P);    // private variable of previous state of buttons
-  static TickType_t last_buttonr_tick = 0, last_buttonl_tick = 0;
 
-  
-  TickType_t now = xTaskGetTickCount();
+
+
   uint8_t bl = BUTTONL_PIN & (1 << BUTTONL_P);  // buffer input so it won't change during ISR
   uint8_t br = BUTTONR_PIN & (1 << BUTTONR_P);  // buffer input so it won't change during ISR
   
 
   // // check buttonl if changed
-  if((buttonl_prev != bl) && ((now - last_buttonl_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
-    
-  //   // update last_tick
-    last_buttonl_tick = now;
+  if((buttonl_prev != bl)){
 
-    
-  //   // update last button state
+    // update last button state
     buttonl_prev = bl;
 
-  //   // set new button state
-    buttonl = !(bl & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
-    
+    // give semaphore so task to check button l can debounce it
+    xSemaphoreGiveFromISR(xSemaphore_l_button, NULL);
+
   }
 
   // check buttonr if changed
-  if((buttonr_prev != br) && ((now - last_buttonr_tick) > (BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS))){
-    
-    // update last_tick
-    last_buttonr_tick = now;
+  if((buttonr_prev != br) ){
 
     // update last button state
     buttonr_prev = br;
 
-    // set new button state
-    buttonr = !(br & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
-    
- 
+    // give semaphore
+    xSemaphoreGiveFromISR(xSemaphore_r_button, NULL);
     
   }
 

@@ -58,11 +58,7 @@
 
 #define BUTTON_DEBOUNCE_MS  50
 
-// ----------------------------------
-//          Structs for Task Param
-// ----------------------------------
-typedef struct mInputDataReg{
-    uint32_t ac;
-};
+
+
 
 #endif
