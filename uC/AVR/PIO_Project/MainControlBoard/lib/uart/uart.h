@@ -17,7 +17,7 @@
 
 #define DEFAULT_BAUD 119200
 
-#define DEBUG_UART 1
+
 
 
 

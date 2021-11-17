@@ -44,8 +44,8 @@
 #define SOL3_TIM_OCR    OCR4C
 
 #define FLIPPER_L_OCR   SOL1_TIM_OCR        // TODO: assign these
-#define FLIPPER_R_OCR   SOL2_TIM_OCR        // TODO: assign these
-#define FLIPPER_START_OCR   SOL3_TIM_OCR    // TODO: assign these
+#define FLIPPER_R_OCR   SOL3_TIM_OCR        // TODO: assign these
+#define FLIPPER_START_OCR   SOL2_TIM_OCR    // TODO: assign these
 
 #define PWM_FREQ        10e3
 
@@ -65,6 +65,7 @@
 #define BUTTON_DEBOUNCE_MS  50
 
 
+#define DUTYCYCLE_TARGET 0.2
 
 
 #endif

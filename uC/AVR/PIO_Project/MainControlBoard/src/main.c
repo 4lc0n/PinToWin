@@ -26,6 +26,8 @@ volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr in
 uint16_t PWM_RANGE;
 
 
+
+
 uint32_t score = 0;
 
 
@@ -197,8 +199,7 @@ void blink(void* param){
 void solenoid_task(void *param){
 
   TickType_t lastTick = xTaskGetTickCount();
-
-  // TODO: this is just a test function to verify the workings of the ISR function
+  uint8_t buttonl_prev, buttonr_prev;
   setup_button_inputs();
 
   // set pins as output: 
@@ -207,30 +208,75 @@ void solenoid_task(void *param){
   SOL2_DDR |= (1 << SOL2_P);
   SOL3_DDR |= (1 << SOL3_P);
 
+
+  // TODO: put this in the safety task: 
+  RELAY_DDR |= (1 << RELAY_P);
+  RELAY_PORT |= (1 << RELAY_P);
+
+  buttonl_prev = buttonl;
+  buttonr_prev = buttonr;
+
   while(1)
   {
     if(buttonl){
       set_led();
 
-      // set solenoid left output: 
-      FLIPPER_L_OCR = PWM_RANGE / 5;    // set to 20% output
+      // check if it is initial run: 
+      if(buttonl_prev != buttonl){
+        // initial run: set to full power
+        FLIPPER_L_OCR = PWM_RANGE;
+        buttonl_prev = buttonl;
+      }
+
+      else{
+        if(FLIPPER_L_OCR > PWM_RANGE / 5){
+          // gradually reduce duty cycle
+          FLIPPER_L_OCR = (uint16_t)(FLIPPER_L_OCR * 0.75);
+        }
+        else{
+        // set solenoid left output to standard output: 
+        FLIPPER_L_OCR = PWM_RANGE / 5;    // set to 20% output
+        }
+        
+      }
+      
 
     }
     else{
       clear_led();
       FLIPPER_L_OCR = 0;
+      buttonl_prev = buttonl;
       
     }
 
     if(buttonr){
       set_led();
 
-      // set solenoid right output: 
-      FLIPPER_R_OCR = PWM_RANGE / 5;    // set to 20% output
+      // check if it is initial run: 
+      if(buttonr_prev != buttonr){
+        // initial run: set to full power
+        FLIPPER_R_OCR = PWM_RANGE;
+        buttonr_prev = buttonr;
+      }
+
+      else{
+        if(FLIPPER_R_OCR > PWM_RANGE / 5){
+          // gradually reduce duty cycle
+          FLIPPER_R_OCR = (uint16_t)(FLIPPER_R_OCR * 0.75);
+        }
+        else{
+        // set solenoid left output to standard output: 
+        FLIPPER_R_OCR = PWM_RANGE / 5;    // set to 20% output
+        }
+        
+      }
+      
+
     }
     else{
       clear_led();
       FLIPPER_R_OCR = 0;
+      buttonr_prev = buttonr;
     }
 
     // TODO: implement starter flipper mechanism
@@ -277,7 +323,7 @@ void check_input_l_task(void *param)
  * */
 void check_input_r_task(void *param)
 {
-xSemaphore_r_button = xSemaphoreCreateBinary();
+  xSemaphore_r_button = xSemaphoreCreateBinary();
   if( xSemaphore_r_button == NULL){
     // failed to create semaphore!
     print_debug("failed to create semaphore in check_input_l_task\n");
@@ -314,6 +360,7 @@ void update_score_task(void *param){
   last_l_button = buttonl;
   last_r_button = buttonr;
 
+  char score_s[10];
 
 
   while(1)
@@ -323,13 +370,19 @@ void update_score_task(void *param){
       last_l_button = buttonl;
       score += 10;
 
-
+      // print to uart0
+      sprintf(score_s, "%d\n", score);
+      uart_puts(0, score_s);
 
     }
 
     if(buttonr != last_r_button){
       last_r_button = buttonr;
       score += 10;
+
+      // print to uart0
+      sprintf(score_s, "%d\n", score);
+      uart_puts(0, score_s);
     }
 
     vTaskDelayUntil(&lastTick, 100 / portTICK_PERIOD_MS);    
@@ -397,7 +450,7 @@ void setup_button_inputs(void){
 
   // activate GND pin for the button input
   BUTTON_GND_DDR |= (1 << BUTTON_GND_P);
-  BUTTON_GND_PORT |= (1 << BUTTON_GND_P);
+  BUTTON_GND_PORT &= ~(1 << BUTTON_GND_P);
 }
 
 
