@@ -234,8 +234,7 @@
          "Design Cache")
       (Path "Outputs")
       (Select "Design Resources"
-         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"
-         "LDR Row Termination"))
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -245,8 +244,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1376 24 752")
-        (Scroll "-172 0")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 752")
+        (Scroll "-321 0")
         (Zoom "85")
         (Occurrence "/"))
       (Path
@@ -256,8 +255,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
-        (Scroll "-85 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
+        (Scroll "-234 0")
         (Zoom "100")
         (Occurrence "/J14"))
       (Path
@@ -267,9 +266,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
-        (Scroll "-85 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
+        (Scroll "-333 -5")
+        (Zoom "83")
         (Occurrence "/P5"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
@@ -278,22 +277,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
-        (Scroll "-85 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
+        (Scroll "-234 0")
         (Zoom "100")
         (Occurrence "/P4"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
       (Schematic "Current_Sensing")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1376 24 752")
-        (Scroll "-184 -5")
-        (Zoom "83")
-        (Occurrence "/P1"))
-      (Path
-         "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
-      (Schematic "Solenoid Driver")
       (Page "PAGE1"))))
