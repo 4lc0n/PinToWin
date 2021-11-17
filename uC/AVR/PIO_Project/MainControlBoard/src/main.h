@@ -51,9 +51,20 @@
 
 
 
-#define MATRIX_ROW0     PF0
-#define MATRIX_ROW1     PF1
-#define MATRIX_ROW2     PF2
+#define MATRIX_ROW0_P   PF0
+#define MATRIX_ROW0_DDR DDRF
+#define MATRIX_ROW0_PORT    PORTF
+
+#define MATRIX_ROW1_P   PF1
+#define MATRIX_ROW1_DDR DDRF
+#define MATRIX_ROW1_PORT    PORTF
+
+#define MATRIX_ROW2_P   PF2
+#define MATRIX_ROW2_DDR DDRF
+#define MATRIX_ROW2_PORT    PORTF
+
+
+
 
 
 

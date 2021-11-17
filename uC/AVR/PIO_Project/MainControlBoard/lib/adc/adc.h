@@ -19,6 +19,8 @@
 
 
 
+#define TEMPSENS_L_MTRX 0x13
+#define TEMPSENS_R_MTRX 0x14
 
 
 

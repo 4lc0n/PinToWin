@@ -20,7 +20,6 @@
 
 
 
-
 /**
  *  @brief init function for uart driver, allocates memory for transmit and receive function
  * 

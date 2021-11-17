@@ -371,7 +371,7 @@ void update_score_task(void *param){
       score += 10;
 
       // print to uart0
-      sprintf(score_s, "%d\n", score);
+      sprintf(score_s, "%lu\n", score);
       uart_puts(0, score_s);
 
     }
@@ -381,7 +381,7 @@ void update_score_task(void *param){
       score += 10;
 
       // print to uart0
-      sprintf(score_s, "%d\n", score);
+      sprintf(score_s, "%lu\n", score);
       uart_puts(0, score_s);
     }
 
@@ -417,7 +417,7 @@ void draw_welcome(void){
   print_debug("||            Main Control            ||\n");
   print_debug("||               Board                ||\n");
   print_debug("||------------------------------------||\n");
-  print_debug("||        Firmware: 2021-11-07        ||\n");
+  print_debug("||        Firmware: 2021-11-17        ||\n");
   print_debug("========================================\n");
  
   print_debug("UART0: initialized\n");_delay_ms(10);
