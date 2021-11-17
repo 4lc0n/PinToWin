@@ -19,6 +19,12 @@
 #define BUTTONR_P       PJ1
 #define BUTTONR_INT     PCINT10
 
+#define BUTTON_GND_DDR  DDRH
+#define BUTTON_GND_PORT PORTH
+#define BUTTON_GND_P    PH1
+
+
+
 #define RELAY_DDR       DDRF
 #define RELAY_PORT      PORTF
 #define RELAY_P         PF3

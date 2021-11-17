@@ -25,6 +25,10 @@ volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr in
 
 uint16_t PWM_RANGE;
 
+
+uint32_t score = 0;
+
+
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
@@ -41,6 +45,8 @@ void solenoid_task(void *param);
 
 void check_input_l_task(void *param);
 void check_input_r_task(void *param);
+
+void update_score_task(void *param);
 
 
 // ##############################################
@@ -135,6 +141,18 @@ void init_task(void *param){
     ,  1  // Priority
     ,  NULL ); //Task Handle
   print_debug("OK\n");
+
+
+  print_debug("create score update task... ");
+  xTaskCreate(
+    update_score_task
+    ,  "Score_t" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
 
 
   vTaskDelete(NULL);
@@ -283,8 +301,44 @@ xSemaphore_r_button = xSemaphoreCreateBinary();
 }
 
 
+/**
+ *  @brief Task to update the score board and send via UART0
+ * 
+ * */
+void update_score_task(void *param){
+
+  TickType_t lastTick = xTaskGetTickCount();
+
+  // TODO: this is just for test purpose: remove when light sensors are implemented
+  uint8_t last_l_button, last_r_button;
+  last_l_button = buttonl;
+  last_r_button = buttonr;
 
 
+
+  while(1)
+  {
+
+    if(buttonl != last_l_button){
+      last_l_button = buttonl;
+      score += 10;
+
+
+
+    }
+
+    if(buttonr != last_r_button){
+      last_r_button = buttonr;
+      score += 10;
+    }
+
+    vTaskDelayUntil(&lastTick, 100 / portTICK_PERIOD_MS);    
+
+  }
+
+
+
+}
 
 
 
@@ -340,6 +394,10 @@ void setup_button_inputs(void){
 
   // enable interrupt for PCIE1 pins
   PCMSK1 |= (1 << BUTTONL_INT) | (1 << BUTTONR_INT);
+
+  // activate GND pin for the button input
+  BUTTON_GND_DDR |= (1 << BUTTON_GND_P);
+  BUTTON_GND_PORT |= (1 << BUTTON_GND_P);
 }
 
 
