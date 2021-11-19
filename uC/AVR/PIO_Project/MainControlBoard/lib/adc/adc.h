@@ -17,10 +17,14 @@
 #ifndef ADC_H
 #define ADC_H
 
+// #define ADC_8_BIT_RESOLUTION        // uncomment this line to get 8 bit resolution
 
+#define TEMPSENS_L_MTRX 0x23
+#define TEMPSENS_R_MTRX 0x24
 
-#define TEMPSENS_L_MTRX 0x13
-#define TEMPSENS_R_MTRX 0x14
+#define CURRENTSENSE_1_MTRX 0x25
+#define CURRENTSENSE_2_MTRX 0x26
+#define CURRENTSENSE_3_MTRX 0x27
 
 
 
