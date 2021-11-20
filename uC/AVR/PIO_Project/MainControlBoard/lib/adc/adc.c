@@ -175,6 +175,7 @@ ISR(ADC_vect)
     // if done with this scan: change buffer,
     if(current_p == n_steps){
         pp_select = !pp_select;
+        current_p = 0;
     }
     // give semaphore
     // TODO: this
@@ -183,7 +184,8 @@ ISR(ADC_vect)
     // set new pins
     input_change(current_p);
 
-    // start new conversion
-    adc_start();
+    // start new conversion only if not finished with this scan
+    if(current_p != 0)
+        adc_start();
 
 }

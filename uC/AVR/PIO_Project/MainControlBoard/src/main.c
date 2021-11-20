@@ -33,6 +33,7 @@
 
 #include "misc.h"
 #include "uart.h"
+#include "adc.h"
 
 
 // ##############################################
@@ -46,9 +47,13 @@ volatile uint8_t buttonr;        // volatile variable for buttonl and buttonr in
 uint16_t PWM_RANGE;
 
 
+extern volatile uint16_t ping_buffer[], pong_buffer[];    // buffer for adc data
+extern volatile uint8_t pp_select;                        // selector for ping or pong buffer: 0 = ping, 1 = pong
 
 
 uint32_t score = 0;
+
+float temperature_l = 0, temperature_r = 0;
 
 
 // ##############################################
@@ -431,26 +436,75 @@ void process_adc_task(void *param)
     while(1);
   }
 
+  TickType_t lastTick = xTaskGetTickCount();
 
-
+#ifdef ADC_8_BIT_RESOLUTION
+  uint8_t temp_data;
+#else
+  uint16_t temp_datar, temp_datal;
+#endif
 
   while (1)
   {
-    
+    // TODO: complete
     // wait for semaphore
+    xSemaphoreTake(xSemaphore_adc_complete, portMAX_DELAY);
 
     // convert to temperature
+    if(pp_select == 0)
+    {
+      // left temp sensor
+      temp_datal = ping_buffer[0];
+      temp_datar = ping_buffer[1];
+    }
+    else{
+      temp_datal = pong_buffer[0];
+      temp_datar = pong_buffer[1];
+    }
+    // https://learn.adafruit.com/thermistor/using-a-thermistor
+
+    // calculate resistance of thermistor ( R1 in voltage divider)
+    // R2 = U1 * R2 / U2 - R2
+    // not following exact example of adafruit, because r1 is no float but uint16_t --> will loose precision in division
+    uint16_t r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datal - TEMP_SENSE_R2;
+
+    temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
+    temperature_l = log(temperature_l);                   // ln(R/Ro)
+    temperature_l /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
+    temperature_l += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
+    temperature_l = 1.0 / temperature_l;                  // Invert
+    temperature_l -= 273.15;                              // convert absolute temp to C
+    
+
+
+      // https://learn.adafruit.com/thermistor/using-a-thermistor
+
+      // calculate resistance of thermistor ( R1 in voltage divider)
+      // R2 = U1 * R2 / U2 - R2
+      // not following exact example of adafruit, because r1 is no float but uint16_t --> will loose precision in division
+      uint16_t r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datar - TEMP_SENSE_R2;
+
+      temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
+      temperature_l = log(temperature_l);                   // ln(R/Ro)
+      temperature_l /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
+      temperature_l += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
+      temperature_l = 1.0 / temperature_l;                  // Invert
+      temperature_l -= 273.15;                              // convert absolute temp to C
+ 
+
 
     // convert to current
 
     // give semaphore for security task
-
+    // TODO
 
     // evaluate matrix
 
 
     // start adc after fixed interval
 
+    xTaskDelayUntil(&lastTick, 1000 / ADC_SCAN_RATE / portTICK_PERIOD_MS);
+    adc_start();
   }
   
 }
