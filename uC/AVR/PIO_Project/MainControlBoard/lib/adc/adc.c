@@ -2,15 +2,18 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-
+#include <stdlib.h>
 
 #include "main.h"
+#include <semphr.h>
+
+
 
 // structure for sampling structure
 int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX};     // list for analog pins to sample 
 int16_t dpin[] = {-1, -1, -1, -1, -1};     // list of corresponding digial pins (used for LDR matrix)
 
-
+extern SemaphoreHandle_t xSemaphore_adc_complete;
 
 
 // const of nuber of conversions for 1 scan
@@ -178,7 +181,7 @@ ISR(ADC_vect)
         current_p = 0;
     }
     // give semaphore
-    // TODO: this
+    xSemaphoreGiveFromISR(xSemaphore_adc_complete, NULL);
 
 
     // set new pins

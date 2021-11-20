@@ -182,6 +182,16 @@ void init_task(void *param){
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
+  print_debug("create adc task... ");
+  xTaskCreate(
+    process_adc_task
+    ,  "Score_t" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
 
 
   vTaskDelete(NULL);
@@ -443,6 +453,11 @@ void process_adc_task(void *param)
 #else
   uint16_t temp_datar, temp_datal;
 #endif
+
+
+  // start adc unit
+  adc_init();           // initialize adc unit
+  adc_start();          // start first conversion
 
   while (1)
   {
