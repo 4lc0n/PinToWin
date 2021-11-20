@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"io.h": "c",
+			"iom2560.h": "c",
+			"iomxx0_1.h": "c",
+			"uart.h": "c"
+		}
+	}
+}

@@ -1,3 +1,23 @@
+/**
+ * @file main.c
+ *  
+ * 
+ * @author Juergen Markl
+ * @brief Main file for main board controller (ATMega2560)
+ * @version 0.1
+ * @date 2021-11-20
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ * 
+ * TODO: tick rate to either 5 ms or 1 ms
+ * TODO: check for tick counter, which data format, to prevent overflow and unexpected behaviour
+ * 
+ */
+
+
+
+
 #include <Arduino.h>
 #include <Arduino_FreeRTOS.h>
 #include <semphr.h>
@@ -36,6 +56,7 @@ uint32_t score = 0;
 // ##############################################
 SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button;
 
+SemaphoreHandle_t xSemaphore_adc_complete;
 
 // ##############################################
 // #            global tasks                    #
@@ -50,6 +71,7 @@ void check_input_r_task(void *param);
 
 void update_score_task(void *param);
 
+void process_adc_task(void *param);
 
 // ##############################################
 // #            global functions                #
@@ -393,7 +415,45 @@ void update_score_task(void *param){
 
 }
 
+/**
+ * @brief Task to process adc sampled data in ping pong buffer
+ * will execute every time one scan is complete. from here the next 
+ * scan should be started using adc_start^
+ * 
+ * @param param unused
+ */
+void process_adc_task(void *param)
+{
+  xSemaphore_adc_complete = xSemaphoreCreateBinary();
+  if( xSemaphore_adc_complete == NULL){
+    // failed to create semaphore!
+    print_debug("failed to create semaphore in process_adc_task\n");
+    while(1);
+  }
 
+
+
+
+  while (1)
+  {
+    
+    // wait for semaphore
+
+    // convert to temperature
+
+    // convert to current
+
+    // give semaphore for security task
+
+
+    // evaluate matrix
+
+
+    // start adc after fixed interval
+
+  }
+  
+}
 
 
 

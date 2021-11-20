@@ -36,7 +36,7 @@ void adc_init()
     // activate ADC
     ADCSRA |= (1 << ADEN);
 
-    // select reference as AVCC
+    // select reference as AVC
     ADMUX = (0 << REFS0) | (1 << REFS1);
 
 #ifdef ADC_8_BIT_RESOLUTION
@@ -67,7 +67,7 @@ void adc_init()
 void adc_start()
 {
 
-    // TODO: set first pin to sample
+
 
     // start first conversion, free running is handled by software
     ADCSRA |= (1 << ADSC);

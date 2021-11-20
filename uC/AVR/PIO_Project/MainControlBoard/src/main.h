@@ -76,7 +76,11 @@
 #define BUTTON_DEBOUNCE_MS  50
 
 
-#define DUTYCYCLE_TARGET 0.2
+#define DUTYCYCLE_TARGET 0.2        // target for solenoid duty cycle
+
+
+#define ADC_SCAN_RATE 100           // adc scan rate 
+
 
 
 #endif
