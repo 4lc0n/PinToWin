@@ -33,6 +33,8 @@
 #define CURRENTSENSE_3_MTRX 0x27
 
 
+#define ADC_SCAN_RATE 100           // adc scan rate 
+
 
 /**
  *  @brief initializes ADC but does not yet start it. 

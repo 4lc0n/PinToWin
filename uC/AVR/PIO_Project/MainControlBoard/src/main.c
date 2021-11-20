@@ -497,7 +497,7 @@ void process_adc_task(void *param)
       // calculate resistance of thermistor ( R1 in voltage divider)
       // R2 = U1 * R2 / U2 - R2
       // not following exact example of adafruit, because r1 is no float but uint16_t --> will loose precision in division
-      uint16_t r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datar - TEMP_SENSE_R2;
+      r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datar - TEMP_SENSE_R2;
 
       temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
       temperature_l = log(temperature_l);                   // ln(R/Ro)
