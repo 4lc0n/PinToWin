@@ -64,6 +64,9 @@ SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button;
 
 SemaphoreHandle_t xSemaphore_adc_complete;
 
+SemaphoreHandle_t xSemaphore_safety;
+SemaphoreHandle_t xSemaphore_targets;
+
 // ##############################################
 // #            global tasks                    #
 // ##############################################
@@ -78,6 +81,8 @@ void check_input_r_task(void *param);
 void update_score_task(void *param);
 
 void process_adc_task(void *param);
+
+void safety_task(void *param);
 
 // ##############################################
 // #            global functions                #
@@ -248,9 +253,7 @@ void solenoid_task(void *param){
   SOL3_DDR |= (1 << SOL3_P);
 
 
-  // TODO: put this in the safety task: 
-  RELAY_DDR |= (1 << RELAY_P);
-  RELAY_PORT |= (1 << RELAY_P);
+
 
   buttonl_prev = buttonl;
   buttonr_prev = buttonr;
@@ -522,7 +525,7 @@ void process_adc_task(void *param)
 
 
     // give semaphore for security task
-    // TODO
+    xSemaphoreGive(xSemaphore_safety);
 
     // evaluate matrix
 
@@ -533,6 +536,99 @@ void process_adc_task(void *param)
     adc_start();
   }
   
+}
+
+
+/**
+ * @brief Task to manage safety features like temperature and current of solenoids
+ * Will shut off the relay if solenoids get too hot
+ * 
+ * @param param 
+ */
+void safety_task(void *param){
+  xSemaphore_safety = xSemaphoreCreateBinary();
+
+  if(xSemaphore_safety == NULL){
+    // failed to create semaphore: 
+    print_debug("failed to create semaphore in safety_task\n");
+    while(1);
+  }
+
+  RELAY_DDR |= (1 << RELAY_P);        // activate port of relay
+  RELAY_PORT |= (1 << RELAY_P);       // start relay
+
+  uint8_t relay_sate = 0;
+  char print_buf[50];
+
+  while(1)
+  {
+    // TODO: in here WATCHDOG should be reset (with a sufficient margin in timeout)
+    // TODO: implement WATCHDOG as reset timer
+    // TODO: change tick timer to e.g. TIMER0
+
+    // wait for semaphore: if not given afetr 1sec: shutdown relay
+    if(xSemaphoreTake(xSemaphore_safety, 1000 / portTICK_PERIOD_MS) == pdTRUE)
+    {
+
+      
+
+
+      // check states of channels
+
+      // temperature
+      if(temperature_l > TEMPERATURE_THRESHOLD || temperature_r > TEMPERATURE_THRESHOLD)
+      {
+        // warning high temperature!
+        // shut down output stage
+        // shut off relay
+        RELAY_PORT &= ~(1 << RELAY_P);
+        relay_sate = 0;
+        sprintf(print_buf, "ERR: HIGH TEMPERATURE!");
+        uart_puts(DEBUG_UART, print_buf);
+      }
+
+      // current
+      else if(current_1 > CURRENT_THRESHOLD || current_2 > CURRENT_THRESHOLD || current_3 > CURRENT_THRESHOLD)
+      {
+        // warning high current
+        // shut down output stage
+        // shut off relay
+        RELAY_PORT &= ~(1 << RELAY_P);
+        relay_sate = 0;
+        sprintf(print_buf, "ERR: HIGH CURRENT!");
+        uart_puts(DEBUG_UART, print_buf);
+      }
+
+      else
+      {
+        // nothing to do, everything fine
+        relay_sate = 1;
+        RELAY_PORT |= (1 << RELAY_P);
+      }
+
+
+      
+
+
+      
+
+    }
+    else{
+
+      // failed to get semaphore: adc sampling was not successful, something is wrong!
+
+      // shut off relay
+      RELAY_PORT &= ~(1 << RELAY_P);
+      relay_sate = 0;
+
+      sprintf(print_buf, "WARNING: was not able to get semaphore!\n");
+      uart_puts(DEBUG_UART, print_buf);
+    }
+
+
+
+  }
+
 }
 
 
@@ -557,7 +653,7 @@ void draw_welcome(void){
   print_debug("||            Main Control            ||\n");
   print_debug("||               Board                ||\n");
   print_debug("||------------------------------------||\n");
-  print_debug("||        Firmware: 2021-11-17        ||\n");
+  print_debug("||        Firmware: 2021-11-22        ||\n");
   print_debug("========================================\n");
  
   print_debug("UART0: initialized\n");_delay_ms(10);

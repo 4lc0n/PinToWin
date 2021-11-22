@@ -80,5 +80,8 @@
 
 
 
+#define TEMPERATURE_THRESHOLD   70
+#define CURRENT_THRESHOLD       2.8
+
 
 #endif
