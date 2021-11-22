@@ -22,11 +22,12 @@
 #define TEMPSENS_L_MTRX 0x23
 #define TEMPSENS_R_MTRX 0x24
 
-#define TEMP_SENSE_R2 10000
+#define TEMP_SENSE_R1 10000
 #define V_ADC_REF   5.0
 
-#define THERMISTOR_B 3950.0f
-#define THERMISTOR_NOMINAL 25.0f
+#define THERMISTOR_B 3965.0f    //https://www.ametherm.com/thermistor/precision-interchangeable-thermistor
+#define THERMISTOR_NOMINAL 10e3
+#define TEMPERATURE_NOMINAL 25.0f
 
 #define CURRENTSENSE_1_MTRX 0x25
 #define CURRENTSENSE_2_MTRX 0x26

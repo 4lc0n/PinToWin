@@ -55,7 +55,7 @@ extern volatile uint8_t pp_select;                        // selector for ping o
 uint32_t score = 0;
 
 float temperature_l = 0, temperature_r = 0;
-
+float current_1, current_2, current_3;
 
 // ##############################################
 // #            FreeRTOS specifics              #
@@ -219,7 +219,7 @@ void blink(void* param){
       PORTB &= ~(1 << PB6);
     
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-    sprintf(s, "rl: %d, tl: %d, rr: %d, tr: %d\n", ping_buffer[0], (int)temperature_l,  ping_buffer[1], (int)temperature_r);
+    sprintf(s, "tl: %d, tr: %d\n", (int)temperature_l, (int)temperature_r);
     print_debug(s);
 
   }
@@ -453,7 +453,7 @@ void process_adc_task(void *param)
 #ifdef ADC_8_BIT_RESOLUTION
   uint8_t temp_data;
 #else
-  uint16_t temp_datar, temp_datal;
+  uint16_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
 #endif
 
 
@@ -473,42 +473,53 @@ void process_adc_task(void *param)
       // left temp sensor
       temp_datal = ping_buffer[0];
       temp_datar = ping_buffer[1];
+      temp_curr1 = ping_buffer[2];
+      temp_curr2 = ping_buffer[3];
+      temp_curr3 = ping_buffer[4];
     }
     else{
       temp_datal = pong_buffer[0];
       temp_datar = pong_buffer[1];
+      temp_curr1 = pong_buffer[2];
+      temp_curr2 = pong_buffer[3];
+      temp_curr3 = pong_buffer[4];
     }
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
     // calculate resistance of thermistor ( R2 in voltage divider)
-    float r1 = (1023.0 / temp_datal)  - 1;     // (1023/ADC - 1) 
-    r1 = TEMP_SENSE_R2 / r1;                 // 10K / (1023/ADC - 1)
+    float r2 = (1023.0 / temp_datal)  - 1;     // (1023/ADC - 1) 
+    r2 = TEMP_SENSE_R1 / r2;                 // 10K / (1023/ADC - 1)
 
-    temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
+    temperature_l = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
     temperature_l = log(temperature_l);                   // ln(R/Ro)
     temperature_l /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
-    temperature_l += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
+    temperature_l += 1.0 / (TEMPERATURE_NOMINAL + 273.15); // + (1/To)
     temperature_l = 1.0 / temperature_l;                  // Invert
     temperature_l -= 273.15;                              // convert absolute temp to C
-    
 
 
-      // https://learn.adafruit.com/thermistor/using-a-thermistor
 
-      // calculate resistance of thermistor ( R1 in voltage divider)
-      r1 = (1023.0 / temp_datar)  - 1;     // (1023/ADC - 1) 
-      r1 = TEMP_SENSE_R2 / r1;           // 10K / (1023/ADC - 1)
+    // https://learn.adafruit.com/thermistor/using-a-thermistor
 
-      temperature_r = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
-      temperature_r = log(temperature_r);                   // ln(R/Ro)
-      temperature_r /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
-      temperature_r += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
-      temperature_r = 1.0 / temperature_r;                  // Invert
-      temperature_r -= 273.15;                              // convert absolute temp to C
+    // calculate resistance of thermistor ( R1 in voltage divider)
+    r2 = (1023.0 / temp_datar)  - 1;     // (1023/ADC - 1) 
+    r2 = TEMP_SENSE_R1 / r2;           // 10K / (1023/ADC - 1)
+
+    temperature_r = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
+    temperature_r = log(temperature_r);                   // ln(R/Ro)
+    temperature_r /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
+    temperature_r += 1.0 / (TEMPERATURE_NOMINAL + 273.15); // + (1/To)
+    temperature_r = 1.0 / temperature_r;                  // Invert
+    temperature_r -= 273.15;                              // convert absolute temp to C
  
 
 
     // convert to current
+    // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
+    current_1 = (1023.0 / temp_curr1) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_2 = (1023.0 / temp_curr2) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_3 = (1023.0 / temp_curr3) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+
 
     // give semaphore for security task
     // TODO
