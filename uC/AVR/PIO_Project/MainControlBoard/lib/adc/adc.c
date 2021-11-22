@@ -135,7 +135,7 @@ void adc_init()
     ADCSRA |= (1 << ADEN);
 
     // select reference as AVC
-    ADMUX = (0 << REFS0) | (1 << REFS1);
+    ADMUX = (0 << REFS1) | (1 << REFS0);
 
 #ifdef ADC_8_BIT_RESOLUTION
     ADCMUX |= (1 << ADLAR);     // left adjust result, read only high bit

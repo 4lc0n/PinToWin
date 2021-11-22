@@ -27,6 +27,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 #include "main.h"
 
@@ -197,12 +198,10 @@ void init_task(void *param){
   vTaskDelete(NULL);
 }
 
-
 void blink(void* param){
 
   DDRB |= (1 << 6);
-  // char s[] = "blink\n";
-
+  char s[50];
   TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
   
   while(1)
@@ -220,6 +219,9 @@ void blink(void* param){
       PORTB &= ~(1 << PB6);
     
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
+    sprintf(s, "rl: %d, tl: %d, rr: %d, tr: %d\n", ping_buffer[0], (int)temperature_l,  ping_buffer[1], (int)temperature_r);
+    print_debug(s);
+
   }
 }
 
@@ -478,10 +480,9 @@ void process_adc_task(void *param)
     }
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
-    // calculate resistance of thermistor ( R1 in voltage divider)
-    // R2 = U1 * R2 / U2 - R2
-    // not following exact example of adafruit, because r1 is no float but uint16_t --> will loose precision in division
-    uint16_t r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datal - TEMP_SENSE_R2;
+    // calculate resistance of thermistor ( R2 in voltage divider)
+    float r1 = (1023.0 / temp_datal)  - 1;     // (1023/ADC - 1) 
+    r1 = TEMP_SENSE_R2 / r1;                 // 10K / (1023/ADC - 1)
 
     temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
     temperature_l = log(temperature_l);                   // ln(R/Ro)
@@ -495,16 +496,15 @@ void process_adc_task(void *param)
       // https://learn.adafruit.com/thermistor/using-a-thermistor
 
       // calculate resistance of thermistor ( R1 in voltage divider)
-      // R2 = U1 * R2 / U2 - R2
-      // not following exact example of adafruit, because r1 is no float but uint16_t --> will loose precision in division
-      r1 = ((uint32_t)1024 * TEMP_SENSE_R2) / temp_datar - TEMP_SENSE_R2;
+      r1 = (1023.0 / temp_datar)  - 1;     // (1023/ADC - 1) 
+      r1 = TEMP_SENSE_R2 / r1;           // 10K / (1023/ADC - 1)
 
-      temperature_l = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
-      temperature_l = log(temperature_l);                   // ln(R/Ro)
-      temperature_l /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
-      temperature_l += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
-      temperature_l = 1.0 / temperature_l;                  // Invert
-      temperature_l -= 273.15;                              // convert absolute temp to C
+      temperature_r = r1 / THERMISTOR_NOMINAL;              // (R/Ro)
+      temperature_r = log(temperature_r);                   // ln(R/Ro)
+      temperature_r /= THERMISTOR_B;                        // 1/B * ln(R/Ro)
+      temperature_r += 1.0 / (THERMISTOR_NOMINAL + 273.15); // + (1/To)
+      temperature_r = 1.0 / temperature_r;                  // Invert
+      temperature_r -= 273.15;                              // convert absolute temp to C
  
 
 
