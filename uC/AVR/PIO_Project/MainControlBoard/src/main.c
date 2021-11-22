@@ -55,7 +55,7 @@ extern volatile uint8_t pp_select;                        // selector for ping o
 uint32_t score = 0;
 
 float temperature_l = 0, temperature_r = 0;
-float current_1, current_2, current_3;
+float current_1, current_2, current_3;                    //  starter flipper - left flipper - right flipper
 
 // ##############################################
 // #            FreeRTOS specifics              #
@@ -219,7 +219,7 @@ void blink(void* param){
       PORTB &= ~(1 << PB6);
     
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-    sprintf(s, "tl: %d, tr: %d\n", (int)temperature_l, (int)temperature_r);
+    sprintf(s, "tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n", (int)temperature_l, (int)temperature_r, (int)ping_buffer[2], (int)ping_buffer[3], (int)ping_buffer[4]);
     print_debug(s);
 
   }

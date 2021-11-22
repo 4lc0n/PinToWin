@@ -34,6 +34,10 @@
 #define CURRENTSENSE_3_MTRX 0x27
 
 
+#define CURRENTSENSE_AMP_FACTOR 11
+
+
+
 #define ADC_SCAN_RATE 100           // adc scan rate 
 
 

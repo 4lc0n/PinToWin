@@ -12,7 +12,7 @@
 
 
 // structure for sampling structure
-int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX};     // list for analog pins to sample 
+int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX, CURRENTSENSE_1_MTRX, CURRENTSENSE_2_MTRX, CURRENTSENSE_3_MTRX};     // list for analog pins to sample 
 int16_t dpin[] = {-1, -1, -1, -1, -1};     // list of corresponding digial pins (used for LDR matrix)
 
 extern SemaphoreHandle_t xSemaphore_adc_complete;
