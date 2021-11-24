@@ -1,5 +1,13 @@
 # Pin To Win - Working repository for electronics
 
+## IMPORTANT
+
+This repository has long file names, for windows user: enable long file names with this command
+
+git config --system core.longpaths true
+
+
+
 ## Overview
 
 This repository represents the electronic part of the project 'Pin To Win', a project in the scope of the lecutre 'Smart Systems' at the USN Kongsberg. 
