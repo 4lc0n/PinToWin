@@ -10,8 +10,8 @@
  * @copyright Copyright (c) 2021
  * 
  * 
- * TODO: tick rate to either 5 ms or 1 ms
- * TODO: check for tick counter, which data format, to prevent overflow and unexpected behaviour
+ * //TODO: tick rate to either 5 ms or 1 ms
+ * //TODO: check for tick counter, which data format, to prevent overflow and unexpected behaviour
  * 
  */
 
@@ -454,7 +454,7 @@ void process_adc_task(void *param)
   TickType_t lastTick = xTaskGetTickCount();
 
 #ifdef ADC_8_BIT_RESOLUTION
-  uint8_t temp_data;
+  uint8_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
 #else
   uint16_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
 #endif
@@ -557,7 +557,7 @@ void safety_task(void *param){
   RELAY_DDR |= (1 << RELAY_P);        // activate port of relay
   RELAY_PORT |= (1 << RELAY_P);       // start relay
 
-  uint8_t relay_sate = 0;
+  uint8_t relay_state = 0;
   char print_buf[50];
 
   while(1)
@@ -570,10 +570,7 @@ void safety_task(void *param){
     if(xSemaphoreTake(xSemaphore_safety, 1000 / portTICK_PERIOD_MS) == pdTRUE)
     {
 
-      
-
-
-      // check states of channels
+       // check states of channels
 
       // temperature
       if(temperature_l > TEMPERATURE_THRESHOLD || temperature_r > TEMPERATURE_THRESHOLD)
@@ -582,7 +579,7 @@ void safety_task(void *param){
         // shut down output stage
         // shut off relay
         RELAY_PORT &= ~(1 << RELAY_P);
-        relay_sate = 0;
+        relay_state = 0;
         sprintf(print_buf, "ERR: HIGH TEMPERATURE!");
         uart_puts(DEBUG_UART, print_buf);
       }
@@ -594,7 +591,7 @@ void safety_task(void *param){
         // shut down output stage
         // shut off relay
         RELAY_PORT &= ~(1 << RELAY_P);
-        relay_sate = 0;
+        relay_state = 0;
         sprintf(print_buf, "ERR: HIGH CURRENT!");
         uart_puts(DEBUG_UART, print_buf);
       }
@@ -602,15 +599,9 @@ void safety_task(void *param){
       else
       {
         // nothing to do, everything fine
-        relay_sate = 1;
+        relay_state = 1;
         RELAY_PORT |= (1 << RELAY_P);
       }
-
-
-      
-
-
-      
 
     }
     else{
@@ -619,7 +610,7 @@ void safety_task(void *param){
 
       // shut off relay
       RELAY_PORT &= ~(1 << RELAY_P);
-      relay_sate = 0;
+      relay_state = 0;
 
       sprintf(print_buf, "WARNING: was not able to get semaphore!\n");
       uart_puts(DEBUG_UART, print_buf);
