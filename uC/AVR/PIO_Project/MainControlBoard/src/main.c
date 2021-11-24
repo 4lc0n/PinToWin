@@ -55,7 +55,7 @@ extern volatile uint8_t pp_select;                        // selector for ping o
 uint32_t score = 0;
 
 float temperature_l = 0, temperature_r = 0;
-float current_1, current_2, current_3;                    //  starter flipper - left flipper - right flipper
+float current_1 = 0, current_2 = 0, current_3 = 0;                    //  starter flipper - left flipper - right flipper
 
 // ##############################################
 // #            FreeRTOS specifics              #
@@ -178,26 +178,35 @@ void init_task(void *param){
   print_debug("OK\n");
 
 
-  print_debug("create score update task... ");
-  xTaskCreate(
-    update_score_task
-    ,  "Score_t" // A name just for humans
-    ,  128  // Stack size
-    ,  NULL //Parameters for the task
-    ,  1  // Priority
-    ,  NULL ); //Task Handle
-  print_debug("OK\n");
+  // print_debug("create score update task... ");
+  // xTaskCreate(
+  //   update_score_task
+  //   ,  "Score" // A name just for humans
+  //   ,  128  // Stack size
+  //   ,  NULL //Parameters for the task
+  //   ,  1  // Priority
+  //   ,  NULL ); //Task Handle
+  // print_debug("OK\n");
 
   print_debug("create adc task... ");
   xTaskCreate(
     process_adc_task
-    ,  "Score_t" // A name just for humans
-    ,  128  // Stack size
+    ,  "ADC" // A name just for humans
+    ,  512  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
+  // print_debug("create safety task... ");
+  // xTaskCreate(
+  //   safety_task
+  //   ,  "Safety" // A name just for humans
+  //   ,  128  // Stack size
+  //   ,  NULL //Parameters for the task
+  //   ,  configMAX_PRIORITIES-1  // Priority
+  //   ,  NULL ); //Task Handle
+  // print_debug("OK\n");
 
 
   vTaskDelete(NULL);
@@ -208,7 +217,7 @@ void blink(void* param){
   DDRB |= (1 << 6);
   char s[50];
   TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
-  
+  TickType_t current;
   while(1)
   {
 
@@ -224,7 +233,8 @@ void blink(void* param){
       PORTB &= ~(1 << PB6);
     
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-    sprintf(s, "tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n", (int)temperature_l, (int)temperature_r, (int)ping_buffer[2], (int)ping_buffer[3], (int)ping_buffer[4]);
+    current = xTaskGetTickCount();
+    sprintf(s, "%d: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n",(int)current, (int)temperature_l, (int)temperature_r, (int)ping_buffer[2], (int)ping_buffer[3], (int)ping_buffer[4]);
     print_debug(s);
 
   }
@@ -460,6 +470,12 @@ void update_score_task(void *param){
  */
 void process_adc_task(void *param)
 {
+  xSemaphore_safety = xSemaphoreCreateBinary();
+  if(xSemaphore_safety == NULL){
+    // failed to create semaphore: 
+    print_debug("failed to create semaphore in safety_task\n");
+    while(1);
+  }
   xSemaphore_adc_complete = xSemaphoreCreateBinary();
   if( xSemaphore_adc_complete == NULL){
     // failed to create semaphore!
@@ -533,11 +549,29 @@ void process_adc_task(void *param)
  
 
 
+    // check within boundaries: 
+    if(temperature_r > TEMPERATURE_THRESHOLD || temperature_l > TEMPERATURE_THRESHOLD)
+    {
+      RELAY_PORT &= ~(1 << RELAY_P);
+    }
+    else{
+      RELAY_PORT |= (1 << RELAY_P);
+    }
+
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
     current_1 = (1023.0 / temp_curr1) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
     current_2 = (1023.0 / temp_curr2) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
     current_3 = (1023.0 / temp_curr3) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+
+    if(current_1 > CURRENT_THRESHOLD || current_2 > CURRENT_THRESHOLD || current_3 > CURRENT_THRESHOLD)
+    {
+      RELAY_PORT &= ~(1 << RELAY_P);
+    }
+    else{
+      RELAY_PORT |= (1 << RELAY_P);
+    }
+
 
 
     // give semaphore for security task
@@ -562,20 +596,19 @@ void process_adc_task(void *param)
  * @param param 
  */
 void safety_task(void *param){
-  xSemaphore_safety = xSemaphoreCreateBinary();
+  
 
-  if(xSemaphore_safety == NULL){
-    // failed to create semaphore: 
-    print_debug("failed to create semaphore in safety_task\n");
-    while(1);
-  }
+  
 
   RELAY_DDR |= (1 << RELAY_P);        // activate port of relay
   RELAY_PORT |= (1 << RELAY_P);       // start relay
 
   uint8_t relay_state;
-  relay_state = 0;
+   relay_state = 0;
   char print_buf[50];
+  char print_ok[] = "ok";
+
+  vTaskDelay(50);   // delay for 50 ticks to let the system start up
 
   while(1)
   {
@@ -590,34 +623,38 @@ void safety_task(void *param){
        // check states of channels
 
       // temperature
-      if(temperature_l > TEMPERATURE_THRESHOLD || temperature_r > TEMPERATURE_THRESHOLD)
+      if((temperature_l > TEMPERATURE_THRESHOLD) || (temperature_r > TEMPERATURE_THRESHOLD))
       {
         // warning high temperature!
         // shut down output stage
         // shut off relay
         RELAY_PORT &= ~(1 << RELAY_P);
-        relay_state = 0;
-        sprintf(print_buf, "ERR: HIGH TEMPERATURE!");
+
+        sprintf(print_buf, "ERRT: HIGH TEMPERATURE!: %d, %d", (int)temperature_l, (int)temperature_r);
         uart_puts(DEBUG_UART, print_buf);
+        vTaskDelay(10);
       }
 
       // current
-      else if(current_1 > CURRENT_THRESHOLD || current_2 > CURRENT_THRESHOLD || current_3 > CURRENT_THRESHOLD)
-      {
-        // warning high current
-        // shut down output stage
-        // shut off relay
-        RELAY_PORT &= ~(1 << RELAY_P);
-        relay_state = 0;
-        sprintf(print_buf, "ERR: HIGH CURRENT!");
-        uart_puts(DEBUG_UART, print_buf);
-      }
+      else {
+        if((current_1 > CURRENT_THRESHOLD) || (current_2 > CURRENT_THRESHOLD) || (current_3 > CURRENT_THRESHOLD))
+        {
+          // warning high current
+          // shut down output stage
+          // shut off relay
+          RELAY_PORT &= ~(1 << RELAY_P);
 
-      else
-      {
-        // nothing to do, everything fine
-        relay_state = 1;
-        RELAY_PORT |= (1 << RELAY_P);
+          sprintf(print_buf, "ERRC: HIGH CURRENT!: %d %d %d", (int)(10*current_1), (int)(10*current_2), (int)(10*current_3));
+          uart_puts(DEBUG_UART, print_buf);
+          vTaskDelay(10);
+        }
+        else
+        {
+          // nothing to do, everything fine
+
+          RELAY_PORT |= (1 << RELAY_P);
+          uart_puts(DEBUG_UART, print_ok);
+        }
       }
 
     }
@@ -627,7 +664,7 @@ void safety_task(void *param){
 
       // shut off relay
       RELAY_PORT &= ~(1 << RELAY_P);
-      relay_state = 0;
+
 
       sprintf(print_buf, "WARNING: was not able to get semaphore!\n");
       uart_puts(DEBUG_UART, print_buf);
