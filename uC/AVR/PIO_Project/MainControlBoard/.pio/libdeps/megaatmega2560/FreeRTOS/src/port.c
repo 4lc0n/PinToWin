@@ -44,8 +44,11 @@
 /* Start tasks with interrupts enabled. */
 #define portFLAGS_INT_ENABLED           ( (StackType_t) 0x80 )
 
-#define    portSCHEDULER_ISR            WDT_vect
-
+#if defined(portUSE_TIMER0)
+    #define    portSCHEDULER_ISR            TIMER0_COMPA_vect
+#else
+    #define    portSCHEDULER_ISR            WDT_vect
+#endif
 /*-----------------------------------------------------------*/
 
 /* We require the address of the pxCurrentTCB variable, but don't want to know
@@ -179,6 +182,31 @@ void wdt_interrupt_reset_enable (const uint8_t value)
     }
 }
 #endif
+
+#if defined(portUSE_TIMER0)
+/**
+ * @brief Function to initialize timer0 as tick timer
+ * 
+ * @param value: tick frequency value
+ */
+static __inline__
+__attribute__ ((__always_inline__))
+void tim0_interrupt_enable (const uint16_t value){
+
+
+    TCCR0A = (1 << WGM01);      // set to CTC (clear timer on compare) mode
+    
+    TIMSK0 = (1 << OCIE0A);     // enable output compare match A
+
+    // TODO: value is just a dummy,hardcoded 200 ms tick frequency
+    TCCR0B = (0x5 << CS00);       // set prescaler to 8
+    OCR0A = 78- 1;            // calculation is not precise, but fast
+
+}
+
+
+#endif
+
 
 /*-----------------------------------------------------------*/
 /* actual number of ticks per second, after configuration. Not for RTC, which has 1 tick/second. */
@@ -676,8 +704,12 @@ void prvSetupTimerInterrupt( void )
     /* reset watchdog */
     wdt_reset();
 
+#if defined(portUSE_TIMER0)
+    tim0_interrupt_enable(portTICK_PERIOD_MS);
+#else
     /* set up WDT Interrupt (rather than the WDT Reset). */
     wdt_interrupt_enable( portUSE_WDTO );
+#endif
 }
 /*-----------------------------------------------------------*/
 

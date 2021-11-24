@@ -90,7 +90,7 @@ typedef uint8_t                     UBaseType_t;
  * but 120 kHz at 5V DC and 25 degrees is actually more accurate,
  * from data sheet.
  */
-#define portTICK_PERIOD_MS          ( (TickType_t) _BV( portUSE_WDTO + 4 ) )
+#define portTICK_PERIOD_MS          ( (TickType_t) 1000 / 200 )
 
 #define portBYTE_ALIGNMENT          1
 #define portNOP()                   __asm__ __volatile__ ( "nop" );

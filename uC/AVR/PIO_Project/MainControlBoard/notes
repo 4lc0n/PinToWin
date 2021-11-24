@@ -17,6 +17,12 @@ NOTE:
 
 - moved print_debug to UART1
 
-- TODO: change tick count to 32 bit
+- TODO: change tick count to 32 bit   DONE (2021-11-24)
+- TODO: change tick generator to TIMER0		DONE (2021-11-24)
+
+	note here: it is such a mess, the same libaray (freerots) is included two times, and both somehow affect the compiled code
+	so changes have to be made in both implementations. this i found out after 1h of testing
+	but, nice, it works now, wdt can be used for safety
+
 
 - TODO: implement recognition for LDR sensor 	
