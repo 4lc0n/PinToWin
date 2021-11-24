@@ -10,7 +10,8 @@
 			"iom2560.h": "c",
 			"iomxx0_1.h": "c",
 			"uart.h": "c",
-			"adc.h": "c"
+			"adc.h": "c",
+			"arduino_freertos.h": "c"
 		}
 	}
 }

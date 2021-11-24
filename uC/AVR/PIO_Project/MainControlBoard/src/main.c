@@ -127,7 +127,11 @@ void init_task(void *param){
   // uart0: USB connection
   // uart1: debug connection (use FTDI Serial to USB converter)
   uart_init(0, 57600);
-  // uart_init(1, 57600);  
+  uart_init(1, 57600);  
+
+  // activate debug port for task monitoring
+  DEBUG_DDR = 0xFF;
+  DEBUG_PORT = 0;
 
   draw_welcome(); 
   clear_led();
@@ -178,15 +182,15 @@ void init_task(void *param){
   print_debug("OK\n");
 
 
-  // print_debug("create score update task... ");
-  // xTaskCreate(
-  //   update_score_task
-  //   ,  "Score" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create score update task... ");
+  xTaskCreate(
+    update_score_task
+    ,  "Score" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
   print_debug("create adc task... ");
   xTaskCreate(
@@ -198,15 +202,15 @@ void init_task(void *param){
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
-  // print_debug("create safety task... ");
-  // xTaskCreate(
-  //   safety_task
-  //   ,  "Safety" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  configMAX_PRIORITIES-1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create safety task... ");
+  xTaskCreate(
+    safety_task
+    ,  "Safety" // A name just for humans
+    ,  256  // Stack size
+    ,  NULL //Parameters for the task
+    ,  configMAX_PRIORITIES-1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
 
   vTaskDelete(NULL);
@@ -218,24 +222,26 @@ void blink(void* param){
   char s[50];
   TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
   TickType_t current;
+
+  vTaskDelay(10);
+
   while(1)
   {
 
+    DEBUG_PORT |= (1 << DEBUG_BLINK);
+
+    PORTB ^= (1 << PB6);
     
-    // uart_puts(0, s);
-    // uart_puts(1, b);
-    // if(br){
-      PORTB |= (1 << PB6);
+
     
-    // else
-    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
-    
-      PORTB &= ~(1 << PB6);
-    
-    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
     current = xTaskGetTickCount();
-    sprintf(s, "%d: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n",(int)current, (int)temperature_l, (int)temperature_r, (int)ping_buffer[2], (int)ping_buffer[3], (int)ping_buffer[4]);
+    sprintf(s, "%d: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n",(int)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
     print_debug(s);
+
+    DEBUG_PORT &= ~(1 << DEBUG_BLINK);
+
+    xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
+
 
   }
 }
@@ -271,8 +277,13 @@ void solenoid_task(void *param){
   buttonl_prev = buttonl;
   buttonr_prev = buttonr;
 
+  vTaskDelay(10);
+
   while(1)
   {
+    
+    DEBUG_PORT |= (1 << DEBUG_SOLENOID);
+
     if(buttonl){
 
       // check if it is initial run: 
@@ -348,6 +359,7 @@ void solenoid_task(void *param){
     }
 
     // TODO: implement starter flipper mechanism
+    DEBUG_PORT &= ~(1 << DEBUG_SOLENOID);
 
     xTaskDelayUntil(&lastTick, 50 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
                                                               // delays of up to 100 ms feel 'natural'
@@ -371,16 +383,24 @@ void check_input_l_task(void *param)
 
   TickType_t lastTick = xTaskGetTickCount();
 
+  vTaskDelay(10);
+
   while(1){
 
 
     xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
+
+    DEBUG_PORT |= (1 << DEBUG_BUTTONL);
+
 
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
     // read button state:
     buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
+
+    DEBUG_PORT &= ~(1 << DEBUG_BUTTONL);
+
 
   }
 
@@ -400,16 +420,23 @@ void check_input_r_task(void *param)
 
   TickType_t lastTick = xTaskGetTickCount();
 
+  vTaskDelay(10);
+
   while(1){
 
 
     xSemaphoreTake(xSemaphore_r_button, portMAX_DELAY);
+
+    DEBUG_PORT |= (1 << DEBUG_BUTTONR);
+
 
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
     // read button state:
     buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
+
+    DEBUG_PORT &= ~(1 << DEBUG_BUTTONR);
 
   }
 }
@@ -430,9 +457,12 @@ void update_score_task(void *param){
 
   char score_s[10];
 
+  vTaskDelay(10);
 
   while(1)
   {
+
+    DEBUG_PORT |= (1 << DEBUG_SCORE);
 
     if(buttonl != last_l_button){
       last_l_button = buttonl;
@@ -440,6 +470,9 @@ void update_score_task(void *param){
 
       // print to uart0
       sprintf(score_s, "%lu\n", score);
+
+      // TODO: test this
+      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
       uart_puts(0, score_s);
 
     }
@@ -450,8 +483,13 @@ void update_score_task(void *param){
 
       // print to uart0
       sprintf(score_s, "%lu\n", score);
+
+      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
+
       uart_puts(0, score_s);
     }
+
+    DEBUG_PORT &= ~(1 << DEBUG_SCORE);
 
     vTaskDelayUntil(&lastTick, 100 / portTICK_PERIOD_MS);    
 
@@ -491,6 +529,7 @@ void process_adc_task(void *param)
   uint16_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
 #endif
 
+  vTaskDelay(10);
 
   // start adc unit
   adc_init();           // initialize adc unit
@@ -501,6 +540,8 @@ void process_adc_task(void *param)
     // TODO: complete
     // wait for semaphore
     xSemaphoreTake(xSemaphore_adc_complete, portMAX_DELAY);
+
+    DEBUG_PORT |= (1 << DEBUG_ADC);
 
     // convert to temperature
     if(pp_select == 0)
@@ -522,7 +563,7 @@ void process_adc_task(void *param)
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
     // calculate resistance of thermistor ( R2 in voltage divider)
-    float r2 = (1023.0 / temp_datal)  - 1;     // (1023/ADC - 1) 
+    float r2 = (1023.0 / (temp_datal+1))  - 1;     // (1023/ADC - 1) 
     r2 = TEMP_SENSE_R1 / r2;                 // 10K / (1023/ADC - 1)
 
     temperature_l = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
@@ -537,7 +578,7 @@ void process_adc_task(void *param)
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
     // calculate resistance of thermistor ( R1 in voltage divider)
-    r2 = (1023.0 / temp_datar)  - 1;     // (1023/ADC - 1) 
+    r2 = (1023.0 / (temp_datar+1))  - 1;     // (1023/ADC - 1) 
     r2 = TEMP_SENSE_R1 / r2;           // 10K / (1023/ADC - 1)
 
     temperature_r = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
@@ -549,28 +590,15 @@ void process_adc_task(void *param)
  
 
 
-    // check within boundaries: 
-    if(temperature_r > TEMPERATURE_THRESHOLD || temperature_l > TEMPERATURE_THRESHOLD)
-    {
-      RELAY_PORT &= ~(1 << RELAY_P);
-    }
-    else{
-      RELAY_PORT |= (1 << RELAY_P);
-    }
+
 
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
-    current_1 = (1023.0 / temp_curr1) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_2 = (1023.0 / temp_curr2) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_3 = (1023.0 / temp_curr3) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_1 = (1023.0 / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_2 = (1023.0 / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_3 = (1023.0 / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
 
-    if(current_1 > CURRENT_THRESHOLD || current_2 > CURRENT_THRESHOLD || current_3 > CURRENT_THRESHOLD)
-    {
-      RELAY_PORT &= ~(1 << RELAY_P);
-    }
-    else{
-      RELAY_PORT |= (1 << RELAY_P);
-    }
+
 
 
 
@@ -580,10 +608,16 @@ void process_adc_task(void *param)
     // evaluate matrix
 
 
+    DEBUG_PORT &= ~(1 << DEBUG_ADC);
+
     // start adc after fixed interval
 
     xTaskDelayUntil(&lastTick, 1000 / ADC_SCAN_RATE / portTICK_PERIOD_MS);
+    
+    DEBUG_PORT |= (1 << DEBUG_ADC);
     adc_start();
+    DEBUG_PORT &= ~(1 << DEBUG_ADC);
+
   }
   
 }
@@ -604,11 +638,12 @@ void safety_task(void *param){
   RELAY_PORT |= (1 << RELAY_P);       // start relay
 
   uint8_t relay_state;
-   relay_state = 0;
-  char print_buf[50];
-  char print_ok[] = "ok";
+  relay_state = 1;
+  const char wrn_high_c[] = "ERR: high current\n";
+  const char wrn_high_t[] = "ERR: high temperature\n";
+  const char wrn_timeout[] = "WRN: cannot get semaphore\n";
 
-  vTaskDelay(50);   // delay for 50 ticks to let the system start up
+  vTaskDelay(30);   // delay for 50 ticks to let the system start up
 
   while(1)
   {
@@ -619,6 +654,7 @@ void safety_task(void *param){
     // wait for semaphore: if not given afetr 1sec: shutdown relay
     if(xSemaphoreTake(xSemaphore_safety, 1000 / portTICK_PERIOD_MS) == pdTRUE)
     {
+      DEBUG_PORT |= (1 << DEBUG_SAFETY);
 
        // check states of channels
 
@@ -629,10 +665,12 @@ void safety_task(void *param){
         // shut down output stage
         // shut off relay
         RELAY_PORT &= ~(1 << RELAY_P);
-
-        sprintf(print_buf, "ERRT: HIGH TEMPERATURE!: %d, %d", (int)temperature_l, (int)temperature_r);
-        uart_puts(DEBUG_UART, print_buf);
-        vTaskDelay(10);
+        if(relay_state){
+          
+          print_debug(wrn_high_t);
+          relay_state = 0;
+        }
+        
       }
 
       // current
@@ -643,33 +681,40 @@ void safety_task(void *param){
           // shut down output stage
           // shut off relay
           RELAY_PORT &= ~(1 << RELAY_P);
-
-          sprintf(print_buf, "ERRC: HIGH CURRENT!: %d %d %d", (int)(10*current_1), (int)(10*current_2), (int)(10*current_3));
-          uart_puts(DEBUG_UART, print_buf);
-          vTaskDelay(10);
+          if(relay_state)
+          {
+            print_debug(wrn_high_c);
+            relay_state = 0;
+          }
+          
         }
         else
         {
           // nothing to do, everything fine
-
+          relay_state = 1;
           RELAY_PORT |= (1 << RELAY_P);
-          uart_puts(DEBUG_UART, print_ok);
+          // uart_puts(DEBUG_UART, print_ok);
         }
       }
 
     }
     else{
+      DEBUG_PORT |= (1 << DEBUG_SAFETY);
 
       // failed to get semaphore: adc sampling was not successful, something is wrong!
 
       // shut off relay
       RELAY_PORT &= ~(1 << RELAY_P);
 
-
-      sprintf(print_buf, "WARNING: was not able to get semaphore!\n");
-      uart_puts(DEBUG_UART, print_buf);
+      if(relay_state){
+        print_debug(wrn_timeout);
+        relay_state = 0;
+      }
+      
+      
     }
 
+    DEBUG_PORT &= ~(1 << DEBUG_SAFETY);
 
 
   }
@@ -690,9 +735,7 @@ void safety_task(void *param){
 // UART1: initialized ...
 void draw_welcome(void){
   
-  // char temp_buff[64];
-  // sprintf(temp_buff, "\033[2J");    // clear serial screen
-  // uart_puts(DEBUG_UART, temp_buff);
+
 
   print_debug("========================================\n"); 
   print_debug("||            Main Control            ||\n");

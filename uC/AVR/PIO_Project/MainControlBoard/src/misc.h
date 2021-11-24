@@ -3,7 +3,7 @@
 
 #include <avr/io.h>
 
-#define DEBUG_UART 0
+#define DEBUG_UART 1
 
 /**
  *  @brief toggle LED on PB7

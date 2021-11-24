@@ -85,6 +85,20 @@
 #define CURRENT_THRESHOLD       2.8
 
 
+// ----------------------------------
+//          DEBUG Definitions
+// ----------------------------------
+
+#define DEBUG_DDR       DDRA
+#define DEBUG_PORT      PORTA
+
+#define DEBUG_SAFETY    PA0
+#define DEBUG_SOLENOID  PA1
+#define DEBUG_ADC       PA2
+#define DEBUG_BLINK     PA3
+#define DEBUG_SCORE     PA4
+#define DEBUG_BUTTONL   PA5
+#define DEBUG_BUTTONR   PA6
 
 
 

@@ -1,0 +1,22 @@
+
+
+timing of tasks: 
+
+		Execution time	Free time	Prio
+ADC task: 	1000 us		1750 (1000)	1
+Solenoid task	1 ... 60 us	(5000)		1
+Score task	1 us		100 000		1
+Safety task	21 us		1750 (1000)	3
+	
+
+
+NOTE: 
+
+- safety task fails when some sprintf is involved: maybe memory leak somehow?
+- after removing sprintf works, also with pring_debug
+
+- moved print_debug to UART1
+
+- TODO: change tick count to 32 bit
+
+- TODO: implement recognition for LDR sensor 	
