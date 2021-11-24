@@ -151,66 +151,66 @@ void init_task(void *param){
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
-  // print_debug("create solenoid task... ");
-  // xTaskCreate(
-  //   solenoid_task
-  //   ,  "Solenoid" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create solenoid task... ");
+  xTaskCreate(
+    solenoid_task
+    ,  "Solenoid" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
-  // print_debug("create button input handler task right... ");
-  // xTaskCreate(
-  //   check_input_r_task
-  //   ,  "Button_r" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create button input handler task right... ");
+  xTaskCreate(
+    check_input_r_task
+    ,  "Button_r" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
-  // print_debug("create button input handler task left... ");
-  // xTaskCreate(
-  //   check_input_l_task
-  //   ,  "Button_l" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create button input handler task left... ");
+  xTaskCreate(
+    check_input_l_task
+    ,  "Button_l" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
 
-  // print_debug("create score update task... ");
-  // xTaskCreate(
-  //   update_score_task
-  //   ,  "Score" // A name just for humans
-  //   ,  128  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create score update task... ");
+  xTaskCreate(
+    update_score_task
+    ,  "Score" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
-  // print_debug("create adc task... ");
-  // xTaskCreate(
-  //   process_adc_task
-  //   ,  "ADC" // A name just for humans
-  //   ,  512  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create adc task... ");
+  xTaskCreate(
+    process_adc_task
+    ,  "ADC" // A name just for humans
+    ,  512  // Stack size
+    ,  NULL //Parameters for the task
+    ,  2  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
-  // print_debug("create safety task... ");
-  // xTaskCreate(
-  //   safety_task
-  //   ,  "Safety" // A name just for humans
-  //   ,  256  // Stack size
-  //   ,  NULL //Parameters for the task
-  //   ,  configMAX_PRIORITIES-1  // Priority
-  //   ,  NULL ); //Task Handle
-  // print_debug("OK\n");
+  print_debug("create safety task... ");
+  xTaskCreate(
+    safety_task
+    ,  "Safety" // A name just for humans
+    ,  256  // Stack size
+    ,  NULL //Parameters for the task
+    ,  configMAX_PRIORITIES-1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
 
   vTaskDelete(NULL);
@@ -361,7 +361,7 @@ void solenoid_task(void *param){
     // TODO: implement starter flipper mechanism
     DEBUG_PORT &= ~(1 << DEBUG_SOLENOID);
 
-    xTaskDelayUntil(&lastTick, 50 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
+    xTaskDelayUntil(&lastTick, 30 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
                                                               // delays of up to 100 ms feel 'natural'
     
   }
