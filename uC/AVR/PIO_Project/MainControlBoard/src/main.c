@@ -244,6 +244,9 @@ void solenoid_task(void *param){
 
   TickType_t lastTick = xTaskGetTickCount();
   uint8_t buttonl_prev, buttonr_prev;
+  uint8_t full_power_l, full_power_r;
+
+
   setup_button_inputs();
 
   // set pins as output: 
@@ -261,23 +264,28 @@ void solenoid_task(void *param){
   while(1)
   {
     if(buttonl){
-      set_led();
 
       // check if it is initial run: 
       if(buttonl_prev != buttonl){
         // initial run: set to full power
         FLIPPER_L_OCR = PWM_RANGE;
+        
         buttonl_prev = buttonl;
+        full_power_l = 10;
       }
 
-      else{
-        if(FLIPPER_L_OCR > PWM_RANGE / 5){
+      else{ 
+        if(full_power_l)                  // if on full power
+        {
+          full_power_l--;                 // reduce tick counter 
+        }
+        else if(FLIPPER_L_OCR > PWM_RANGE * DUTYCYCLE_TARGET){    // if not on full power anymore
           // gradually reduce duty cycle
-          FLIPPER_L_OCR = (uint16_t)(FLIPPER_L_OCR * 0.75);
+          FLIPPER_L_OCR = (uint16_t)(FLIPPER_L_OCR * DUTYCYCLE_REDUCTION);
         }
         else{
         // set solenoid left output to standard output: 
-        FLIPPER_L_OCR = PWM_RANGE / 5;    // set to 20% output
+        FLIPPER_L_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
         }
         
       }
@@ -285,30 +293,38 @@ void solenoid_task(void *param){
 
     }
     else{
-      clear_led();
+      
       FLIPPER_L_OCR = 0;
       buttonl_prev = buttonl;
-      
+      full_power_l = 0;
     }
 
     if(buttonr){
-      set_led();
+      
 
       // check if it is initial run: 
       if(buttonr_prev != buttonr){
         // initial run: set to full power
         FLIPPER_R_OCR = PWM_RANGE;
         buttonr_prev = buttonr;
+
+        full_power_r = 10;
       }
 
+      
       else{
-        if(FLIPPER_R_OCR > PWM_RANGE / 5){
+
+        if(full_power_r)                      // if running on full power
+        {
+          full_power_r--;                     // reduce counter
+        }
+        else if(FLIPPER_R_OCR > PWM_RANGE * DUTYCYCLE_TARGET){ // else if not on full power anymore
           // gradually reduce duty cycle
-          FLIPPER_R_OCR = (uint16_t)(FLIPPER_R_OCR * 0.75);
+          FLIPPER_R_OCR = (uint16_t)(FLIPPER_R_OCR * DUTYCYCLE_REDUCTION);
         }
         else{
         // set solenoid left output to standard output: 
-        FLIPPER_R_OCR = PWM_RANGE / 5;    // set to 20% output
+        FLIPPER_R_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
         }
         
       }
@@ -316,7 +332,7 @@ void solenoid_task(void *param){
 
     }
     else{
-      clear_led();
+      
       FLIPPER_R_OCR = 0;
       buttonr_prev = buttonr;
     }
@@ -557,7 +573,8 @@ void safety_task(void *param){
   RELAY_DDR |= (1 << RELAY_P);        // activate port of relay
   RELAY_PORT |= (1 << RELAY_P);       // start relay
 
-  uint8_t relay_state = 0;
+  uint8_t relay_state;
+  relay_state = 0;
   char print_buf[50];
 
   while(1)

@@ -77,6 +77,7 @@
 
 
 #define DUTYCYCLE_TARGET 0.2        // target for solenoid duty cycle
+#define DUTYCYCLE_REDUCTION 0.5
 
 
 
