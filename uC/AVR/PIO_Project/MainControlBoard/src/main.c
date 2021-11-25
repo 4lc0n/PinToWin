@@ -35,6 +35,7 @@
 #include "misc.h"
 #include "uart.h"
 #include "adc.h"
+#include "tone.h"
 
 
 // ##############################################
@@ -57,6 +58,8 @@ uint32_t score = 0;
 float temperature_l = 0, temperature_r = 0;
 float current_1 = 0, current_2 = 0, current_3 = 0;                    //  starter flipper - left flipper - right flipper
 
+
+extern float lead_notes[], lead_times[];
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
@@ -83,6 +86,8 @@ void update_score_task(void *param);
 void process_adc_task(void *param);
 
 void safety_task(void *param);
+
+void music_task(void *param);
 
 // ##############################################
 // #            global functions                #
@@ -211,7 +216,17 @@ void init_task(void *param){
     ,  configMAX_PRIORITIES-1  // Priority
     ,  NULL ); //Task Handle
   print_debug("OK\n");
+  
 
+    print_debug("create music task... ");
+  xTaskCreate(
+    music_task
+    ,  "Safety" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  configMAX_PRIORITIES-1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
 
   vTaskDelete(NULL);
 }
@@ -722,6 +737,34 @@ void safety_task(void *param){
 }
 
 
+void music_task(void *param)
+{
+
+  uint8_t step = 0;
+  TickType_t last = xTaskGetTickCount();
+  tone_init();
+
+
+
+  while(1)
+  {
+    step++;
+
+    if(step == 58){   // sizeof didn't work, so here we go
+      step = 0;
+    }
+
+    tone_play(lead_notes[step]);
+
+    // calculate delay
+    vTaskDelayUntil(&last, (TickType_t)((lead_times[step] / 2) * 1000 / portTICK_PERIOD_MS)); 
+
+
+  }
+
+
+
+}
 
 
 // welcome screen:
