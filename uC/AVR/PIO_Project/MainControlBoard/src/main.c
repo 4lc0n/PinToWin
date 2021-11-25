@@ -23,6 +23,8 @@
 #include <semphr.h>
 
 #include <avr/io.h>
+#include <avr/wdt.h>
+#include <avr/interrupt.h>
 #include <util/delay.h>
 
 #include <stdlib.h>
@@ -96,6 +98,8 @@ void music_task(void *param);
 void draw_welcome(void);
 void setup_button_inputs(void);
 void setup_pwm_outputs(void);
+
+void setup_watchdog(void);
 
 // ##############################################
 // #                  setup                     #
@@ -662,9 +666,7 @@ void safety_task(void *param){
 
   while(1)
   {
-    // TODO: in here WATCHDOG should be reset (with a sufficient margin in timeout)
-    // TODO: implement WATCHDOG as reset timer
-    // TODO: change tick timer to e.g. TIMER0
+    
 
     // wait for semaphore: if not given afetr 1sec: shutdown relay
     if(xSemaphoreTake(xSemaphore_safety, 1000 / portTICK_PERIOD_MS) == pdTRUE)
@@ -730,7 +732,7 @@ void safety_task(void *param){
     }
 
     DEBUG_PORT &= ~(1 << DEBUG_SAFETY);
-
+    wdt_reset();                          // reset watchdog, this was the last safe run
 
   }
 
@@ -857,6 +859,24 @@ void setup_pwm_outputs(void)
 }
 
 
+/**
+ * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
+ * 
+ */
+void setup_watchdog(void)
+{
+  cli();
+  wdt_reset();
+  // start timed sequence
+  WDTCSR |= (1 >> WDCE) | (1 << WDE);
+
+  // set new prescaler
+  WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP0);
+
+  sei();
+}
+
+
 
 
 /**
@@ -897,3 +917,5 @@ ISR(PCINT1_vect){
 
   
 }
+
+
