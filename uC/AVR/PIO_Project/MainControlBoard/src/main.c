@@ -12,7 +12,7 @@
  * 
  * 
  *  // TODO: change score task to only send and check if it changed from last run
- * 
+ *  // TODO: test starter mechanism
  */
 
 
@@ -64,6 +64,9 @@ enum starter_conditions starter_state = Empty;
 uint8_t starter_delay_after_fired = 0;
 
 extern float lead_notes[], lead_times[];
+
+
+adc_type temp_info[10];
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
@@ -156,7 +159,7 @@ void init_task(void *param){
   xTaskCreate(
     blink
     ,  "Blink" // A name just for humans
-    ,  256  // Stack size
+    ,  300  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
     ,  NULL ); //Task Handle
@@ -240,7 +243,7 @@ void init_task(void *param){
 void blink(void* param){
 
   DDRB |= (1 << 6);
-  char s[50];
+  char s[100];
   TickType_t last = xTaskGetTickCount();    // needed or xTaskDelayUntil
   TickType_t current;
 
@@ -256,9 +259,11 @@ void blink(void* param){
 
     
     current = xTaskGetTickCount();
-    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n",(uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
+    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
+    
     print_debug(s);
-
+    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
+    print_debug(s);
     DEBUG_PORT &= ~(1 << DEBUG_BLINK);
 
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
@@ -432,9 +437,7 @@ void solenoid_task(void *param){
       buttonr_prev = buttonr;
     }
 
-    // TODO: implement starter flipper mechanism
-
-
+   
 
 
 
@@ -536,6 +539,7 @@ void update_score_task(void *param){
   last_r_button = buttonr;
 
   char score_s[10];
+  uint32_t last_score = 0;
 
   vTaskDelay(10);
 
@@ -605,8 +609,8 @@ void process_adc_task(void *param)
 
 
   adc_type temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
-  adc_type temp_targets[10];
-  adc_type base_level[4];
+  adc_type temp_targets[10] = {0};
+  adc_type base_level[4] = {0};
 
 
 
@@ -717,6 +721,7 @@ void process_adc_task(void *param)
         // set variable for ball in starter position
         starter_state = At_Starter;
         starter_delay_after_fired = 100;      // prepare variable to count down after ball was fired
+        print_debug("starter armed\n");
       }
       else{   // if ball already registered
         // this state could also involve that the solenoid just fired
@@ -751,10 +756,20 @@ void process_adc_task(void *param)
       // if starter_state == empty: everything is fine, ball is in game
     }
     // update base level to adapt to gradual light changes
-    base_level[0] = base_level[0] * COMP_FILTER_FACTOR + temp_targets[0] * (1 - COMP_FILTER_FACTOR);
+    base_level[0] = (adc_type)((float)base_level[0] * COMP_FILTER_FACTOR + (float)temp_targets[0] * (1.0 - COMP_FILTER_FACTOR));
+
+    // assign to temp_info to be printed at blink
+    temp_info[0] = temp_targets[0];
+    temp_info[1] = base_level[0];
 
 
+    // TODO: implement buttons
 
+    // TODO: implement wheel
+
+    // TODO: implement target
+
+    // TODO: implement slingshots
 
 
 

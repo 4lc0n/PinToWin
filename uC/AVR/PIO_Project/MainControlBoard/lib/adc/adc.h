@@ -55,7 +55,7 @@
 #define LDR_ROW2_MTRX 0x02
 
 
-#define COMP_FILTER_FACTOR (0.99f)
+#define COMP_FILTER_FACTOR (0.95f)
 #define STARTER_THRESHOLD (0.7f)
 
 
