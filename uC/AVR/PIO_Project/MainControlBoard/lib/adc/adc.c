@@ -12,9 +12,9 @@
 
 
 // structure for sampling structure
-int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX, CURRENTSENSE_1_MTRX, CURRENTSENSE_2_MTRX, CURRENTSENSE_3_MTRX};     // list for analog pins to sample 
-int16_t dpin[] = {-1, -1, -1, -1, -1};     // list of corresponding digial pins (used for LDR matrix)
-
+//                  temp sensor     temp sensor         current sensors                                                     // starter      // wheels                                       // slingshot    target center   slingshoht      // buttons      
+int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX, CURRENTSENSE_1_MTRX,    CURRENTSENSE_2_MTRX,    CURRENTSENSE_3_MTRX,    LDR_ROW0_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX};     // list for analog pins to sample 
+int16_t dpin[] = {-1,               -1,             -1,                     -1,                     -1,                     0,              1,              1,              1,              2,              2,              2,              3,              3,              4};                         // list of corresponding digial pins (used for LDR matrix)
 extern SemaphoreHandle_t xSemaphore_adc_complete;
 
 
@@ -66,13 +66,16 @@ void input_change(uint8_t step)
         switch(dpin[n_steps - step - 1])
         {
             case 0:
-                MATRIX_ROW0_PORT &= ~(1 << MATRIX_ROW0_P);
+                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
                 break;
             case 1:
-                MATRIX_ROW1_PORT &= ~(1 << MATRIX_ROW1_P);
+                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
                 break;
             case 2:
-                MATRIX_ROW2_PORT &= ~(1 << MATRIX_ROW2_P);
+                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+                break;
+            case 3:
+                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
                 break;
             default:
                 break;
@@ -82,13 +85,16 @@ void input_change(uint8_t step)
         switch(dpin[step - 1])
         {
             case 0:
-                MATRIX_ROW0_PORT &= ~(1 << MATRIX_ROW0_P);
+                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
                 break;
             case 1:
-                MATRIX_ROW1_PORT &= ~(1 << MATRIX_ROW1_P);
+                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
                 break;
             case 2:
-                MATRIX_ROW2_PORT &= ~(1 << MATRIX_ROW2_P);
+                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+                break;
+            case 3:
+                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
                 break;
             default:
                 break;
@@ -101,13 +107,16 @@ void input_change(uint8_t step)
         switch(dpin[step])
         {
             case 0:
-                MATRIX_ROW0_PORT |= (1 << MATRIX_ROW0_P);
+                MATRIX_COL0_DDR |= (1 << MATRIX_COL0_P);
                 break;
             case 1:
-                MATRIX_ROW1_PORT |= (1 << MATRIX_ROW1_P);
+                MATRIX_COL1_DDR |= (1 << MATRIX_COL1_P);
                 break;
             case 2:
-                MATRIX_ROW2_PORT |= (1 << MATRIX_ROW2_P);
+                MATRIX_COL2_DDR |= (1 << MATRIX_COL2_P);
+                break;
+            case 3:
+                MATRIX_COL3_DDR |= (1 << MATRIX_COL3_P);
                 break;
             default:
                 break;

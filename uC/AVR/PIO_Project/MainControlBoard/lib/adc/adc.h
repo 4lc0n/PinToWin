@@ -17,25 +17,46 @@
 #ifndef ADC_H
 #define ADC_H
 
-// #define ADC_8_BIT_RESOLUTION        // uncomment this line to get 8 bit resolution
+#include <stdint.h>
 
+// #define ADC_8_BIT_RESOLUTION        // uncomment this line to get 8 bit resolution
+#ifdef ADC_8_BIT_RESOLUTION
+    typedef uint8_t adc_type;
+    #define ADC_MAX 255
+    #define ADC_MAX_F (255.0f)
+#else
+    typedef uint16_t adc_type;
+    #define ADC_MAX 1023
+    #define ADC_MAX_F (1023.0f)
+#endif
+
+
+// temperature sensors
 #define TEMPSENS_L_MTRX 0x23
 #define TEMPSENS_R_MTRX 0x24
 
 #define TEMP_SENSE_R1 10000
-#define V_ADC_REF   5.0
+#define V_ADC_REF   (5.0f)
 
-#define THERMISTOR_B 3965.0f    //https://www.ametherm.com/thermistor/precision-interchangeable-thermistor
+#define THERMISTOR_B (3965.0f)    //https://www.ametherm.com/thermistor/precision-interchangeable-thermistor
 #define THERMISTOR_NOMINAL 10e3
-#define TEMPERATURE_NOMINAL 25.0f
+#define TEMPERATURE_NOMINAL (25.0f)
 
+// current sensors
 #define CURRENTSENSE_1_MTRX 0x25
 #define CURRENTSENSE_2_MTRX 0x26
 #define CURRENTSENSE_3_MTRX 0x27
 
-
 #define CURRENTSENSE_AMP_FACTOR 11
 
+// LDR matrix
+#define LDR_ROW0_MTRX 0x00
+#define LDR_ROW1_MTRX 0x01
+#define LDR_ROW2_MTRX 0x02
+
+
+#define COMP_FILTER_FACTOR (0.99f)
+#define STARTER_THRESHOLD (0.7f)
 
 
 #define ADC_SCAN_RATE 100           // adc scan rate 

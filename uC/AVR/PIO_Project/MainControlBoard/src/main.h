@@ -91,7 +91,7 @@
 
 #define DUTYCYCLE_TARGET 0.2        // target for solenoid duty cycle
 #define DUTYCYCLE_REDUCTION 0.5
-
+#define FULL_POWER_DURATION 6       // full power duration in multible of 50 ms
 
 
 #define TEMPERATURE_THRESHOLD   70
@@ -114,5 +114,10 @@
 #define DEBUG_BUTTONR   PA6
 
 
+// ----------------------------------
+//          Variable states
+// ----------------------------------
+
+enum starter_conditions{Empty = 0, At_Starter = 1, Fired = 2};
 
 #endif

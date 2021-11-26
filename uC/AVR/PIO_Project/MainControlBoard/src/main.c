@@ -10,8 +10,8 @@
  * @copyright Copyright (c) 2021
  * 
  * 
- * //TODO: tick rate to either 5 ms or 1 ms
- * //TODO: check for tick counter, which data format, to prevent overflow and unexpected behaviour
+ * 
+ *  // TODO: change score task to only send and check if it changed from last run
  * 
  */
 
@@ -60,6 +60,8 @@ uint32_t score = 0;
 float temperature_l = 0, temperature_r = 0;
 float current_1 = 0, current_2 = 0, current_3 = 0;                    //  starter flipper - left flipper - right flipper
 
+enum starter_conditions starter_state = Empty;
+uint8_t starter_delay_after_fired = 0;
 
 extern float lead_notes[], lead_times[];
 // ##############################################
@@ -300,8 +302,59 @@ void solenoid_task(void *param){
 
   while(1)
   {
-    
+    // delay on begin of while loop, so on continue, the delay and yield to another task is executed
+    xTaskDelayUntil(&lastTick, 50 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
+                                                              // delays of up to 100 ms feel 'natural'
+
+
     DEBUG_PORT |= (1 << DEBUG_SOLENOID);
+
+
+    // check if ball is at starter position
+    if(starter_state == At_Starter){
+
+      // to start the game: press both buttons simultaneous
+      if(buttonl && buttonr)
+      {
+        // fire solenoid
+        FLIPPER_START_OCR = PWM_RANGE;    // at full power
+
+        // update starter variable
+        starter_state = Fired;
+
+        // shut off other solenoids
+
+        FLIPPER_L_OCR = 0;
+        FLIPPER_R_OCR = 0;
+      }
+      
+      // if not both buttons pressed: 
+      // nothing to do
+      // continue, don't fire flipper solenoids
+      // because otherwise all solenoids will be fired and
+      // probably the current protection or current limit of the 
+      // power supply is reached
+      continue;
+
+    }
+    else if(starter_state == Fired)
+    {
+      // this state should show up ideally around 20 times: 
+      // check if starter_delay_after_fired is below 50: 500 ms have passed (adc task reduces it by 1 every 10 ms)
+      if(starter_delay_after_fired < 50)
+      {
+        // shut down starter solenoid
+        FLIPPER_START_OCR = 0;
+
+      }
+      else{
+        // if starter flipper still fired: 
+        // continue and don't fire other solenoids, 
+        // because with both buttons pressed, turrend protection of 
+        // power supply will probably trigger
+        continue;
+      }
+    }
 
     if(buttonl){
 
@@ -311,7 +364,7 @@ void solenoid_task(void *param){
         FLIPPER_L_OCR = PWM_RANGE;
         
         buttonl_prev = buttonl;
-        full_power_l = 10;
+        full_power_l = FULL_POWER_DURATION;
       }
 
       else{ 
@@ -319,13 +372,15 @@ void solenoid_task(void *param){
         {
           full_power_l--;                 // reduce tick counter 
         }
-        else if(FLIPPER_L_OCR > PWM_RANGE * DUTYCYCLE_TARGET){    // if not on full power anymore
+        else {
+          if(FLIPPER_L_OCR > PWM_RANGE * DUTYCYCLE_TARGET){    // if not on full power anymore
           // gradually reduce duty cycle
           FLIPPER_L_OCR = (uint16_t)(FLIPPER_L_OCR * DUTYCYCLE_REDUCTION);
-        }
-        else{
-        // set solenoid left output to standard output: 
-        FLIPPER_L_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
+          }
+          else{
+          // set solenoid left output to standard output: 
+          FLIPPER_L_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
+          }
         }
         
       }
@@ -348,7 +403,7 @@ void solenoid_task(void *param){
         FLIPPER_R_OCR = PWM_RANGE;
         buttonr_prev = buttonr;
 
-        full_power_r = 10;
+        full_power_r = FULL_POWER_DURATION;
       }
 
       
@@ -378,10 +433,16 @@ void solenoid_task(void *param){
     }
 
     // TODO: implement starter flipper mechanism
+
+
+
+
+
+
+
     DEBUG_PORT &= ~(1 << DEBUG_SOLENOID);
 
-    xTaskDelayUntil(&lastTick, 30 / portTICK_PERIOD_MS);       // delay for 50 ms until next check
-                                                              // delays of up to 100 ms feel 'natural'
+    
     
   }
 }
@@ -490,7 +551,7 @@ void update_score_task(void *param){
       // print to uart0
       sprintf(score_s, "%lu\n", score);
 
-      // TODO: test this
+
       while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
       uart_puts(0, score_s);
 
@@ -542,11 +603,12 @@ void process_adc_task(void *param)
 
   TickType_t lastTick = xTaskGetTickCount();
 
-#ifdef ADC_8_BIT_RESOLUTION
-  uint8_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
-#else
-  uint16_t temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
-#endif
+
+  adc_type temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
+  adc_type temp_targets[10];
+  adc_type base_level[4];
+
+
 
   vTaskDelay(10);
 
@@ -562,7 +624,8 @@ void process_adc_task(void *param)
 
     DEBUG_PORT |= (1 << DEBUG_ADC);
 
-    // convert to temperature
+    // copy into local variables, in case calculation is interrupted and buffer gets
+    // overwritten
     if(pp_select == 0)
     {
       // left temp sensor
@@ -571,6 +634,9 @@ void process_adc_task(void *param)
       temp_curr1 = ping_buffer[2];
       temp_curr2 = ping_buffer[3];
       temp_curr3 = ping_buffer[4];
+      for(uint8_t i = 0; i < 10; i++){
+        temp_targets[i] = ping_buffer[5+i];
+      }
     }
     else{
       temp_datal = pong_buffer[0];
@@ -578,11 +644,16 @@ void process_adc_task(void *param)
       temp_curr1 = pong_buffer[2];
       temp_curr2 = pong_buffer[3];
       temp_curr3 = pong_buffer[4];
+      for(uint8_t i = 0; i < 10; i++){
+        temp_targets[i] = ping_buffer[5+i];
+      }
     }
+
+    // convert to temperature
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
     // calculate resistance of thermistor ( R2 in voltage divider)
-    float r2 = (1023.0 / (temp_datal+1))  - 1;     // (1023/ADC - 1) 
+    float r2 = (ADC_MAX_F/ (temp_datal+1))  - 1;     // (1023/ADC - 1) 
     r2 = TEMP_SENSE_R1 / r2;                 // 10K / (1023/ADC - 1)
 
     temperature_l = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
@@ -597,7 +668,7 @@ void process_adc_task(void *param)
     // https://learn.adafruit.com/thermistor/using-a-thermistor
 
     // calculate resistance of thermistor ( R1 in voltage divider)
-    r2 = (1023.0 / (temp_datar+1))  - 1;     // (1023/ADC - 1) 
+    r2 = (ADC_MAX_F/ (temp_datar+1))  - 1;     // (1023/ADC - 1) 
     r2 = TEMP_SENSE_R1 / r2;           // 10K / (1023/ADC - 1)
 
     temperature_r = r2 / THERMISTOR_NOMINAL;              // (R/Ro)
@@ -613,18 +684,78 @@ void process_adc_task(void *param)
 
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
-    current_1 = (1023.0 / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_2 = (1023.0 / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_3 = (1023.0 / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-
-
-
+    current_1 = (ADC_MAX_F / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_2 = (ADC_MAX_F / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_3 = (ADC_MAX_F / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
 
 
     // give semaphore for security task
     xSemaphoreGive(xSemaphore_safety);
 
+
+
     // evaluate matrix
+
+    // evaluate column by column
+    // column 0: starter 
+    // for starter: base level will be set as a slow moving average of the light
+    //    condition, wheneveer the light reading is below a threshold value, 
+    //    it is assumed the ball is there. 
+    //    as of the nature of the filter, the value will decrese over time, as 
+    //    the filter adapts to it, but the set variable till stays true
+    
+    // if light reading is significantly lower than base level and ball was not at starter beforehand
+    if(temp_targets[0] < STARTER_THRESHOLD * base_level[0])
+    {
+      // below threshold
+
+      if(starter_state == Empty){   // if ball was not there previously
+        // TODO: test this
+        // reset score
+        score = 0;
+        
+        // set variable for ball in starter position
+        starter_state = At_Starter;
+        starter_delay_after_fired = 100;      // prepare variable to count down after ball was fired
+      }
+      else{   // if ball already registered
+        // this state could also involve that the solenoid just fired
+        // and the pusher is blocking the light
+        // 
+        // do nothing
+        _NOP();
+      }
+    }
+    else
+    { // if at threshold
+      if(starter_state == Fired)
+      {
+        // if just fired recently
+        // reduce starter_delay_after_fired
+        // this will count down from 100, so at a 100 hz rate for 1 sec
+        // intention: if light condition stays the same for 1 sec, it is
+        // assumed, that the ball left the starting position successfully
+        // and pusher retracted (see starter implementation)
+        starter_delay_after_fired--;
+        if(starter_delay_after_fired == 0)
+        {
+          // reset starter state
+          starter_state = Empty;
+        }
+      }
+
+      // else: nothing to do
+      // if starter_state == At_Starter
+      // we do not need to do anything, as starting will be handled in solenoid task
+      
+      // if starter_state == empty: everything is fine, ball is in game
+    }
+    // update base level to adapt to gradual light changes
+    base_level[0] = base_level[0] * COMP_FILTER_FACTOR + temp_targets[0] * (1 - COMP_FILTER_FACTOR);
+
+
+
+
 
 
     DEBUG_PORT &= ~(1 << DEBUG_ADC);
