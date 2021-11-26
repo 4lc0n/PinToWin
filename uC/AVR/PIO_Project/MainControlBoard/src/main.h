@@ -51,22 +51,35 @@
 
 
 
-#define MATRIX_ROW0_P   PF0
-#define MATRIX_ROW0_DDR DDRF
+#define MATRIX_ROW0_P       PF0
+#define MATRIX_ROW0_DDR     DDRF
 #define MATRIX_ROW0_PORT    PORTF
 
-#define MATRIX_ROW1_P   PF1
-#define MATRIX_ROW1_DDR DDRF
+#define MATRIX_ROW1_P       PF1
+#define MATRIX_ROW1_DDR     DDRF
 #define MATRIX_ROW1_PORT    PORTF
 
-#define MATRIX_ROW2_P   PF2
-#define MATRIX_ROW2_DDR DDRF
+#define MATRIX_ROW2_P       PF2
+#define MATRIX_ROW2_DDR     DDRF
 #define MATRIX_ROW2_PORT    PORTF
 
+// TODO: check this
+// most leftern one
+#define MATRIX_COL0_P       PB7
+#define MATRIX_COL0_DDR     DDRB
+#define MATRIX_COL0_PORT    PORTB
 
+#define MATRIX_COL1_P       PB6
+#define MATRIX_COL1_DDR     DDRB
+#define MATRIX_COL1_PORT    PORTB  
 
-
-
+#define MATRIX_COL2_P       PB5
+#define MATRIX_COL2_DDR     DDRB
+#define MATRIX_COL2_PORT    PORTB
+//  most rightern one
+#define MATRIX_COL3_P       PB4
+#define MATRIX_COL3_DDR     DDRB
+#define MATRIX_COL3_PORT    PORTB
 
 
 // ----------------------------------

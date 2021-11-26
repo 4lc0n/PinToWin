@@ -782,11 +782,11 @@ void draw_welcome(void){
   
 
 
-  print_debug("========================================\n"); 
+  print_debug("\n\n========================================\n"); 
   print_debug("||            Main Control            ||\n");
   print_debug("||               Board                ||\n");
   print_debug("||------------------------------------||\n");
-  print_debug("||        Firmware: 2021-11-22        ||\n");
+  print_debug("||        Firmware: 2021-11-25        ||\n");
   print_debug("========================================\n");
  
   print_debug("UART0: initialized\n");_delay_ms(10);
