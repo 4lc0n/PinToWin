@@ -29,4 +29,20 @@ void set_led();
  * */
 void print_debug(const char *c);
 
+
+void draw_welcome(void);
+
+/** 
+ *  @brief: function to initialize inputs for button with ISR pin change * 
+ * */
+void setup_button_inputs(void);
+
+/**
+ *  @brief setup function to setup timers for pwm operation on solenoids
+ *  MAX value for PWM in OCR4x is set in PWM_RANGE
+ *  TIMER 4, pins PH3, PH4, PH5 
+ * 
+ * */
+void setup_pwm_outputs(void);
+
 #endif

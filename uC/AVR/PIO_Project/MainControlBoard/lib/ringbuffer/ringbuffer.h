@@ -15,7 +15,7 @@
 #include <avr/interrupt.h>
 
 
-#define BUFFER_SIZE 64
+#define BUFFER_SIZE 128
 
 
 typedef struct ring_buffer{
