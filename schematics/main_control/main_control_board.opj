@@ -1,6 +1,6 @@
 (ExpressProject "main_control_board"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/09/21]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/27/21]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
@@ -239,13 +239,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 734"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 749"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 752")
-        (Scroll "-321 0")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 767")
+        (Scroll "-321 -4")
         (Zoom "85")
         (Occurrence "/"))
       (Path
@@ -255,7 +255,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 767")
         (Scroll "-234 0")
         (Zoom "100")
         (Occurrence "/J14"))
@@ -266,9 +266,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
-        (Scroll "-333 -5")
-        (Zoom "83")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 767")
+        (Scroll "-321 -4")
+        (Zoom "85")
         (Occurrence "/P5"))
       (Path
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\MAIN_CONTROL\MAIN_CONTROL_BOARD.DSN")
@@ -277,7 +277,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 752")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 767")
         (Scroll "-234 0")
         (Zoom "100")
         (Occurrence "/P4"))

@@ -284,13 +284,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 829"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 639"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 847")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 868 24 657")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
@@ -300,8 +300,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 0 0 5 1674 24 847")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 0 0 5 868 24 657")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/m1"))
       (Path
@@ -311,8 +311,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 847")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 868 24 657")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/m1/col1"))
       (Path
@@ -322,8 +322,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 847")
-        (Scroll "-239 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 868 24 657")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/m1/col1/R-D1"))
       (Path

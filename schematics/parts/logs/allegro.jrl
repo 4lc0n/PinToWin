@@ -1,55 +1,49 @@
-\t (00:00:01) allegro 17.4 S017 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Thu Sep 30 11:33:57 2021
-\t (00:00:01)         Host=DESKTOP-QOSR346 User=markl Pid=10608 CPUs=8
-\t (00:00:01) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
-\t (00:00:01) 
-   (00:00:01) Loading axlcore.cxt 
-   (00:00:01) Searching for nsWare programs v2.65
-   (00:00:01) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
-   (00:00:01) 	NsWare programs must reside in this directory!
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function Find_Component_Routine redefined
-   (00:00:01) function AFn_formEnd redefined
-   (00:00:01) function AFn_formMessage redefined
-   (00:00:01) function AFn_formGroup redefined
-   (00:00:01) function AFn_formText redefined
-   (00:00:01) function AFn_formButton redefined
-   (00:00:01) function AFn_formChecklistItem redefined
-   (00:00:01) function AFn_formRealFillin redefined
-   (00:00:01) function AFn_formPop redefined
-   (00:00:01) function AFn_formThumbnail redefined
-   (00:00:01) function AFn_formOptionsString redefined
-   (00:00:01) function AFn_formSizeString redefined
-   (00:00:01) function AFn_formOptionalString redefined
-   (00:00:01) function _saveSelSet redefined
-   (00:00:01) function _restoreSelSet redefined
-   (00:00:01) function findAllOfType redefined
-   (00:00:01) function ashFindAllClines redefined
-   (00:00:01) function ashFindAllClinesegs redefined
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "SOD123_DIO"
-\d (00:00:04) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/SOD123_DIO.dra
-   (00:00:04) Loading skillExt.cxt 
-\t (00:00:04) Grids are drawn 0.0400, 0.0400 apart for enhanced viewing.
-\i (00:00:04) trapsize 398
-\i (00:00:04) trapsize 417
-\i (00:00:04) trapsize 398
-\i (00:00:04) trapsize 365
-\t (00:00:04) Grids are drawn 0.0400, 0.0400 apart for enhanced viewing.
-\i (00:00:04) trapsize 376
-\i (00:00:05) etchedit 
-\i (00:00:06) open 
-\i (00:00:18) fillin "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro/sensor_board_routing.brd"
-\i (00:00:18) cd "C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/sensor_matrix/allegro"
-\t (00:00:18) Opening existing design...
-\i (00:00:19) fillin yes 
-\t (00:00:19) Grids are drawn 1.0000, 1.0000 apart for enhanced viewing.
-\i (00:00:19) trapsize 8391
-\i (00:00:19) trapsize 8755
-\i (00:00:19) trapsize 8391
-\t (00:00:19) Grids are drawn 64.0000, 64.0000 apart for enhanced viewing.
-\t (00:00:19) Grids are drawn 1.0000, 1.0000 apart for enhanced viewing.
-\i (00:00:19) trapsize 10660
-\t (00:00:21) > Sending response DoneOpenBoard
-\t (00:00:21)     Journal end - Thu Sep 30 11:34:16 2021
+\t (00:00:00) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Nov 21 23:27:32 2021
+\t (00:00:00)         Host=DESKTOP-QOSR346 User=markl Pid=15112 CPUs=8
+\t (00:00:00) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe C:\Users\markl\Documents\Sem7\SmartSystems\PinToWin\schematics\parts\LDR1_NTE.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.65
+   (00:00:00) 	NsWare directory found: C:/Cadence/Company/pcb/skill/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function Find_Component_Routine redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+   (00:00:00) function _saveSelSet redefined
+   (00:00:00) function _restoreSelSet redefined
+   (00:00:00) function findAllOfType redefined
+   (00:00:00) function ashFindAllClines redefined
+   (00:00:00) function ashFindAllClinesegs redefined
+\t (00:00:00) Opening existing design...
+\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "LDR1_NTE"
+\d (00:00:00) Design opened: C:/Users/markl/Documents/Sem7/SmartSystems/PinToWin/schematics/parts/LDR1_NTE.dra
+   (00:00:00) Loading skillExt.cxt 
+\i (00:00:00) trapsize 5360
+\i (00:00:00) trapsize 5614
+\i (00:00:00) trapsize 5360
+\i (00:00:01) trapsize 5442
+\i (00:00:01) trapsize 5442
+\i (00:00:01) trapsize 3476
+\i (00:00:01) etchedit 
+\i (00:00:02) prepopup -5.769 18.069
+\i (00:00:04) pop dyn_option_select '@:@Show element' 
+\i (00:00:04) show element 
+\i (00:00:04) etchedit 
+\i (00:00:41) setwindow text
+\i (00:00:41) close
+\i (00:01:12) setwindow pcb
+\i (00:01:12) exit 
+\t (00:01:13)     Journal end - Sun Nov 21 23:28:45 2021
