@@ -238,6 +238,10 @@ void init_task(void *param){
   vTaskDelete(NULL);
 }
 
+
+// ##############################################
+// #               blink task                   #
+// ##############################################
 void blink(void* param){
 
   DDRB |= (1 << 6);
@@ -270,11 +274,9 @@ void blink(void* param){
   }
 }
 
-/**
- *  @brief task to control solenoids with PWM
- * 
- *  @param param: parameter pointer (unused)
- * */
+// ##############################################
+// #              solenoid task                 #
+// ##############################################
 /**
  *  @brief task to control solenoids with PWM
  * 
@@ -423,32 +425,20 @@ void solenoid_task(void *param){
         else{
         // set solenoid left output to standard output: 
         FLIPPER_R_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
-        }
-        
+        } 
       }
-      
-
     }
-    else{
-      
+    else{     
       FLIPPER_R_OCR = 0;
       buttonr_prev = buttonr;
     }
-
-   
-
-
-
-
-
     DEBUG_PORT &= ~(1 << DEBUG_SOLENOID);
-
-    
-    
   }
 }
 
-
+// ##############################################
+// #               button l                     #
+// ##############################################
 /**
  *  @brief task to ckeck button state after a debounce interval
  * 
@@ -486,6 +476,9 @@ void check_input_l_task(void *param)
   }
 
 }
+// ##############################################
+// #               button r                     #
+// ##############################################
 /**
  *  @brief task to ckeck button state after a debounce interval
  * 
@@ -522,7 +515,9 @@ void check_input_r_task(void *param)
   }
 }
 
-
+// ##############################################
+// #              score task                    #
+// ##############################################
 /**
  *  @brief Task to update the score board and send via UART0
  * 
@@ -581,6 +576,10 @@ void update_score_task(void *param){
 
 }
 
+
+// ##############################################
+// #               adc task                     #
+// ##############################################
 /**
  * @brief Task to process adc sampled data in ping pong buffer
  * will execute every time one scan is complete. from here the next 
@@ -785,7 +784,9 @@ void process_adc_task(void *param)
   
 }
 
-
+// ##############################################
+// #              safety task                   #
+// ##############################################
 /**
  * @brief Task to manage safety features like temperature and current of solenoids
  * Will shut off the relay if solenoids get too hot
@@ -882,7 +883,9 @@ void safety_task(void *param){
 
 }
 
-
+// ##############################################
+// #             music task                     #
+// ##############################################
 void music_task(void *param)
 {
 
@@ -919,22 +922,7 @@ void music_task(void *param)
 
 
 
-/**
- * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
- * 
- */
-void setup_watchdog(void)
-{
-  cli();
-  wdt_reset();
-  // start timed sequence
-  WDTCSR |= (1 >> WDCE) | (1 << WDE);
 
-  // set new prescaler
-  WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP0);
-
-  sei();
-}
 
 
 

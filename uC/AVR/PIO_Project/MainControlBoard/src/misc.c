@@ -156,3 +156,21 @@ void setup_pwm_outputs(void)
   PWM_RANGE = ICR4;
 
 }
+
+
+/**
+ * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
+ * 
+ */
+void setup_watchdog(void)
+{
+  cli();
+  wdt_reset();
+  // start timed sequence
+  WDTCSR |= (1 >> WDCE) | (1 << WDE);
+
+  // set new prescaler
+  WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP0);
+
+  sei();
+}

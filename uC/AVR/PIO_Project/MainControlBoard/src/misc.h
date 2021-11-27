@@ -45,4 +45,11 @@ void setup_button_inputs(void);
  * */
 void setup_pwm_outputs(void);
 
+
+/**
+ * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
+ * 
+ */
+void setup_watchdog(void);
+
 #endif
