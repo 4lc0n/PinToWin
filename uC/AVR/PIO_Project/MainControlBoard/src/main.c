@@ -526,11 +526,8 @@ void update_score_task(void *param){
 
   TickType_t lastTick = xTaskGetTickCount();
 
-  // TODO: this is just for test purpose: remove when light sensors are implemented
-  uint8_t last_l_button, last_r_button;
-  last_l_button = buttonl;
-  last_r_button = buttonr;
 
+  uint8_t chars_written = 0;
   char score_s[10];
   uint32_t last_score = 0;
 
@@ -541,29 +538,19 @@ void update_score_task(void *param){
 
     DEBUG_PORT |= (1 << DEBUG_SCORE);
 
-    if(buttonl != last_l_button){
-      last_l_button = buttonl;
-      score += 10;
+    if(score != last_score){
 
-      // print to uart0
-      sprintf(score_s, "%lu\n", score);
+      // either a new target was hit, or score is reset to 0
+      // we will not check here, as it doesn't matter
 
+      // just update the UART output
+      chars_written = sprintf(score_s, "%lu\n", score);
 
-      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
+      // wait for the UART transmit buffer to have enough space available
+      // should never !! ever !! happen, as this is the only data transmitted!
+      while(uart_tx_buffer_state(0) < chars_written)  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
       uart_puts(0, score_s);
 
-    }
-
-    if(buttonr != last_r_button){
-      last_r_button = buttonr;
-      score += 10;
-
-      // print to uart0
-      sprintf(score_s, "%lu\n", score);
-
-      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
-
-      uart_puts(0, score_s);
     }
 
     DEBUG_PORT &= ~(1 << DEBUG_SCORE);
@@ -760,14 +747,77 @@ void process_adc_task(void *param)
     temp_info[1] = base_level[0];
 
 
-    // TODO: implement buttons
+    // === button targets === 
+    // if light reading is significantly higher than base level 
+    if(temp_targets[1] > (BUTTON_TARGET_THRESHOLD * base_level[1]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[1] = temp_targets[1];
 
-    // TODO: implement wheel
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[1] = (adc_type)((float)base_level[1] * COMP_FILTER_FACTOR + (float)temp_targets[1] * (1.0 - COMP_FILTER_FACTOR));
 
-    // TODO: implement target
+    if(temp_targets[2] > (BUTTON_TARGET_THRESHOLD * base_level[2]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[2] = temp_targets[2];
+
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[2] = (adc_type)((float)base_level[2] * COMP_FILTER_FACTOR + (float)temp_targets[2] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[3] > (BUTTON_TARGET_THRESHOLD * base_level[3]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[3] = temp_targets[3];
+
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[3] = (adc_type)((float)base_level[3] * COMP_FILTER_FACTOR + (float)temp_targets[3] * (1.0 - COMP_FILTER_FACTOR));
+
+
+
+
+    // TODO: check numbering
+
+    
+    // ===  target at center of board ===
+    // if light reading is significantly lower than base level 
+    if(temp_targets[5] < TARGET_THRESHOLD * base_level[5])
+    {
+      // increase score
+      score += TARGET_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[5] = temp_targets[5];
+
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    
+    base_level[5] = (adc_type)((float)base_level[5] * COMP_FILTER_FACTOR + (float)temp_targets[5] * (1.0 - COMP_FILTER_FACTOR));
+
+
 
     // TODO: implement slingshots
-
+    // TODO: implement wheel
 
 
     DEBUG_PORT &= ~(1 << DEBUG_ADC);

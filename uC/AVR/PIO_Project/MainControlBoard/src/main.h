@@ -120,4 +120,11 @@
 
 enum starter_conditions{Empty = 0, At_Starter = 1, Fired = 2};
 
+
+// ----------------------------------
+//          score points
+// ----------------------------------
+#define TARGET_POINTS 10
+#define BUTTON_POINTS 20
+
 #endif

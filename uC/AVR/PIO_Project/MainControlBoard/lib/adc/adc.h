@@ -57,7 +57,8 @@
 
 #define COMP_FILTER_FACTOR (0.95f)
 #define STARTER_THRESHOLD (0.7f)
-
+#define TARGET_THRESHOLD (1.5f)
+#define BUTTON_TARGET_THRESHOLD (0.7f)
 
 #define ADC_SCAN_RATE 100           // adc scan rate 
 
