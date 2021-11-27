@@ -11,8 +11,9 @@
  * 
  * 
  * 
- *  // TODO: change score task to only send and check if it changed from last run
  *  // TODO: test starter mechanism
+ *  // TODO: check target pins and values in matrix
+ *  // TODO: check target mechanism on trigger: is timer necessary?
  */
 
 
@@ -606,7 +607,7 @@ void process_adc_task(void *param)
 
   while (1)
   {
-    // TODO: complete
+
     // wait for semaphore
     xSemaphoreTake(xSemaphore_adc_complete, portMAX_DELAY);
 
@@ -683,7 +684,7 @@ void process_adc_task(void *param)
 
 
     // evaluate matrix
-
+    
     // evaluate column by column
     // column 0: starter 
     // for starter: base level will be set as a slow moving average of the light
@@ -747,6 +748,10 @@ void process_adc_task(void *param)
     temp_info[1] = base_level[0];
 
 
+
+    // TODO: check numbering
+
+
     // === button targets === 
     // if light reading is significantly higher than base level 
     if(temp_targets[1] > (BUTTON_TARGET_THRESHOLD * base_level[1]))
@@ -794,7 +799,6 @@ void process_adc_task(void *param)
 
 
 
-    // TODO: check numbering
 
     
     // ===  target at center of board ===
@@ -816,7 +820,39 @@ void process_adc_task(void *param)
 
 
 
-    // TODO: implement slingshots
+
+    // ===  sling shot  ===
+    // if light reading is significantly lower than base level 
+    if(temp_targets[4] < SLINGSHOT_THRESHOLD * base_level[4])
+    {
+      // increase score
+      score += SLINGHSHOT_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[4] = temp_targets[4];
+
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[4] = (adc_type)((float)base_level[4] * COMP_FILTER_FACTOR + (float)temp_targets[4] * (1.0 - COMP_FILTER_FACTOR));
+
+    // if light reading is significantly lower than base level 
+    if(temp_targets[6] < SLINGSHOT_THRESHOLD * base_level[6])
+    {
+      // increase score
+      score += SLINGHSHOT_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[6] = temp_targets[6];
+
+      // TODO: test above
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[6] = (adc_type)((float)base_level[6] * COMP_FILTER_FACTOR + (float)temp_targets[6] * (1.0 - COMP_FILTER_FACTOR));
+
+
     // TODO: implement wheel
 
 
