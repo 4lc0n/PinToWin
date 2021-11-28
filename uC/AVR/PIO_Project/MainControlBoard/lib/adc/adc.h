@@ -61,7 +61,7 @@
 #define TARGET_THRESHOLD (0.7f)
 #define BUTTON_TARGET_THRESHOLD (1.5f)
 #define SLINGSHOT_THRESHOLD (0.8f)
-#define WHEEL_THRESHOLD (0.86f)
+#define WHEEL_THRESHOLD (0.9f)
 
 #define ADC_SCAN_RATE 100           // adc scan rate 
 
