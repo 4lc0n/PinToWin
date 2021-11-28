@@ -172,15 +172,7 @@ void init_task(void *param){
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
-  print_debug("create solenoid task... ");
-  xTaskCreate(
-    solenoid_task
-    ,  "Solenoid" // A name just for humans
-    ,  128  // Stack size
-    ,  NULL //Parameters for the task
-    ,  1  // Priority
-    ,  NULL ); //Task Handle
-  print_debug("OK\n");
+
 
   print_debug("create button input handler task right... ");
   xTaskCreate(
@@ -206,7 +198,18 @@ void init_task(void *param){
   xTaskCreate(
     check_input_rpi_task
     ,  "RPI_input" // A name just for humans
-    ,  64  // Stack size
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  // moved back after check_input_tasks
+  print_debug("create solenoid task... ");
+  xTaskCreate(
+    solenoid_task
+    ,  "Solenoid" // A name just for humans
+    ,  128  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
     ,  NULL ); //Task Handle
@@ -281,12 +284,12 @@ void blink(void* param){
     current = xTaskGetTickCount();
     sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
     print_debug(s);
-    // sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
-    // print_debug(s);
+    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[5], temp_info[15]);
+    print_debug(s);
 
     // raw readings
-    // sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
-    // print_debug(s);
+    sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
+    print_debug(s);
 
 
     #
@@ -553,7 +556,7 @@ void check_input_rpi_task(void *param)
     xSemaphoreTake(xSemaphore_rpi_button, portMAX_DELAY);
 
     buttonr = !(RPI_R_PIN & (1 << RPI_R_P));   // inverse signal, as active low!
-    buttonr = !(RPI_L_PIN & (1 << RPI_L_P));   //
+    buttonl = !(RPI_L_PIN & (1 << RPI_L_P));   //
 
   }
 }
@@ -891,14 +894,13 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[5] = temp_targets[5];
 
-      // TODO: test above
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
     
     base_level[5] = (adc_type)((float)base_level[5] * COMP_FILTER_FACTOR + (float)temp_targets[5] * (1.0 - COMP_FILTER_FACTOR));
 
-  
+    temp_info[15] = base_level[5];
 
 
 
@@ -912,7 +914,6 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[4] = temp_targets[4];
 
-      // TODO: test above
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
@@ -927,7 +928,6 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[6] = temp_targets[6];
 
-      // TODO: test above
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
@@ -936,7 +936,7 @@ void process_adc_task(void *param)
 
 
 
-    // TODO: === Wheel target ===
+    //  === Wheel target ===
     // if light reading is significantly higher than base level 
     if(temp_targets[7] < (WHEEL_THRESHOLD * base_level[7]))
     {
@@ -1181,5 +1181,5 @@ ISR(PCINT2_vect){
   // this is just a mirrow of ISR(PCINT1_vect), but no hardware debouncing 
   // is required, as none is expected from the RPI
 
-  xSemaphoreGiveFromISR(xSemaphore_r_button, NULL);
+  xSemaphoreGiveFromISR(xSemaphore_rpi_button, NULL);
 }

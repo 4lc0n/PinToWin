@@ -129,8 +129,8 @@ void setup_button_inputs(void){
   RPI_R_PORT &= ~(1 << RPI_R_P);
 
   // enable internal pullup (around 35k)
-  RPI_L_DDR |= (1 << RPI_L_P);
-  RPI_L_PORT |= (1 << RPI_L_P);
+  RPI_L_DDR &= ~(1 << RPI_L_P);
+  RPI_L_PORT &= ~(1 << RPI_L_P);
 
   // enable interrupt pins 16 - 23
   PCICR |= (1 << PCIE2);
