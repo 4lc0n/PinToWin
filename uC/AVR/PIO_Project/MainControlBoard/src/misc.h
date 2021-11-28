@@ -37,6 +37,11 @@ void draw_welcome(void);
  * */
 void setup_button_inputs(void);
 
+/** 
+ *  @brief: function to initialize outputs for matrix column selection * 
+ * */
+void setup_matrix_outputs(void);
+
 /**
  *  @brief setup function to setup timers for pwm operation on solenoids
  *  MAX value for PWM in OCR4x is set in PWM_RANGE

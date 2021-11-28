@@ -127,5 +127,5 @@ enum starter_conditions{Empty = 0, At_Starter = 1, Fired = 2};
 #define TARGET_POINTS 10
 #define BUTTON_POINTS 20
 #define SLINGHSHOT_POINTS 25
-
+#define WHEEL_POINTS 10
 #endif

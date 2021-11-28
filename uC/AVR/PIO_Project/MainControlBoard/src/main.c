@@ -11,8 +11,8 @@
  * 
  * 
  * 
- *  // TODO: test starter mechanism
- *  // TODO: check target pins and values in matrix
+
+
  *  // TODO: check target mechanism on trigger: is timer necessary?
  */
 
@@ -67,7 +67,7 @@ uint8_t starter_delay_after_fired = 0;
 extern float lead_notes[], lead_times[];
 
 
-adc_type temp_info[10];
+adc_type temp_info[20];
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
@@ -147,7 +147,7 @@ void init_task(void *param){
   DEBUG_PORT = 0;
 
   draw_welcome(); 
-  clear_led();
+
 
   setup_pwm_outputs();
   print_debug("PWM module: initialized\n");
@@ -261,11 +261,14 @@ void blink(void* param){
 
     
     current = xTaskGetTickCount();
-    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
-    
+    // sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
+    // print_debug(s);
+    // sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
+    // print_debug(s);
+
+    sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
     print_debug(s);
-    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
-    print_debug(s);
+
     DEBUG_PORT &= ~(1 << DEBUG_BLINK);
 
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
@@ -545,6 +548,8 @@ void update_score_task(void *param){
       while(uart_tx_buffer_state(0) < chars_written)  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
       uart_puts(0, score_s);
 
+      last_score = score;
+
     }
 
     DEBUG_PORT &= ~(1 << DEBUG_SCORE);
@@ -570,6 +575,10 @@ void update_score_task(void *param){
  */
 void process_adc_task(void *param)
 {
+
+  setup_matrix_outputs();
+
+
   xSemaphore_safety = xSemaphoreCreateBinary();
   if(xSemaphore_safety == NULL){
     // failed to create semaphore: 
@@ -588,8 +597,22 @@ void process_adc_task(void *param)
 
   adc_type temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
   adc_type temp_targets[10] = {0};
-  adc_type base_level[4] = {0};
+  adc_type base_level[10] = {0};
 
+
+  // in temp_targets: 
+  // 0: starter
+  // 1: button r
+  // 2: button m
+  // 3: button l
+  
+  // 4: slingshot r
+  // 5: target center
+  // 6: slingshot l
+
+  // 7: wheel r
+  // 8: wheel m
+  // 9: wheel l
 
 
   vTaskDelay(10);
@@ -621,7 +644,7 @@ void process_adc_task(void *param)
       }
     }
     else{
-      temp_datal = pong_buffer[0];
+      temp_datal = pong_buffer[0];    
       temp_datar = pong_buffer[1];
       temp_curr1 = pong_buffer[2];
       temp_curr2 = pong_buffer[3];
@@ -629,6 +652,14 @@ void process_adc_task(void *param)
       for(uint8_t i = 0; i < 10; i++){
         temp_targets[i] = ping_buffer[5+i];
       }
+    }
+    temp_info[0] = temp_datal;
+    temp_info[1] = temp_datar;
+    temp_info[2] = temp_curr1;
+    temp_info[3] = temp_curr2;
+    temp_info[4] = temp_curr3;
+    for(uint8_t i = 0; i < 10; i++){
+      temp_info[5 + i] = temp_targets[i];
     }
 
     // convert to temperature
@@ -737,12 +768,8 @@ void process_adc_task(void *param)
     base_level[0] = (adc_type)((float)base_level[0] * COMP_FILTER_FACTOR + (float)temp_targets[0] * (1.0 - COMP_FILTER_FACTOR));
 
     // assign to temp_info to be printed at blink
-    temp_info[0] = temp_targets[0];
-    temp_info[1] = base_level[0];
+    
 
-
-
-    // TODO: check numbering
 
 
     // === button targets === 
@@ -755,7 +782,7 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[1] = temp_targets[1];
 
-      // TODO: test above
+
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
@@ -769,7 +796,7 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[2] = temp_targets[2];
 
-      // TODO: test above
+
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
@@ -783,15 +810,13 @@ void process_adc_task(void *param)
       // adjust base_level to match current value, so no further trigger will be generated
       base_level[3] = temp_targets[3];
 
-      // TODO: test above
       // if not working: set a timer with last score given for this target
       // if difference greater than e.g. 300 ms: give score, set timer to current time
     }
     base_level[3] = (adc_type)((float)base_level[3] * COMP_FILTER_FACTOR + (float)temp_targets[3] * (1.0 - COMP_FILTER_FACTOR));
 
 
-
-
+  
 
     
     // ===  target at center of board ===
@@ -811,6 +836,7 @@ void process_adc_task(void *param)
     
     base_level[5] = (adc_type)((float)base_level[5] * COMP_FILTER_FACTOR + (float)temp_targets[5] * (1.0 - COMP_FILTER_FACTOR));
 
+  
 
 
 
@@ -846,7 +872,50 @@ void process_adc_task(void *param)
     base_level[6] = (adc_type)((float)base_level[6] * COMP_FILTER_FACTOR + (float)temp_targets[6] * (1.0 - COMP_FILTER_FACTOR));
 
 
-    // TODO: implement wheel
+
+
+    // TODO: === Wheel target ===
+    // if light reading is significantly higher than base level 
+    if(temp_targets[7] < (WHEEL_THRESHOLD * base_level[7]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[7] = temp_targets[7];
+
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[7] = (adc_type)((float)base_level[7] * COMP_FILTER_FACTOR + (float)temp_targets[7] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[8] < (WHEEL_THRESHOLD * base_level[8]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[8] = temp_targets[8];
+
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[8] = (adc_type)((float)base_level[8] * COMP_FILTER_FACTOR + (float)temp_targets[8] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[9] < (WHEEL_THRESHOLD * base_level[9]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[9] = temp_targets[9];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[9] = (adc_type)((float)base_level[9] * COMP_FILTER_FACTOR + (float)temp_targets[9] * (1.0 - COMP_FILTER_FACTOR));
 
 
     DEBUG_PORT &= ~(1 << DEBUG_ADC);

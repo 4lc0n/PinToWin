@@ -24,11 +24,11 @@ extern uint16_t PWM_RANGE;
  * */
 void toggle_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB ^= (1 << PB7);
+    // PORTB ^= (1 << PB7);
 }
 /**
  *  @brief set LED on PB7
@@ -36,11 +36,11 @@ void toggle_led()
  * */
 void set_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB |= (1 << PB7);
+    // PORTB |= (1 << PB7);
 }
 /**
  *  @brief clear LED on PB7
@@ -48,11 +48,11 @@ void set_led()
  * */
 void clear_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB &= ~(1 << PB7);
+    // PORTB &= ~(1 << PB7);
 }
 
 
@@ -124,6 +124,24 @@ void setup_button_inputs(void){
   BUTTON_GND_PORT &= ~(1 << BUTTON_GND_P);
 }
 
+
+/** 
+ *  @brief: function to initialize outputs for matrix column selection * 
+ * */
+void setup_matrix_outputs(void){
+  MATRIX_COL0_DDR |= (1 << MATRIX_COL0_P);
+  MATRIX_COL1_DDR |= (1 << MATRIX_COL1_P);
+  MATRIX_COL2_DDR |= (1 << MATRIX_COL2_P);
+  MATRIX_COL3_DDR |= (1 << MATRIX_COL3_P);
+
+  MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
+  MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
+  MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+  MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
+
+  
+  
+}
 
 
 /**
