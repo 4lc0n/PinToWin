@@ -252,7 +252,6 @@ void blink(void* param){
 
     DEBUG_PORT |= (1 << DEBUG_BLINK);
 
-    PORTB ^= (1 << PB6);
     
 
     
@@ -472,8 +471,6 @@ void check_input_l_task(void *param)
     xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
 
 
-
-
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
@@ -481,8 +478,6 @@ void check_input_l_task(void *param)
     buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
 
  
-
-
   }
 
 }
