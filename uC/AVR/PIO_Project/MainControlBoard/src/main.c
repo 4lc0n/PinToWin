@@ -63,8 +63,11 @@ float current_1 = 0, current_2 = 0, current_3 = 0;                    //  starte
 
 enum starter_conditions starter_state = Empty;
 uint8_t starter_delay_after_fired = 0;
+uint8_t game_running = 0;         
+
 
 extern float lead_notes[], lead_times[];
+
 
 
 adc_type temp_info[20];
@@ -261,14 +264,17 @@ void blink(void* param){
 
     
     current = xTaskGetTickCount();
-    // sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
-    // print_debug(s);
+    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
+    print_debug(s);
     // sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
     // print_debug(s);
 
-    sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
-    print_debug(s);
+    // raw readings
+    // sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
+    // print_debug(s);
 
+
+    #
     DEBUG_PORT &= ~(1 << DEBUG_BLINK);
 
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
@@ -535,7 +541,7 @@ void update_score_task(void *param){
 
     DEBUG_PORT |= (1 << DEBUG_SCORE);
 
-    if(score != last_score){
+    if(score != last_score && game_running){
 
       // either a new target was hit, or score is reset to 0
       // we will not check here, as it doesn't matter
@@ -550,6 +556,13 @@ void update_score_task(void *param){
 
       last_score = score;
 
+    }
+    else{
+      if(!game_running)
+      {
+        // game not started, set score to 0 as long as this variable is false
+        score = 0;
+      }
     }
 
     DEBUG_PORT &= ~(1 << DEBUG_SCORE);
@@ -697,10 +710,14 @@ void process_adc_task(void *param)
 
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
-    current_1 = (ADC_MAX_F / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_2 = (ADC_MAX_F / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_3 = (ADC_MAX_F / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_1 = ( (temp_curr1+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_1 = current_1  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
 
+    current_2 = ((temp_curr2+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_2 = current_2  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
+
+    current_3 = ((temp_curr3+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_3 = current_3  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
 
     // give semaphore for security task
     xSemaphoreGive(xSemaphore_safety);
@@ -751,10 +768,15 @@ void process_adc_task(void *param)
         // assumed, that the ball left the starting position successfully
         // and pusher retracted (see starter implementation)
         starter_delay_after_fired--;
+
+        // if starter is fired, set the game_running to true to start counting score
+        game_running = 1;
+
         if(starter_delay_after_fired == 0)
         {
           // reset starter state
           starter_state = Empty;
+          score = 0;
         }
       }
 
@@ -955,7 +977,7 @@ void safety_task(void *param){
   const char wrn_high_t[] = "ERR: high temperature\n";
   const char wrn_timeout[] = "WRN: cannot get semaphore\n";
 
-  vTaskDelay(30);   // delay for 50 ticks to let the system start up
+  vTaskDelay(1000 / portTICK_PERIOD_MS);   // delay for 50 ticks to let the system start up
 
   while(1)
   {
