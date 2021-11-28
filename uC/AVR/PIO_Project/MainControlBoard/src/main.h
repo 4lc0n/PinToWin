@@ -23,6 +23,17 @@
 #define BUTTON_GND_PORT PORTH
 #define BUTTON_GND_P    PH1
 
+#define RPI_L_DDR       DDRK
+#define RPI_L_PORT      PORTK
+#define RPI_L_PIN       PINK
+#define RPI_L_P         PK0
+#define RPI_L_INT       PCINT16
+
+#define RPI_R_DDR       DDRK
+#define RPI_R_PORT      PORTK
+#define RPI_R_PIN       PINK
+#define RPI_R_P         PK1
+#define RPI_R_INT       PCINT17
 
 
 #define RELAY_DDR       DDRF

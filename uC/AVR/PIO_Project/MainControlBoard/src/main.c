@@ -74,12 +74,13 @@ adc_type temp_info[20];
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
-SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button;
+SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button, xSemaphore_rpi_button;
 
 SemaphoreHandle_t xSemaphore_adc_complete;
 
 SemaphoreHandle_t xSemaphore_safety;
 SemaphoreHandle_t xSemaphore_targets;
+
 
 // ##############################################
 // #            global tasks                    #
@@ -92,6 +93,8 @@ void solenoid_task(void *param);
 void check_input_l_task(void *param);
 void check_input_r_task(void *param);
 
+void check_input_rpi_task(void *param);
+
 void update_score_task(void *param);
 
 void process_adc_task(void *param);
@@ -99,6 +102,8 @@ void process_adc_task(void *param);
 void safety_task(void *param);
 
 void music_task(void *param);
+
+
 
 // ##############################################
 // #            global functions                #
@@ -192,6 +197,16 @@ void init_task(void *param){
     check_input_l_task
     ,  "Button_l" // A name just for humans
     ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  print_debug("create button rpi handler task... ");
+  xTaskCreate(
+    check_input_rpi_task
+    ,  "RPI_input" // A name just for humans
+    ,  64  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
     ,  NULL ); //Task Handle
@@ -514,6 +529,31 @@ void check_input_r_task(void *param)
     // read button state:
     buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
 
+
+  }
+}
+
+/**
+ * @brief Task to ckeck button state on the RPi input lines
+ * 
+ * @param param 
+ */
+void check_input_rpi_task(void *param)
+{
+
+  xSemaphore_rpi_button = xSemaphoreCreateBinary();
+  if( xSemaphore_rpi_button == NULL){
+    // failed to create semaphore!
+    print_debug("failed to create semaphore in ckeck_input_rpi_task\n");
+    while(1);
+  }
+
+  while(1)
+  {
+    xSemaphoreTake(xSemaphore_rpi_button, portMAX_DELAY);
+
+    buttonr = !(RPI_R_PIN & (1 << RPI_R_P));   // inverse signal, as active low!
+    buttonr = !(RPI_L_PIN & (1 << RPI_L_P));   //
 
   }
 }
@@ -1137,3 +1177,9 @@ ISR(PCINT1_vect){
 }
 
 
+ISR(PCINT2_vect){
+  // this is just a mirrow of ISR(PCINT1_vect), but no hardware debouncing 
+  // is required, as none is expected from the RPI
+
+  xSemaphoreGiveFromISR(xSemaphore_r_button, NULL);
+}

@@ -122,6 +122,22 @@ void setup_button_inputs(void){
   // activate GND pin for the button input
   BUTTON_GND_DDR |= (1 << BUTTON_GND_P);
   BUTTON_GND_PORT &= ~(1 << BUTTON_GND_P);
+
+
+  // do the same for RPI_L_P and RPI_R_P
+  RPI_R_DDR &= ~(1 << RPI_R_P);
+  RPI_R_PORT &= ~(1 << RPI_R_P);
+
+  // enable internal pullup (around 35k)
+  RPI_L_DDR |= (1 << RPI_L_P);
+  RPI_L_PORT |= (1 << RPI_L_P);
+
+  // enable interrupt pins 16 - 23
+  PCICR |= (1 << PCIE2);
+
+  // enable interrupt mask
+  PCMSK2 |= (1 << RPI_L_INT) | (1 << RPI_R_INT);
+
 }
 
 
