@@ -51,7 +51,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
 {
     uint16_t ubrr;
 
-    if(uart_if > 3){
+    if(uart_if > (N_UARTS-1)){
         return 0;                         // uart > 3 doesn't exist!
     }
     
@@ -147,7 +147,7 @@ uint8_t uart_init(uint8_t uart_if, uint32_t baudrate)
  * */
 uint8_t uart_tx_buffer_state(uint8_t uart_if)
 {
-    if(uart_if > 3){
+    if(uart_if > (N_UARTS-1)){
         return 0;                         // uart > 3 doesn't exist!
     }
     
@@ -166,7 +166,7 @@ uint8_t uart_tx_buffer_state(uint8_t uart_if)
 void uart_puts(uint8_t uart_if, char* s)
 {
 
-    if(uart_if > 3){
+    if(uart_if > (N_UARTS-1)){
         return;                         // uart > 3 doesn't exist!
     }
     
@@ -193,7 +193,7 @@ void uart_puts(uint8_t uart_if, char* s)
  * */
 void uart_putc(uint8_t uart_if, char c)
 {
-    if(uart_if > 3){
+    if(uart_if > (N_UARTS-1)){
         return;                         // uart > 3 doesn't exist!
     }
     if(uarttx[uart_if].initialized == 0){    // check if already initialized
@@ -305,17 +305,17 @@ ISR(USART2_RX_vect){
 }
 
 
-ISR(USART3_TX_vect){
-    char c = rbuffer_read(&uarttx[3]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
-    if(c == 0){                             // if returns 0 (empty)
-        uarttx[3].transmitting = 0;         // stop transmitting flag
-        return; 
-    }
+// ISR(USART3_TX_vect){
+//     char c = rbuffer_read(&uarttx[3]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
+//     if(c == 0){                             // if returns 0 (empty)
+//         uarttx[3].transmitting = 0;         // stop transmitting flag
+//         return; 
+//     }
 
-    UDR3 = c;                               // else add new data
-}
+//     UDR3 = c;                               // else add new data
+// }
 
-ISR(USART3_RX_vect){
-    char c = UDR3;
-    rbuffer_write(&uartrx[3], c);           // store into buffer. do not check if full
-}
+// ISR(USART3_RX_vect){
+//     char c = UDR3;
+//     rbuffer_write(&uartrx[3], c);           // store into buffer. do not check if full
+// }

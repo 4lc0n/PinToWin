@@ -16,7 +16,7 @@
 
 
 #define DEFAULT_BAUD 119200
-
+#define N_UARTS 3       // 3 uarts avaliable: uart 0, 1, 2
 
 
 
