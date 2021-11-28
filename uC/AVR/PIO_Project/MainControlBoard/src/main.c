@@ -471,7 +471,7 @@ void check_input_l_task(void *param)
 
     xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
 
-    DEBUG_PORT |= (1 << DEBUG_BUTTONL);
+
 
 
     // debounce: wait until state is settled
@@ -480,7 +480,7 @@ void check_input_l_task(void *param)
     // read button state:
     buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
 
-    DEBUG_PORT &= ~(1 << DEBUG_BUTTONL);
+ 
 
 
   }
@@ -508,7 +508,6 @@ void check_input_r_task(void *param)
 
     xSemaphoreTake(xSemaphore_r_button, portMAX_DELAY);
 
-    DEBUG_PORT |= (1 << DEBUG_BUTTONR);
 
 
     // debounce: wait until state is settled
@@ -517,7 +516,6 @@ void check_input_r_task(void *param)
     // read button state:
     buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
 
-    DEBUG_PORT &= ~(1 << DEBUG_BUTTONR);
 
   }
 }

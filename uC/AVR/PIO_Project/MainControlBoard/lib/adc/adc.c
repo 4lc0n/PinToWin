@@ -179,6 +179,23 @@ ISR(ADC_vect)
     uint16_t data = ADC;
 #endif
 
+    DEBUG_PORT |= (1 << DEBUG_ADC_ISR);
+
+
+    // increase step
+    current_p++;
+
+    // if done with this scan: change buffer,
+
+    if(current_p == n_steps){
+        pp_select = !pp_select;
+        current_p = 0;
+    }
+
+    // set new pins now, so state can settle in
+    input_change(current_p);
+
+
     // read adc data
     if(pp_select)
     {
@@ -188,23 +205,17 @@ ISR(ADC_vect)
         pong_buffer[current_p] = data;
     }
 
-    // increase step
-    current_p++;
-
-    // if done with this scan: change buffer,
-    if(current_p == n_steps){
-        pp_select = !pp_select;
-        current_p = 0;
-    }
+    
     // give semaphore
     xSemaphoreGiveFromISR(xSemaphore_adc_complete, NULL);
 
 
-    // set new pins
-    input_change(current_p);
+
 
     // start new conversion only if not finished with this scan
     if(current_p != 0)
         adc_start();
+
+    DEBUG_PORT &= ~(1 << DEBUG_ADC_ISR);
 
 }

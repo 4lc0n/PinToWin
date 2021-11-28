@@ -22,6 +22,7 @@
 #include <avr/interrupt.h>
 
 #include "ringbuffer.h"
+#include "../../src/main.h"
 
 // ------------------------------------
 //          private variables
@@ -255,6 +256,7 @@ char uart_getChar(uint8_t uart_if){
 
 
 ISR(USART0_TX_vect){
+    DEBUG_PORT |= (1 << DEBUG_UART_ISR);
     char c = rbuffer_read(&uarttx[0]);      // read from buffer ( is approx. same speed as checking size + on not empty is faster than first checking )
     if(c == 0){                             // if returns 0 (empty)
         uarttx[0].transmitting = 0;         // stop transmitting flag
@@ -262,6 +264,7 @@ ISR(USART0_TX_vect){
     }
 
     UDR0 = c;                               // else add new data
+    DEBUG_PORT &= ~(1 << DEBUG_UART_ISR);
 }
 
 ISR(USART0_RX_vect){
