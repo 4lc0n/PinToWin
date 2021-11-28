@@ -68,6 +68,7 @@ extern float lead_notes[], lead_times[];
 
 
 adc_type temp_info[20];
+
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
@@ -261,10 +262,10 @@ void blink(void* param){
 
     
     current = xTaskGetTickCount();
-    // sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
-    // print_debug(s);
-    // sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
-    // print_debug(s);
+    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
+    print_debug(s);
+    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[5], temp_info[15]);
+    print_debug(s);
 
     sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
     print_debug(s);
@@ -697,9 +698,9 @@ void process_adc_task(void *param)
 
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
-    current_1 = (ADC_MAX_F / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_2 = (ADC_MAX_F / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_3 = (ADC_MAX_F / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_1 = ((temp_curr1+1) / ADC_MAX_F) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_2 = ((temp_curr2+1) / ADC_MAX_F) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_3 = ((temp_curr3+1) / ADC_MAX_F) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
 
 
     // give semaphore for security task
@@ -768,7 +769,7 @@ void process_adc_task(void *param)
     base_level[0] = (adc_type)((float)base_level[0] * COMP_FILTER_FACTOR + (float)temp_targets[0] * (1.0 - COMP_FILTER_FACTOR));
 
     // assign to temp_info to be printed at blink
-    
+    temp_info[15] = base_level[0];
 
 
 
