@@ -59,47 +59,14 @@ void adc_start()
 void input_change(uint8_t step)
 {
 
+    // disable all dpins
+    MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
+    MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
+    MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+    MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
 
 
-    // disable last dpin
-    if((int8_t)(step - 1) < 0){
-        switch(dpin[n_steps - step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
-    else{
-        switch(dpin[step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
+   
 
     // activate next pin
     if(dpin[step] != -1)
@@ -179,6 +146,23 @@ ISR(ADC_vect)
     uint16_t data = ADC;
 #endif
 
+    DEBUG_PORT |= (1 << DEBUG_ADC_ISR);
+
+
+    // increase step
+    current_p++;
+
+    // if done with this scan: change buffer,
+
+    if(current_p == n_steps){
+        pp_select = !pp_select;
+        current_p = 0;
+    }
+
+    // set new pins now, so state can settle in
+    input_change(current_p);
+
+
     // read adc data
     if(pp_select)
     {
@@ -188,23 +172,17 @@ ISR(ADC_vect)
         pong_buffer[current_p] = data;
     }
 
-    // increase step
-    current_p++;
-
-    // if done with this scan: change buffer,
-    if(current_p == n_steps){
-        pp_select = !pp_select;
-        current_p = 0;
-    }
+    
     // give semaphore
     xSemaphoreGiveFromISR(xSemaphore_adc_complete, NULL);
 
 
-    // set new pins
-    input_change(current_p);
+
 
     // start new conversion only if not finished with this scan
     if(current_p != 0)
         adc_start();
+
+    DEBUG_PORT &= ~(1 << DEBUG_ADC_ISR);
 
 }

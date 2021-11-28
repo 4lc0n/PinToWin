@@ -110,8 +110,8 @@
 #define DEBUG_ADC       PA2
 #define DEBUG_BLINK     PA3
 #define DEBUG_SCORE     PA4
-#define DEBUG_BUTTONL   PA5
-#define DEBUG_BUTTONR   PA6
+#define DEBUG_ADC_ISR   PA5
+#define DEBUG_UART_ISR  PA6
 
 
 // ----------------------------------
