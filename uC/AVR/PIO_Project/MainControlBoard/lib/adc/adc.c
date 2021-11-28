@@ -59,47 +59,14 @@ void adc_start()
 void input_change(uint8_t step)
 {
 
+    // disable all dpins
+    MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
+    MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
+    MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+    MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
 
 
-    // disable last dpin
-    if((int8_t)(step - 1) < 0){
-        switch(dpin[n_steps - step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
-    else{
-        switch(dpin[step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
+   
 
     // activate next pin
     if(dpin[step] != -1)
