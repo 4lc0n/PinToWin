@@ -1,0 +1,67 @@
+<!-- wp:image {"align":"center","id":5976,"width":552,"height":383,"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="http://dronesonen.usn.no/wp-content/uploads/2021/11/image-31-1024x712.png" alt="" class="wp-image-5976" width="552" height="383"/></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2>Jürgen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Okay. Let's do this. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I started this week off on Monday, tested some code on the machine, like temperature readings and the current reading to form the basis for the safety features, namely over-current protection and over-temperature protection. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Everything worked out fine, i had to browse the internet to find the correct calculations for the temperature sensor, as no data sheet was out there for the breakout board, but i stumbled across a tutorial, on which the calculations matched so i had a temperature reading of around 23°C, room temperature, instead of arctic -70°C. This worked fine and the current and temperature readings are to be outputed to the DEBUG UART port, UART1, as UART0 will be used to provide the score to the RPi. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>On Wednesday i continued with the implementation of the safety feature, i had some trouble, as some Semaphores didn't behave as intended and the system just over-run them instead of waiting until the Semaphore is given. But eventually it worked, i don't know why and at this point i'm too afraid to ask, but i'll just take it. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I also tested the score output with Petter, and it worked out just fine, after we adjusted his baud rate to my set 57600, which was a nice result mid-week. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>After this i began with tweaking the FreeRTOS kernel to run on TIMER0 instead of on the Watchdog timer, as this enables me to have the Watchdog timer as  backup to shut down the system if a error occurs. Also it gives me the flexibility to adjust the tick rate of FreeRTOS which was fixed to ~17 ms by the Watchdog timer. While digging in the port.c file, i realized that some changes were applied when compiling and running, while others were just ignored. The reason for this is, that appearently PlatformIO imported the FreeRTOS library two times. I didn't know why, but i just copied the changes to the other implementation too, and now the FreeRTOS tick rate is based on TIMER0 with a tick rate of 10ms as well as the Tick_type was changed to a 32bit integer to prevent overflow.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>As a sidequest i implemented a tone library, which is able to play the matrix melody by frequency-modulating a square wave to a output pin. It looks like it is working on the oscilloscope, i wasn't able to test it yet because the buzzer i picked was a active one, so it has an internal oscillator to generate a fixed tone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Also i did run a test on the processor load, where whenever a task is started, it will pull a pin to high, and thus indicates the processing time of the different tasks. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":5895,"width":704,"height":137,"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="http://dronesonen.usn.no/wp-content/uploads/2021/11/image-28-1024x201.png" alt="" class="wp-image-5895" width="704" height="137"/><figcaption>Result of processing time evaluation</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>I then worked on getting the starter mechanism to work, which involved one of the LDRs. To determine a decrese in brightness on the sensor, i have a base_level variable, which is continuously updated with 90% of the previous value and 10% of the new reading, thus creating a simple low pass filter. The newly read value is then compared with the base level. If below a threshold, it sets a variable and resets the score. To activate the starter solenoid after the variable is set, both buttons have to be pushed. The other solenoids are disabled during this process, to not exceed the current rating of the power supply.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Also a long time test was run over more than 6 hours, to determine if something fails, or i have a memory leak. It ran fine after 6h, so i concluded, it should be all right.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I then worked on getting the µC to recognise, when a target is hit. For this i simply converted the same code for the starter to the input channels of the target. For some i had to invert the logic, as they are active high.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Some other bugs appeared in the code, and then it was just time to get everything aligned, set some threshold values and implement a ISR for the connection with the RPi to fire the solenoids as well as notify the RPi, whenever the game is reset, using a additional pin.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I spent the rest of Monday cleaning up my schematics, added missing parts and generating the PDF as well as attaching labels to all connector on the main control board.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

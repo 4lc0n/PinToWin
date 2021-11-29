@@ -108,19 +108,23 @@
       (Sort User)))
   (Folder "Logs")
   (PartMRUSelector
-    (VCC_ARROW
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (VCC
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (0
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON1
+      (FullPartName "CON1.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (Q2N2222
       (FullPartName "Q2N2222.Normal")
@@ -210,11 +214,7 @@
       (FullPartName "LM324N.Normal")
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
-      (DeviceIndex "3"))
-    (IRF520
-      (FullPartName "IRF520.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0")))
+      (DeviceIndex "3")))
   (MPSSessionName "markl")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.4\tools\capture\library")
   (GlobalState
@@ -240,8 +240,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 799")
-        (Scroll "-298 -4")
+        (Placement "44 0 1 -1 -1 5 24 5 1376 24 799")
+        (Scroll "-149 -4")
         (Zoom "89")
         (Occurrence "/"))
       (Path
