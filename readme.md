@@ -33,18 +33,19 @@ Members:
 
 ### PinballSim-main/Pinball 
 Unity Simulation by Marcus
-
+---
 ### Concepts
 
 Drawings and test files used to sketch out parts of the projects
-
+---
 ### doc
 
 Documents regarding this project including documentation, data sheets and other application notes and reference sheets
-
+---
 ### schematics
 
 Schematics and other files related to this for the projects PCBs
+
 #### main control
 Board to controll solenoids, some light sensors and temperature sensors
 
@@ -56,14 +57,14 @@ KiCAD project for first draft of the solenoid driver, a low side mosfet with a p
 
 #### parts
 custom parts and footprints for OrCAD Cadence projects
-
+---
 ### simulations
 
 Simulations with LTSpice regarding some components like 
 * Solenoid Driver (Mosfet Driver)
 * Current Calculation on Solenoids
 
-
+---
 ### uC
 
 #### solenoid_driver
