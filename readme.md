@@ -39,23 +39,24 @@ Unity Simulation by Marcus
 Drawings and test files used to sketch out parts of the projects
 
 ### doc
-
+---
 Documents regarding this project including documentation, data sheets and other application notes and reference sheets
 
 ### schematics
+---
 
 Schematics and other files related to this for the projects PCBs
 
-* main control: 
+* main control:  
 Board to controll solenoids, some light sensors and temperature sensors
 
-* sensor matrix: 
+* sensor matrix:  
 Board with Light Dependent Resistors in a matrix
 
-* solenoid driver: 
+* solenoid driver:  
 KiCAD project for first draft of the solenoid driver, a low side mosfet with a push-pull driver circuit
 
-* parts
+* parts:  
 custom parts and footprints for OrCAD Cadence projects
 
 ### simulations
