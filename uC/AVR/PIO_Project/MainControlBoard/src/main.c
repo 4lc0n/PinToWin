@@ -784,11 +784,15 @@ void process_adc_task(void *param)
    
         // reset score
         score = 0;
+
+        // signal raspberry that game needs to be reset
+        RPI_RES_PORT |= (1 << RPI_RES_P);
         
         // set variable for ball in starter position
         starter_state = At_Starter;
         starter_delay_after_fired = 100;      // prepare variable to count down after ball was fired
-        print_debug("starter armed\n");
+        print_debug("Game over!\n\nstarter armed\n");
+
       }
       else{   // if ball already registered
         // this state could also involve that the solenoid just fired
@@ -812,6 +816,9 @@ void process_adc_task(void *param)
 
         // if starter is fired, set the game_running to true to start counting score
         game_running = 1;
+
+        // set output to low for raspberry: game running again
+        RPI_RES_PORT &= ~(1 << RPI_RES_P);
 
         if(starter_delay_after_fired == 0)
         {
@@ -1129,7 +1136,7 @@ void music_task(void *param)
 
 
 // ##############################################
-// #             music task                     #
+// #             ISR Routines                   #
 // ##############################################
 /**
  * @brief Interrupt Service Routine for Pin Change Interrupt 1

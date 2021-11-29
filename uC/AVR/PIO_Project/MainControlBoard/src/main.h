@@ -36,6 +36,10 @@
 #define RPI_R_INT       PCINT17
 
 
+#define RPI_RES_DDR     DDRK
+#define RPI_RES_PORT    PORTK
+#define RPI_RES_P       PK2
+
 #define RELAY_DDR       DDRF
 #define RELAY_PORT      PORTF
 #define RELAY_P         PF3
@@ -74,7 +78,7 @@
 #define MATRIX_ROW2_DDR     DDRF
 #define MATRIX_ROW2_PORT    PORTF
 
-// TODO: check this
+
 // most leftern one
 #define MATRIX_COL0_P       PB7
 #define MATRIX_COL0_DDR     DDRB
@@ -139,4 +143,6 @@ enum starter_conditions{Empty = 0, At_Starter = 1, Fired = 2};
 #define BUTTON_POINTS 20
 #define SLINGHSHOT_POINTS 25
 #define WHEEL_POINTS 10
+
+
 #endif
