@@ -108,11 +108,10 @@
       (Sort User)))
   (Folder "Logs")
   (PartMRUSelector
-    (CON2
-      (FullPartName "CON2.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
-      (DeviceIndex "0"))
     (VCC_ARROW
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (0
@@ -122,6 +121,15 @@
       (FullPartName "R.Normal")
       (LibraryName
          "C:\USERS\MARKL\DOCUMENTS\SEM7\SMARTSYSTEMS\PINTOWIN\SCHEMATICS\PRIVATE_LIB.OLB")
+      (DeviceIndex "0"))
+    (Q2N2222
+      (FullPartName "Q2N2222.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
       (DeviceIndex "0"))
     (NTC
       (FullPartName "NTC.Normal")
@@ -206,16 +214,6 @@
     (IRF520
       (FullPartName "IRF520.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
-      (DeviceIndex "0"))
-    (VPULSE
-      (FullPartName "VPULSE.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (L
-      (FullPartName "L.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0")))
   (MPSSessionName "markl")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.4\tools\capture\library")
@@ -230,7 +228,9 @@
       (Path "Design Resources"
          "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"
          "Design Cache")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\users\markl\documents\sem7\smartsystems\pintowin\schematics\main_control\main_control_board.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
