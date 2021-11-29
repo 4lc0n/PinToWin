@@ -23,6 +23,17 @@
 #define BUTTON_GND_PORT PORTH
 #define BUTTON_GND_P    PH1
 
+#define RPI_L_DDR       DDRK
+#define RPI_L_PORT      PORTK
+#define RPI_L_PIN       PINK
+#define RPI_L_P         PK0
+#define RPI_L_INT       PCINT16
+
+#define RPI_R_DDR       DDRK
+#define RPI_R_PORT      PORTK
+#define RPI_R_PIN       PINK
+#define RPI_R_P         PK1
+#define RPI_R_INT       PCINT17
 
 
 #define RELAY_DDR       DDRF
@@ -110,8 +121,8 @@
 #define DEBUG_ADC       PA2
 #define DEBUG_BLINK     PA3
 #define DEBUG_SCORE     PA4
-#define DEBUG_BUTTONL   PA5
-#define DEBUG_BUTTONR   PA6
+#define DEBUG_ADC_ISR   PA5
+#define DEBUG_UART_ISR  PA6
 
 
 // ----------------------------------
@@ -120,4 +131,12 @@
 
 enum starter_conditions{Empty = 0, At_Starter = 1, Fired = 2};
 
+
+// ----------------------------------
+//          score points
+// ----------------------------------
+#define TARGET_POINTS 10
+#define BUTTON_POINTS 20
+#define SLINGHSHOT_POINTS 25
+#define WHEEL_POINTS 10
 #endif

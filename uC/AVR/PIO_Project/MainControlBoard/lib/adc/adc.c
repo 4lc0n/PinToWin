@@ -14,19 +14,19 @@
 // structure for sampling structure
 //                  temp sensor     temp sensor         current sensors                                                     // starter      // wheels                                       // slingshot    target center   slingshoht      // buttons      
 int16_t amux[] = {TEMPSENS_L_MTRX, TEMPSENS_R_MTRX, CURRENTSENSE_1_MTRX,    CURRENTSENSE_2_MTRX,    CURRENTSENSE_3_MTRX,    LDR_ROW0_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX,  LDR_ROW0_MTRX,  LDR_ROW1_MTRX,  LDR_ROW2_MTRX};     // list for analog pins to sample 
-int16_t dpin[] = {-1,               -1,             -1,                     -1,                     -1,                     0,              1,              1,              1,              2,              2,              2,              3,              3,              4};                         // list of corresponding digial pins (used for LDR matrix)
+int16_t dpin[] = {-1,               -1,             -1,                     -1,                     -1,                     0,              1,              1,              1,              2,              2,              2,              3,              3,              3};                         // list of corresponding digial pins (used for LDR matrix)
 extern SemaphoreHandle_t xSemaphore_adc_complete;
 
 
 // const of nuber of conversions for 1 scan
-const uint8_t n_steps = sizeof(amux);
+#define N_STEPS (sizeof(amux) / sizeof(int16_t))
 
 #ifdef ADC_8_BIT_RESOLUTION
 // ping and pong buffer for conversion result (8 bit adjusted)
-volatile uint8_t ping_buffer[sizeof(amux)], pong_buffer[sizeof(amux)];      
+volatile uint8_t ping_buffer[N_STEPS], pong_buffer[N_STEPS];      
 #else
 // ping and pong buffer for conversion result (8 bit adjusted)
-volatile uint16_t ping_buffer[sizeof(amux)], pong_buffer[sizeof(amux)];      
+volatile uint16_t ping_buffer[N_STEPS], pong_buffer[N_STEPS];      
 #endif
 
 volatile uint8_t pp_select = 0;         // selector for ping or pong buffer: 0 = ping, 1 = pong
@@ -59,47 +59,14 @@ void adc_start()
 void input_change(uint8_t step)
 {
 
+    // disable all dpins
+    MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
+    MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
+    MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+    MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
 
 
-    // disable last dpin
-    if((int8_t)(step - 1) < 0){
-        switch(dpin[n_steps - step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
-    else{
-        switch(dpin[step - 1])
-        {
-            case 0:
-                MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
-                break;
-            case 1:
-                MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
-                break;
-            case 2:
-                MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
-                break;
-            case 3:
-                MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
-                break;
-            default:
-                break;
-        }
-    }
+   
 
     // activate next pin
     if(dpin[step] != -1)
@@ -179,32 +146,46 @@ ISR(ADC_vect)
     uint16_t data = ADC;
 #endif
 
-    // read adc data
-    if(pp_select)
-    {
-        ping_buffer[current_p] = data;
-    }
-    else{
-        pong_buffer[current_p] = data;
-    }
+    DEBUG_PORT |= (1 << DEBUG_ADC_ISR);
+
+    uint8_t sampled_p = current_p;      // as current_p will be increased prior so dpin could be switched
 
     // increase step
     current_p++;
 
     // if done with this scan: change buffer,
-    if(current_p == n_steps){
+
+    if(current_p == N_STEPS){
         pp_select = !pp_select;
         current_p = 0;
+
+        // give semaphore
+        xSemaphoreGiveFromISR(xSemaphore_adc_complete, NULL);
     }
-    // give semaphore
-    xSemaphoreGiveFromISR(xSemaphore_adc_complete, NULL);
 
-
-    // set new pins
+    // set new pins now, so state can settle in
     input_change(current_p);
+
+
+    // read adc data
+    if(pp_select)
+    {
+        ping_buffer[sampled_p] = data;
+    }
+    else{
+        pong_buffer[sampled_p] = data;
+    }
+
+    
+    
+
+
+
 
     // start new conversion only if not finished with this scan
     if(current_p != 0)
         adc_start();
+
+    DEBUG_PORT &= ~(1 << DEBUG_ADC_ISR);
 
 }

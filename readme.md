@@ -49,7 +49,9 @@ STM32CubeIDE for breadboard prototype of LDR matrix with a 4x4 matrix
 
 #### AVR
 contains FreeRTOS implementation on ATMega2560 (Arduino Mega). Main project lies in PlatformIO workspace, the Arduino_FreeRTOS port is used, as the native didn't feel like running
+
 Multi-Tasking firmware with custom drivers for ADC and UART for effective data throughput
+reads pins for sensors, targets, Raspberry Pi output, button input, etc. 
 
 ### schematics
 

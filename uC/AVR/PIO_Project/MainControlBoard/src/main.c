@@ -3,16 +3,15 @@
  *  
  * 
  * @author Juergen Markl
- * @brief Main file for main board controller (ATMega2560)
- * @version 0.1
- * @date 2021-11-20
+ * @brief Main file for main board controller (ATMega2560): controlls solenoids and button inputs and
+ * targets being hit, transferes score
+ * @version 1.0
+ * @date 2021-11-29
  * 
  * @copyright Copyright (c) 2021
  * 
  * 
  * 
- *  // TODO: change score task to only send and check if it changed from last run
- *  // TODO: test starter mechanism
  */
 
 
@@ -62,20 +61,24 @@ float current_1 = 0, current_2 = 0, current_3 = 0;                    //  starte
 
 enum starter_conditions starter_state = Empty;
 uint8_t starter_delay_after_fired = 0;
+uint8_t game_running = 0;         
+
 
 extern float lead_notes[], lead_times[];
 
 
-adc_type temp_info[10];
+
+adc_type temp_info[20];
 // ##############################################
 // #            FreeRTOS specifics              #
 // ##############################################
-SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button;
+SemaphoreHandle_t xSemaphore_r_button, xSemaphore_l_button, xSemaphore_rpi_button;
 
 SemaphoreHandle_t xSemaphore_adc_complete;
 
 SemaphoreHandle_t xSemaphore_safety;
 SemaphoreHandle_t xSemaphore_targets;
+
 
 // ##############################################
 // #            global tasks                    #
@@ -88,6 +91,8 @@ void solenoid_task(void *param);
 void check_input_l_task(void *param);
 void check_input_r_task(void *param);
 
+void check_input_rpi_task(void *param);
+
 void update_score_task(void *param);
 
 void process_adc_task(void *param);
@@ -95,6 +100,8 @@ void process_adc_task(void *param);
 void safety_task(void *param);
 
 void music_task(void *param);
+
+
 
 // ##############################################
 // #            global functions                #
@@ -146,7 +153,7 @@ void init_task(void *param){
   DEBUG_PORT = 0;
 
   draw_welcome(); 
-  clear_led();
+
 
   setup_pwm_outputs();
   print_debug("PWM module: initialized\n");
@@ -163,15 +170,7 @@ void init_task(void *param){
     ,  NULL ); //Task Handle
   print_debug("OK\n");
 
-  print_debug("create solenoid task... ");
-  xTaskCreate(
-    solenoid_task
-    ,  "Solenoid" // A name just for humans
-    ,  128  // Stack size
-    ,  NULL //Parameters for the task
-    ,  1  // Priority
-    ,  NULL ); //Task Handle
-  print_debug("OK\n");
+
 
   print_debug("create button input handler task right... ");
   xTaskCreate(
@@ -187,6 +186,27 @@ void init_task(void *param){
   xTaskCreate(
     check_input_l_task
     ,  "Button_l" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  print_debug("create button rpi handler task... ");
+  xTaskCreate(
+    check_input_rpi_task
+    ,  "RPI_input" // A name just for humans
+    ,  128  // Stack size
+    ,  NULL //Parameters for the task
+    ,  1  // Priority
+    ,  NULL ); //Task Handle
+  print_debug("OK\n");
+
+  // moved back after check_input_tasks
+  print_debug("create solenoid task... ");
+  xTaskCreate(
+    solenoid_task
+    ,  "Solenoid" // A name just for humans
     ,  128  // Stack size
     ,  NULL //Parameters for the task
     ,  1  // Priority
@@ -238,6 +258,10 @@ void init_task(void *param){
   vTaskDelete(NULL);
 }
 
+
+// ##############################################
+// #               blink task                   #
+// ##############################################
 void blink(void* param){
 
   DDRB |= (1 << 6);
@@ -252,16 +276,21 @@ void blink(void* param){
 
     DEBUG_PORT |= (1 << DEBUG_BLINK);
 
-    PORTB ^= (1 << PB6);
     
 
     
     current = xTaskGetTickCount();
-    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
-    
+    sprintf(s, "%ld: tl: %d, tr: %d, c1: %d, c2: %d, c3: %d\n", (uint32_t)current, (int)temperature_l, (int)temperature_r, (int)(current_1*100), (int)(current_2*100), (int)(current_3*100));
     print_debug(s);
-    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[0], temp_info[1]);
+    sprintf(s, ", starter: %d temp info: %d, th %d\n", (uint8_t)(starter_state), temp_info[5], temp_info[15]);
     print_debug(s);
+
+    // raw readings
+    sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
+    print_debug(s);
+
+
+    #
     DEBUG_PORT &= ~(1 << DEBUG_BLINK);
 
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
@@ -270,11 +299,9 @@ void blink(void* param){
   }
 }
 
-/**
- *  @brief task to control solenoids with PWM
- * 
- *  @param param: parameter pointer (unused)
- * */
+// ##############################################
+// #              solenoid task                 #
+// ##############################################
 /**
  *  @brief task to control solenoids with PWM
  * 
@@ -423,32 +450,20 @@ void solenoid_task(void *param){
         else{
         // set solenoid left output to standard output: 
         FLIPPER_R_OCR = PWM_RANGE * DUTYCYCLE_TARGET;    // set to 20% output
-        }
-        
+        } 
       }
-      
-
     }
-    else{
-      
+    else{     
       FLIPPER_R_OCR = 0;
       buttonr_prev = buttonr;
     }
-
-   
-
-
-
-
-
     DEBUG_PORT &= ~(1 << DEBUG_SOLENOID);
-
-    
-    
   }
 }
 
-
+// ##############################################
+// #               button l                     #
+// ##############################################
 /**
  *  @brief task to ckeck button state after a debounce interval
  * 
@@ -471,8 +486,6 @@ void check_input_l_task(void *param)
 
     xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
 
-    DEBUG_PORT |= (1 << DEBUG_BUTTONL);
-
 
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
@@ -480,12 +493,13 @@ void check_input_l_task(void *param)
     // read button state:
     buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
 
-    DEBUG_PORT &= ~(1 << DEBUG_BUTTONL);
-
-
+ 
   }
 
 }
+// ##############################################
+// #               button r                     #
+// ##############################################
 /**
  *  @brief task to ckeck button state after a debounce interval
  * 
@@ -508,7 +522,6 @@ void check_input_r_task(void *param)
 
     xSemaphoreTake(xSemaphore_r_button, portMAX_DELAY);
 
-    DEBUG_PORT |= (1 << DEBUG_BUTTONR);
 
 
     // debounce: wait until state is settled
@@ -517,12 +530,38 @@ void check_input_r_task(void *param)
     // read button state:
     buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
 
-    DEBUG_PORT &= ~(1 << DEBUG_BUTTONR);
 
   }
 }
 
+/**
+ * @brief Task to ckeck button state on the RPi input lines
+ * 
+ * @param param 
+ */
+void check_input_rpi_task(void *param)
+{
 
+  xSemaphore_rpi_button = xSemaphoreCreateBinary();
+  if( xSemaphore_rpi_button == NULL){
+    // failed to create semaphore!
+    print_debug("failed to create semaphore in ckeck_input_rpi_task\n");
+    while(1);
+  }
+
+  while(1)
+  {
+    xSemaphoreTake(xSemaphore_rpi_button, portMAX_DELAY);
+
+    buttonr = !(RPI_R_PIN & (1 << RPI_R_P));   // inverse signal, as active low!
+    buttonl = !(RPI_L_PIN & (1 << RPI_L_P));   //
+
+  }
+}
+
+// ##############################################
+// #              score task                    #
+// ##############################################
 /**
  *  @brief Task to update the score board and send via UART0
  * 
@@ -531,11 +570,8 @@ void update_score_task(void *param){
 
   TickType_t lastTick = xTaskGetTickCount();
 
-  // TODO: this is just for test purpose: remove when light sensors are implemented
-  uint8_t last_l_button, last_r_button;
-  last_l_button = buttonl;
-  last_r_button = buttonr;
 
+  uint8_t chars_written = 0;
   char score_s[10];
   uint32_t last_score = 0;
 
@@ -546,29 +582,28 @@ void update_score_task(void *param){
 
     DEBUG_PORT |= (1 << DEBUG_SCORE);
 
-    if(buttonl != last_l_button){
-      last_l_button = buttonl;
-      score += 10;
+    if(score != last_score && game_running){
 
-      // print to uart0
-      sprintf(score_s, "%lu\n", score);
+      // either a new target was hit, or score is reset to 0
+      // we will not check here, as it doesn't matter
 
+      // just update the UART output
+      chars_written = sprintf(score_s, "%lu\n", score);
 
-      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
+      // wait for the UART transmit buffer to have enough space available
+      // should never !! ever !! happen, as this is the only data transmitted!
+      while(uart_tx_buffer_state(0) < chars_written)  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
       uart_puts(0, score_s);
+
+      last_score = score;
 
     }
-
-    if(buttonr != last_r_button){
-      last_r_button = buttonr;
-      score += 10;
-
-      // print to uart0
-      sprintf(score_s, "%lu\n", score);
-
-      while(uart_tx_buffer_state(0) < strlen(score_s))  vTaskDelay((TickType_t)1);    // wait for 1 tick if tx buffer full
-
-      uart_puts(0, score_s);
+    else{
+      if(!game_running)
+      {
+        // game not started, set score to 0 as long as this variable is false
+        score = 0;
+      }
     }
 
     DEBUG_PORT &= ~(1 << DEBUG_SCORE);
@@ -581,6 +616,10 @@ void update_score_task(void *param){
 
 }
 
+
+// ##############################################
+// #               adc task                     #
+// ##############################################
 /**
  * @brief Task to process adc sampled data in ping pong buffer
  * will execute every time one scan is complete. from here the next 
@@ -590,6 +629,10 @@ void update_score_task(void *param){
  */
 void process_adc_task(void *param)
 {
+
+  setup_matrix_outputs();
+
+
   xSemaphore_safety = xSemaphoreCreateBinary();
   if(xSemaphore_safety == NULL){
     // failed to create semaphore: 
@@ -608,8 +651,22 @@ void process_adc_task(void *param)
 
   adc_type temp_datar, temp_datal, temp_curr1, temp_curr2, temp_curr3;
   adc_type temp_targets[10] = {0};
-  adc_type base_level[4] = {0};
+  adc_type base_level[10] = {0};
 
+
+  // in temp_targets: 
+  // 0: starter
+  // 1: button r
+  // 2: button m
+  // 3: button l
+  
+  // 4: slingshot r
+  // 5: target center
+  // 6: slingshot l
+
+  // 7: wheel r
+  // 8: wheel m
+  // 9: wheel l
 
 
   vTaskDelay(10);
@@ -620,7 +677,7 @@ void process_adc_task(void *param)
 
   while (1)
   {
-    // TODO: complete
+
     // wait for semaphore
     xSemaphoreTake(xSemaphore_adc_complete, portMAX_DELAY);
 
@@ -641,7 +698,7 @@ void process_adc_task(void *param)
       }
     }
     else{
-      temp_datal = pong_buffer[0];
+      temp_datal = pong_buffer[0];    
       temp_datar = pong_buffer[1];
       temp_curr1 = pong_buffer[2];
       temp_curr2 = pong_buffer[3];
@@ -649,6 +706,14 @@ void process_adc_task(void *param)
       for(uint8_t i = 0; i < 10; i++){
         temp_targets[i] = ping_buffer[5+i];
       }
+    }
+    temp_info[0] = temp_datal;
+    temp_info[1] = temp_datar;
+    temp_info[2] = temp_curr1;
+    temp_info[3] = temp_curr2;
+    temp_info[4] = temp_curr3;
+    for(uint8_t i = 0; i < 10; i++){
+      temp_info[5 + i] = temp_targets[i];
     }
 
     // convert to temperature
@@ -686,10 +751,14 @@ void process_adc_task(void *param)
 
     // convert to current
     // amplification factor is CURRENTSENSE_AMP_FACTOR (11)
-    current_1 = (ADC_MAX_F / (temp_curr1+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_2 = (ADC_MAX_F / (temp_curr2+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
-    current_3 = (ADC_MAX_F / (temp_curr3+1)) * V_ADC_REF / CURRENTSENSE_AMP_FACTOR;
+    current_1 = ( (temp_curr1+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_1 = current_1  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
 
+    current_2 = ((temp_curr2+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_2 = current_2  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
+
+    current_3 = ((temp_curr3+1.0) / ADC_MAX_F) * V_ADC_REF ;
+    current_3 = current_3  / SHUNT_R / CURRENTSENSE_AMP_FACTOR;
 
     // give semaphore for security task
     xSemaphoreGive(xSemaphore_safety);
@@ -697,7 +766,7 @@ void process_adc_task(void *param)
 
 
     // evaluate matrix
-
+    
     // evaluate column by column
     // column 0: starter 
     // for starter: base level will be set as a slow moving average of the light
@@ -740,10 +809,15 @@ void process_adc_task(void *param)
         // assumed, that the ball left the starting position successfully
         // and pusher retracted (see starter implementation)
         starter_delay_after_fired--;
+
+        // if starter is fired, set the game_running to true to start counting score
+        game_running = 1;
+
         if(starter_delay_after_fired == 0)
         {
           // reset starter state
           starter_state = Empty;
+          score = 0;
         }
       }
 
@@ -757,18 +831,151 @@ void process_adc_task(void *param)
     base_level[0] = (adc_type)((float)base_level[0] * COMP_FILTER_FACTOR + (float)temp_targets[0] * (1.0 - COMP_FILTER_FACTOR));
 
     // assign to temp_info to be printed at blink
-    temp_info[0] = temp_targets[0];
-    temp_info[1] = base_level[0];
+    
 
 
-    // TODO: implement buttons
 
-    // TODO: implement wheel
+    // === button targets === 
+    // if light reading is significantly higher than base level 
+    if(temp_targets[1] > (BUTTON_TARGET_THRESHOLD * base_level[1]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[1] = temp_targets[1];
 
-    // TODO: implement target
 
-    // TODO: implement slingshots
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[1] = (adc_type)((float)base_level[1] * COMP_FILTER_FACTOR + (float)temp_targets[1] * (1.0 - COMP_FILTER_FACTOR));
 
+    if(temp_targets[2] > (BUTTON_TARGET_THRESHOLD * base_level[2]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[2] = temp_targets[2];
+
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[2] = (adc_type)((float)base_level[2] * COMP_FILTER_FACTOR + (float)temp_targets[2] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[3] > (BUTTON_TARGET_THRESHOLD * base_level[3]))
+    {
+      // increase score
+      score += BUTTON_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[3] = temp_targets[3];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[3] = (adc_type)((float)base_level[3] * COMP_FILTER_FACTOR + (float)temp_targets[3] * (1.0 - COMP_FILTER_FACTOR));
+
+
+  
+
+    
+    // ===  target at center of board ===
+    // if light reading is significantly lower than base level 
+    if(temp_targets[5] < TARGET_THRESHOLD * base_level[5])
+    {
+      // increase score
+      score += TARGET_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[5] = temp_targets[5];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    
+    base_level[5] = (adc_type)((float)base_level[5] * COMP_FILTER_FACTOR + (float)temp_targets[5] * (1.0 - COMP_FILTER_FACTOR));
+
+    temp_info[15] = base_level[5];
+
+
+
+    // ===  sling shot  ===
+    // if light reading is significantly lower than base level 
+    if(temp_targets[4] < SLINGSHOT_THRESHOLD * base_level[4])
+    {
+      // increase score
+      score += SLINGHSHOT_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[4] = temp_targets[4];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[4] = (adc_type)((float)base_level[4] * COMP_FILTER_FACTOR + (float)temp_targets[4] * (1.0 - COMP_FILTER_FACTOR));
+
+    // if light reading is significantly lower than base level 
+    if(temp_targets[6] < SLINGSHOT_THRESHOLD * base_level[6])
+    {
+      // increase score
+      score += SLINGHSHOT_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[6] = temp_targets[6];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[6] = (adc_type)((float)base_level[6] * COMP_FILTER_FACTOR + (float)temp_targets[6] * (1.0 - COMP_FILTER_FACTOR));
+
+
+
+
+    //  === Wheel target ===
+    // if light reading is significantly higher than base level 
+    if(temp_targets[7] < (WHEEL_THRESHOLD * base_level[7]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[7] = temp_targets[7];
+
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[7] = (adc_type)((float)base_level[7] * COMP_FILTER_FACTOR + (float)temp_targets[7] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[8] < (WHEEL_THRESHOLD * base_level[8]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[8] = temp_targets[8];
+
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[8] = (adc_type)((float)base_level[8] * COMP_FILTER_FACTOR + (float)temp_targets[8] * (1.0 - COMP_FILTER_FACTOR));
+
+    if(temp_targets[9] < (WHEEL_THRESHOLD * base_level[9]))
+    {
+      // increase score
+      score += WHEEL_POINTS;
+      
+      // adjust base_level to match current value, so no further trigger will be generated
+      base_level[9] = temp_targets[9];
+
+      // if not working: set a timer with last score given for this target
+      // if difference greater than e.g. 300 ms: give score, set timer to current time
+    }
+    base_level[9] = (adc_type)((float)base_level[9] * COMP_FILTER_FACTOR + (float)temp_targets[9] * (1.0 - COMP_FILTER_FACTOR));
 
 
     DEBUG_PORT &= ~(1 << DEBUG_ADC);
@@ -785,7 +992,9 @@ void process_adc_task(void *param)
   
 }
 
-
+// ##############################################
+// #              safety task                   #
+// ##############################################
 /**
  * @brief Task to manage safety features like temperature and current of solenoids
  * Will shut off the relay if solenoids get too hot
@@ -806,7 +1015,7 @@ void safety_task(void *param){
   const char wrn_high_t[] = "ERR: high temperature\n";
   const char wrn_timeout[] = "WRN: cannot get semaphore\n";
 
-  vTaskDelay(30);   // delay for 50 ticks to let the system start up
+  vTaskDelay(600 / portTICK_PERIOD_MS);   // delay for 50 ticks to let the system start up
 
   while(1)
   {
@@ -882,7 +1091,9 @@ void safety_task(void *param){
 
 }
 
-
+// ##############################################
+// #             music task                     #
+// ##############################################
 void music_task(void *param)
 {
 
@@ -891,16 +1102,20 @@ void music_task(void *param)
   tone_init();
 
 
+  // as no speaker is connected currently (2021-11-29), this has no effect other than
+  // generating a square wave with variable frequency :blobsad:
 
   while(1)
   {
     step++;
 
-    if(step == 58){   // sizeof didn't work, so here we go
+    // when reached the end of the song: play the same song again
+    if(step == (sizeof(lead_notes)/(sizeof(float)))){   // sizeof didn't work, so here we go
       step = 0;
     }
 
-    tone_play(lead_notes[step]);
+    // function call to frequency generator
+    tone_play((uint16_t)(lead_notes[step]));
 
     // calculate delay
     vTaskDelayUntil(&last, (TickType_t)((lead_times[step] / 2) * 1000 / portTICK_PERIOD_MS)); 
@@ -913,32 +1128,9 @@ void music_task(void *param)
 }
 
 
-
-
-
-
-
-
-/**
- * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
- * 
- */
-void setup_watchdog(void)
-{
-  cli();
-  wdt_reset();
-  // start timed sequence
-  WDTCSR |= (1 >> WDCE) | (1 << WDE);
-
-  // set new prescaler
-  WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP0);
-
-  sei();
-}
-
-
-
-
+// ##############################################
+// #             music task                     #
+// ##############################################
 /**
  * @brief Interrupt Service Routine for Pin Change Interrupt 1
  *  will handle the interrupts on buttonl and buttonr
@@ -979,3 +1171,9 @@ ISR(PCINT1_vect){
 }
 
 
+ISR(PCINT2_vect){
+  // this is just a mirrow of ISR(PCINT1_vect), but no hardware debouncing 
+  // is required, as none is expected from the RPI
+
+  xSemaphoreGiveFromISR(xSemaphore_rpi_button, NULL);
+}

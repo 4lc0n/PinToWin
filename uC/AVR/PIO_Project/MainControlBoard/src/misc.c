@@ -1,6 +1,7 @@
 #include "misc.h"
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
 
 #include <stdio.h>
 #include <string.h>
@@ -13,6 +14,7 @@
 
 
 
+
 extern uint16_t PWM_RANGE;
 
 
@@ -22,11 +24,11 @@ extern uint16_t PWM_RANGE;
  * */
 void toggle_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB ^= (1 << PB7);
+    // PORTB ^= (1 << PB7);
 }
 /**
  *  @brief set LED on PB7
@@ -34,11 +36,11 @@ void toggle_led()
  * */
 void set_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB |= (1 << PB7);
+    // PORTB |= (1 << PB7);
 }
 /**
  *  @brief clear LED on PB7
@@ -46,11 +48,11 @@ void set_led()
  * */
 void clear_led()
 {
-    if(!(DDRB & (1 << PB7))){
-        DDRB |= (1 << PB7);
-    }
+    // if(!(DDRB & (1 << PB7))){
+    //     DDRB |= (1 << PB7);
+    // }
 
-    PORTB &= ~(1 << PB7);
+    // PORTB &= ~(1 << PB7);
 }
 
 
@@ -120,8 +122,42 @@ void setup_button_inputs(void){
   // activate GND pin for the button input
   BUTTON_GND_DDR |= (1 << BUTTON_GND_P);
   BUTTON_GND_PORT &= ~(1 << BUTTON_GND_P);
+
+
+  // do the same for RPI_L_P and RPI_R_P
+  RPI_R_DDR &= ~(1 << RPI_R_P);
+  RPI_R_PORT &= ~(1 << RPI_R_P);
+
+  // enable internal pullup (around 35k)
+  RPI_L_DDR &= ~(1 << RPI_L_P);
+  RPI_L_PORT &= ~(1 << RPI_L_P);
+
+  // enable interrupt pins 16 - 23
+  PCICR |= (1 << PCIE2);
+
+  // enable interrupt mask
+  PCMSK2 |= (1 << RPI_L_INT) | (1 << RPI_R_INT);
+
 }
 
+
+/** 
+ *  @brief: function to initialize outputs for matrix column selection * 
+ * */
+void setup_matrix_outputs(void){
+  MATRIX_COL0_DDR |= (1 << MATRIX_COL0_P);
+  MATRIX_COL1_DDR |= (1 << MATRIX_COL1_P);
+  MATRIX_COL2_DDR |= (1 << MATRIX_COL2_P);
+  MATRIX_COL3_DDR |= (1 << MATRIX_COL3_P);
+
+  MATRIX_COL0_PORT &= ~(1 << MATRIX_COL0_P);
+  MATRIX_COL1_PORT &= ~(1 << MATRIX_COL1_P);
+  MATRIX_COL2_PORT &= ~(1 << MATRIX_COL2_P);
+  MATRIX_COL3_PORT &= ~(1 << MATRIX_COL3_P);
+
+  
+  
+}
 
 
 /**
@@ -155,4 +191,22 @@ void setup_pwm_outputs(void)
   // set PWM_RANGE to ICR4 value, to have a reference frame for pwm signal
   PWM_RANGE = ICR4;
 
+}
+
+
+/**
+ * @brief Set the up watchdog timer in reset mode, 0.5sec timeout
+ * 
+ */
+void setup_watchdog(void)
+{
+  cli();
+  wdt_reset();
+  // start timed sequence
+  WDTCSR |= (1 >> WDCE) | (1 << WDE);
+
+  // set new prescaler
+  WDTCSR = (1 << WDE) | (1 << WDP2) | (1 << WDP0);
+
+  sei();
 }

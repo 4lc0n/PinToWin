@@ -47,7 +47,8 @@
 #define CURRENTSENSE_2_MTRX 0x26
 #define CURRENTSENSE_3_MTRX 0x27
 
-#define CURRENTSENSE_AMP_FACTOR 11
+#define CURRENTSENSE_AMP_FACTOR (11.0f)
+#define SHUNT_R (0.1f)
 
 // LDR matrix
 #define LDR_ROW0_MTRX 0x00
@@ -57,7 +58,10 @@
 
 #define COMP_FILTER_FACTOR (0.95f)
 #define STARTER_THRESHOLD (0.7f)
-
+#define TARGET_THRESHOLD (0.7f)
+#define BUTTON_TARGET_THRESHOLD (1.5f)
+#define SLINGSHOT_THRESHOLD (0.8f)
+#define WHEEL_THRESHOLD (0.9f)
 
 #define ADC_SCAN_RATE 100           // adc scan rate 
 
