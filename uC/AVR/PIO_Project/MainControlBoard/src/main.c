@@ -3,17 +3,15 @@
  *  
  * 
  * @author Juergen Markl
- * @brief Main file for main board controller (ATMega2560)
- * @version 0.1
- * @date 2021-11-20
+ * @brief Main file for main board controller (ATMega2560): controlls solenoids and button inputs and
+ * targets being hit, transferes score
+ * @version 1.0
+ * @date 2021-11-29
  * 
  * @copyright Copyright (c) 2021
  * 
  * 
  * 
-
-
- *  // TODO: check target mechanism on trigger: is timer necessary?
  */
 
 
@@ -1017,7 +1015,7 @@ void safety_task(void *param){
   const char wrn_high_t[] = "ERR: high temperature\n";
   const char wrn_timeout[] = "WRN: cannot get semaphore\n";
 
-  vTaskDelay(1000 / portTICK_PERIOD_MS);   // delay for 50 ticks to let the system start up
+  vTaskDelay(600 / portTICK_PERIOD_MS);   // delay for 50 ticks to let the system start up
 
   while(1)
   {
@@ -1104,16 +1102,20 @@ void music_task(void *param)
   tone_init();
 
 
+  // as no speaker is connected currently (2021-11-29), this has no effect other than
+  // generating a square wave with variable frequency :blobsad:
 
   while(1)
   {
     step++;
 
-    if(step == 58){   // sizeof didn't work, so here we go
+    // when reached the end of the song: play the same song again
+    if(step == (sizeof(lead_notes)/(sizeof(float)))){   // sizeof didn't work, so here we go
       step = 0;
     }
 
-    tone_play(lead_notes[step]);
+    // function call to frequency generator
+    tone_play((uint16_t)(lead_notes[step]));
 
     // calculate delay
     vTaskDelayUntil(&last, (TickType_t)((lead_times[step] / 2) * 1000 / portTICK_PERIOD_MS)); 
@@ -1126,17 +1128,9 @@ void music_task(void *param)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+// ##############################################
+// #             music task                     #
+// ##############################################
 /**
  * @brief Interrupt Service Routine for Pin Change Interrupt 1
  *  will handle the interrupts on buttonl and buttonr
