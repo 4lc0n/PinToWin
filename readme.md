@@ -2,7 +2,7 @@
 
 
 
-<img src="Images/IMG_3024.JPG" width="400px">
+<img src="images/IMG_3024.JPG" width="400px">
 
 
 ## IMPORTANT
