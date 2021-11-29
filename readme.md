@@ -1,5 +1,10 @@
 # Pin To Win - Working repository for electronics
 
+
+
+<img src="Images/IMG_3024.JPG" width="400px">
+
+
 ## IMPORTANT
 
 This repository has long file names, for windows user: enable long file names with this command
@@ -32,6 +37,27 @@ Drawings and test files used to sketch out parts of the projects
 
 Documents regarding this project including documentation, data sheets and other application notes and reference sheets
 
+### schematics
+
+Schematics and other files related to this for the projects PCBs
+#### main control
+Board to controll solenoids, some light sensors and temperature sensors
+
+#### sensor matrix
+Board with Light Dependent Resistors in a matrix
+
+#### solenoid driver
+KiCAD project for first draft of the solenoid driver, a low side mosfet with a push-pull driver circuit
+
+#### parts
+custom parts and footprints for OrCAD Cadence projects
+
+### simulations
+
+Simulations with LTSpice regarding some components like 
+* Solenoid Driver (Mosfet Driver)
+* Current Calculation on Solenoids
+
 
 ### uC
 
@@ -53,24 +79,6 @@ contains FreeRTOS implementation on ATMega2560 (Arduino Mega). Main project lies
 Multi-Tasking firmware with custom drivers for ADC and UART for effective data throughput
 reads pins for sensors, targets, Raspberry Pi output, button input, etc. 
 
-### schematics
-
-Schematics and other files related to this for the projects PCBs
-#### main control
-Board to controll solenoids, some light sensors and temperature sensors
-
-#### sensor matrix
-Board with Light Dependent Resistors in a matrix
-
-#### solenoid driver
-KiCAD project for first draft of the solenoid driver, a low side mosfet with a push-pull driver circuit
-
-#### parts
-custom parts and footprints for OrCAD Cadence projects
-
-### simulations
-
-Simulations with LTSpice regarding some components
 
 
 
