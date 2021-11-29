@@ -1,8 +1,10 @@
 # Pin To Win - Working repository for electronics
 
 
+<p align="center">
+  <img src="images/IMG_3024.JPG" width="500px">
+</p>
 
-<img src="images/IMG_3024.JPG" width="400px">
 
 
 ## IMPORTANT
