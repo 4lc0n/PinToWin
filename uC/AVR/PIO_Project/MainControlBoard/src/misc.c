@@ -138,6 +138,11 @@ void setup_button_inputs(void){
   // enable interrupt mask
   PCMSK2 |= (1 << RPI_L_INT) | (1 << RPI_R_INT);
 
+
+  // NOTE: here the output for the raspberry to signal a reset state is also set
+  RPI_RES_DDR |= (1 << RPI_RES_P);
+  RPI_RES_DDR &= ~(1 << RPI_RES_P);
+
 }
 
 
