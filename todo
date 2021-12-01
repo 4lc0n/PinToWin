@@ -1,0 +1,3 @@
+use FTDI UART to USB converter for main control board --> appears as USB0 instead of ACM0
+
+implement API on Matrix boards to return either L or R, when the received character is '?', so Jostein can differentiate which is located where
