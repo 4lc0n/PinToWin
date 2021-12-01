@@ -6,7 +6,7 @@
  * @brief Main file for main board controller (ATMega2560): controlls solenoids and button inputs and
  * targets being hit, transferes score
  * @version 1.0
- * @date 2021-11-29
+ * @date 2021-12-01
  * 
  * @copyright Copyright (c) 2021
  * 
