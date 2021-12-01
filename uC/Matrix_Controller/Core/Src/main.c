@@ -46,7 +46,7 @@
 
 #define ANALOG_OUTPUT
 
-
+#define SIDE 'L'
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -173,8 +173,14 @@ int main(void)
   		adc_complete = 0;
   		usb_rec = 0;
 
+  		if(usb_rx_buffer[0] == '?')
+  		{
+  			sprintf(usb_buffer, "%c\n", SIDE);
+				CDC_Transmit_FS((uint8_t*)usb_buffer, strlen(usb_buffer));
+				continue;
+  		}
 
-//  		if(usb_rec == 1 && adc_complete == 1){
+
 
 
 #ifdef ANALOG_OUTPUT
