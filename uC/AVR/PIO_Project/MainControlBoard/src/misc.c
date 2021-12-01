@@ -141,7 +141,7 @@ void setup_button_inputs(void){
 
   // NOTE: here the output for the raspberry to signal a reset state is also set
   RPI_RES_DDR |= (1 << RPI_RES_P);
-  RPI_RES_DDR &= ~(1 << RPI_RES_P);
+  RPI_RES_PORT &= ~(1 << RPI_RES_P);
 
 }
 
