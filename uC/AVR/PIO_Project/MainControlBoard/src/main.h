@@ -101,7 +101,7 @@
 //          Timing Definitions
 // ----------------------------------
 
-#define BUTTON_DEBOUNCE_MS  50
+#define BUTTON_DEBOUNCE_MS  20
 
 
 #define DUTYCYCLE_TARGET 0.2        // target for solenoid duty cycle
