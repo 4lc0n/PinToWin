@@ -426,6 +426,8 @@ void solenoid_task(void *param){
       FLIPPER_L_OCR = 0;
       buttonl_prev = buttonl;
       full_power_l = 0;
+      
+      
     }
 
     if(buttonr){
