@@ -193,14 +193,14 @@ void init_task(void *param){
   print_debug("OK\n");
 
   print_debug("create button rpi handler task... ");
-  xTaskCreate(
-    check_input_rpi_task
-    ,  "RPI_input" // A name just for humans
-    ,  128  // Stack size
-    ,  NULL //Parameters for the task
-    ,  1  // Priority
-    ,  NULL ); //Task Handle
-  print_debug("OK\n");
+  // xTaskCreate(
+  //   check_input_rpi_task
+  //   ,  "RPI_input" // A name just for humans
+  //   ,  128  // Stack size
+  //   ,  NULL //Parameters for the task
+  //   ,  1  // Priority
+  //   ,  NULL ); //Task Handle
+  // print_debug("OK\n");
 
   // moved back after check_input_tasks
   print_debug("create solenoid task... ");
@@ -490,8 +490,13 @@ void check_input_l_task(void *param)
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
+
+    bool button, rpi;
+
+    button = !(BUTTONL_PIN & (1 << BUTTONL_P));
+    rpi = !(RPI_L_PIN & (1 << RPI_L_P));
     // read button state:
-    buttonl = !(BUTTONL_PIN & (1 << BUTTONL_P));    // inverse signal, as pullup resistor: active low
+    buttonl = rpi | button;    // inverse signal, as pullup resistor: active low
 
  
   }
@@ -527,8 +532,12 @@ void check_input_r_task(void *param)
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
+    bool button, rpi;
+    button = !(BUTTONR_PIN & (1 << BUTTONR_P));
+    rpi = !(RPI_R_PIN & (1 << RPI_R_P));
+
     // read button state:
-    buttonr = !(BUTTONR_PIN & (1 << BUTTONR_P));    // inverse signal, as pullup resistor: active low
+    buttonr = button | rpi;    // inverse signal, as pullup resistor: active low
 
 
   }
@@ -1182,5 +1191,6 @@ ISR(PCINT2_vect){
   // this is just a mirrow of ISR(PCINT1_vect), but no hardware debouncing 
   // is required, as none is expected from the RPI
 
-  xSemaphoreGiveFromISR(xSemaphore_rpi_button, NULL);
+  xSemaphoreGiveFromISR(xSemaphore_r_button, NULL);
+  xSemaphoreGiveFromISR(xSemaphore_l_button, NULL);
 }

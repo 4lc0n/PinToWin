@@ -46,7 +46,7 @@
 
 #define ANALOG_OUTPUT
 
-#define SIDE 'L'
+#define SIDE 'R'
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
