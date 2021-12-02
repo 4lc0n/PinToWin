@@ -10,7 +10,7 @@
  * 
  * @copyright Copyright (c) 2021
  * 
- * 
+ * // TODO: bricks on too much input
  * 
  */
 
@@ -109,7 +109,7 @@ void music_task(void *param);
 
 
 
-void setup_watchdog(void);
+
 
 // ##############################################
 // #                  setup                     #
@@ -286,11 +286,15 @@ void blink(void* param){
     print_debug(s);
 
     // raw readings
-    sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
+    // sprintf(s, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", (int)temp_info[0], (int)temp_info[1], (int)temp_info[2], (int)temp_info[3], (int)temp_info[4], (int)temp_info[5], (int)temp_info[6], (int)temp_info[7], (int)temp_info[8], (int)temp_info[9], (int)temp_info[10], (int)temp_info[11], (int)temp_info[12], (int)temp_info[13], (int)temp_info[14]);
+    // print_debug(s);
+
+    sprintf(s, "%d, %d, button %d %d, rpi: %d %d\n", buttonl, buttonr, !(BUTTONL_PIN & (1 << BUTTONL_P)), !(BUTTONR_PIN & (1 << BUTTONR_P)), !(RPI_L_PIN & (1 << RPI_L_P)), !(RPI_R_PIN & (1 << RPI_R_P)));
     print_debug(s);
 
 
-    #
+
+    
     DEBUG_PORT &= ~(1 << DEBUG_BLINK);
 
     xTaskDelayUntil(&last, 200 / portTICK_PERIOD_MS);
@@ -476,7 +480,7 @@ void check_input_l_task(void *param)
     print_debug("failed to create semaphore in check_input_l_task\n");
     while(1);
   }
-
+  bool button, rpi;
   TickType_t lastTick = xTaskGetTickCount();
 
   vTaskDelay(10);
@@ -486,19 +490,20 @@ void check_input_l_task(void *param)
 
     xSemaphoreTake(xSemaphore_l_button, portMAX_DELAY);
 
-
+    // disable IRQ for rpi
+    PCMSK2 &= ~(1 << RPI_L_INT);
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
 
-    bool button, rpi;
+    
 
     button = !(BUTTONL_PIN & (1 << BUTTONL_P));
     rpi = !(RPI_L_PIN & (1 << RPI_L_P));
     // read button state:
     buttonl = rpi | button;    // inverse signal, as pullup resistor: active low
 
- 
+     PCMSK2 |= (1 << RPI_L_INT);
   }
 
 }
@@ -517,7 +522,7 @@ void check_input_r_task(void *param)
     print_debug("failed to create semaphore in check_input_l_task\n");
     while(1);
   }
-
+  bool button, rpi;
   TickType_t lastTick = xTaskGetTickCount();
 
   vTaskDelay(10);
@@ -528,17 +533,19 @@ void check_input_r_task(void *param)
     xSemaphoreTake(xSemaphore_r_button, portMAX_DELAY);
 
 
+    // disable ISR for RPI 
+    PCMSK2 &= ~(1 << RPI_R_INT);
 
     // debounce: wait until state is settled
     xTaskDelayUntil(&lastTick, BUTTON_DEBOUNCE_MS / portTICK_PERIOD_MS); 
 
-    bool button, rpi;
+
     button = !(BUTTONR_PIN & (1 << BUTTONR_P));
     rpi = !(RPI_R_PIN & (1 << RPI_R_P));
 
     // read button state:
     buttonr = button | rpi;    // inverse signal, as pullup resistor: active low
-
+     PCMSK2 |= (1 << RPI_R_INT);
 
   }
 }
@@ -1032,6 +1039,8 @@ void safety_task(void *param){
   const char wrn_timeout[] = "WRN: cannot get semaphore\n";
 
   vTaskDelay(600 / portTICK_PERIOD_MS);   // delay for 50 ticks to let the system start up
+
+  setup_watchdog();
 
   while(1)
   {

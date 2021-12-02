@@ -128,7 +128,7 @@ void setup_button_inputs(void){
   RPI_R_DDR &= ~(1 << RPI_R_P);
   RPI_R_PORT &= ~(1 << RPI_R_P);
 
-  // enable internal pullup (around 35k)
+  
   RPI_L_DDR &= ~(1 << RPI_L_P);
   RPI_L_PORT &= ~(1 << RPI_L_P);
 
