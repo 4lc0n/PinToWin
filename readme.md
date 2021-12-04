@@ -28,6 +28,7 @@ Members:
 * Jürgen Josef Markl
 * Marcus Ringen Ulleberg
 
+For more information on the project, see the blog at http://dronesonen.usn.no/ 
 
 ## Content
 
