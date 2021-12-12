@@ -91,4 +91,14 @@ reads pins for sensors, targets, Raspberry Pi output, button input, etc.
 
 
 
+## Note for further development
 
+To get this thing up and running, 2 Raspberry were used, but only 1 is also sufficient. 
+
+All matrices were connected via USB-C cables to the Raspberry, appearing as ACM0 and ACM1 (numbering can be different), the ATMega2560 was connected via a FTDI USB to Serial adapter, as this will show up as USB0, so can be easily identified. 
+
+A strong 5V power supply is needed to prevent low power warnings on the raspberry and the Arduino to brown-out!
+
+Having a common ground between the Raspberry with the control output and the ATMega2560 with the input for the flipper pins is also important, and is given when connecting either a jumper wire between the two, or having the ATMega2560 be powered from the Raspberry Pi. 
+
+Getting the score board script to automaticly open the port did not work in our case, so it has to be started manually. Also the c++-programm for autonomous playing needs to be started manually.
