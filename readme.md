@@ -7,7 +7,7 @@
 
 
 
-## IMPORTANT
+# IMPORTANT
 
 This repository has long file names, for windows user: enable long file names with this command
 
@@ -15,7 +15,7 @@ git config --system core.longpaths true
 
 
 
-## Overview
+# Overview
 
 This repository represents the electronic part of the project 'Pin To Win', a project in the scope of the lecutre 'Smart Systems' at the USN Kongsberg. 
 
@@ -30,20 +30,20 @@ Members:
 
 For more information on the project, see the blog at http://dronesonen.usn.no/?author=84
 
-## Content
+# Content
 
 ### PinballSim-main/Pinball 
 Unity Simulation by Marcus
 
-### Concepts
+## Concepts
 
 Drawings and test files used to sketch out parts of the projects
 
-### doc
+## doc
 ---
 Documents regarding this project including documentation, data sheets and other application notes and reference sheets
 
-### schematics
+## schematics
 ---
 
 Schematics and other files related to this for the projects PCBs
@@ -60,14 +60,14 @@ KiCAD project for first draft of the solenoid driver, a low side mosfet with a p
 * parts:  
 custom parts and footprints for OrCAD Cadence projects
 
-### simulations
+## simulations
 ---
 Simulations with LTSpice regarding some components like 
 * Solenoid Driver (Mosfet Driver)
 * Current Calculation on Solenoids
 
 
-### uC
+## uC
 ---
 * solenoid_driver:  
 STM32CubeIDE-Projects for the Microcontroller (STM32F411,  BlackPill V3 designed by WeAct), used to controll the hardware, especially the solenoids. Represents main processor in this project
@@ -91,7 +91,7 @@ reads pins for sensors, targets, Raspberry Pi output, button input, etc.
 
 
 
-## Note for further development
+# Note for further development
 
 To get this thing up and running, 2 Raspberry were used, but only 1 is also sufficient. 
 
