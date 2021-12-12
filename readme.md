@@ -40,11 +40,11 @@ Unity Simulation by Marcus
 Drawings and test files used to sketch out parts of the projects
 
 ## doc
----
+
 Documents regarding this project including documentation, data sheets and other application notes and reference sheets
 
 ## schematics
----
+
 
 Schematics and other files related to this for the projects PCBs
 
@@ -61,14 +61,14 @@ KiCAD project for first draft of the solenoid driver, a low side mosfet with a p
 custom parts and footprints for OrCAD Cadence projects
 
 ## simulations
----
+
 Simulations with LTSpice regarding some components like 
 * Solenoid Driver (Mosfet Driver)
 * Current Calculation on Solenoids
 
 
 ## uC
----
+
 * solenoid_driver:  
 STM32CubeIDE-Projects for the Microcontroller (STM32F411,  BlackPill V3 designed by WeAct), used to controll the hardware, especially the solenoids. Represents main processor in this project
 
